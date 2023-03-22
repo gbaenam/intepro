@@ -7,17 +7,17 @@
 	--font-size-button: 1.4em;
 	--min-width-button: 15.625rem;
 
-	// @include from(360px) {
-	// 	--font-size-button: 1.3em;
-	// }
+	@include from(360px) {
+		--min-width-button: 17rem;
+	}
 
-	// @include from(412px) {
-	// 	--font-size-button: 1.35em;
-	// 	--min-width-button: 18.75rem;
-	// }
+	@include from(412px) {
+		--font-size-button: 1.45em;
+		--min-width-button: 18.75rem;
+	}
 
 	@include from(ultrawide) {
-		--font-size-button: 1.5em;
+		--font-size-button: 1.6em;
 		--min-width-button: 20rem;
 	}
 }
@@ -32,8 +32,6 @@
   font-family: $font-family-primary;
 	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
-
-	// min-height: 45px;
 
 	&-blue,
 	&-green,

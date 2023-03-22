@@ -294,9 +294,20 @@ textarea {
   --font-size-button: 1.4em;
   --min-width-button: 15.625rem;
 }
+@media screen and (min-width: 360px) {
+  .button {
+    --min-width-button: 17rem;
+  }
+}
+@media screen and (min-width: 412px) {
+  .button {
+    --font-size-button: 1.45em;
+    --min-width-button: 18.75rem;
+  }
+}
 @media screen and (min-width: 2100px) {
   .button {
-    --font-size-button: 1.5em;
+    --font-size-button: 1.6em;
     --min-width-button: 20rem;
   }
 }
