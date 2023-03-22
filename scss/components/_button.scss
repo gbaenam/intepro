@@ -4,17 +4,17 @@
 
 // Variables.
 .button {
-	--font-size-button: 1.2em;
+	--font-size-button: 1.4em;
 	--min-width-button: 15.625rem;
 
-	@include from(360px) {
-		--font-size-button: 1.3em;
-	}
+	// @include from(360px) {
+	// 	--font-size-button: 1.3em;
+	// }
 
-	@include from(412px) {
-		--font-size-button: 1.35em;
-		--min-width-button: 18.75rem;
-	}
+	// @include from(412px) {
+	// 	--font-size-button: 1.35em;
+	// 	--min-width-button: 18.75rem;
+	// }
 
 	@include from(ultrawide) {
 		--font-size-button: 1.5em;
@@ -24,14 +24,16 @@
 
 .button {
 	color: #fff;
-	padding: .5em 0;
-	font-weight: 600;
+	padding: .3em 0;
+	font-weight: 500;
 	border-radius: 2em;
 	border: .125em solid;
 	text-transform: uppercase;
   font-family: $font-family-primary;
 	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
+
+	// min-height: 45px;
 
 	&-blue,
 	&-green,
