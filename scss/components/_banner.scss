@@ -104,20 +104,30 @@
 
         margin-bottom: 1rem;
 
-        &::before {
-            content: "¡";
+        @include from(360px) {
+            font-size: 49px;
         }
 
-        &::after {
-            content: "!";
+        @include from(412px) {
+            font-size: 55px;
         }
     }
 
     &__call-us-now {
-        // font-family: $font-family-secondary;
         font-size: 32px;
         margin-bottom: 1rem;
 
+        @include from(360px) {
+            font-size: 36px;
+        }
+
+        @include from(412px) {
+            font-size: 38px;
+        }
+    }
+
+    &__title,
+    &__call-us-now {
         &::before {
             content: "¡";
         }
@@ -139,16 +149,27 @@
         margin-right: 5px;
         border-radius: 1px;
 
+        @include from(360px) {
+            width: 48px;
+            height: 29px;
+        }
+
     }
 
     &__phone {
         font-size: 28px;
         font-style: normal;
-        // font-family: $font-family-secondary;
+
+        @include from(360px) {
+            font-size: 31px;
+        }
+
+        @include from(412px) {
+            font-size: 33px;
+        }
     }
 
     &__button {
         text-transform: none;
-        // font-size: 1.3em;
     }
 }

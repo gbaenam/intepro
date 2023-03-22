@@ -228,6 +228,11 @@ textarea {
   margin-top: var(--height-header);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 }
+@media screen and (min-width: 412px) {
+  .banner-layout {
+    padding-top: 14rem;
+  }
+}
 @media screen and (min-width: 640px) {
   .banner-layout {
     padding: 5rem 1.5rem 3rem;
@@ -759,20 +764,34 @@ textarea {
   text-align: center;
   margin-bottom: 1rem;
 }
-.banner__title::before {
-  content: "¡";
+@media screen and (min-width: 360px) {
+  .banner__title {
+    font-size: 49px;
+  }
 }
-.banner__title::after {
-  content: "!";
+@media screen and (min-width: 412px) {
+  .banner__title {
+    font-size: 55px;
+  }
 }
 .banner__call-us-now {
   font-size: 32px;
   margin-bottom: 1rem;
 }
-.banner__call-us-now::before {
+@media screen and (min-width: 360px) {
+  .banner__call-us-now {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 412px) {
+  .banner__call-us-now {
+    font-size: 38px;
+  }
+}
+.banner__title::before, .banner__call-us-now::before {
   content: "¡";
 }
-.banner__call-us-now::after {
+.banner__title::after, .banner__call-us-now::after {
   content: "!";
 }
 .banner__wrapper-address {
@@ -786,9 +805,25 @@ textarea {
   margin-right: 5px;
   border-radius: 1px;
 }
+@media screen and (min-width: 360px) {
+  .banner__flag {
+    width: 48px;
+    height: 29px;
+  }
+}
 .banner__phone {
   font-size: 28px;
   font-style: normal;
+}
+@media screen and (min-width: 360px) {
+  .banner__phone {
+    font-size: 31px;
+  }
+}
+@media screen and (min-width: 412px) {
+  .banner__phone {
+    font-size: 33px;
+  }
 }
 .banner__button {
   text-transform: none;
