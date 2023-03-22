@@ -9,27 +9,33 @@
     content: "";
 }
 
-// Width 412px
-.line-break412::before {
-
-    @include from(412px) {
+.line-break320::before {
+    @include from(640px) {
         display: inline;
     }
 }
 
-// Width 960px
-.line-break960::before {
+// // Width 412px
+// .line-break412::before {
 
-    @include from(xxmedium) {
-        display: inline;
-    }
-}
+//     @include from(412px) {
+//         display: inline;
+//     }
+// }
 
-// Width 1200px
-.line-break1200::before {
+// // Width 960px
+// .line-break960::before {
 
-    @include from(1200px) {
-        display: inline;
-    }
-}
+//     @include from(xxmedium) {
+//         display: inline;
+//     }
+// }
+
+// // Width 1200px
+// .line-break1200::before {
+
+//     @include from(1200px) {
+//         display: inline;
+//     }
+// }
 

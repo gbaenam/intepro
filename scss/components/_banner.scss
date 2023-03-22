@@ -111,6 +111,10 @@
         @include from(412px) {
             font-size: 55px;
         }
+
+        @include from(medium) {
+            font-size: 66px;
+        }
     }
 
     &__call-us-now {

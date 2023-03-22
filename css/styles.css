@@ -167,20 +167,8 @@ textarea {
   content: "";
 }
 
-@media screen and (min-width: 412px) {
-  .line-break412::before {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .line-break960::before {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .line-break1200::before {
+@media screen and (min-width: 640px) {
+  .line-break320::before {
     display: inline;
   }
 }
@@ -274,12 +262,12 @@ textarea {
 
 /* ----------------- button-whatsapp.scss ---------------- */
 .btn-whatsapp {
+  bottom: 2rem;
   display: flex;
   right: 0.625rem;
   width: 3.75rem;
   height: 3.75rem;
   position: fixed;
-  bottom: 4.375rem;
   z-index: 100;
   font-size: 3.75rem;
   align-items: center;
@@ -772,6 +760,11 @@ textarea {
 @media screen and (min-width: 412px) {
   .banner__title {
     font-size: 55px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .banner__title {
+    font-size: 66px;
   }
 }
 .banner__call-us-now {

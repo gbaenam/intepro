@@ -3,12 +3,12 @@
 /* ----------------- button-whatsapp.scss ---------------- */
 
 .btn-whatsapp {
+    bottom: 2rem;
     display: flex;
     right: .625rem;
     width: 3.75rem;
     height: 3.75rem;
     position: fixed;
-    bottom: 4.375rem;
     z-index: $z-fixed;
     font-size: 3.75rem;
     align-items: center;
