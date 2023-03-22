@@ -1,0 +1,7 @@
+@use '../tools-sass/' as *;
+
+/* ------------------ _main.scss ---------------------- */
+
+.main {
+    font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
+}

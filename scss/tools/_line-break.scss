@@ -1,0 +1,35 @@
+@use '../tools-sass/' as *;
+
+/* ------------------ line-break.scss ---------------------- */
+
+.line-break412::before,
+.line-break960::before,
+.line-break1200::before {
+    display: block;
+    content: "";
+}
+
+// Width 412px
+.line-break412::before {
+
+    @include from(412px) {
+        display: inline;
+    }
+}
+
+// Width 960px
+.line-break960::before {
+
+    @include from(xxmedium) {
+        display: inline;
+    }
+}
+
+// Width 1200px
+.line-break1200::before {
+
+    @include from(1200px) {
+        display: inline;
+    }
+}
+

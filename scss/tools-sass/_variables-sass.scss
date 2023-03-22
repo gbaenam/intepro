@@ -1,0 +1,81 @@
+// TODO: REVISAR Y OPTIMIZAR TODAS ESTAS VARIABLES.
+
+// Variables de apilamiento - "z-index"
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+$z-modal-alt: 10000;
+
+
+// Variables ancho página "Width"
+$min-width: 320px;
+$max-width: 1430px;
+
+
+// Paleta de Colores
+$color-dark-gray: #646464;
+$color-light-gray: #c2c2c2;
+$color-more-dark-gray: #333333;
+$color-pearl-light-gray: #9c9c9c;
+
+$color-pale-grey: #f5f8ff;
+
+$color-text: #495057;
+$color-cobalt: #094293;
+$color-orangey-red: #ff452b;
+
+$color-sky-blue: #80bdff;
+$color-dodger-blue: #1E90FF;
+$color-bright-sky-blue: #00bfff;
+
+$color-pass: #5aaa9a;
+$color-error: #cc0000;
+
+$color-body: rgb(30, 63, 63);
+$background-color-body: #f5f8ff;
+
+$background-color-header: #fff;
+$color-site-title: #6a7477;
+
+$background-color-banner: #2e5dd8;
+
+$color-toggle-button: #6a7477;
+
+$color-menu: #fff;
+$color-menu-alt: #aab0b5;
+$color-menu-hover: #fff;
+$color-menu-large: #6a7477;
+$color-menu-alt-large:#6a7477;
+$color-menu-hover-large: #0098b8;
+
+$color-whatsapp: #1bd741;
+$color-whatsapp-alt: #32cd32;
+
+
+// button-color
+$green-light: #00ff00;
+$green-dark: #00c600;
+$green-darker: #00aa00;
+
+$blue-light: #1F51FF;
+$blue-dark: #0034eb;
+$blue-darker: #002fd2;
+
+$orange-red-light: #ff6227;
+$orange-red-dark: #ff4500;
+$orange-red-darker:  #eb4000;
+
+
+// font-family
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Lato', sans-serif;
+$font-family-tertiary: 'Ubuntu', sans-serif;
+
+$font-family-body: 'Bitter', serif;
+$font-family-body-alt:'Roboto', sans-serif;
+
+$font-family-site-title: 'Amaranth', sans-serif;
+$font-family-menu: 'Roboto', sans-serif;
+$font-family-footer: 'Lato', sans-serif;

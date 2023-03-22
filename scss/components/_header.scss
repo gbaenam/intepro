@@ -1,0 +1,75 @@
+@use '../tools-sass/' as *;
+
+/* ------------------ header.scss ---------------------- */
+
+.main-header {
+    // link-logo
+    --margin-right-link-logo: .3rem;
+    // title
+    --font-weight-title: 400;
+    --font-size-title: 1.875rem;
+
+    @include from(412px) {
+        // title
+        --font-size-title: 2.0625rem;
+    }
+
+    // Wide 1024px
+    @include from(large) {
+        // link-logo
+        --margin-right-link-logo: 0;
+        --padding-link-logo: .2rem .1rem .2rem 0;
+        // title-link
+        --padding-title-link: .1rem .2rem;
+    }
+}
+
+.main-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: $z-fixed;
+    height: var(--height-header);
+    background-color: $background-color-header; // TODO: Actualizar con Paleta de Colores.
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link-logo {
+        padding: var(--padding-link-logo);
+        margin-right: var(--margin-right-link-logo);
+    }
+
+    &__link-logo,
+    &__title-link {
+        border: var(--border-link);
+        border-radius: var(--border-radius-link);
+    }
+
+    &__link-logo:focus,
+    &__title-link:focus {
+        border-color: var(--color-focus);
+    }
+
+    &__logo {
+        width: var(--width-logo);
+    }
+
+    &__title {
+        margin-bottom: 0;
+        margin-right: auto;
+
+        font: {
+            size: var(--font-size-title);
+            family: $font-family-site-title;
+            weight: var(--font-weight-title);
+        }
+    }
+
+    &__title-link {
+        padding: var(--padding-title-link);
+        color: $color-site-title; // TODO: Actualizar con Paleta de Colores.
+    }
+}

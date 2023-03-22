@@ -1,0 +1,82 @@
+@use '../tools-sass/' as *;
+
+/* ------------------ _layout.scss ---------------------- */
+
+.main-header-layout {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: $min-width;
+    max-width: $max-width;
+}
+
+.main-header-layout {
+    padding: 0 .5rem 0 .3rem;
+
+    // Wide 412px
+    @include from(412px) {
+        padding: 0 .7rem 0 .5rem;
+    }
+
+    // Wide 640px
+    @include from(xmedium) {
+        padding: 0 .9rem 0 .5rem;
+    }
+
+    // Wide 1024px
+    @include from(large) {
+        padding: 0 1.5rem 0 .7rem;
+    }
+
+    // Wide 1280px
+    @include from(xlarge) {
+        padding: 0 1.5rem 0 1rem;
+    }
+
+    // Wide 1500px
+    @include from(1500px) {
+        padding: 0;
+    }
+}
+
+.banner-layout {
+    padding: 2.5rem .5rem 3rem;
+    margin-top: var(--height-header);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+
+    // Wide 640px
+    @include from(xmedium) {
+        padding: 5rem 1.5rem 3rem;
+    }
+
+    // Wide 840px
+    @include from(840px) {
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    // Wide 960px
+    @include from(xxmedium) {
+        padding: 10rem 1.5rem 4rem;
+        --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
+    }
+
+    // Wide 1024px
+    @include from(large) {
+        padding: 14rem 1.5rem 4rem;
+    }
+
+    @include from(zlarge) {
+        padding: 18rem 1.5rem 5rem;
+    }
+
+    @include from(ultrawide) {
+        padding: 26rem 1.5rem 5rem;
+    }
+}
+
+.social-bar-layout,
+.main-footer-layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-width;
+}

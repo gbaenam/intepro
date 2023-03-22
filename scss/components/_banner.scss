@@ -1,0 +1,110 @@
+@use '../tools-sass/' as *;
+
+/* ------------------ banner.scss --------------------- */
+
+.banner {
+    // hero-image
+    --objet-position-hero-image: center;
+    // title
+    --font-weight-title: 400;
+    --line-height-title: 120%;
+    --margin-bottom-title: 2rem;
+    --font-size-title: 2.5625rem;
+
+    // Wide 412px
+    @include from(412px) {
+        // title
+        --font-size-title: 3.125rem;
+    }
+
+    // Wide 512px
+    @include from(512px) {
+        // title
+        --font-size-title: 3.5rem;
+    }
+
+    // Wide 640px
+    @include from(xmedium) {
+        // title
+        --font-size-title: 4.125rem;
+        --margin-bottom-title: 2.5rem;
+    }
+
+    // Wide 840px
+    @include from(840px) {
+        // title
+        --font-size-title: 3.5rem;
+        --line-height-title: 71px; // TODO: Revisar esta declaración.
+    }
+
+    // Wide 960px
+    @include from(xxmedium) {
+        // title
+        --font-size-title: 3.8rem;
+    }
+
+    // Wide 1024px
+    @include from(large) {
+        // hero-image
+        --objet-position-hero-image: right;
+    }
+
+    // Wide 1280px
+    @include from(xlarge) {
+        // hero-image
+        --objet-position-hero-image: 10% 50%;
+    }
+
+    // Wide 1920px
+    @include from(zzlarge) {
+        // hero-image
+        --objet-position-hero-image: center top;
+    }
+
+    // Wide 2100px
+    @include from(maximum) {
+        // title
+        --font-size-title: 4.5rem;
+    }
+}
+
+.banner {
+    position: relative;
+    // line-height: normal;
+    // background-color: $background-color-banner;
+
+    background-color: rgba($color: #000000, $alpha: .8);
+
+    &__hero-image {
+        top: 0;
+        left: 0;
+        opacity: .4;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        object-position: var(--objet-position-hero-image);
+    }
+
+    &__content {
+        font-size: 1rem;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+    }
+
+    // TODO: Revisar todas las propiedades de este selector,
+    // TODO: .... incluyendo la variable "font-family-h"
+    &__title {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: var(--font-family-h);
+        font-size: var(--font-size-title);
+        line-height: var(--line-height-title);
+        font-weight: var(--font-weight-title);
+        margin-bottom: var(--margin-bottom-title);
+    }
+}

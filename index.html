@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- <html lang="en" class="notranslate" translate="no"></html> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="google" content="notranslate" /> -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <title>Intepro</title>
+    <script src="https://kit.fontawesome.com/293c79670a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Familia de fuentes del sitio. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font body -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font body-alt / menu / button-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font header -->
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font footer -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main header -->
+        <header class="main-header" id="main-header">
+            <div class="main-header__container main-header-layout">
+                <!-- Logo del Sitio Web -->
+                <a class="main-header__link-logo" href="#"><img class="main-header__logo" src="img/logos/logo.svg" alt="Logo principal del sitio Web"></a>
+                <!-- Nombre del Sitio Web -->
+                <span class="main-header__title"><a class="main-header__title-link" href="#">Mi Sitio Web</a></span>
+                <!-- Botón de hamburguesa -->
+                <div role="button" aria-pressed="false" class="burger-button">
+                    <div class="burger-button__line"></div>
+                </div>
+                <!-- Menú principal de navegación -->
+                <nav class="main-nav" id="main-nav">
+                    <!-- Lista de navegación principal -->
+                    <ul class="main-nav__menu">
+                        <li class="main-nav__item"><a class="main-nav__link" href="link.html">About us</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Products</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Demo</a></li>
+                        <!-- <li class="main-nav__item"><a class="main-nav__link" href="#"></a>Contact</li> -->
+                    </ul>
+                    <!-- Barra de contacto - contact-bar -->
+                    <div class="contact-bar">
+                        <button class="contact-bar__mail" id="contact-bar-mail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                    <div class="social-bar" id="social-bar">
+                        <div class="social-bar__wrapper social-bar-layout" id="social-bar-wrapper">
+                            <div class="social-bar__icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <!-- Banner página principal -->
+            <section class="banner banner-layout">
+                <picture class="picture">
+                    <source srcset="img/banners/banner-canada.png" media="(min-width: 1024px)">
+                    <source srcset="img/fondos/bruce-mars-compress.jpg" media="(min-width: 541px)">
+                    <img src="img/fondos/md-mahdi.jpg" alt="Banner de estudia en Canad&aacute;" class="banner__hero-image">
+                </picture>
+                <div class="banner__content">
+                    <h1 class="banner__title">Estudia en Canad&aacute;</h1>
+                    <button class="banner__button button button-green" id="banner-button">Cont&aacute;ctanos</button>
+                </div>
+            </section>
+            <section class="about-us">
+                <h2 class="about-us__title">Hola soy la sección "Quienes somos"</h2>
+                <button class="about-us__button button button-blue">Cont&aacute;ctanos</button>
+                <button class="about-us__button button button-orange-red">Cont&aacute;ctanos</button>
+            </section>
+        </main>
+        <form action="https://formspree.io/f/xbjwqzpe" method="POST" class="form" id="form">
+            <div class="form__container" id="form-container">
+                <div class="form__container-height">
+                    <h2 class="form__title">Cont&aacute;ctanos</h2>
+                    <p class="form__subtitle caption">Queremos saber de ti</p>
+                    <div class="form__icon-close icon" id="form-icon-close">
+                        <fieldset class="form__fieldset">
+                            <!-- Nombre -->
+                            <div class="form__box">
+                                <label for="name" class="form__label">Nombre completo</label>
+                                <p></p>
+                                <div class="form__wrapper-input form__wrapper-input-name">
+                                    <i class="fas fa-smile"></i>
+                                    <input type="text" name="name" autocomplete="off" autocapitalize="words" class="form__input input" id="name">
+                                </div>
+                            </div>
+                            <!-- Correo electrónico. -->
+                            <div class="form__box">
+                                <label for="email" class="form__label">Correo Electr&oacute;nico</label>
+                                <p></p>
+                                <div class="form__wrapper-input form__wrapper-input-email">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" autocomplete="off" class="form__input input" id="email">
+                                </div>
+                            </div>
+                            <!-- Correo electrónico confirmar. -->
+                            <div class="form__box">
+                                <label for="emailconfirm" class="form__label">Confirmar Correo Electr&oacute;nico</label>
+                                <p></p>
+                                <div class="form__wrapper-input form__wrapper-input-emailconfirm">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <input type="email" name="emailconfirm" autocomplete="off" class="form__input form__input-emailconfirm input" id="emailconfirm">
+                                </div>
+                            </div>
+                            <!-- Mensaje. -->
+                            <div class="form__box">
+                                <label for="textarea" class="form__label">D&eacute;janos tu mensaje</label>
+                                <p></p>
+                                <div class="form__wrapper-input form__wrapper-input-textarea">
+                                    <i class="fas fa-file-alt"></i>
+                                    <textarea name="textarea" class="form__textarea input" id="textarea"></textarea>
+                                </div>
+                            </div>
+                            <!-- Términos y condiciones. -->
+                            <div class="form__box">
+                                <input type="checkbox" name="checkbox" class="form__input-terms" id="terms">
+                                <label for="terms" class="form__label-checkbox">Acepto <a href="">T&eacute;rminos y Condiciones</a></label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- Wrapper -->
+                    <div class="form__wrapper">
+                        <!-- Botón enviar formulario -->
+                        <button type="submit" class="form__button button button-blue" id="submit-button" disabled>Enviar</button>
+                        <!-- Créditos -->
+                        <span class="form__copyright"><small>CompuAndina SAS &copy; 2014 - 2022</small></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Ventana Modal confirmación envío mail de contacto. -->
+        <div class="form__modal" id="form-modal">
+            <div class="form__modal-content" id="form-modal-content">
+                <i class="fa-solid fa-xmark"></i>
+                <p class="form__modal-confirmation">¡Env&iacute;o exitoso!</p>
+            </div>
+        </div>
+        <footer class="main-footer" id="main-footer">
+            <div class="main-footer__development">
+                <div class="main-footer__wrapper main-footer-layout">
+                    <p><small class="main-footer__info">Developed by CompuAndina S.A.S.</small></p>
+                    <p><small class="main-footer__info">Design and Development<span class="line-break412"></span> of Accessible Websites</small></p>
+                    <p><small class="main-footer__info">COPYRIGHT &copy; 2014 - 2023<br>All rights reserved</small></p>
+                    <div class="main-footer__country">
+                        <img src="img/flags/colombia-min.jpg" alt="Bandera de la rep&uacute;blica de Colombia">
+                        <span>Colombia</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="https://wa.me/573205124775" target="_blank" class="btn-whatsapp"><i class="icon-whatsapp"></i></a>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

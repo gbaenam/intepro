@@ -1,0 +1,43 @@
+
+// Breakpoints
+$breakpoints: (
+    medium: 540px,
+    xmedium: 640px,
+    xxmedium: 960px,
+    large: 1024px,
+    llarge: 1160px,
+    xlarge: 1280px,
+    xxlarge: 1440px,
+    zlarge: 1600px,
+    zzlarge: 1920px,
+    ultrawide: 2100px
+);
+
+
+// Mixin para los breakpoints.
+@mixin from($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media screen and (min-width: map-get($map: $breakpoints, $key: $breakpoint )) {
+            @content;
+        }
+    } @else if type-of($value: $breakpoint) == number and unit($breakpoint) == 'px' {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+
+// Mixin para vídeo.
+@mixin ratio($w,$h) {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat($w,1fr);
+    grid-template-rows: repeat($h,1fr);
+
+    &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+}

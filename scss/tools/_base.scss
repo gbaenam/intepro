@@ -1,0 +1,141 @@
+@use '../tools-sass/' as *;
+
+
+/* ------------------ base.scss ---------------------- */
+
+// Declaración de los estilos básicos del proyecto.
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $color-body;
+    background-color: $background-color-body;
+
+    font: {
+        family: $font-family-body;
+        size: var(--font-size-body);
+        weight: var(--font-weight-body);
+    }
+}
+
+// Reset <img>
+img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+// Reset general etiquetas <h>
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-dark-gray;
+    font-family: $font-family-primary;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+
+// Reset <p>
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+// Reset <a>
+a {
+    text-decoration: none;
+}
+
+a,
+i,
+button {
+    outline: none;
+    cursor: var(--cursor-button);
+}
+
+// Reset <button>
+button {
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    background: transparent;
+}
+
+// Reset small
+small {
+    font-family: $font-family-secondary;
+}
+
+// Reset <ul>
+ul {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+// Reset <label>, <input>, <textarea>
+label {
+    font-size: 1.0625rem;
+    color: $color-more-dark-gray;
+}
+
+input,
+button,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+label,
+input,
+textarea {
+    font-family: $font-family-secondary;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    color: $color-text;
+}
+
+
+
+// Clases predefinidas
+
+// Subtítulos
+.caption {
+    font-weight: 500;
+    color: $color-dark-gray;
+    font-family: $font-family-primary;
+}
+
+// Font Awesome Icons
+.icon {
+    position: relative;
+
+    &::before {
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        font-variant: normal;
+        text-rendering: auto;
+        display: inline-block;
+        color: $color-dark-gray;
+        font-family: "Font Awesome 5 Free";
+        -webkit-font-smoothing: antialiased;
+    }
+}
+

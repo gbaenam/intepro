@@ -1,0 +1,67 @@
+@use '../tools-sass/' as *;
+
+/* ----------------- burger-button.scss ------------------ */
+
+.burger-button {
+    --display-button: visibility;
+
+    @include from(large) {
+        --display-button: none;
+    }
+}
+
+.burger-button {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    cursor: var(--cursor-button);
+    display: var(--display-button);
+
+    &__line,
+    &__line::before,
+    &__line::after {
+        width: 100%;
+        height: .25rem;
+        position: absolute;
+        border-radius: 1.25rem;
+        background-color: $color-toggle-button;
+    }
+
+    &__line {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__line::before,
+    &__line::after {
+        content: '';
+        right: 0;
+    }
+
+    &__line::before {
+        top: -200%;
+    }
+
+    &__line::after {
+        top: 200%;
+    }
+}
+
+.cruz {
+    transform: rotateZ(45deg);
+    top: 43%;
+
+    &::before {
+        transform: rotateZ(90deg);
+    }
+
+    &::before,
+    &::after {
+        top: 0;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,262 @@
+@use '../tools-sass' as *;
+
+/* --------------------- menu.scss ------------------------ */
+
+.main-nav {
+    // nav
+    --width-main-nav: 100vw;
+    --position-main-nav: fixed;
+    --overflow-y-main-nav: scroll;
+    --transition-main-nav: left .6s;
+    --flex-direction-main-nav: column;
+    --background-color-main-nav: #2a3b47; // TODO: Actualizar con Paleta de Colores.
+    // menu
+    --border-top-menu: .0625rem solid #11191e;
+    --border-bottom-menu: .125rem solid #485761;
+    // item
+    --border-top-item: .125rem solid #485761;
+    --border-bottom-item: .0625rem solid #11191e;
+    // link
+    --color-link: #fff; // TODO: Actualizar con Paleta de Colores.
+    --padding-link: .7rem;
+    --font-weight-link: 300;
+    --line-height-link: 140%;  // TODO: Revisado!!
+    --font-size-link: 1.375rem;
+
+
+    @include from(large) {
+        // nav
+        --width-main-nav: auto;
+        --position-main-nav: static;
+        --overflow-y-main-nav: auto;
+        --transition-main-nav: none;
+        --flex-direction-main-nav: row;
+        --align-items-main-nav: center;
+        --background-color-main-nav: transparent;
+        // menu
+        --display-menu: flex;
+        --border-top-menu: none;
+        --border-bottom-menu: none;
+        // item
+        --border-top-item: none;
+        --border-bottom-item: none;
+        --margin-right-item: .625rem;
+        --margin-right-item-last-child: 1.5rem;
+        // link
+        --color-link: #6a7477; // TODO: Actualizar con Paleta de Colores.
+        --font-weight-link: 400;
+        --line-height-link: 145%; // TODO: Revisado!!
+        --font-size-link: 1.125rem;
+        --padding-link: .1rem .5rem;
+    }
+}
+
+
+.contact-bar {
+    // contact-bar
+    --order-contact-bar: -1;
+    --padding-contact-bar: 1.5rem 1.5rem;
+    --justify-content-contact-bar: flex-end;
+    // mail
+    --color-contact-bar-mail: #fff; // TODO: Actualizar variable
+
+
+    @include from(large) {
+        // contact-bar
+        --padding-contact-bar: 0;
+        --order-contact-bar: unset;
+        --justify-content-contact-bar: unset;
+        // mail
+        --color-contact-bar-mail: #9b9b9b; // TODO: Actualizar con Paleta de Colores.
+        --padding-contact-bar-mail: 0 .3125rem;
+    }
+}
+
+
+.social-bar {
+    // social-bar
+    --margin-top-social-bar: auto;
+    // wrapper
+    --padding-wrapper: 1rem 0 1.2rem;
+    // icons
+    --font-size-icons: 1.6rem;
+
+
+    // Wide 540px
+    @include from(medium) {
+        // wrapper
+        --padding-wrapper: 1rem 1rem 1.2rem;
+        // icons
+        --font-size-icons: 1.8rem;
+    }
+
+
+    // Wide 960px
+    @include from(xxmedium) {
+        // wrapper
+        --padding-wrapper: 1rem 5rem 1.2rem;
+    }
+
+
+    // Wide 1024px
+    @include from(large) {
+        // social-bar
+        --margin-top-social-bar: 0;
+        --background-color-social-bar:  #5396f0; // TODO: Actualizar con Paleta de Colores.
+        // wrapper
+        --padding-wrapper: 2rem 10rem;
+        // title
+        --color-title: #fff; // TODO: Actualizar con Paleta de Colores.
+        --font-size-title: 2.625rem;
+        --margin-bottom-title: 2rem;
+        // wrapper a
+        --display-social-bar-a: flex;
+        --width-social-bar-a: 3.125rem;
+        --height-social-bar-a: 3.125rem;
+        --align-items-social-bar-a: center;
+        --justify-content-social-bar-a: center;
+    }
+
+
+    // Wide 1280px
+    @include from(xlarge) {
+        // Wrapper
+        --padding-wrapper: 2rem 15rem;
+    }
+
+
+    // Wide 1440px
+    @include from(xxlarge) {
+        // Wrapper
+        --padding-wrapper: 2rem 20rem;
+    }
+}
+
+
+.main-nav {
+    left: -100vw;
+    display: flex;
+    top: var(--height-header);
+    width: var(--width-main-nav);
+    position: var(--position-main-nav);
+    overflow-y: var(--overflow-y-main-nav);
+    transition: var(--transition-main-nav);
+    align-items: var(--align-items-main-nav);
+    flex-direction: var(--flex-direction-main-nav);
+    background-color: var(--background-color-main-nav); // TODO: Actualizar con Paleta de Colores.
+
+    &__move {
+        left: 0;
+    }
+
+    &__menu {
+        display: var(--display-menu);
+        border-top: var(--border-top-menu);
+        border-bottom: var(--border-bottom-menu);
+    }
+
+    &__item {
+        border-top: var(--border-top-item);
+        margin-right: var(--margin-right-item);
+        border-bottom: var(--border-bottom-item);
+    }
+
+    &__item:last-child {
+        margin-right: var(--margin-right-item-last-child);
+    }
+
+    &__item:hover {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    &__link {
+        display: block;
+        color: var(--color-link);
+        border: var(--border-link);
+        padding: var(--padding-link);
+        line-height: var(--line-height-link); // TODO: Revisado!!
+        border-radius: var(--border-radius-link);
+
+        font: {
+            family: $font-family-menu; // TODO: Revisar familia de fuentes.
+            size: var(--font-size-link);
+            weight: var(--font-weight-link);
+        }
+    }
+
+    // &__link:visited {
+    //     color: var(--color-link-visited);
+    // }
+
+    &__link:hover {
+        color: var(--color-hover);
+    }
+
+    &__link:focus {
+        border-color: var(--color-focus);
+    }
+}
+
+
+.contact-bar {
+    display: flex;
+    order: var(--order-contact-bar);
+    padding: var(--padding-contact-bar);
+    justify-content: var(--justify-content-contact-bar);
+
+    &__mail {
+        line-height: 0;
+        font-size: 2.5rem;
+        border: var(--border-link);
+        color: var(--color-contact-bar-mail); // TODO: Actualizar con Paleta de Colores.
+        padding: var(--padding-contact-bar-mail);
+        border-radius: var(--border-radius-link);
+    }
+
+    &__mail:hover {
+        color: var(--color-hover);
+    }
+
+    &__mail:focus {
+        border-color: var(--color-focus);
+    }
+}
+
+
+.social-bar {
+    margin-top: var(--margin-top-social-bar);
+    background-color: var(--background-color-social-bar); // TODO: Actualizar con Paleta de Colores.
+
+    &__wrapper {
+        padding: var(--padding-wrapper);
+    }
+
+    &__title {
+        color: var(--color-title); // TODO: Actualizar con Paleta de Colores.
+        font-size: var(--font-size-title);
+        margin-bottom: var(--margin-bottom-title);
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        font-size: var(--font-size-icons);
+    }
+
+    a {
+        color: #fff; // TODO: Actualizar con Paleta de Colores.
+        border: var(--border-link);
+        width: var(--width-social-bar-a);
+        height: var(--height-social-bar-a);
+        display: var(--display-social-bar-a);
+        border-radius: var(--border-radius-link);
+        align-items: var(--align-items-social-bar-a);
+        justify-content: var(--justify-content-social-bar-a);
+    }
+
+    a:focus {
+        border-color: var(--color-focus-alt);
+    }
+}
+

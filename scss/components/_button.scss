@@ -1,0 +1,92 @@
+@use '../tools-sass/' as *;
+
+/* -------------------- button.scss ---------------------- */
+
+// Variables.
+.button {
+	--font-size-button: 1.2em;
+	--min-width-button: 15.625rem;
+
+	@include from(360px) {
+		--font-size-button: 1.3em;
+	}
+
+	@include from(412px) {
+		--font-size-button: 1.35em;
+		--min-width-button: 18.75rem;
+	}
+
+	@include from(ultrawide) {
+		--font-size-button: 1.5em;
+		--min-width-button: 20rem;
+	}
+}
+
+.button {
+	color: #fff;
+	padding: .5em 0;
+	font-weight: 600;
+	border-radius: 2em;
+	border: .125em solid;
+	text-transform: uppercase;
+    font-family: $font-family-primary;
+	min-width: var(--min-width-button);
+	font-size: var(--font-size-button);
+
+	&-blue,
+	&-green,
+	&-orange-red {
+		&:hover {
+			border-color: unset;
+			background-color: unset;
+		}
+	}
+
+	&-green {
+		border-color: $green-dark;
+		background-color: $green-dark;
+
+		&:hover {
+			color: $green-light;
+		}
+
+		&:active {
+			border-color: $green-darker;
+			background-color: $green-darker;
+		}
+	}
+
+	&-blue {
+		border-color: $blue-light;
+		background-color:$blue-light;
+
+		&:hover {
+			color: $blue-dark;
+		}
+
+		&:active {
+			border-color: $blue-darker;
+			background-color: $blue-darker;
+		}
+	}
+
+	&-orange-red {
+		border-color: $orange-red-light;
+		background-color: $orange-red-light;
+
+		&:hover {
+			color: $orange-red-dark;
+		}
+
+		&:active {
+			border-color: $orange-red-darker;
+			background-color: $orange-red-darker;
+		}
+	}
+
+	&:active {
+		color: #fff;
+		transform: scale(.98);
+	}
+}
+
