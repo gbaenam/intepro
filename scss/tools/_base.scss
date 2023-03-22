@@ -32,14 +32,14 @@ img {
 // Reset general etiquetas <h>
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
+    line-height: 1;
     margin-bottom: 0;
     color: $color-dark-gray;
     font-family: $font-family-primary;
 }
 
-h1,
-h2 {
-    font-weight: 700;
+h1 {
+    font-weight: 600;
 }
 
 

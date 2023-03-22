@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-size-body: 20px;
   --font-weight-body: 400;
@@ -67,14 +68,14 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  line-height: 1;
   margin-bottom: 0;
   color: #646464;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1,
-h2 {
-  font-weight: 700;
+h1 {
+  font-weight: 600;
 }
 
 p {
@@ -139,7 +140,7 @@ textarea {
 .caption {
   font-weight: 500;
   color: #646464;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .icon {
@@ -158,6 +159,7 @@ textarea {
 }
 
 /* ------------------ line-break.scss ---------------------- */
+.line-break320::before,
 .line-break412::before,
 .line-break960::before,
 .line-break1200::before {
@@ -222,7 +224,7 @@ textarea {
 }
 
 .banner-layout {
-  padding: 2.5rem 0.5rem 3rem;
+  padding: 10rem 0 3rem;
   margin-top: var(--height-header);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 }
@@ -249,7 +251,7 @@ textarea {
 }
 @media screen and (min-width: 1600px) {
   .banner-layout {
-    padding: 18rem 1.5rem 5rem;
+    padding: 8rem 1.5rem 5rem;
   }
 }
 @media screen and (min-width: 2100px) {
@@ -317,7 +319,7 @@ textarea {
   border-radius: 2em;
   border: 0.125em solid;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   min-width: var(--min-width-button);
   font-size: var(--font-size-button);
 }
@@ -730,6 +732,7 @@ textarea {
 
 .banner {
   position: relative;
+  font-family: "Lato", sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .banner__hero-image {
@@ -743,22 +746,52 @@ textarea {
   object-position: var(--objet-position-hero-image);
 }
 .banner__content {
-  font-size: 1rem;
-  display: flex;
   color: #fff;
-  align-items: center;
+  display: flex;
+  font-size: 1rem;
   position: relative;
+  align-items: center;
   flex-direction: column;
 }
 .banner__title {
   color: #fff;
+  font-size: 45px;
   text-align: center;
-  text-transform: uppercase;
-  font-family: var(--font-family-h);
-  font-size: var(--font-size-title);
-  line-height: var(--line-height-title);
-  font-weight: var(--font-weight-title);
-  margin-bottom: var(--margin-bottom-title);
+  margin-bottom: 1rem;
+}
+.banner__title::before {
+  content: "¡";
+}
+.banner__title::after {
+  content: "!";
+}
+.banner__call-us-now {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+.banner__call-us-now::before {
+  content: "¡";
+}
+.banner__call-us-now::after {
+  content: "!";
+}
+.banner__wrapper-address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.banner__flag {
+  width: 45px;
+  height: 26px;
+  margin-right: 5px;
+  border-radius: 1px;
+}
+.banner__phone {
+  font-size: 28px;
+  font-style: normal;
+}
+.banner__button {
+  text-transform: none;
 }
 
 /* ---------------- about-us.scss -------------------- */
@@ -991,7 +1024,7 @@ textarea {
   border-radius: 0.3125rem;
   background-color: #fff;
   padding: 1.875rem 1.25rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .form--show {
   transform: translateY(0);
