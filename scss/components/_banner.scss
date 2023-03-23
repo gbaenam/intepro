@@ -6,13 +6,10 @@
     // hero-image
     --objet-position-hero-image: center;
     // title
-    --margin-bottom-title: 2rem;
-    --font-size-title: 2.5625rem;
 
     // Wide 412px
     @include from(412px) {
         // title
-        --font-size-title: 3.125rem;
     }
 
     // Wide 420px
@@ -24,7 +21,6 @@
     // Wide 512px
     @include from(512px) {
         // title
-        --font-size-title: 3.5rem;
     }
 
     // Wide 541px
@@ -36,8 +32,6 @@
     // Wide 640px
     @include from(xmedium) {
         // title
-        --font-size-title: 4.125rem;
-        --margin-bottom-title: 2.5rem;
     }
 
     // Wide 840px
@@ -45,7 +39,6 @@
         // hero-image
         --objet-position-hero-image: center bottom;
         // title
-        --font-size-title: 3.5rem;
     }
 
     // Wide 960px
@@ -53,7 +46,6 @@
         // hero-image
         --objet-position-hero-image: center 90%;
         // title
-        --font-size-title: 3.8rem;
     }
 
     // Wide 1024px
@@ -77,7 +69,6 @@
     // Wide 2100px
     @include from(maximum) {
         // title
-        --font-size-title: 4.5rem;
     }
 }
 
@@ -108,7 +99,8 @@
 
     &__title {
         color: #fff;
-        font-size: 45px;
+        --font-size-banner-title: 45px;
+        font-size: var(--font-size-banner-title);
         text-align: center;
 
         margin-bottom: 1rem;

@@ -695,22 +695,10 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
-  --margin-bottom-title: 2rem;
-  --font-size-title: 2.5625rem;
-}
-@media screen and (min-width: 412px) {
-  .banner {
-    --font-size-title: 3.125rem;
-  }
 }
 @media screen and (min-width: 420px) {
   .banner {
     --objet-position-hero-image: center 10%;
-  }
-}
-@media screen and (min-width: 512px) {
-  .banner {
-    --font-size-title: 3.5rem;
   }
 }
 @media screen and (min-width: 541px) {
@@ -718,22 +706,14 @@ textarea {
     --objet-position-hero-image: 70%;
   }
 }
-@media screen and (min-width: 640px) {
-  .banner {
-    --font-size-title: 4.125rem;
-    --margin-bottom-title: 2.5rem;
-  }
-}
 @media screen and (min-width: 840px) {
   .banner {
     --objet-position-hero-image: center bottom;
-    --font-size-title: 3.5rem;
   }
 }
 @media screen and (min-width: 960px) {
   .banner {
     --objet-position-hero-image: center 90%;
-    --font-size-title: 3.8rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -777,7 +757,8 @@ textarea {
 }
 .banner__title {
   color: #fff;
-  font-size: 45px;
+  --font-size-banner-title: 45px;
+  font-size: var(--font-size-banner-title);
   text-align: center;
   margin-bottom: 1rem;
 }
