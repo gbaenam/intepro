@@ -17,8 +17,8 @@
         --font-size-title: 3.125rem;
     }
 
-    // Wide 460px
-    @include from(460px) {
+    // Wide 420px
+    @include from(420px) {
         // hero-image
         --objet-position-hero-image: center 10%;
     }
@@ -32,13 +32,11 @@
     // Wide 541px
     @include from(541px) {
         // hero-image
-        --objet-position-hero-image: 20%;
+        --objet-position-hero-image: 70%;
     }
 
     // Wide 640px
     @include from(xmedium) {
-        // hero-image
-        --objet-position-hero-image: center;
         // title
         --font-size-title: 4.125rem;
         --margin-bottom-title: 2.5rem;
@@ -54,6 +52,8 @@
 
     // Wide 960px
     @include from(xxmedium) {
+        // hero-image
+        --objet-position-hero-image: center 90%;
         // title
         --font-size-title: 3.8rem;
     }
@@ -61,13 +61,13 @@
     // Wide 1024px
     @include from(large) {
         // hero-image
-        --objet-position-hero-image: 85%;
+        --objet-position-hero-image: 90%;
     }
 
     // Wide 1280px
     @include from(xlarge) {
         // hero-image
-        --objet-position-hero-image: 10% 50%;
+        --objet-position-hero-image: 100%;
     }
 
     // Wide 1920px
@@ -127,15 +127,33 @@
             font-size: 55px;
         }
 
-        // Wide 540px
-        @include from(medium) {
-            font-size: 66px;
-        }
-
         // Wide 640px
         @include from(xmedium) {
             font-size: 57px;
-            // line-height: 1.2;
+        }
+
+        // @include from(840px) {
+        //     font-size: 66px;
+        // }
+
+        @include from(960px) {
+            font-size: 48px;
+        }
+
+        @include from(large) {
+            font-size: 52px;
+        }
+
+        @include from(zlarge) {
+            font-size: 56px;
+        }
+
+        @include from(zzlarge) {
+            font-size: 62px;
+        }
+
+        @include from(ultrawide) {
+            font-size: 72px;
         }
     }
 
@@ -149,6 +167,15 @@
 
         @include from(412px) {
             font-size: 38px;
+        }
+
+        @include from(zlarge) {
+            font-size: 48px;
+        }
+
+        @include from(zzlarge) {
+            font-size: 50px;
+            margin-bottom: 1.5rem;
         }
     }
 
@@ -180,6 +207,11 @@
             height: 29px;
         }
 
+        @include from(zlarge) {
+            width: 52px;
+            height: 33px;
+        }
+
     }
 
     &__phone {
@@ -192,6 +224,10 @@
 
         @include from(412px) {
             font-size: 33px;
+        }
+
+        @include from(zlarge) {
+            font-size: 38px;
         }
     }
 

@@ -172,15 +172,20 @@ textarea {
   content: "";
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 592px) {
   .line-break320::before {
     display: inline;
   }
 }
 
-@media screen and (min-width: 708px) {
+@media screen and (min-width: 740px) {
   .line-break708::before {
     display: block;
+  }
+}
+@media screen and (min-width: 960px) {
+  .line-break708::before {
+    display: inline;
   }
 }
 
@@ -227,40 +232,43 @@ textarea {
   margin-top: var(--height-header);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 }
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 384px) {
   .banner-layout {
-    padding-top: 14rem;
+    padding-top: 11rem;
   }
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 541px) {
   .banner-layout {
-    padding-top: 10rem;
+    padding-top: 4rem;
   }
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 560px) {
   .banner-layout {
-    padding: 8rem 1.5rem 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (min-width: 960px) {
   .banner-layout {
-    padding: 10rem 1.5rem 4rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
     --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner-layout {
-    padding: 14rem 1.5rem 4rem;
+    padding-top: 11rem;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1920px) {
   .banner-layout {
-    padding: 8rem 1.5rem 5rem;
+    padding-top: 14rem;
   }
 }
 @media screen and (min-width: 2100px) {
   .banner-layout {
-    padding: 26rem 1.5rem 5rem;
+    padding-top: 18rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -696,7 +704,7 @@ textarea {
     --font-size-title: 3.125rem;
   }
 }
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 420px) {
   .banner {
     --objet-position-hero-image: center 10%;
   }
@@ -708,12 +716,11 @@ textarea {
 }
 @media screen and (min-width: 541px) {
   .banner {
-    --objet-position-hero-image: 20%;
+    --objet-position-hero-image: 70%;
   }
 }
 @media screen and (min-width: 640px) {
   .banner {
-    --objet-position-hero-image: center;
     --font-size-title: 4.125rem;
     --margin-bottom-title: 2.5rem;
   }
@@ -726,17 +733,18 @@ textarea {
 }
 @media screen and (min-width: 960px) {
   .banner {
+    --objet-position-hero-image: center 90%;
     --font-size-title: 3.8rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner {
-    --objet-position-hero-image: 85%;
+    --objet-position-hero-image: 90%;
   }
 }
 @media screen and (min-width: 1280px) {
   .banner {
-    --objet-position-hero-image: 10% 50%;
+    --objet-position-hero-image: 100%;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -784,14 +792,34 @@ textarea {
     font-size: 55px;
   }
 }
-@media screen and (min-width: 540px) {
-  .banner__title {
-    font-size: 66px;
-  }
-}
 @media screen and (min-width: 640px) {
   .banner__title {
     font-size: 57px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .banner__title {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner__title {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .banner__title {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .banner__title {
+    font-size: 62px;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .banner__title {
+    font-size: 72px;
   }
 }
 .banner__call-us-now {
@@ -806,6 +834,17 @@ textarea {
 @media screen and (min-width: 412px) {
   .banner__call-us-now {
     font-size: 38px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .banner__call-us-now {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .banner__call-us-now {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
   }
 }
 .banner__title::before, .banner__call-us-now::before {
@@ -831,6 +870,12 @@ textarea {
     height: 29px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .banner__flag {
+    width: 52px;
+    height: 33px;
+  }
+}
 .banner__phone {
   font-size: 28px;
   font-style: normal;
@@ -843,6 +888,11 @@ textarea {
 @media screen and (min-width: 412px) {
   .banner__phone {
     font-size: 33px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .banner__phone {
+    font-size: 38px;
   }
 }
 .banner__button {

@@ -41,43 +41,45 @@
 
 .banner-layout {
     padding: 10rem 0 3rem;
-    // padding: 2.5rem .5rem 3rem;
     margin-top: var(--height-header);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 
-    // Wide 412px
-    @include from(412px) {
-        padding-top: 14rem;
+    // Wide 384px
+    @include from(384px) {
+        padding-top: 11rem;
     }
 
-    // Wide 540px
-    @include from(medium) {
-        padding-top: 10rem;
+    // Wide 541px
+    @include from(541px) {
+        padding-top: 4rem;
     }
 
-    // Wide 840px
-    @include from(840px) {
-        padding: 8rem 1.5rem 3rem;
+    // Wide 560px
+    @include from(560px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     // Wide 960px
     @include from(xxmedium) {
-        padding: 10rem 1.5rem 4rem;
+        padding-top: 7rem;
+        padding-bottom: 4rem;
         --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
     }
 
     // Wide 1024px
     @include from(large) {
-        padding: 14rem 1.5rem 4rem;
+        padding-top: 11rem;
     }
 
-    // Wide 1600px
-    @include from(zlarge) {
-        padding: 8rem 1.5rem 5rem;
+    // Wide 190px
+    @include from(zzlarge) {
+        padding-top: 14rem;
     }
 
     @include from(ultrawide) {
-        padding: 26rem 1.5rem 5rem;
+        padding-top: 18rem;
+        padding-bottom: 5rem;
     }
 }
 

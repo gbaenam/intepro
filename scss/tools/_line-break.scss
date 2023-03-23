@@ -14,17 +14,19 @@
     content: "";
 }
 
-// Wide 640px
 .line-break320::before {
-    @include from(640px) {
+    @include from(592px) {
         display: inline;
     }
 }
 
-// Width 708px
 .line-break708::before {
-    @include from(708px) {
+    @include from(740px) {
         display: block;
+    }
+
+    @include from(960px) {
+        display: inline;
     }
 }
 
