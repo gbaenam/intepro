@@ -10,12 +10,18 @@
     // call-us-now
     --font-size-calle-us-now: 32px;
     --margin-bottom-call-us-now: 1rem;
+    // flag
+    --width-banner-flag: 45px;
+    --height-banner-flag: 26px;
 
     @include from(360px) {
         // title
         --font-size-banner-title: 49px;
          // call-us-now
         --font-size-calle-us-now: 36px;
+        // flag
+        --width-banner-flag: 48px;
+        --height-banner-flag: 29px;
     }
 
     // Wide 412px
@@ -83,6 +89,9 @@
         --font-size-banner-title: 56px;
         // call-us-now
         --font-size-calle-us-now: 48px;
+        // flag
+        --width-banner-flag: 52px;
+        --height-banner-flag: 33px;
     }
 
     // Wide 1920px
@@ -158,21 +167,10 @@
     }
 
     &__flag {
-        width: 45px;
-        height: 26px;
         margin-right: 5px;
         border-radius: 1px;
-
-        @include from(360px) {
-            width: 48px;
-            height: 29px;
-        }
-
-        @include from(zlarge) {
-            width: 52px;
-            height: 33px;
-        }
-
+        width: var(--width-banner-flag);
+        height: var(--height-banner-flag);
     }
 
     &__phone {

@@ -698,11 +698,15 @@ textarea {
   --font-size-banner-title: 45px;
   --font-size-calle-us-now: 32px;
   --margin-bottom-call-us-now: 1rem;
+  --width-banner-flag: 45px;
+  --height-banner-flag: 26px;
 }
 @media screen and (min-width: 360px) {
   .banner {
     --font-size-banner-title: 49px;
     --font-size-calle-us-now: 36px;
+    --width-banner-flag: 48px;
+    --height-banner-flag: 29px;
   }
 }
 @media screen and (min-width: 412px) {
@@ -752,6 +756,8 @@ textarea {
   .banner {
     --font-size-banner-title: 56px;
     --font-size-calle-us-now: 48px;
+    --width-banner-flag: 52px;
+    --height-banner-flag: 33px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -808,22 +814,10 @@ textarea {
   margin-bottom: 4rem;
 }
 .banner__flag {
-  width: 45px;
-  height: 26px;
   margin-right: 5px;
   border-radius: 1px;
-}
-@media screen and (min-width: 360px) {
-  .banner__flag {
-    width: 48px;
-    height: 29px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .banner__flag {
-    width: 52px;
-    height: 33px;
-  }
+  width: var(--width-banner-flag);
+  height: var(--height-banner-flag);
 }
 .banner__phone {
   font-size: 28px;
