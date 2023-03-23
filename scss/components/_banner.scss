@@ -37,6 +37,8 @@
 
     // Wide 640px
     @include from(xmedium) {
+        // hero-image
+        --objet-position-hero-image: center;
         // title
         --font-size-title: 4.125rem;
         --margin-bottom-title: 2.5rem;
@@ -44,6 +46,8 @@
 
     // Wide 840px
     @include from(840px) {
+        // hero-image
+        --objet-position-hero-image: center bottom;
         // title
         --font-size-title: 3.5rem;
     }

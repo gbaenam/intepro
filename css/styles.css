@@ -173,6 +173,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 756px) {
+  .line-break756::before {
+    display: block;
+  }
+}
+
 /* ------------------ _layout.scss ---------------------- */
 .main-header-layout {
   height: 100%;
@@ -224,6 +230,12 @@ textarea {
 @media screen and (min-width: 540px) {
   .banner-layout {
     padding-top: 10rem;
+  }
+}
+@media screen and (min-width: 640px) {
+  .banner-layout {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media screen and (min-width: 840px) {
@@ -702,12 +714,14 @@ textarea {
 }
 @media screen and (min-width: 640px) {
   .banner {
+    --objet-position-hero-image: center;
     --font-size-title: 4.125rem;
     --margin-bottom-title: 2.5rem;
   }
 }
 @media screen and (min-width: 840px) {
   .banner {
+    --objet-position-hero-image: center bottom;
     --font-size-title: 3.5rem;
   }
 }

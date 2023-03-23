@@ -55,10 +55,11 @@
         padding-top: 10rem;
     }
 
-    // // Wide 640px
-    // @include from(xmedium) {
-    //     padding: 5rem 1.5rem 3rem;
-    // }
+    // Wide 640px
+    @include from(xmedium) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 
     // Wide 840px
     @include from(840px) {

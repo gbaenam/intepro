@@ -15,13 +15,12 @@
     }
 }
 
-// // Width 412px
-// .line-break412::before {
-
-//     @include from(412px) {
-//         display: inline;
-//     }
-// }
+// Width 756
+.line-break756::before {
+    @include from(756px) {
+        display: block;
+    }
+}
 
 // // Width 960px
 // .line-break960::before {
