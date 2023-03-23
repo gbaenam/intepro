@@ -112,8 +112,14 @@
             font-size: 55px;
         }
 
+        // Wide 540px
         @include from(medium) {
             font-size: 66px;
+        }
+
+        @include from(xmedium) {
+            font-size: 57px;
+            line-height: 1.2;
         }
     }
 
