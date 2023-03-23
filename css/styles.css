@@ -228,7 +228,8 @@ textarea {
 }
 
 .banner-layout {
-  padding: 10rem 0 3rem;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
   margin-top: var(--height-header);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 }
