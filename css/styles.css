@@ -434,16 +434,16 @@ textarea {
   --font-weight-title: 600;
   --font-size-title: 2.25rem;
 }
-@media screen and (min-width: 412px) {
-  .main-header {
-    --font-size-title: 2.0625rem;
-  }
-}
 @media screen and (min-width: 1024px) {
   .main-header {
     --margin-right-link-logo: 0;
     --padding-link-logo: .2rem .1rem .2rem 0;
     --padding-title-link: .1rem .2rem;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .main-header {
+    --font-size-title: 2.4375rem;
   }
 }
 

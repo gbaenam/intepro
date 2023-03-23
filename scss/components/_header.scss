@@ -9,11 +9,6 @@
     --font-weight-title: 600;
     --font-size-title: 2.25rem;
 
-    @include from(412px) {
-        // title
-        --font-size-title: 2.0625rem;
-    }
-
     // Wide 1024px
     @include from(large) {
         // link-logo
@@ -21,6 +16,10 @@
         --padding-link-logo: .2rem .1rem .2rem 0;
         // title-link
         --padding-title-link: .1rem .2rem;
+    }
+
+    @include from(ultrawide) {
+        --font-size-title: 2.4375rem;
     }
 }
 
