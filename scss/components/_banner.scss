@@ -7,16 +7,23 @@
     --objet-position-hero-image: center;
     // title.
     --font-size-banner-title: 45px;
+    // call-us-now
+    --font-size-calle-us-now: 32px;
+    --margin-bottom-call-us-now: 1rem;
 
     @include from(360px) {
         // title
         --font-size-banner-title: 49px;
+         // call-us-now
+        --font-size-calle-us-now: 36px;
     }
 
     // Wide 412px
     @include from(412px) {
         // title
         --font-size-banner-title: 55px;
+        // call-us-now
+        --font-size-calle-us-now: 38px;
     }
 
     // Wide 420px
@@ -74,6 +81,8 @@
     @include from(zlarge) {
         // title
         --font-size-banner-title: 56px;
+        // call-us-now
+        --font-size-calle-us-now: 48px;
     }
 
     // Wide 1920px
@@ -82,6 +91,9 @@
         --objet-position-hero-image: center top;
         // title
         --font-size-banner-title: 62px;
+        // call-us-now
+        --font-size-calle-us-now: 50px;
+        --margin-bottom-call-us-now: 1.5rem;
     }
 
     // Wide 2100px
@@ -124,25 +136,8 @@
     }
 
     &__call-us-now {
-        font-size: 32px;
-        margin-bottom: 1rem;
-
-        @include from(360px) {
-            font-size: 36px;
-        }
-
-        @include from(412px) {
-            font-size: 38px;
-        }
-
-        @include from(zlarge) {
-            font-size: 48px;
-        }
-
-        @include from(zzlarge) {
-            font-size: 50px;
-            margin-bottom: 1.5rem;
-        }
+        font-size: var(--font-size-calle-us-now);
+        margin-bottom: var(--margin-bottom-call-us-now);
     }
 
     &__title,

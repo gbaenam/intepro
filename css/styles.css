@@ -696,15 +696,19 @@ textarea {
 .banner {
   --objet-position-hero-image: center;
   --font-size-banner-title: 45px;
+  --font-size-calle-us-now: 32px;
+  --margin-bottom-call-us-now: 1rem;
 }
 @media screen and (min-width: 360px) {
   .banner {
     --font-size-banner-title: 49px;
+    --font-size-calle-us-now: 36px;
   }
 }
 @media screen and (min-width: 412px) {
   .banner {
     --font-size-banner-title: 55px;
+    --font-size-calle-us-now: 38px;
   }
 }
 @media screen and (min-width: 420px) {
@@ -747,12 +751,15 @@ textarea {
 @media screen and (min-width: 1600px) {
   .banner {
     --font-size-banner-title: 56px;
+    --font-size-calle-us-now: 48px;
   }
 }
 @media screen and (min-width: 1920px) {
   .banner {
     --objet-position-hero-image: center top;
     --font-size-banner-title: 62px;
+    --font-size-calle-us-now: 50px;
+    --margin-bottom-call-us-now: 1.5rem;
   }
 }
 
@@ -786,29 +793,8 @@ textarea {
   font-size: var(--font-size-banner-title);
 }
 .banner__call-us-now {
-  font-size: 32px;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 360px) {
-  .banner__call-us-now {
-    font-size: 36px;
-  }
-}
-@media screen and (min-width: 412px) {
-  .banner__call-us-now {
-    font-size: 38px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .banner__call-us-now {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .banner__call-us-now {
-    font-size: 50px;
-    margin-bottom: 1.5rem;
-  }
+  font-size: var(--font-size-calle-us-now);
+  margin-bottom: var(--margin-bottom-call-us-now);
 }
 .banner__title::before, .banner__call-us-now::before {
   content: "¡";
