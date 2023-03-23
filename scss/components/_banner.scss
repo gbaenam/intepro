@@ -17,10 +17,22 @@
         --font-size-title: 3.125rem;
     }
 
+    // Wide 460px
+    @include from(460px) {
+        // hero-image
+        --objet-position-hero-image: center 10%;
+    }
+
     // Wide 512px
     @include from(512px) {
         // title
         --font-size-title: 3.5rem;
+    }
+
+    // Wide 541px
+    @include from(541px) {
+        // hero-image
+        --objet-position-hero-image: 20%;
     }
 
     // Wide 640px
@@ -34,7 +46,6 @@
     @include from(840px) {
         // title
         --font-size-title: 3.5rem;
-        --line-height-title: 71px; // TODO: Revisar esta declaración.
     }
 
     // Wide 960px
@@ -46,7 +57,7 @@
     // Wide 1024px
     @include from(large) {
         // hero-image
-        --objet-position-hero-image: right;
+        --objet-position-hero-image: 85%;
     }
 
     // Wide 1280px
@@ -117,9 +128,10 @@
             font-size: 66px;
         }
 
+        // Wide 640px
         @include from(xmedium) {
             font-size: 57px;
-            line-height: 1.2;
+            // line-height: 1.2;
         }
     }
 
