@@ -695,27 +695,27 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
-  --font-size-banner-title: 45px;
-  --font-size-calle-us-now: 32px;
+  --font-size-banner-title: 2.8125rem;
+  --font-size-calle-us-now: 2rem;
   --margin-bottom-call-us-now: 1rem;
-  --width-banner-flag: 45px;
-  --height-banner-flag: 26px;
-  --font-size-banner-phone: 28px;
+  --width-banner-flag: 2.8125rem;
+  --height-banner-flag: 1.625rem;
+  --font-size-banner-phone: 1.75rem;
 }
 @media screen and (min-width: 360px) {
   .banner {
-    --font-size-banner-title: 49px;
-    --font-size-calle-us-now: 36px;
-    --width-banner-flag: 48px;
-    --height-banner-flag: 29px;
-    --font-size-banner-phone: 31px;
+    --font-size-banner-title: 3.0625rem;
+    --font-size-calle-us-now: 2.25rem;
+    --width-banner-flag: 3rem;
+    --height-banner-flag: 1.8125rem;
+    --font-size-banner-phone: 1.9375rem;
   }
 }
 @media screen and (min-width: 412px) {
   .banner {
-    --font-size-banner-title: 55px;
-    --font-size-calle-us-now: 38px;
-    --font-size-banner-phone: 33px;
+    --font-size-banner-title: 3.4375rem;
+    --font-size-calle-us-now: 2.375rem;
+    --font-size-banner-phone: 2.0625rem;
   }
 }
 @media screen and (min-width: 420px) {
@@ -730,7 +730,7 @@ textarea {
 }
 @media screen and (min-width: 640px) {
   .banner {
-    --font-size-banner-title: 57px;
+    --font-size-banner-title: 3.5625rem;
   }
 }
 @media screen and (min-width: 840px) {
@@ -741,13 +741,13 @@ textarea {
 @media screen and (min-width: 960px) {
   .banner {
     --objet-position-hero-image: center 90%;
-    --font-size-banner-title: 48px;
+    --font-size-banner-title: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner {
     --objet-position-hero-image: 90%;
-    --font-size-banner-title: 52px;
+    --font-size-banner-title: 3.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -757,18 +757,18 @@ textarea {
 }
 @media screen and (min-width: 1600px) {
   .banner {
-    --font-size-banner-title: 56px;
-    --font-size-calle-us-now: 48px;
-    --width-banner-flag: 52px;
-    --height-banner-flag: 33px;
-    --font-size-banner-phone: 38px;
+    --font-size-banner-title: 3.5rem;
+    --font-size-calle-us-now: 3rem;
+    --width-banner-flag: 3.25rem;
+    --height-banner-flag: 2.0625rem;
+    --font-size-banner-phone: 2.375rem;
   }
 }
 @media screen and (min-width: 1920px) {
   .banner {
     --objet-position-hero-image: center top;
-    --font-size-banner-title: 62px;
-    --font-size-calle-us-now: 50px;
+    --font-size-banner-title: 3.875rem;
+    --font-size-calle-us-now: 3.125rem;
     --margin-bottom-call-us-now: 1.5rem;
   }
 }

@@ -6,36 +6,36 @@
     // hero-image
     --objet-position-hero-image: center;
     // title.
-    --font-size-banner-title: 45px;
+    --font-size-banner-title: 2.8125rem;
     // call-us-now
-    --font-size-calle-us-now: 32px;
+    --font-size-calle-us-now: 2rem;
     --margin-bottom-call-us-now: 1rem;
     // flag
-    --width-banner-flag: 45px;
-    --height-banner-flag: 26px;
+    --width-banner-flag: 2.8125rem;
+    --height-banner-flag: 1.625rem;
     // phone
-    --font-size-banner-phone: 28px;
+    --font-size-banner-phone: 1.75rem;
 
     @include from(360px) {
         // title
-        --font-size-banner-title: 49px;
+        --font-size-banner-title: 3.0625rem;
          // call-us-now
-        --font-size-calle-us-now: 36px;
+        --font-size-calle-us-now: 2.25rem;
         // flag
-        --width-banner-flag: 48px;
-        --height-banner-flag: 29px;
+        --width-banner-flag: 3rem;
+        --height-banner-flag: 1.8125rem;
         // phone
-        --font-size-banner-phone: 31px;
+        --font-size-banner-phone: 1.9375rem;
     }
 
     // Wide 412px
     @include from(412px) {
         // title
-        --font-size-banner-title: 55px;
+        --font-size-banner-title: 3.4375rem;
         // call-us-now
-        --font-size-calle-us-now: 38px;
+        --font-size-calle-us-now: 2.375rem;
         // phone
-        --font-size-banner-phone: 33px;
+        --font-size-banner-phone: 2.0625rem;
     }
 
     // Wide 420px
@@ -53,7 +53,7 @@
     // Wide 640px
     @include from(xmedium) {
         // title
-        --font-size-banner-title: 57px;
+        --font-size-banner-title: 3.5625rem;
     }
 
     // Wide 840px
@@ -67,7 +67,7 @@
         // hero-image
         --objet-position-hero-image: center 90%;
         // title
-        --font-size-banner-title: 48px;
+        --font-size-banner-title: 3rem;
     }
 
     // Wide 1024px
@@ -75,7 +75,7 @@
         // hero-image
         --objet-position-hero-image: 90%;
         // title
-        --font-size-banner-title: 52px;
+        --font-size-banner-title: 3.25rem;
     }
 
     // Wide 1280px
@@ -87,14 +87,14 @@
     // Wide 1600px
     @include from(zlarge) {
         // title
-        --font-size-banner-title: 56px;
+        --font-size-banner-title: 3.5rem;
         // call-us-now
-        --font-size-calle-us-now: 48px;
+        --font-size-calle-us-now: 3rem;
         // flag
-        --width-banner-flag: 52px;
-        --height-banner-flag: 33px;
+        --width-banner-flag: 3.25rem;
+        --height-banner-flag: 2.0625rem;
         // phone
-        --font-size-banner-phone: 38px;
+        --font-size-banner-phone: 2.375rem;
     }
 
     // Wide 1920px
@@ -102,16 +102,16 @@
         // hero-image
         --objet-position-hero-image: center top;
         // title
-        --font-size-banner-title: 62px;
+        --font-size-banner-title: 3.875rem;
         // call-us-now
-        --font-size-calle-us-now: 50px;
+        --font-size-calle-us-now: 3.125rem;
         --margin-bottom-call-us-now: 1.5rem;
     }
 
     // Wide 2100px
     @include from(maximum) {
         // title
-        --font-size-banner-title: 72px;
+        --font-size-banner-title: 4.5rem;
     }
 }
 
