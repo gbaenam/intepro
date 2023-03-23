@@ -695,8 +695,6 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
-  --font-weight-title: 400;
-  --line-height-title: 120%;
   --margin-bottom-title: 2rem;
   --font-size-title: 2.5625rem;
 }
