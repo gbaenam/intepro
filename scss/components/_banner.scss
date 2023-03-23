@@ -44,11 +44,6 @@
         --objet-position-hero-image: center 10%;
     }
 
-    // Wide 512px
-    @include from(512px) {
-        // title
-    }
-
     // Wide 541px
     @include from(541px) {
         // hero-image
