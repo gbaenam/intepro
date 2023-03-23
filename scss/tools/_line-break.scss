@@ -25,7 +25,8 @@
         display: block;
     }
 
-    @include from(960px) {
+    // Wide 960px
+    @include from(xxmedium) {
         display: inline;
     }
 }
