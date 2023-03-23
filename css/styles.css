@@ -695,6 +695,17 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
+  --font-size-banner-title: 45px;
+}
+@media screen and (min-width: 360px) {
+  .banner {
+    --font-size-banner-title: 49px;
+  }
+}
+@media screen and (min-width: 412px) {
+  .banner {
+    --font-size-banner-title: 55px;
+  }
 }
 @media screen and (min-width: 420px) {
   .banner {
@@ -706,6 +717,11 @@ textarea {
     --objet-position-hero-image: 70%;
   }
 }
+@media screen and (min-width: 640px) {
+  .banner {
+    --font-size-banner-title: 57px;
+  }
+}
 @media screen and (min-width: 840px) {
   .banner {
     --objet-position-hero-image: center bottom;
@@ -714,11 +730,13 @@ textarea {
 @media screen and (min-width: 960px) {
   .banner {
     --objet-position-hero-image: center 90%;
+    --font-size-banner-title: 48px;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner {
     --objet-position-hero-image: 90%;
+    --font-size-banner-title: 52px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -726,9 +744,15 @@ textarea {
     --objet-position-hero-image: 100%;
   }
 }
+@media screen and (min-width: 1600px) {
+  .banner {
+    --font-size-banner-title: 56px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .banner {
     --objet-position-hero-image: center top;
+    --font-size-banner-title: 62px;
   }
 }
 
@@ -757,50 +781,9 @@ textarea {
 }
 .banner__title {
   color: #fff;
-  --font-size-banner-title: 45px;
-  font-size: var(--font-size-banner-title);
   text-align: center;
   margin-bottom: 1rem;
-}
-@media screen and (min-width: 360px) {
-  .banner__title {
-    font-size: 49px;
-  }
-}
-@media screen and (min-width: 412px) {
-  .banner__title {
-    font-size: 55px;
-  }
-}
-@media screen and (min-width: 640px) {
-  .banner__title {
-    font-size: 57px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .banner__title {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .banner__title {
-    font-size: 52px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .banner__title {
-    font-size: 56px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .banner__title {
-    font-size: 62px;
-  }
-}
-@media screen and (min-width: 2100px) {
-  .banner__title {
-    font-size: 72px;
-  }
+  font-size: var(--font-size-banner-title);
 }
 .banner__call-us-now {
   font-size: 32px;

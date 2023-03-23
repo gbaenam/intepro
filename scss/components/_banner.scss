@@ -5,11 +5,18 @@
 .banner {
     // hero-image
     --objet-position-hero-image: center;
-    // title
+    // title.
+    --font-size-banner-title: 45px;
+
+    @include from(360px) {
+        // title
+        --font-size-banner-title: 49px;
+    }
 
     // Wide 412px
     @include from(412px) {
         // title
+        --font-size-banner-title: 55px;
     }
 
     // Wide 420px
@@ -32,13 +39,13 @@
     // Wide 640px
     @include from(xmedium) {
         // title
+        --font-size-banner-title: 57px;
     }
 
     // Wide 840px
     @include from(840px) {
         // hero-image
         --objet-position-hero-image: center bottom;
-        // title
     }
 
     // Wide 960px
@@ -46,12 +53,15 @@
         // hero-image
         --objet-position-hero-image: center 90%;
         // title
+        --font-size-banner-title: 48px;
     }
 
     // Wide 1024px
     @include from(large) {
         // hero-image
         --objet-position-hero-image: 90%;
+        // title
+        --font-size-banner-title: 52px;
     }
 
     // Wide 1280px
@@ -60,15 +70,24 @@
         --objet-position-hero-image: 100%;
     }
 
+    // Wide 1600px
+    @include from(zlarge) {
+        // title
+        --font-size-banner-title: 56px;
+    }
+
     // Wide 1920px
     @include from(zzlarge) {
         // hero-image
         --objet-position-hero-image: center top;
+        // title
+        --font-size-banner-title: 62px;
     }
 
     // Wide 2100px
     @include from(maximum) {
         // title
+        --font-size-banner-title: 72px;
     }
 }
 
@@ -99,48 +118,9 @@
 
     &__title {
         color: #fff;
-        --font-size-banner-title: 45px;
-        font-size: var(--font-size-banner-title);
         text-align: center;
-
         margin-bottom: 1rem;
-
-        @include from(360px) {
-            font-size: 49px;
-        }
-
-        @include from(412px) {
-            font-size: 55px;
-        }
-
-        // Wide 640px
-        @include from(xmedium) {
-            font-size: 57px;
-        }
-
-        // @include from(840px) {
-        //     font-size: 66px;
-        // }
-
-        @include from(960px) {
-            font-size: 48px;
-        }
-
-        @include from(large) {
-            font-size: 52px;
-        }
-
-        @include from(zlarge) {
-            font-size: 56px;
-        }
-
-        @include from(zzlarge) {
-            font-size: 62px;
-        }
-
-        @include from(ultrawide) {
-            font-size: 72px;
-        }
+        font-size: var(--font-size-banner-title);
     }
 
     &__call-us-now {
