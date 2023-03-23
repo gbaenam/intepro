@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   line-height: 1;
   margin-bottom: 0;
-  color: #646464;
+  color: #6a7477;
   font-family: "Poppins", sans-serif;
 }
 
@@ -139,7 +139,7 @@ textarea {
 
 .caption {
   font-weight: 500;
-  color: #646464;
+  color: #6a7477;
   font-family: "Poppins", sans-serif;
 }
 
@@ -153,7 +153,7 @@ textarea {
   font-variant: normal;
   text-rendering: auto;
   display: inline-block;
-  color: #646464;
+  color: #6a7477;
   font-family: "Font Awesome 5 Free";
   -webkit-font-smoothing: antialiased;
 }
@@ -968,7 +968,7 @@ textarea {
   left: 0.4375rem;
   font-size: 1.25rem;
   position: absolute;
-  color: #646464;
+  color: #6a7477;
 }
 .form__wrapper-input-email i, .form__wrapper-input-emailconfirm i {
   top: 0.75rem;
@@ -1056,7 +1056,7 @@ textarea {
   font-weight: 600;
   text-align: center;
   font-size: 2.125rem;
-  color: #646464;
+  color: #6a7477;
   border-radius: 0.3125rem;
   background-color: #fff;
   padding: 1.875rem 1.25rem;
