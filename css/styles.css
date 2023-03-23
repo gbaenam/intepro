@@ -480,8 +480,8 @@ textarea {
   font-weight: var(--font-weight-title);
 }
 .main-header__title-link {
-  padding: var(--padding-title-link);
   color: #6a7477;
+  padding: var(--padding-title-link);
 }
 
 /* --------------------- menu.scss ------------------------ */
