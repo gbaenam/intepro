@@ -431,8 +431,8 @@ textarea {
 /* ------------------ header.scss ---------------------- */
 .main-header {
   --margin-right-link-logo: .3rem;
-  --font-weight-title: 400;
-  --font-size-title: 1.875rem;
+  --font-weight-title: 600;
+  --font-size-title: 2.25rem;
 }
 @media screen and (min-width: 412px) {
   .main-header {
@@ -475,9 +475,8 @@ textarea {
 }
 .main-header__title {
   margin-right: auto;
-  background-color: orange;
   font-size: var(--font-size-title);
-  font-family: "Amaranth", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: var(--font-weight-title);
 }
 .main-header__title-link {

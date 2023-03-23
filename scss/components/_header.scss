@@ -6,8 +6,8 @@
     // link-logo
     --margin-right-link-logo: .3rem;
     // title
-    --font-weight-title: 400;
-    --font-size-title: 1.875rem;
+    --font-weight-title: 600;
+    --font-size-title: 2.25rem;
 
     @include from(412px) {
         // title
@@ -60,11 +60,9 @@
     &__title {
         margin-right: auto;
 
-                background-color: orange;
-
         font: {
             size: var(--font-size-title);
-            family: $font-family-site-title;
+            family: $font-family-primary;
             weight: var(--font-weight-title);
         }
     }
