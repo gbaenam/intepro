@@ -9,15 +9,21 @@
     content: "";
 }
 
+.line-break708::before {
+    display: inline;
+    content: "";
+}
+
+// Wide 640px
 .line-break320::before {
     @include from(640px) {
         display: inline;
     }
 }
 
-// Width 756
-.line-break756::before {
-    @include from(756px) {
+// Width 708px
+.line-break708::before {
+    @include from(708px) {
         display: block;
     }
 }
