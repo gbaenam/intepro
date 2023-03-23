@@ -474,8 +474,8 @@ textarea {
   width: var(--width-logo);
 }
 .main-header__title {
-  margin-bottom: 0;
   margin-right: auto;
+  background-color: orange;
   font-size: var(--font-size-title);
   font-family: "Amaranth", sans-serif;
   font-weight: var(--font-weight-title);
