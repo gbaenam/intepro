@@ -13,6 +13,8 @@
     // flag
     --width-banner-flag: 45px;
     --height-banner-flag: 26px;
+    // phone
+    --font-size-banner-phone: 28px;
 
     @include from(360px) {
         // title
@@ -22,6 +24,8 @@
         // flag
         --width-banner-flag: 48px;
         --height-banner-flag: 29px;
+        // phone
+        --font-size-banner-phone: 31px;
     }
 
     // Wide 412px
@@ -30,6 +34,8 @@
         --font-size-banner-title: 55px;
         // call-us-now
         --font-size-calle-us-now: 38px;
+        // phone
+        --font-size-banner-phone: 33px;
     }
 
     // Wide 420px
@@ -92,6 +98,8 @@
         // flag
         --width-banner-flag: 52px;
         --height-banner-flag: 33px;
+        // phone
+        --font-size-banner-phone: 38px;
     }
 
     // Wide 1920px
@@ -154,7 +162,6 @@
         &::before {
             content: "¡";
         }
-
         &::after {
             content: "!";
         }
@@ -174,20 +181,8 @@
     }
 
     &__phone {
-        font-size: 28px;
         font-style: normal;
-
-        @include from(360px) {
-            font-size: 31px;
-        }
-
-        @include from(412px) {
-            font-size: 33px;
-        }
-
-        @include from(zlarge) {
-            font-size: 38px;
-        }
+        font-size: var(--font-size-banner-phone);
     }
 
     &__button {
