@@ -22,6 +22,7 @@
   :root {
     --color-hover: #0098b8;
     --color-focus: #3399ff;
+    --color-hover-alt: #333333;
     --color-focus-alt: #62e884;
   }
 }
@@ -623,7 +624,7 @@ textarea {
   font-weight: var(--font-weight-link);
 }
 .main-nav__link:hover {
-  color: var(--color-hover);
+  color: var(--color-hover-alt);
 }
 .main-nav__link:focus {
   border-color: var(--color-focus-alt);
@@ -644,7 +645,7 @@ textarea {
   border-radius: var(--border-radius-link);
 }
 .contact-bar__mail:hover {
-  color: var(--color-hover);
+  color: var(--color-hover-alt);
 }
 .contact-bar__mail:focus {
   border-color: var(--color-focus-alt);
