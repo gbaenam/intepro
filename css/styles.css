@@ -631,7 +631,7 @@ textarea {
   color: var(--color-hover);
 }
 .main-nav__link:focus {
-  border-color: var(--color-focus);
+  border-color: var(--color-focus-alt);
 }
 
 .contact-bar {
@@ -652,7 +652,7 @@ textarea {
   color: var(--color-hover);
 }
 .contact-bar__mail:focus {
-  border-color: var(--color-focus);
+  border-color: var(--color-focus-alt);
 }
 
 .social-bar {

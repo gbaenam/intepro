@@ -194,7 +194,7 @@
     }
 
     &__link:focus {
-        border-color: var(--color-focus);
+        border-color: var(--color-focus-alt);
     }
 }
 
@@ -219,7 +219,7 @@
     }
 
     &__mail:focus {
-        border-color: var(--color-focus);
+        border-color: var(--color-focus-alt);
     }
 }
 
