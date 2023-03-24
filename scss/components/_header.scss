@@ -65,5 +65,9 @@
     &__title-link {
         color: $color-dark-gray;
         padding: var(--padding-title-link);
+
+        &:hover {
+            color: var(--color-hover-third);
+        }
     }
 }

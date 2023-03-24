@@ -29,11 +29,14 @@
 // hover / focus
 :root {
     --color-hover: #fff;
+    --color-hover-second: #fff;
+    --color-hover-third: #6a7477;
 
     @include from(large) {
         --color-hover: #646464;
         --color-focus: #3399ff;
-        --color-hover-alt: #333333;
+        --color-hover-second: #333333;
+        --color-hover-third: #333333;
         --color-focus-alt: #62e884;
     }
 }
