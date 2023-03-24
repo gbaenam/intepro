@@ -40,7 +40,7 @@
 }
 @media screen and (min-width: 1024px) {
   :root {
-    --border-link: .125rem solid transparent;
+    --border-link: 0.125rem solid transparent;
   }
 }
 
