@@ -20,7 +20,7 @@
 }
 @media screen and (min-width: 1024px) {
   :root {
-    --color-hover: #0098b8;
+    --color-hover: #646464;
     --color-focus: #3399ff;
     --color-hover-alt: #333333;
     --color-focus-alt: #62e884;
@@ -645,7 +645,7 @@ textarea {
   border-radius: var(--border-radius-link);
 }
 .contact-bar__mail:hover {
-  color: var(--color-hover-alt);
+  color: var(--color-hover);
 }
 .contact-bar__mail:focus {
   border-color: var(--color-focus-alt);
