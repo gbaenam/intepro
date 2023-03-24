@@ -441,11 +441,6 @@ textarea {
     --padding-title-link: 0 .2rem;
   }
 }
-@media screen and (min-width: 2100px) {
-  .main-header {
-    --font-size-title: 2.4375rem;
-  }
-}
 
 .main-header {
   top: 0;

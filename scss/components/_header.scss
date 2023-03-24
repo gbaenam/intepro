@@ -17,10 +17,6 @@
         // title-link
         --padding-title-link: 0 .2rem;
     }
-
-    @include from(ultrawide) {
-        --font-size-title: 2.4375rem;
-    }
 }
 
 .main-header {
