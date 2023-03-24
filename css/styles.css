@@ -438,7 +438,7 @@ textarea {
   .main-header {
     --margin-right-link-logo: 0;
     --padding-link-logo: .2rem .1rem .2rem 0;
-    --padding-title-link: .1rem .2rem;
+    --padding-title-link: 0 .2rem;
   }
 }
 @media screen and (min-width: 2100px) {

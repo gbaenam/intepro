@@ -15,7 +15,7 @@
         --margin-right-link-logo: 0;
         --padding-link-logo: .2rem .1rem .2rem 0;
         // title-link
-        --padding-title-link: .1rem .2rem;
+        --padding-title-link: 0 .2rem;
     }
 
     @include from(ultrawide) {
