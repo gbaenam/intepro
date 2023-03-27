@@ -37,7 +37,7 @@ const formModal = document.getElementById('form-modal'),
 	iconFormModal = document.querySelector('.form__modal-content i')
 
 
-// Consulta de medios.
+// Creando consulta de medios para ancho mínimo de 1024px
 const mql = matchMedia('(min-width: 1024px)')
 
 
@@ -75,25 +75,26 @@ mql.addEventListener('change', moveSocialBar)
 
 // Función Altura Elemento.
 const elementHeight = () => {
-
     // Altura interna del viewport.
     const vh = innerHeight,
-
     // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
     heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 
-
     if (mql.matches) {
-		// Altura del NAV
-        nav.style.height = 'auto'
-		// padding-top formContainer
-		formContHeight.style.paddingTop = '20px'
+			// Altura del NAV
+			nav.style.height = 'auto'
+
+							// Todo: Estas líneas de código NO se necesitan.
+							// padding-top formContainer
+							// formContHeight.style.paddingTop = '20px'
 
 		if (vh <= formContHeight.clientHeight) {
 			// padding-top formContainer
 			formContainer.style.paddingTop = '20px'
-			// padding-top formContainerHeight
-			formContHeight.style.paddingTop = 0
+
+							// Todo: Estas líneas de código NO se necesitan.
+							// padding-top formContainerHeight
+							// formContHeight.style.paddingTop = 0
 		} else {
 			// Calculando padding-top para formContainer
 			formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
@@ -103,16 +104,51 @@ const elementHeight = () => {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
-		// padding-top formContainer
-		formContainer.style.paddingTop = '50px'
-		// padding-top formContainerHeight
-		formContHeight.style.paddingTop = 0
+				// padding-top formContainer
+				formContainer.style.paddingTop = '50px'
+							// Todo: Estas líneas de código NO se necesitan.
+							// padding-top formContainerHeight
+							// formContHeight.style.paddingTop = 0
     }
 }
 // Ejecución de la función Altura Elemento.
 elementHeight()
 // Evento 'resize' función Altura Elemento.
 addEventListener('resize', elementHeight)
+
+
+
+// Seleccionando el elemento :root para asignar la variable css "--max-width-layout"
+const rootElement = document.documentElement
+
+// Función calcular ancho del viewport
+const viewportWidth = () => {
+	// Ancho interno del viewport
+	const vw = innerWidth,
+	// Creando y calculado el máximo ancho para los contenedores "layout"
+	maxWidthLayout = `calc(${vw-(vw*10/100)}px)`
+
+	// Consulta de medios para "min-width: 1024px"
+	if (mql.matches) {
+		// Asignando el ancho máximo a la variable CSS "--max-width-layout"
+		rootElement.style.setProperty('--max-width-layout', maxWidthLayout)
+		// Creando consulta de medios para ancho mínimo de 1600px
+		const mql1600 = matchMedia('(min-width: 1600px)')
+
+		// Consulta de medios para "min-width: 1600px
+		if (mql1600.matches) {
+			//
+			// Accediendo a los estilos de la variable "--max-width-layout"
+			const style = document.documentElement.style
+			// Asignando nuevo valor a la variable "--max-width-layout"
+			style.setProperty('--max-width-layout', '1430px')
+		}
+	}
+}
+// Ejecución de la función calcular ancho del viewport
+viewportWidth()
+// Evento 'resize' función calcular ancho del viewport
+addEventListener('resize', viewportWidth)
 
 
 

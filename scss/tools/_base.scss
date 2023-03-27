@@ -34,12 +34,20 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     line-height: 1;
     margin-bottom: 0;
+    font-weight: 500; // Todo: Tener presente esta línea.
     color: $color-dark-gray;
     font-family: $font-family-primary;
 }
 
-h1 {
-    font-weight: 500;
+// h1 {
+//     font-weight: 500;
+// }
+
+
+// Reset <hr>
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -55,12 +63,14 @@ a {
     text-decoration: none;
 }
 
+
 a,
 i,
 button {
     outline: none;
     cursor: var(--cursor-button);
 }
+
 
 // Reset <button>
 button {
@@ -72,10 +82,12 @@ button {
     background: transparent;
 }
 
+
 // Reset small
 small {
     font-family: $font-family-secondary;
 }
+
 
 // Reset <ul>
 ul {
@@ -85,11 +97,13 @@ ul {
     list-style: none;
 }
 
+
 // Reset <label>, <input>, <textarea>
 label {
     font-size: 1.0625rem;
     color: $color-darker-gray-alt;
 }
+
 
 input,
 button,
@@ -99,11 +113,13 @@ textarea {
     }
 }
 
+
 label,
 input,
 textarea {
     font-family: $font-family-secondary;
 }
+
 
 input,
 textarea {

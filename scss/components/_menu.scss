@@ -19,7 +19,7 @@
     // link
     --color-link: #fff; // TODO: Actualizar con Paleta de Colores.
     --padding-link: .7rem;
-    --font-weight-link: 300;
+    --font-weight-link: 300; // Todo: Revisar esta declaración de variable.
     --line-height-link: 140%;  // TODO: Revisado!!
     --font-size-link: 1.375rem;
 
@@ -181,7 +181,7 @@
         font: {
             family: $font-family-menu; // TODO: Revisar familia de fuentes.
             size: var(--font-size-link);
-            weight: var(--font-weight-link);
+            weight: var(--font-weight-link); // Todo: Revisar esta declaración.
         }
     }
 
@@ -228,14 +228,18 @@
     margin-top: var(--margin-top-social-bar);
     background-color: var(--background-color-social-bar); // TODO: Actualizar con Paleta de Colores.
 
+    background-color: #192229; // Todo: Pendiente!
+
     &__wrapper {
         padding: var(--padding-wrapper);
     }
 
     &__title {
-        color: var(--color-title); // TODO: Actualizar con Paleta de Colores.
+        // color: var(--color-title); // TODO: Actualizar con Paleta de Colores.
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
+
+        color: #d6d9dc; // Todo: Corregir con variables de colores.
     }
 
     &__icons {
@@ -245,7 +249,12 @@
     }
 
     a {
-        color: #fff; // TODO: Actualizar con Paleta de Colores.
+        // color: #fff; // TODO: Actualizar con Paleta de Colores.
+
+        color: #d6d9dc;  // Todo: Arreglar este código.
+
+
+
         border: var(--border-link);
         width: var(--width-social-bar-a);
         height: var(--height-social-bar-a);

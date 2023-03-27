@@ -3,11 +3,12 @@
 /* ------------------ _layout.scss ---------------------- */
 
 .main-header-layout {
+    width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     min-width: $min-width;
-    max-width: $max-width;
+    max-width: var(--max-width-layout);
 }
 
 .main-header-layout {
@@ -23,20 +24,24 @@
         padding: 0 .9rem 0 .5rem;
     }
 
-    // Wide 1024px
     @include from(large) {
-        padding: 0 1.5rem 0 .7rem;
-    }
-
-    // Wide 1280px
-    @include from(xlarge) {
-        padding: 0 1.5rem 0 1rem;
-    }
-
-    // Wide 1500px
-    @include from(1500px) {
         padding: 0;
     }
+
+    // // Wide 1024px
+    // @include from(large) {
+    //     padding: 0 1.5rem 0 .7rem;
+    // }
+
+    // // Wide 1280px
+    // @include from(xlarge) {
+    //     padding: 0 1.5rem 0 1rem;
+    // }
+
+    // // Wide 1500px
+    // @include from(1500px) {
+    //     padding: 0;
+    // }
 }
 
 .banner-layout {
@@ -87,7 +92,17 @@
 
 .social-bar-layout,
 .main-footer-layout {
+    // Todo: Pendiente width y height definir al 100%
     margin-left: auto;
     margin-right: auto;
-    max-width: $max-width;
+    max-width: var(--max-width-layout);
+}
+
+.main-footer-layout {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @include from(large) {
+        padding-bottom: 2rem;
+    }
 }
