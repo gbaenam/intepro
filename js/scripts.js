@@ -38,7 +38,10 @@ const formModal = document.getElementById('form-modal'),
 
 
 // Creando consulta de medios para ancho mínimo de 1024px
-const mql = matchMedia('(min-width: 1024px)')
+const mql1024 = matchMedia('(min-width: 1024px)')
+
+// Creando consulta de medios para ancho mínimo de 1600px
+const mql1600 = matchMedia('(min-width: 1600px)')
 
 
 // Función hamburger button animation
@@ -59,7 +62,7 @@ h3.id = 'bar-text'
 
 // Función mover la Barra Social.
 const moveSocialBar = () => {
-    if (mql.matches) {
+    if (mql1024.matches) {
         footer.insertAdjacentElement('afterbegin', socialBar)
         socialBarWrapper.insertAdjacentElement('afterbegin', h3)
     } else if (socialBarWrapper.firstElementChild.id === 'bar-text') {
@@ -70,7 +73,7 @@ const moveSocialBar = () => {
 // Ejecución de la función mover la Barra Social.
 moveSocialBar()
 // Evento 'change'
-mql.addEventListener('change', moveSocialBar)
+mql1024.addEventListener('change', moveSocialBar)
 
 
 // Función Altura Elemento.
@@ -80,7 +83,7 @@ const elementHeight = () => {
     // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
     heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 
-    if (mql.matches) {
+    if (mql1024.matches) {
 			// Altura del NAV
 			nav.style.height = 'auto'
 
@@ -108,28 +111,29 @@ addEventListener('resize', elementHeight)
 
 
 
-// Seleccionando el elemento :root para asignar la variable css "--max-width-layout"
-const rootElement = document.documentElement
+
+// Accediendo a los estilos de la variable "--max-width-layout"
+const style = document.documentElement.style
 
 // Función calcular ancho del viewport
 const viewportWidth = () => {
-	// Ancho interno del viewport
-	const vw = innerWidth,
-	// Creando y calculado el máximo ancho para los contenedores "layout"
-	maxWidthLayout = `calc(${vw-(vw*10/100)}px)`
+
+	// Asignando valor "none" a la variable CSS "--max-width-layout"
+	style.setProperty('--max-width-layout', 'none')
 
 	// Consulta de medios para "min-width: 1024px"
-	if (mql.matches) {
-		// Asignando el ancho máximo a la variable CSS "--max-width-layout"
-		rootElement.style.setProperty('--max-width-layout', maxWidthLayout)
-		// Creando consulta de medios para ancho mínimo de 1600px
-		const mql1600 = matchMedia('(min-width: 1600px)')
+	if (mql1024.matches) {
+		// Viewport width
+		const vw = innerWidth,
+		// Ancho máximo
+		maxWidthLayout = `calc(${vw-(vw*10/100)}px)`
+
+	// Asignando "maxWidthLayout" a la variable CSS "--max-width-layout"
+		style.setProperty('--max-width-layout', maxWidthLayout)
 
 		// Consulta de medios para "min-width: 1600px
 		if (mql1600.matches) {
-			// Accediendo a los estilos de la variable "--max-width-layout"
-			const style = document.documentElement.style
-			// Asignando nuevo valor a la variable "--max-width-layout"
+			// Asignando valor de "1430px" a la variable "--max-width-layout"
 			style.setProperty('--max-width-layout', '1430px')
 		}
 	}
