@@ -13,11 +13,11 @@
 
     &__separator {
         border: 0;
+        background-color: $color-red-canada-line;
 
         @include from(large) {
             height: 0.0625rem;
             margin-bottom: 2rem;
-            background-color: $color-red-canada-line;
         }
     }
 

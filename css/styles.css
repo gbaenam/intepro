@@ -1087,12 +1087,12 @@ textarea {
 }
 .main-footer__separator {
   border: 0;
+  background-color: #e00000;
 }
 @media screen and (min-width: 1024px) {
   .main-footer__separator {
     height: 0.0625rem;
     margin-bottom: 2rem;
-    background-color: #e00000;
   }
 }
 .main-footer__copyright, .main-footer__info {
