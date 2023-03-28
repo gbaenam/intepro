@@ -3,6 +3,42 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
+    // copyright // info
+    --font-size-main-footer-info: 1.1rem;
+    // copyright // info :first-child
+    --line-height-main-footer-copyright: 1.1;
+    // separator
+    --height-main-footer-separator: unset;
+    --margin-bottom-main-footer-separator: unset;
+
+    @include from(360px) {
+         // copyright // info
+        --font-size-main-footer-info: 1.2rem;
+        // copyright // info :first-child
+        --line-height-main-footer-copyright: 1.15;
+    }
+
+    @include from(412px) {
+         // copyright // info
+        --font-size-main-footer-info: 1.3rem;
+        // copyright // info :first-child
+        --line-height-main-footer-copyright: 1.2;
+    }
+
+    @include from(592px) {
+        // copyright // info :first-child
+        --line-height-main-footer-copyright: 1;
+    }
+
+    @include from(large) {
+        // separator
+        --height-main-footer-separator: 0.0625rem;
+        --margin-bottom-main-footer-separator: 2rem;
+    }
+}
+
+
+.main-footer {
     font-size: 1rem; // Todo: Referencia para el contenedor.
     text-align: center;
     background-color: $color-red-canada-alt;
@@ -14,42 +50,19 @@
     &__separator {
         border: 0;
         background-color: $color-red-canada-line;
-
-        @include from(large) {
-            height: 0.0625rem;
-            margin-bottom: 2rem;
-        }
+        height: var(--height-main-footer-separator);
+        margin-bottom: var(--margin-bottom-main-footer-separator);
     }
 
     &__copyright,
     &__info {
-        font-size: 1.1rem;
-
-        @include from(360px) {
-            font-size: 1.2rem;
-        }
-
-        @include from(412px) {
-            font-size: 1.3rem;
-        }
+        font-size: var(--font-size-main-footer-info);
     }
 
     // Todo: Tener presente este selector.
     &__copyright,
     &__info :first-child {
-        line-height: 1.1;
-
-        @include from(360px) {
-            line-height: 1.15;
-        }
-
-        @include from(412px) {
-            line-height: 1.2;
-        }
-
-        @include from(592px) {
-            line-height: 1;
-        }
+        line-height: var(--line-height-main-footer-copyright);
     }
 
     &__copyright {

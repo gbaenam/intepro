@@ -1078,6 +1078,36 @@ textarea {
 
 /* ------------------ footer.scss ---------------------- */
 .main-footer {
+  --font-size-main-footer-info: 1.1rem;
+  --line-height-main-footer-copyright: 1.1;
+  --height-main-footer-separator: unset;
+  --margin-bottom-main-footer-separator: unset;
+}
+@media screen and (min-width: 360px) {
+  .main-footer {
+    --font-size-main-footer-info: 1.2rem;
+    --line-height-main-footer-copyright: 1.15;
+  }
+}
+@media screen and (min-width: 412px) {
+  .main-footer {
+    --font-size-main-footer-info: 1.3rem;
+    --line-height-main-footer-copyright: 1.2;
+  }
+}
+@media screen and (min-width: 592px) {
+  .main-footer {
+    --line-height-main-footer-copyright: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-footer {
+    --height-main-footer-separator: 0.0625rem;
+    --margin-bottom-main-footer-separator: 2rem;
+  }
+}
+
+.main-footer {
   font-size: 1rem;
   text-align: center;
   background-color: #cc0000;
@@ -1088,43 +1118,14 @@ textarea {
 .main-footer__separator {
   border: 0;
   background-color: #e00000;
-}
-@media screen and (min-width: 1024px) {
-  .main-footer__separator {
-    height: 0.0625rem;
-    margin-bottom: 2rem;
-  }
+  height: var(--height-main-footer-separator);
+  margin-bottom: var(--margin-bottom-main-footer-separator);
 }
 .main-footer__copyright, .main-footer__info {
-  font-size: 1.1rem;
-}
-@media screen and (min-width: 360px) {
-  .main-footer__copyright, .main-footer__info {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 412px) {
-  .main-footer__copyright, .main-footer__info {
-    font-size: 1.3rem;
-  }
+  font-size: var(--font-size-main-footer-info);
 }
 .main-footer__copyright, .main-footer__info :first-child {
-  line-height: 1.1;
-}
-@media screen and (min-width: 360px) {
-  .main-footer__copyright, .main-footer__info :first-child {
-    line-height: 1.15;
-  }
-}
-@media screen and (min-width: 412px) {
-  .main-footer__copyright, .main-footer__info :first-child {
-    line-height: 1.2;
-  }
-}
-@media screen and (min-width: 592px) {
-  .main-footer__copyright, .main-footer__info :first-child {
-    line-height: 1;
-  }
+  line-height: var(--line-height-main-footer-copyright);
 }
 .main-footer__copyright {
   margin-bottom: 1rem;
