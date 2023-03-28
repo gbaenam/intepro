@@ -173,6 +173,8 @@
         border-radius: 1px;
         width: var(--width-banner-flag);
         height: var(--height-banner-flag);
+
+        border: 1px solid $color-light-gray;
     }
 
     &__phone {

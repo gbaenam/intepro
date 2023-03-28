@@ -3,51 +3,65 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-    font-size: 1rem;
+    font-size: 1rem; // Todo: Referencia para el contenedor.
     text-align: center;
-    // background-color: #192229; // Todo: Cambiar a variables de color.
-    background-color: rgb(25, 34, 41) ;
+    background-color: $color-red-canada-alt;
 
     &__container {
-        color: #d6d9dc; // Todo: Cambiar a variables de color.
-
-                    // background-color: orange;
+        color: $color-text-white;
     }
 
     &__separator {
         border: 0;
 
         @include from(large) {
-            // width: 90%;
-            height: 1px;
+            height: 0.0625rem;
             margin-bottom: 2rem;
-            background-color: #28353e; // Todo: Cambiar a variables de color.
+            background-color: $color-red-canada-line;
+        }
+    }
+
+    &__copyright,
+    &__info {
+        font-size: 1.1rem;
+
+        @include from(360px) {
+            font-size: 1.2rem;
+        }
+
+        @include from(412px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    // Todo: Tener presente este selector.
+    &__copyright,
+    &__info :first-child {
+        line-height: 1.1;
+
+        @include from(360px) {
+            line-height: 1.15;
+        }
+
+        @include from(412px) {
+            line-height: 1.2;
+        }
+
+        @include from(592px) {
+            line-height: 1;
         }
     }
 
     &__copyright {
-        font-size: 1rem;
         margin-bottom: 1rem;
         display: inline-block;
-        line-height: 19px; // Todo: Tener presente esta declaración.
-
-        @include from(412px) {
-            font-size: 1.1rem;
-            line-height: 21px;
-        }
     }
 
     &__info {
         font-style: normal;
-
-        @include from(412px) {
-            font-size: 18px;
-        }
     }
 
     &__info :first-child {
         margin-bottom: 1rem;
-        line-height: 21px;
     }
-
 }

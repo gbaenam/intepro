@@ -228,7 +228,8 @@
     margin-top: var(--margin-top-social-bar);
     background-color: var(--background-color-social-bar); // TODO: Actualizar con Paleta de Colores.
 
-    background-color: #192229; // Todo: Pendiente!
+    // background-color: #192229; // Todo: Pendiente!
+    background-color: $color-red-canada-alt;
 
     &__wrapper {
         padding: var(--padding-wrapper);
@@ -239,7 +240,8 @@
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
 
-        color: #d6d9dc; // Todo: Corregir con variables de colores.
+        // color: #d6d9dc; // Todo: Corregir con variables de colores.
+        color: #fff;
     }
 
     &__icons {
@@ -251,7 +253,7 @@
     a {
         // color: #fff; // TODO: Actualizar con Paleta de Colores.
 
-        color: #d6d9dc;  // Todo: Arreglar este código.
+        color: #fff;  // Todo: Arreglar este código.
 
 
 

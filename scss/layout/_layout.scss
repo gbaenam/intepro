@@ -99,10 +99,10 @@
 }
 
 .main-footer-layout {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     @include from(large) {
-        padding-bottom: 2rem;
+        padding-top: 0;
     }
 }

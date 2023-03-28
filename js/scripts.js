@@ -127,7 +127,6 @@ const viewportWidth = () => {
 
 		// Consulta de medios para "min-width: 1600px
 		if (mql1600.matches) {
-			//
 			// Accediendo a los estilos de la variable "--max-width-layout"
 			const style = document.documentElement.style
 			// Asignando nuevo valor a la variable "--max-width-layout"
