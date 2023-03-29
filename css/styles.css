@@ -7,6 +7,25 @@
 }
 
 :root {
+  --padding-layout: 0 .6rem;
+}
+@media screen and (min-width: 360px) {
+  :root {
+    --padding-layout: 0 .8rem;
+  }
+}
+@media screen and (min-width: 412px) {
+  :root {
+    --padding-layout: 0 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --padding-layout: 0;
+  }
+}
+
+:root {
   --cursor-button: default;
 }
 @media screen and (min-width: 1024px) {
@@ -213,13 +232,13 @@ textarea {
 .main-header-layout {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0.3rem;
-  padding-right: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
 @media screen and (min-width: 412px) {
   .main-header-layout {
-    padding-left: 0.5rem;
-    padding-right: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (min-width: 640px) {

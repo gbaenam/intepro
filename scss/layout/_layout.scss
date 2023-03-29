@@ -14,13 +14,19 @@
 .main-header-layout {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: .3rem;
-    padding-right: .5rem;
+    // padding-left: .3rem;
+    // padding-right: .5rem;
+
+    padding-left: .6rem;
+    padding-right: .6rem;
 
     // Wide 412px
     @include from(412px) {
-        padding-left: .5rem;
-        padding-right: .7rem;
+        // padding-left: .5rem;
+        // padding-right: .7rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     // Wide 640px

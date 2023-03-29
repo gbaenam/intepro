@@ -16,6 +16,24 @@
 }
 
 
+// Padding para viewport de móvil
+:root {
+    --padding-layout: 0 .6rem;
+
+    @include from(360px) {
+        --padding-layout: 0 .8rem;
+    }
+
+    @include from(412px) {
+        --padding-layout: 0 1rem;
+    }
+
+    @include from(large) {
+        --padding-layout: 0;
+    }
+}
+
+
 // Cursor.
 :root {
     --cursor-button: default;
