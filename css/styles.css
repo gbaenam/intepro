@@ -716,7 +716,7 @@ textarea {
 .main {
   font-size: 1rem;
   display: grid;
-  gap: 15px;
+  gap: 0.9375rem;
   padding-bottom: 1.2rem;
   background-color: #e7e7e7;
 }
