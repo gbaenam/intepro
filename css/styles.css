@@ -709,6 +709,7 @@ textarea {
   display: grid;
   gap: 15px;
   padding-bottom: 1.2rem;
+  background-color: #e7e7e7;
 }
 
 /* ------------------ banner.scss --------------------- */
@@ -858,7 +859,7 @@ textarea {
 .about-us__container {
   text-align: center;
   border-radius: 10px;
-  background-color: lightgray;
+  background-color: #fff;
 }
 .about-us__title {
   margin-bottom: 2em;
