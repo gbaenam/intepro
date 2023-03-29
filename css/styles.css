@@ -845,9 +845,14 @@ textarea {
 
 /* ---------------- about-us.scss -------------------- */
 .about-us {
+  padding: var(--padding-layout);
+}
+.about-us__container {
   display: grid;
+  text-align: center;
   place-items: center;
   padding-bottom: 5em;
+  background-color: lightgray;
 }
 .about-us__title {
   margin-top: 1em;

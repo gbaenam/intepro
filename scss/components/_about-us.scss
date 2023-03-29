@@ -3,9 +3,15 @@
 /* ---------------- about-us.scss -------------------- */
 
 .about-us {
-    display: grid;
-    place-items: center;
-    padding-bottom: 5em;
+    padding: var(--padding-layout);
+
+    &__container {
+        display: grid;
+        text-align: center;
+        place-items: center;
+        padding-bottom: 5em;
+        background-color: lightgray;
+    }
 
     &__title {
         margin-top: 1em;
