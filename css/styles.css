@@ -848,9 +848,7 @@ textarea {
   padding: var(--padding-layout);
 }
 .about-us__container {
-  display: grid;
   text-align: center;
-  place-items: center;
   padding-bottom: 5em;
   background-color: lightgray;
 }

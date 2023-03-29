@@ -6,9 +6,9 @@
     padding: var(--padding-layout);
 
     &__container {
-        display: grid;
+        // display: grid;
+        // place-items: center;
         text-align: center;
-        place-items: center;
         padding-bottom: 5em;
         background-color: lightgray;
     }
