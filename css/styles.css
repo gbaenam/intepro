@@ -285,18 +285,20 @@ textarea {
   }
 }
 
-.youtube {
+.youtube-layout {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   max-width: var(--max-width-layout);
 }
 
 .about-us-layout {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
   max-width: var(--max-width-layout);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .social-bar-layout,
@@ -864,6 +866,22 @@ textarea {
 }
 .banner__button {
   text-transform: none;
+}
+
+/* ------------------ youtube.scss --------------------- */
+.youtube {
+  text-align: center;
+  padding: var(--padding-layout);
+}
+.youtube__content {
+  border-radius: 10px;
+  background-color: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.youtube__title {
+  font-size: 29px;
+  margin-bottom: 0.7rem;
 }
 
 /* ---------------- about-us.scss -------------------- */
