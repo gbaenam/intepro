@@ -9,7 +9,6 @@
     --overflow-y-main-nav: scroll;
     --transition-main-nav: left .6s;
     --flex-direction-main-nav: column;
-    --background-color-main-nav: #2a3b47; // TODO: Actualizar con Paleta de Colores.
     // menu
     --border-top-menu: .0625rem solid #11191e;
     --border-bottom-menu: .125rem solid #485761;
@@ -32,7 +31,6 @@
         --transition-main-nav: none;
         --flex-direction-main-nav: row;
         --align-items-main-nav: center;
-        --background-color-main-nav: transparent;
         // menu
         --display-menu: flex;
         --border-top-menu: none;
@@ -76,6 +74,7 @@
 .social-bar {
     // social-bar
     --margin-top-social-bar: auto;
+    --background-color-social-bar: unset;
     // wrapper
     --padding-wrapper: 1rem 0 1.2rem;
     // icons
@@ -102,11 +101,10 @@
     @include from(large) {
         // social-bar
         --margin-top-social-bar: 0;
-        --background-color-social-bar:  #5396f0; // TODO: Actualizar con Paleta de Colores.
+        --background-color-social-bar: #cc000;
         // wrapper
         --padding-wrapper: 2rem 10rem;
         // title
-        --color-title: #fff; // TODO: Actualizar con Paleta de Colores.
         --font-size-title: 2.625rem;
         --margin-bottom-title: 2rem;
         // wrapper a
@@ -142,8 +140,8 @@
     overflow-y: var(--overflow-y-main-nav);
     transition: var(--transition-main-nav);
     align-items: var(--align-items-main-nav);
+    background-color: var(--background-color-nav);
     flex-direction: var(--flex-direction-main-nav);
-    background-color: var(--background-color-main-nav); // TODO: Actualizar con Paleta de Colores.
 
     &__move {
         left: 0;
@@ -226,22 +224,16 @@
 
 .social-bar {
     margin-top: var(--margin-top-social-bar);
-    background-color: var(--background-color-social-bar); // TODO: Actualizar con Paleta de Colores.
-
-    // background-color: #192229; // Todo: Pendiente!
-    background-color: $color-red-canada-alt;
+    background-color: var(--background-color-social-bar);
 
     &__wrapper {
         padding: var(--padding-wrapper);
     }
 
     &__title {
-        // color: var(--color-title); // TODO: Actualizar con Paleta de Colores.
+        color: $color-text-white;
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
-
-        // color: #d6d9dc; // Todo: Corregir con variables de colores.
-        color: #fff;
     }
 
     &__icons {
@@ -251,12 +243,7 @@
     }
 
     a {
-        // color: #fff; // TODO: Actualizar con Paleta de Colores.
-
-        color: #fff;  // Todo: Arreglar este código.
-
-
-
+        color: $color-text-white;
         border: var(--border-link);
         width: var(--width-social-bar-a);
         height: var(--height-social-bar-a);

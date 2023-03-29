@@ -80,3 +80,11 @@
 }
 
 
+// Colores para los elementos
+:root {
+    --background-color-nav: #2a3b47;
+
+    @include from(large) {
+        --background-color-nav: transparent;
+    }
+}

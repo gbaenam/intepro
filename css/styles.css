@@ -67,6 +67,15 @@
   }
 }
 
+:root {
+  --background-color-nav: #2a3b47;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --background-color-nav: transparent;
+  }
+}
+
 /* ------------------ base.scss ---------------------- */
 *,
 *::before,
@@ -510,7 +519,6 @@ textarea {
   --overflow-y-main-nav: scroll;
   --transition-main-nav: left .6s;
   --flex-direction-main-nav: column;
-  --background-color-main-nav: #2a3b47;
   --border-top-menu: .0625rem solid #11191e;
   --border-bottom-menu: .125rem solid #485761;
   --border-top-item: .125rem solid #485761;
@@ -529,7 +537,6 @@ textarea {
     --transition-main-nav: none;
     --flex-direction-main-nav: row;
     --align-items-main-nav: center;
-    --background-color-main-nav: transparent;
     --display-menu: flex;
     --border-top-menu: none;
     --border-bottom-menu: none;
@@ -563,6 +570,7 @@ textarea {
 
 .social-bar {
   --margin-top-social-bar: auto;
+  --background-color-social-bar: unset;
   --padding-wrapper: 1rem 0 1.2rem;
   --font-size-icons: 1.6rem;
 }
@@ -580,9 +588,8 @@ textarea {
 @media screen and (min-width: 1024px) {
   .social-bar {
     --margin-top-social-bar: 0;
-    --background-color-social-bar: #5396f0;
+    --background-color-social-bar: #cc000;
     --padding-wrapper: 2rem 10rem;
-    --color-title: #fff;
     --font-size-title: 2.625rem;
     --margin-bottom-title: 2rem;
     --display-social-bar-a: flex;
@@ -612,8 +619,8 @@ textarea {
   overflow-y: var(--overflow-y-main-nav);
   transition: var(--transition-main-nav);
   align-items: var(--align-items-main-nav);
+  background-color: var(--background-color-nav);
   flex-direction: var(--flex-direction-main-nav);
-  background-color: var(--background-color-main-nav);
 }
 .main-nav__move {
   left: 0;
@@ -677,15 +684,14 @@ textarea {
 .social-bar {
   margin-top: var(--margin-top-social-bar);
   background-color: var(--background-color-social-bar);
-  background-color: #cc0000;
 }
 .social-bar__wrapper {
   padding: var(--padding-wrapper);
 }
 .social-bar__title {
+  color: #fff;
   font-size: var(--font-size-title);
   margin-bottom: var(--margin-bottom-title);
-  color: #fff;
 }
 .social-bar__icons {
   display: flex;
