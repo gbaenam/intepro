@@ -3,12 +3,9 @@
 /* ------------------ _main.scss ---------------------- */
 
 .main {
-    font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
-
-
     display: grid;
     gap: 0.9375rem;
+    font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
     padding-bottom: 1.2rem;
-
-    background-color: #e7e7e7; // Todo: Incluir en paleta de colores.
+    background-color: $color-light-gray-alt;
 }
