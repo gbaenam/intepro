@@ -25,14 +25,12 @@
     position: fixed;
     z-index: $z-fixed;
     height: var(--height-header);
-    background-color: $background-color-header; // TODO: Actualizar con Paleta de Colores.
+    background-color: $color-white;
 
 
     &__container {
         display: flex;
         align-items: center;
-
-                // background-color: lightgreen; // Todo: Este es el ancho!!!
     }
 
     &__link-logo {
