@@ -864,7 +864,7 @@ textarea {
 .about-us {
   padding: var(--padding-layout);
 }
-.about-us__container {
+.about-us__content {
   display: grid;
   place-items: center;
   text-align: center;
