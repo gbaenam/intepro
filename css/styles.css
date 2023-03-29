@@ -276,6 +276,11 @@ textarea {
   }
 }
 
+.about-us-layout {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .social-bar-layout,
 .main-footer-layout {
   margin-left: auto;
@@ -701,6 +706,9 @@ textarea {
 /* ------------------ _main.scss ---------------------- */
 .main {
   font-size: 1rem;
+  display: grid;
+  gap: 15px;
+  padding-bottom: 1.2rem;
 }
 
 /* ------------------ banner.scss --------------------- */
@@ -849,11 +857,10 @@ textarea {
 }
 .about-us__container {
   text-align: center;
-  padding-bottom: 5em;
+  border-radius: 10px;
   background-color: lightgray;
 }
 .about-us__title {
-  margin-top: 1em;
   margin-bottom: 2em;
 }
 .about-us__button {

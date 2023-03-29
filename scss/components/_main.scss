@@ -4,4 +4,8 @@
 
 .main {
     font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
+
+    display: grid;
+    gap: 15px;
+    padding-bottom: 1.2rem;
 }
