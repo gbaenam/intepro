@@ -15,6 +15,22 @@
 
   &__title {
     font-size: 29px;
-    margin-bottom: .7rem;
+    margin-bottom: .3rem;
   }
+
+  &__subtitle {
+    font-size: 22px;
+  }
+
+  &__subtitle {
+    &::before {
+        content: "¡";
+    }
+    &::after {
+        content: "!";
+    }
+  }
+
+
+
 }

@@ -881,7 +881,16 @@ textarea {
 }
 .youtube__title {
   font-size: 29px;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.youtube__subtitle {
+  font-size: 22px;
+}
+.youtube__subtitle::before {
+  content: "¡";
+}
+.youtube__subtitle::after {
+  content: "!";
 }
 
 /* ---------------- about-us.scss -------------------- */
