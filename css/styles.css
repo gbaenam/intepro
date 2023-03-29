@@ -226,30 +226,8 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
+  padding: var(--padding-layout);
   max-width: var(--max-width-layout);
-}
-
-.main-header-layout {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-}
-@media screen and (min-width: 412px) {
-  .main-header-layout {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-@media screen and (min-width: 640px) {
-  .main-header-layout {
-    padding-right: 0.9rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main-header-layout {
-    padding: 0;
-  }
 }
 
 .banner-layout {

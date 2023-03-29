@@ -8,37 +8,10 @@
     margin-left: auto;
     margin-right: auto;
     min-width: $min-width;
+    padding: var(--padding-layout);
     max-width: var(--max-width-layout);
 }
 
-.main-header-layout {
-    padding-top: 0;
-    padding-bottom: 0;
-    // padding-left: .3rem;
-    // padding-right: .5rem;
-
-    padding-left: .6rem;
-    padding-right: .6rem;
-
-    // Wide 412px
-    @include from(412px) {
-        // padding-left: .5rem;
-        // padding-right: .7rem;
-
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    // Wide 640px
-    @include from(xmedium) {
-        padding-right: .9rem;
-    }
-
-    // Wide 1024px
-    @include from(large) {
-        padding: 0;
-    }
-}
 
 .banner-layout {
     padding-top: 10rem;
