@@ -870,12 +870,15 @@ textarea {
 
 /* ------------------ youtube.scss --------------------- */
 .youtube {
-  text-align: center;
   padding: var(--padding-layout);
 }
 .youtube__content {
   border-radius: 10px;
   background-color: #fff;
+  display: grid;
+  place-items: center;
+}
+.youtube__header {
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -885,12 +888,43 @@ textarea {
 }
 .youtube__subtitle {
   font-size: 22px;
+  margin-bottom: 1rem;
+}
+.youtube__title, .youtube__subtitle {
+  text-align: center;
 }
 .youtube__subtitle::before {
   content: "¡";
 }
 .youtube__subtitle::after {
   content: "!";
+}
+.youtube__wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 1rem;
+}
+.youtube__video {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+.youtube__video::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.youtube__video > iframe,
+.youtube__video > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.youtube__description {
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 960px;
 }
 
 /* ---------------- about-us.scss -------------------- */

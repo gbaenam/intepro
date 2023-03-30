@@ -3,12 +3,21 @@
 /* ------------------ youtube.scss --------------------- */
 
 .youtube {
-  text-align: center;
   padding: var(--padding-layout);
 
   &__content {
     border-radius: 10px;
     background-color: #fff;
+
+    display: grid;
+    place-items: center;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+
+  &__header {
     padding-left: 7px;
     padding-right: 7px;
   }
@@ -20,6 +29,12 @@
 
   &__subtitle {
     font-size: 22px;
+    margin-bottom: 1rem;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
   }
 
   &__subtitle {
@@ -30,6 +45,38 @@
         content: "!";
     }
   }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 960px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__video {
+    @include ratio(16,9);
+    // background-color: red;
+
+    > iframe,
+    > video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  &__description {
+    padding-left: 7px;
+    padding-right: 7px;
+    max-width: 960px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  // &__description p:first-child {
+  //   color: red;
+  // }
 
 
 
