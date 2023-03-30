@@ -926,6 +926,10 @@ textarea {
   padding-right: 7px;
   max-width: 960px;
 }
+.youtube__description p:first-child {
+  line-height: 120%;
+  font-size: 17px;
+}
 
 /* ---------------- about-us.scss -------------------- */
 .about-us {
