@@ -932,7 +932,8 @@ textarea {
 }
 @media screen and (min-width: 412px) {
   .youtube__description p:first-child {
-    line-height: 130%;
+    font-size: 20px;
+    line-height: 140%;
   }
 }
 
