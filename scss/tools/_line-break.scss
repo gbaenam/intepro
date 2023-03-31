@@ -9,6 +9,15 @@
     content: "";
 }
 
+.line-break391::before {
+    display: block;
+    content: "";
+
+    @include from(492px) {
+        display: inline;
+    }
+}
+
 .line-break708::before {
     display: inline;
     content: "";

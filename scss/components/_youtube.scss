@@ -5,6 +5,7 @@
 .youtube {
   padding: var(--padding-layout);
 
+
   &__content {
     border-radius: 10px;
     background-color: #fff;
@@ -12,30 +13,44 @@
     display: grid;
     place-items: center;
 
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
   }
 
   &__header {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   &__title {
     font-size: 28px;
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
+
+    @include from(360px) {
+      font-size: 30px;
+    }
+
+    @include from(412px) {
+      font-size: 36px;
+    }
   }
 
   &__subtitle {
     font-size: 22px;
     margin-bottom: 1rem;
+    // text-align: center;
+
+    @include from(360px) {
+      font-size: 24px;
+    }
+
+    @include from(412px) {
+      font-size: 25px;
+    }
   }
 
-  &__title,
-  &__subtitle {
-    text-align: center;
-  }
+  // &__title,
+  // &__subtitle {
+  //   text-align: center;
+  // }
 
   &__subtitle {
     &::before {
@@ -51,7 +66,7 @@
     max-width: 960px;
     // margin-left: auto;
     // margin-right: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 
   &__video {
@@ -67,22 +82,33 @@
   }
 
   &__description {
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
     max-width: 960px;
-    // margin-left: auto;
-    // margin-right: auto;
 
+    @include from(360px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @include from(412px) {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+
+    // @include from(medium) {
+    //   padding: 0 20px;
+    // }
   }
 
-  &__description p:first-child {
-    line-height: 120%;
-    font-size: 16px;
-  
-    @include from(412px) {
+  &__description p {
+    font-size: 18px;
+    line-height: 140%;
+
+    @include from(360px) {
       font-size: 20px;
-      line-height: 140%;
     }
+
   }
 
 
