@@ -928,7 +928,8 @@ textarea {
 }
 .youtube__description p:first-child {
   line-height: 120%;
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 130%;
 }
 
 /* ---------------- about-us.scss -------------------- */
