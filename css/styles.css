@@ -929,7 +929,11 @@ textarea {
 .youtube__description p:first-child {
   line-height: 120%;
   font-size: 16px;
-  line-height: 130%;
+}
+@media screen and (min-width: 412px) {
+  .youtube__description p:first-child {
+    line-height: 130%;
+  }
 }
 
 /* ---------------- about-us.scss -------------------- */
