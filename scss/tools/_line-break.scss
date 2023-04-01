@@ -1,44 +1,66 @@
 @use '../tools-sass/' as *;
 
 /* ------------------ line-break.scss ---------------------- */
-.line-break320::before,
-.line-break412::before,
-.line-break960::before,
-.line-break1200::before {
-    display: block;
-    content: "";
-}
+
+// .line-break320::before,
+// .line-break412::before,
+// .line-break960::before,
+// .line-break1200::before {
+//     display: block;
+//     content: "";
+// }
+
 
 .line-break391::before {
     display: block;
     content: "";
 
-    @include from(492px) {
+    @include from(540px) {
         display: inline;
     }
-}
-
-.line-break708::before {
-    display: inline;
-    content: "";
-}
-
-.line-break320::before {
-    @include from(592px) {
-        display: inline;
-    }
-}
-
-.line-break708::before {
-    @include from(740px) {
+    @include from(541px) {
         display: block;
     }
-
-    // Wide 960px
-    @include from(xxmedium) {
+    @include from(564px) {
+        display: inline;
+    }
+    @include from(720px) {
+        display: block;
+    }
+    @include from(large) {
         display: inline;
     }
 }
 
+.line-break570::before {
+    display: inline;
+    content: "";
 
+    @include from(570px) {
+        display: block;
+    }
+    @include from(600px) {
+        display: inline;
+    }
+}
 
+.line-break725::before {
+    display: inline;
+    content: "";
+
+    @include from(725px) {
+        display: block;
+    }
+    @include from(large) {
+        display: inline;
+    }
+}
+
+.line-break1188::before {
+    display: inline;
+    content: "";
+
+    @include from(1188px) {
+        display: block;
+    }
+}

@@ -7,21 +7,29 @@
 }
 
 :root {
-  --padding-layout: 0 .6rem;
+  --padding-layout: 0 0.6rem;
+  --padding-text: 0 8px;
 }
 @media screen and (min-width: 360px) {
   :root {
-    --padding-layout: 0 .8rem;
+    --padding-layout: 0 0.8rem;
+    --padding-text: 0 10px;
   }
 }
 @media screen and (min-width: 412px) {
   :root {
     --padding-layout: 0 1rem;
+    --padding-text: 0 12px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 541px) {
   :root {
     --padding-layout: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  :root {
+    --padding-text: 0 20px;
   }
 }
 
@@ -104,6 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   color: #6a7477;
   font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 540px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+  }
 }
 
 h1,
@@ -198,43 +211,73 @@ textarea {
 }
 
 /* ------------------ line-break.scss ---------------------- */
-.line-break320::before,
-.line-break412::before,
-.line-break960::before,
-.line-break1200::before {
-  display: block;
-  content: "";
-}
-
 .line-break391::before {
   display: block;
   content: "";
 }
-@media screen and (min-width: 492px) {
+@media screen and (min-width: 540px) {
+  .line-break391::before {
+    display: inline;
+  }
+}
+@media screen and (min-width: 541px) {
+  .line-break391::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 564px) {
+  .line-break391::before {
+    display: inline;
+  }
+}
+@media screen and (min-width: 720px) {
+  .line-break391::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
   .line-break391::before {
     display: inline;
   }
 }
 
-.line-break708::before {
+.line-break570::before {
   display: inline;
   content: "";
 }
-
-@media screen and (min-width: 592px) {
-  .line-break320::before {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 740px) {
-  .line-break708::before {
+@media screen and (min-width: 570px) {
+  .line-break570::before {
     display: block;
   }
 }
-@media screen and (min-width: 960px) {
-  .line-break708::before {
+@media screen and (min-width: 600px) {
+  .line-break570::before {
     display: inline;
+  }
+}
+
+.line-break725::before {
+  display: inline;
+  content: "";
+}
+@media screen and (min-width: 725px) {
+  .line-break725::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .line-break725::before {
+    display: inline;
+  }
+}
+
+.line-break1188::before {
+  display: inline;
+  content: "";
+}
+@media screen and (min-width: 1188px) {
+  .line-break1188::before {
+    display: block;
   }
 }
 
@@ -298,9 +341,25 @@ textarea {
 .youtube-layout {
   margin-left: auto;
   margin-right: auto;
+  max-width: var(--max-width-layout);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  max-width: var(--max-width-layout);
+}
+@media screen and (min-width: 360px) {
+  .youtube-layout {
+    padding-bottom: 1.2rem;
+  }
+}
+@media screen and (min-width: 412px) {
+  .youtube-layout {
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 540px) {
+  .youtube-layout {
+    padding-top: 1.5rem;
+    padding-bottom: 1.8rem;
+  }
 }
 
 .about-us-layout {
@@ -738,6 +797,11 @@ textarea {
   padding-bottom: 1.2rem;
   background-color: #e7e7e7;
 }
+@media screen and (min-width: 541px) {
+  .main {
+    background-color: #fff;
+  }
+}
 
 /* ------------------ banner.scss --------------------- */
 .banner {
@@ -888,9 +952,32 @@ textarea {
   display: grid;
   place-items: center;
 }
+@media screen and (min-width: 541px) {
+  .youtube__content {
+    border-radius: 0;
+  }
+}
 .youtube__header {
   padding-left: 12px;
   padding-right: 12px;
+  max-width: 1100px;
+}
+@media screen and (min-width: 541px) {
+  .youtube__header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .youtube__header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .youtube__header {
+    padding: 0;
+  }
 }
 .youtube__title {
   font-size: 28px;
@@ -906,6 +993,21 @@ textarea {
     font-size: 36px;
   }
 }
+@media screen and (min-width: 492px) {
+  .youtube__title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 536px) {
+  .youtube__title {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .youtube__title {
+    font-size: 40px;
+  }
+}
 .youtube__subtitle {
   font-size: 22px;
   margin-bottom: 1rem;
@@ -917,7 +1019,17 @@ textarea {
 }
 @media screen and (min-width: 412px) {
   .youtube__subtitle {
-    font-size: 25px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .youtube__subtitle {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .youtube__title, .youtube__subtitle {
+    text-align: center;
   }
 }
 .youtube__subtitle::before {
@@ -928,7 +1040,7 @@ textarea {
 }
 .youtube__wrapper {
   width: 100%;
-  max-width: 960px;
+  max-width: 640px;
   margin-bottom: 1.2rem;
 }
 .youtube__video {
@@ -949,25 +1061,12 @@ textarea {
   position: absolute;
 }
 .youtube__description {
-  padding-left: 8px;
-  padding-right: 8px;
-  max-width: 960px;
-}
-@media screen and (min-width: 360px) {
-  .youtube__description {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-@media screen and (min-width: 412px) {
-  .youtube__description {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+  padding: var(--padding-text);
 }
 .youtube__description p {
   font-size: 18px;
   line-height: 140%;
+  max-width: 1100px;
 }
 @media screen and (min-width: 360px) {
   .youtube__description p {
@@ -978,6 +1077,7 @@ textarea {
 /* ---------------- about-us.scss -------------------- */
 .about-us {
   padding: var(--padding-layout);
+  background-color: #e7e7e7;
 }
 .about-us__content {
   display: grid;
@@ -985,6 +1085,11 @@ textarea {
   text-align: center;
   border-radius: 10px;
   background-color: #fff;
+}
+@media screen and (min-width: 541px) {
+  .about-us__content {
+    background-color: #e7e7e7;
+  }
 }
 .about-us__title {
   margin-bottom: 2em;

@@ -63,9 +63,23 @@
 .youtube-layout {
     margin-left: auto;
     margin-right: auto;
+    max-width: var(--max-width-layout);
+
     padding-top: 1rem;
     padding-bottom: 1rem;
-    max-width: var(--max-width-layout);
+
+    @include from(360px) {
+        padding-bottom: 1.2rem;
+    }
+
+    @include from(412px) {
+        padding-bottom: 1.5rem;
+    }
+
+    @include from(medium) {
+        padding-top: 1.5rem;
+        padding-bottom: 1.8rem;
+    }
 }
 
 

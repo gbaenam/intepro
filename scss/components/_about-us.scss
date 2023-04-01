@@ -4,6 +4,7 @@
 
 .about-us {
     padding: var(--padding-layout);
+    background-color:#e7e7e7;
 
 
     &__content {
@@ -12,6 +13,10 @@
         text-align: center;
         border-radius: 10px;
         background-color: #fff;
+
+        @include from(541px) {
+            background-color:#e7e7e7;
+        }
     }
 
     &__title {
