@@ -4,14 +4,20 @@
 
 .main {
     display: grid;
-    gap: 0.9375rem;
+    gap: 16px;
+
+    @include from(541px) {
+        gap: 28px;
+    }
+
+
     font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
     padding-bottom: 1.2rem;
     // background-color: $color-light-gray-alt;
 
     background-color: #e7e7e7;
 
-    // @include from(541px) {
-    //     background-color: #fff;
-    // }
+    @include from(541px) {
+        background-color: #fff;
+    }
 }

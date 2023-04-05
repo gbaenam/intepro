@@ -67,10 +67,13 @@
       font-size: 38px;
     }
 
-    // @include from(594px) {
-    //   font-size: 40px;
-    // }
+    @include from(xxlarge) {
+      font-size: 42px;
+    }
 
+    @include from(1921px) {
+      font-size: 46px;
+    }
   }
 
   &__subtitle {
@@ -88,6 +91,15 @@
 
     @include from(medium) {
       font-size: 28px;
+      margin-bottom: 1.2rem;
+    }
+
+    @include from(720px) {
+      margin-bottom: 1.5rem;
+    }
+
+    @include from(llarge) {
+      margin-bottom: 2rem;
     }
   }
 
@@ -112,6 +124,14 @@
     width: 100%;
     max-width: 640px;
     margin-bottom: 1.2rem;
+
+    @include from(xxmedium) {
+      margin-bottom: 1.5rem; 
+    }
+
+    @include from(llarge) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__video {

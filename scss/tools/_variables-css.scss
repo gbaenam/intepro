@@ -39,6 +39,10 @@
     @include from(xmedium) {
         --padding-text: 0 20px;
     }
+
+    @include from(large) {
+        --padding-text: 0;
+    }
 }
 
 
