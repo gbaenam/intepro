@@ -50,6 +50,13 @@ img {
 //     font-weight: 500;
 // }
 
+h1 {
+    font: {
+        family: $font-family-first;
+        weight: 400;
+    };
+}
+
 
 // Reset <hr>
 hr {
