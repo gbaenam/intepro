@@ -2,48 +2,48 @@
 
 /* ------------------ line-break.scss ---------------------- */
 
-// superiores...
-.line-break391::before {
-    @include from(391px) {
-        display: block;
-        content: "";
-    }
-    @include from(medium) {
-        display: inline;
-    }
-    @include from(594px) {
-        display: block;
-    }
-    @include from(656px) {
-        display: inline;
-    }
-}
+// // superiores...
+// .line-break391::before {
+//     @include from(391px) {
+//         display: block;
+//         content: "";
+//     }
+//     @include from(medium) {
+//         display: inline;
+//     }
+//     @include from(594px) {
+//         display: block;
+//     }
+//     @include from(656px) {
+//         display: inline;
+//     }
+// }
 
-// en el...
-.line-break540::before {
-    @include from(medium) {
-        display: block;
-        content: "";
-    }
-    @include from(544px) {
-        display: inline;
-    }
-}
+// // en el...
+// .line-break540::before {
+//     @include from(medium) {
+//         display: block;
+//         content: "";
+//     }
+//     @include from(544px) {
+//         display: inline;
+//     }
+// }
 
-// o realiza...
-.line-break828::before {
-    @include from(828px) {
-        display: block;
-        content: "";
-    }
-    @include from(large) {
-        display: inline;
-    }
-}
+// // o realiza...
+// .line-break828::before {
+//     @include from(828px) {
+//         display: block;
+//         content: "";
+//     }
+//     @include from(large) {
+//         display: inline;
+//     }
+// }
 
-.line-break1128::before {
-    @include from(1128px) {
-        display: block;
-        content: "";
-    }
-}
+// .line-break1128::before {
+//     @include from(1128px) {
+//         display: block;
+//         content: "";
+//     }
+// }
