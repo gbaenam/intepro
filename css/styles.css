@@ -111,25 +111,6 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 0;
-  color: #6a7477;
-  font-family: "Poppins", sans-serif;
-}
-@media screen and (min-width: 540px) {
-  h1, h2, h3, h4, h5, h6 {
-    line-height: 1.15;
-  }
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 500;
-}
-
 hr {
   margin-top: 0;
   margin-bottom: 0;
