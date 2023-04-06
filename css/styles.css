@@ -128,26 +128,26 @@ h1 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 @media screen and (min-width: 360px) {
   h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 400px) {
   h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 540px) {
   h1 {
-    font-size: 66px;
+    font-size: 4.125rem;
   }
 }
 @media screen and (min-width: 1920px) {
   h1 {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
