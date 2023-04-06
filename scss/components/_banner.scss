@@ -5,8 +5,6 @@
 .banner {
     // hero-image
     --objet-position-hero-image: center;
-    // title.
-    --font-size-banner-title: 2.8125rem;
     // call-us-now
     --font-size-calle-us-now: 2rem;
     --margin-bottom-call-us-now: 1rem;
@@ -17,8 +15,6 @@
     --font-size-banner-phone: 1.75rem;
 
     @include from(360px) {
-        // title
-        --font-size-banner-title: 3.0625rem;
          // call-us-now
         --font-size-calle-us-now: 2.25rem;
         // flag
@@ -30,8 +26,6 @@
 
     // Wide 412px
     @include from(412px) {
-        // title
-        --font-size-banner-title: 3.4375rem;
         // call-us-now
         --font-size-calle-us-now: 2.375rem;
         // phone
@@ -50,12 +44,6 @@
         --objet-position-hero-image: 70%;
     }
 
-    // Wide 640px
-    @include from(xmedium) {
-        // title
-        --font-size-banner-title: 3.5625rem;
-    }
-
     // Wide 840px
     @include from(840px) {
         // hero-image
@@ -66,16 +54,12 @@
     @include from(xxmedium) {
         // hero-image
         --objet-position-hero-image: center 90%;
-        // title
-        --font-size-banner-title: 3rem;
     }
 
     // Wide 1024px
     @include from(large) {
         // hero-image
         --objet-position-hero-image: 90%;
-        // title
-        --font-size-banner-title: 3.25rem;
     }
 
     // Wide 1280px
@@ -86,8 +70,6 @@
 
     // Wide 1600px
     @include from(zlarge) {
-        // title
-        --font-size-banner-title: 3.5rem;
         // call-us-now
         --font-size-calle-us-now: 3rem;
         // flag
@@ -101,17 +83,9 @@
     @include from(zzlarge) {
         // hero-image
         --objet-position-hero-image: center top;
-        // title
-        --font-size-banner-title: 3.875rem;
         // call-us-now
         --font-size-calle-us-now: 3.125rem;
         --margin-bottom-call-us-now: 1.5rem;
-    }
-
-    // Wide 2100px
-    @include from(maximum) {
-        // title
-        --font-size-banner-title: 4.5rem;
     }
 }
 
@@ -141,9 +115,9 @@
 
     &__title {
         color: #fff;
+        max-width: 95%;
         text-align: center;
         margin-bottom: 1rem;
-        font-size: var(--font-size-banner-title);
     }
 
     &__call-us-now {

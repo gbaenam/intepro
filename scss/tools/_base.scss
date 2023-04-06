@@ -31,30 +31,55 @@ img {
     max-width: 100%;
 }
 
-// // Reset general etiquetas <h>
-// h1,h2,h3,h4,h5,h6 {
-//     margin-top: 0;
-//     line-height: 1;
-//     margin-bottom: 0;
-//     color: $color-dark-gray;
-//     font-family: $font-family-primary;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-//     @include from(540px) {
-//         line-height: 1.15;
-//     }
-// }
-
-// h1,
-// h2,
-// h3 {
-//     font-weight: 500;
-// }
 
 h1 {
-    font: {
-        family: $font-family-first;
-        weight: 400;
-    };
+    line-height: 1;
+    font-weight: 400;
+    font-family: $font-family-primary;
+}
+
+h1 {
+    font-size: 42px;
+
+    @include from(360px) {
+        font-size: 48px;
+    }
+
+    @include from(400px) {
+        font-size: 56px;
+    }
+
+    @include from(medium) {
+        font-size: 66px;
+    }
+
+    @include from(zzlarge) {
+        font-size: 70px;
+    }
+}
+
+h2 {
+    font-weight: 400;
+    line-height: 120%;
+    font-family: $font-family-first;
+}
+
+h2 {
+    font-size: 36px;
+
+    @include from(400px) {
+        font-size: 46px;
+    }
 }
 
 

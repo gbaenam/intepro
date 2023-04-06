@@ -30,10 +30,10 @@
     }
 
     // Wide 560px
-    @include from(560px) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+    // @include from(560px) {
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    // }
 
     // Wide 960px
     @include from(xxmedium) {

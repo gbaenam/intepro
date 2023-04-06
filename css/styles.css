@@ -111,9 +111,59 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 h1 {
-  font-family: "Fjalla One", sans-serif;
+  line-height: 1;
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 42px;
+}
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 540px) {
+  h1 {
+    font-size: 66px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  line-height: 120%;
+  font-family: "Fjalla One", sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+}
+@media screen and (min-width: 400px) {
+  h2 {
+    font-size: 46px;
+  }
 }
 
 hr {
@@ -201,7 +251,33 @@ textarea {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ------------------ line-break.scss ---------------------- */ /* ------------------ _layout.scss ---------------------- */
+/* ------------------ line-break.scss ---------------------- */
+.line-break485::before {
+  display: inline;
+  content: "";
+}
+@media screen and (min-width: 329px) {
+  .line-break485::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 698px) {
+  .line-break485::before {
+    display: inline;
+  }
+}
+@media screen and (min-width: 914px) {
+  .line-break485::before {
+    display: block;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .line-break485::before {
+    display: inline;
+  }
+}
+
+/* ------------------ _layout.scss ---------------------- */
 .main-header-layout {
   width: 100%;
   height: 100%;
@@ -225,12 +301,6 @@ textarea {
 @media screen and (min-width: 541px) {
   .banner-layout {
     padding-top: 4rem;
-  }
-}
-@media screen and (min-width: 560px) {
-  .banner-layout {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -732,7 +802,6 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
-  --font-size-banner-title: 2.8125rem;
   --font-size-calle-us-now: 2rem;
   --margin-bottom-call-us-now: 1rem;
   --width-banner-flag: 2.8125rem;
@@ -741,7 +810,6 @@ textarea {
 }
 @media screen and (min-width: 360px) {
   .banner {
-    --font-size-banner-title: 3.0625rem;
     --font-size-calle-us-now: 2.25rem;
     --width-banner-flag: 3rem;
     --height-banner-flag: 1.8125rem;
@@ -750,7 +818,6 @@ textarea {
 }
 @media screen and (min-width: 412px) {
   .banner {
-    --font-size-banner-title: 3.4375rem;
     --font-size-calle-us-now: 2.375rem;
     --font-size-banner-phone: 2.0625rem;
   }
@@ -765,11 +832,6 @@ textarea {
     --objet-position-hero-image: 70%;
   }
 }
-@media screen and (min-width: 640px) {
-  .banner {
-    --font-size-banner-title: 3.5625rem;
-  }
-}
 @media screen and (min-width: 840px) {
   .banner {
     --objet-position-hero-image: center bottom;
@@ -778,13 +840,11 @@ textarea {
 @media screen and (min-width: 960px) {
   .banner {
     --objet-position-hero-image: center 90%;
-    --font-size-banner-title: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner {
     --objet-position-hero-image: 90%;
-    --font-size-banner-title: 3.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -794,7 +854,6 @@ textarea {
 }
 @media screen and (min-width: 1600px) {
   .banner {
-    --font-size-banner-title: 3.5rem;
     --font-size-calle-us-now: 3rem;
     --width-banner-flag: 3.25rem;
     --height-banner-flag: 2.0625rem;
@@ -804,7 +863,6 @@ textarea {
 @media screen and (min-width: 1920px) {
   .banner {
     --objet-position-hero-image: center top;
-    --font-size-banner-title: 3.875rem;
     --font-size-calle-us-now: 3.125rem;
     --margin-bottom-call-us-now: 1.5rem;
   }
@@ -834,9 +892,9 @@ textarea {
 }
 .banner__title {
   color: #fff;
+  max-width: 95%;
   text-align: center;
   margin-bottom: 1rem;
-  font-size: var(--font-size-banner-title);
 }
 .banner__call-us-now {
   font-size: var(--font-size-calle-us-now);
@@ -875,8 +933,9 @@ textarea {
 .youtube__content {
   border-radius: 10px;
   background-color: #fff;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 541px) {
   .youtube__content {
@@ -894,48 +953,7 @@ textarea {
   }
 }
 .youtube__title {
-  font-size: 28px;
   margin-bottom: 0.5rem;
-}
-@media screen and (min-width: 360px) {
-  .youtube__title {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 412px) {
-  .youtube__title {
-    font-size: 36px;
-  }
-}
-@media screen and (min-width: 492px) {
-  .youtube__title {
-    font-size: 32px;
-  }
-}
-@media screen and (min-width: 536px) {
-  .youtube__title {
-    font-size: 34px;
-  }
-}
-@media screen and (min-width: 540px) {
-  .youtube__title {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 544px) {
-  .youtube__title {
-    font-size: 38px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .youtube__title {
-    font-size: 42px;
-  }
-}
-@media screen and (min-width: 1921px) {
-  .youtube__title {
-    font-size: 46px;
-  }
 }
 .youtube__subtitle {
   font-size: 22px;
@@ -1032,9 +1050,9 @@ textarea {
 .about-us__content {
   display: grid;
   place-items: center;
-  text-align: center;
   border-radius: 10px;
   background-color: #fff;
+  height: 500px;
 }
 @media screen and (min-width: 541px) {
   .about-us__content {
@@ -1043,12 +1061,6 @@ textarea {
 }
 .about-us__title {
   margin-bottom: 2em;
-}
-.about-us__button {
-  margin-bottom: 50px;
-}
-.about-us__button:last-child {
-  margin-bottom: 0;
 }
 
 /* ------------------ form.scss ---------------------- */

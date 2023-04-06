@@ -10,8 +10,9 @@
     border-radius: 10px;
     background-color: #fff;
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include from(541px) {
       border-radius: 0;
@@ -40,40 +41,40 @@
   }
 
   &__title {
-    font-size: 28px;
+    // font-size: 28px;
     margin-bottom: .5rem;
 
-    @include from(360px) {
-      font-size: 30px;
-    }
+    // @include from(360px) {
+    //   font-size: 30px;
+    // }
 
-    @include from(412px) {
-      font-size: 36px;
-    }
+    // @include from(412px) {
+    //   font-size: 36px;
+    // }
 
-    @include from(492px) {
-      font-size: 32px;
-    }
+    // @include from(492px) {
+    //   font-size: 32px;
+    // }
 
-    @include from(536px) {
-      font-size: 34px;
-    }
+    // @include from(536px) {
+    //   font-size: 34px;
+    // }
 
-    @include from(medium) {
-      font-size: 40px;
-    }
+    // @include from(medium) {
+    //   font-size: 40px;
+    // }
 
-    @include from(544px) {
-      font-size: 38px;
-    }
+    // @include from(544px) {
+    //   font-size: 38px;
+    // }
 
-    @include from(xxlarge) {
-      font-size: 42px;
-    }
+    // @include from(xxlarge) {
+    //   font-size: 42px;
+    // }
 
-    @include from(1921px) {
-      font-size: 46px;
-    }
+    // @include from(1921px) {
+    //   font-size: 46px;
+    // }
   }
 
   &__subtitle {
