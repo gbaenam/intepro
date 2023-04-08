@@ -1076,12 +1076,19 @@ textarea {
   position: relative;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  border: 1px solid #fafbfa;
+  border-top: 1px solid #fafbfa;
+  border-bottom: 1px solid #fafbfa;
 }
 .youtube__video::before {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .youtube__video {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
 }
 .youtube__video > iframe,
 .youtube__video > video {
