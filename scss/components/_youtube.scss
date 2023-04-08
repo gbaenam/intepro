@@ -5,7 +5,7 @@
 .youtube {
   padding: var(--padding-layout);
 
-  background-color: #fafbfa;
+  // background-color: #fafbfa;
 
 
   &__content {
@@ -123,7 +123,7 @@
 
   &__video {
     @include ratio(16,9);
-    // background-color: red;
+    border: 1px solid #fafbfa;
 
     > iframe,
     > video {

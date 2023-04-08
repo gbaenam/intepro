@@ -962,7 +962,6 @@ textarea {
 /* ------------------ youtube.scss --------------------- */
 .youtube {
   padding: var(--padding-layout);
-  background-color: #fafbfa;
 }
 .youtube__content {
   border-radius: 10px;
@@ -1077,6 +1076,7 @@ textarea {
   position: relative;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(9, 1fr);
+  border: 1px solid #fafbfa;
 }
 .youtube__video::before {
   content: "";
