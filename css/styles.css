@@ -25,11 +25,7 @@
 @media screen and (min-width: 541px) {
   :root {
     --padding-layout: 0;
-  }
-}
-@media screen and (min-width: 640px) {
-  :root {
-    --padding-text: 0 20px;
+    --padding-text: 0 25px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -160,9 +156,19 @@ h2 {
 h2 {
   font-size: 36px;
 }
+@media screen and (min-width: 384px) {
+  h2 {
+    font-size: 38px;
+  }
+}
 @media screen and (min-width: 400px) {
   h2 {
     font-size: 46px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h2 {
+    font-size: 54px;
   }
 }
 
@@ -274,6 +280,16 @@ textarea {
 @media screen and (min-width: 1260px) {
   .line-break485::before {
     display: inline;
+  }
+}
+
+.line-break997::before {
+  display: inline;
+  content: "";
+}
+@media screen and (min-width: 997px) {
+  .line-break997::before {
+    display: block;
   }
 }
 
@@ -793,9 +809,24 @@ textarea {
     gap: 28px;
   }
 }
+@media screen and (min-width: 640px) {
+  .main {
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .main {
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    gap: 90px;
+  }
+}
 @media screen and (min-width: 541px) {
   .main {
-    background-color: #fff;
+    background-color: #fafbfa;
   }
 }
 
@@ -929,10 +960,11 @@ textarea {
 /* ------------------ youtube.scss --------------------- */
 .youtube {
   padding: var(--padding-layout);
+  background-color: #fafbfa;
 }
 .youtube__content {
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #fafbfa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -943,9 +975,16 @@ textarea {
   }
 }
 .youtube__header {
+  width: 100%;
+  max-width: 1100px;
   padding-left: 12px;
   padding-right: 12px;
-  max-width: 1100px;
+}
+@media screen and (min-width: 541px) {
+  .youtube__header {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .youtube__header {
@@ -954,6 +993,26 @@ textarea {
 }
 .youtube__title {
   margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 356px) {
+  .youtube__title {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 400px) {
+  .youtube__title {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .youtube__title {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 545px) {
+  .youtube__title {
+    max-width: 100%;
+  }
 }
 .youtube__subtitle {
   font-size: 22px;
@@ -1029,12 +1088,13 @@ textarea {
   position: absolute;
 }
 .youtube__description {
+  width: 100%;
+  max-width: 960px;
   padding: var(--padding-text);
 }
 .youtube__description p {
   font-size: 18px;
   line-height: 140%;
-  max-width: 1100px;
 }
 @media screen and (min-width: 360px) {
   .youtube__description p {

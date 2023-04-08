@@ -15,8 +15,6 @@ body {
     color: $color-body;
     background-color: $background-color-body;
 
-    // line-height: 140%;
-
     font: {
         family: $font-family-body;
         size: var(--font-size-body);
@@ -77,8 +75,16 @@ h2 {
 h2 {
     font-size: 36px;
 
+    @include from(384px) {
+        font-size: 38px;
+    }
+
     @include from(400px) {
         font-size: 46px;
+    }
+
+    @include from(zzlarge) {
+        font-size: 54px;
     }
 }
 

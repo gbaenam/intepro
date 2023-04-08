@@ -5,10 +5,13 @@
 .youtube {
   padding: var(--padding-layout);
 
+  background-color: #fafbfa;
+
 
   &__content {
     border-radius: 10px;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: #fafbfa;
 
     display: flex;
     flex-direction: column;
@@ -21,19 +24,17 @@
   }
 
   &__header {
-    padding-left: 12px;
-    padding-right: 12px;
+    width: 100%;
     max-width: $max-width-text-alt;
 
-    // @include from(541px) {
-    //   padding-left: 40px;
-    //   padding-right: 40px;
-    // }
 
-    // @include from(600px) {
-    //   padding-left: 30px;
-    //   padding-right: 30px;
-    // }
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @include from(541px) {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
 
     @include from(large) {
       padding: 0;
@@ -41,40 +42,24 @@
   }
 
   &__title {
-    // font-size: 28px;
     margin-bottom: .5rem;
 
-    // @include from(360px) {
-    //   font-size: 30px;
-    // }
+    @include from(356px) {
+      max-width: 90%;
+    }
 
-    // @include from(412px) {
-    //   font-size: 36px;
-    // }
+    @include from(400px) {
+      max-width: 100%;
+    }
 
-    // @include from(492px) {
-    //   font-size: 32px;
-    // }
+    @include from(500px) {
+      max-width: 90%;
+    }
 
-    // @include from(536px) {
-    //   font-size: 34px;
-    // }
+    @include from(545px) {
+      max-width: 100%;
+    }
 
-    // @include from(medium) {
-    //   font-size: 40px;
-    // }
-
-    // @include from(544px) {
-    //   font-size: 38px;
-    // }
-
-    // @include from(xxlarge) {
-    //   font-size: 42px;
-    // }
-
-    // @include from(1921px) {
-    //   font-size: 46px;
-    // }
   }
 
   &__subtitle {
@@ -126,8 +111,9 @@
     max-width: 640px;
     margin-bottom: 1.2rem;
 
+    // Wide 960px
     @include from(xxmedium) {
-      margin-bottom: 1.5rem; 
+      margin-bottom: 1.5rem;
     }
 
     @include from(llarge) {
@@ -148,16 +134,15 @@
   }
 
   &__description {
-
+    width: 100%;
+    max-width: $max-width-text;
     padding: var(--padding-text);
-
   }
 
   &__description p {
     font-size: 18px;
     line-height: 140%;
 
-    max-width: $max-width-text-alt;
 
     @include from(360px) {
       font-size: 20px;

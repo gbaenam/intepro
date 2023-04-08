@@ -34,11 +34,12 @@
 
     @include from(541px) {
         --padding-layout: 0;
+        --padding-text: 0 25px;
     }
 
-    @include from(xmedium) {
-        --padding-text: 0 20px;
-    }
+    // @include from(xmedium) {
+    //     --padding-text: 0 20px;
+    // }
 
     @include from(large) {
         --padding-text: 0;
