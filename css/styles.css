@@ -1084,7 +1084,7 @@ textarea {
   display: block;
   padding-bottom: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 645px) {
   .youtube__video {
     border-left: 1px solid #fafbfa;
     border-right: 1px solid #fafbfa;

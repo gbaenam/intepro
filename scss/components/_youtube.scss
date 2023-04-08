@@ -126,7 +126,7 @@
     border-top: 1px solid #fafbfa;
     border-bottom: 1px solid #fafbfa;
 
-    @include from(large) {
+    @include from(645px) {
       border-left: 1px solid #fafbfa;
       border-right: 1px solid #fafbfa;
     }
