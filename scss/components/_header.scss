@@ -26,6 +26,8 @@
     z-index: $z-fixed;
     height: var(--height-header);
     background-color: $color-white;
+    border-top: 1px solid $color-light-gray-alt;
+    border-bottom: 1px solid $color-light-gray-alt;
 
 
     &__container {
