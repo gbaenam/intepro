@@ -1027,7 +1027,6 @@ textarea {
 }
 .youtube__wrapper {
   width: 100%;
-  max-width: 960px;
   margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 960px) {
@@ -1067,7 +1066,6 @@ textarea {
 }
 .youtube__description {
   width: 100%;
-  max-width: 960px;
   padding: var(--padding-text);
   font-family: "Montserrat", sans-serif;
 }

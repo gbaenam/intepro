@@ -109,7 +109,7 @@
   &__wrapper {
     width: 100%;
     // max-width: 640px;
-    max-width: $max-width-text;
+    // max-width: $max-width-text;
     margin-bottom: 1.2rem;
 
         // background-color: lightblue;
@@ -144,7 +144,7 @@
 
   &__description {
     width: 100%;
-    max-width: $max-width-text;
+    // max-width: $max-width-text;
     padding: var(--padding-text);
 
                     font-family: $font-family-primary-alt;
