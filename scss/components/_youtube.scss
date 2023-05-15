@@ -5,17 +5,12 @@
 .youtube {
   padding: var(--padding-layout);
 
-  // background-color: #fafbfa;
-
-
   &__content {
-    border-radius: 10px;
-    // background-color: #fff;
-    background-color: #fafbfa;
-
     display: flex;
-    flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #fafbfa;
 
     @include from(541px) {
       border-radius: 0;
@@ -25,7 +20,9 @@
 
   &__header {
     width: 100%;
-    max-width: $max-width-text-alt;
+    // max-width: $max-width-text-alt;
+
+        background-color: pink;
 
 
     padding-left: 12px;
@@ -42,27 +39,30 @@
   }
 
   &__title {
+
+            color: #444;
     margin-bottom: .5rem;
 
-    @include from(356px) {
-      max-width: 90%;
-    }
+    // @include from(356px) {
+    //   max-width: 90%;
+    // }
 
-    @include from(400px) {
-      max-width: 100%;
-    }
+    // @include from(400px) {
+    //   max-width: 100%;
+    // }
 
-    @include from(500px) {
-      max-width: 90%;
-    }
+    // @include from(500px) {
+    //   max-width: 90%;
+    // }
 
-    @include from(545px) {
-      max-width: 100%;
-    }
+    // @include from(545px) {
+    //   max-width: 100%;
+    // }
 
   }
 
   &__subtitle {
+    color: #444;
     font-size: 22px;
     margin-bottom: 1rem;
     // text-align: center;
@@ -108,8 +108,11 @@
 
   &__wrapper {
     width: 100%;
-    max-width: 640px;
+    // max-width: 640px;
+    max-width: $max-width-text;
     margin-bottom: 1.2rem;
+
+        // background-color: lightblue;
 
     // Wide 960px
     @include from(xxmedium) {
@@ -143,15 +146,18 @@
     width: 100%;
     max-width: $max-width-text;
     padding: var(--padding-text);
+
+                    font-family: $font-family-primary-alt;
   }
 
-  &__description p {
-    font-size: 18px;
-    line-height: 140%;
+    &__description p {
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.18px;
+      color: #333;
 
-
-    @include from(360px) {
-      font-size: 20px;
-    }
+    // @include from(360px) {
+    //   font-size: 20px;
+    // }
   }
 }

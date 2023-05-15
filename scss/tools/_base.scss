@@ -12,12 +12,12 @@
 
 body {
     margin: 0;
-    color: $color-body;
+                        // color: $color-body;
     background-color: $background-color-body;
 
     font: {
         family: $font-family-body;
-        size: var(--font-size-body);
+                        // size: var(--font-size-body);
         weight: var(--font-weight-body);
     }
 }
@@ -178,9 +178,11 @@ textarea {
 
 // Subtítulos
 .caption {
-    font-weight: 400;
-    color: $color-darker-gray;
-    font-family: $font-family-secondary;
+    font-weight: 500;
+                // color: $color-darker-gray;
+                // font-family: $font-family-secondary;
+                // font-family: $font-family-primary-alt;
+                font-family: $font-family-primary;
 }
 
 // Font Awesome Icons

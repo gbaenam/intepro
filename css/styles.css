@@ -94,10 +94,8 @@
 
 body {
   margin: 0;
-  color: rgb(30, 63, 63);
   background-color: #f5f8ff;
   font-family: "Bitter", serif;
-  font-size: var(--font-size-body);
   font-weight: var(--font-weight-body);
 }
 
@@ -237,9 +235,8 @@ textarea {
 }
 
 .caption {
-  font-weight: 400;
-  color: #646464;
-  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .icon {
@@ -280,16 +277,6 @@ textarea {
 @media screen and (min-width: 1260px) {
   .line-break485::before {
     display: inline;
-  }
-}
-
-.line-break997::before {
-  display: inline;
-  content: "";
-}
-@media screen and (min-width: 997px) {
-  .line-break997::before {
-    display: block;
   }
 }
 
@@ -964,11 +951,11 @@ textarea {
   padding: var(--padding-layout);
 }
 .youtube__content {
-  border-radius: 10px;
-  background-color: #fafbfa;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #fafbfa;
 }
 @media screen and (min-width: 541px) {
   .youtube__content {
@@ -977,7 +964,7 @@ textarea {
 }
 .youtube__header {
   width: 100%;
-  max-width: 1100px;
+  background-color: pink;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -993,29 +980,11 @@ textarea {
   }
 }
 .youtube__title {
+  color: #444;
   margin-bottom: 0.5rem;
 }
-@media screen and (min-width: 356px) {
-  .youtube__title {
-    max-width: 90%;
-  }
-}
-@media screen and (min-width: 400px) {
-  .youtube__title {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 500px) {
-  .youtube__title {
-    max-width: 90%;
-  }
-}
-@media screen and (min-width: 545px) {
-  .youtube__title {
-    max-width: 100%;
-  }
-}
 .youtube__subtitle {
+  color: #444;
   font-size: 22px;
   margin-bottom: 1rem;
 }
@@ -1058,7 +1027,7 @@ textarea {
 }
 .youtube__wrapper {
   width: 100%;
-  max-width: 640px;
+  max-width: 960px;
   margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 960px) {
@@ -1100,15 +1069,13 @@ textarea {
   width: 100%;
   max-width: 960px;
   padding: var(--padding-text);
+  font-family: "Montserrat", sans-serif;
 }
 .youtube__description p {
   font-size: 18px;
-  line-height: 140%;
-}
-@media screen and (min-width: 360px) {
-  .youtube__description p {
-    font-size: 20px;
-  }
+  line-height: 150%;
+  letter-spacing: -0.18px;
+  color: #333;
 }
 
 /* ---------------- about-us.scss -------------------- */

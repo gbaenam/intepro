@@ -22,11 +22,11 @@
 }
 
 // estudios...
-.line-break997::before {
-    display: inline;
-    content: "";
+// .line-break997::before {
+//     display: inline;
+//     content: "";
 
-    @include from(997px) {
-        display: block;
-    }
-}
+//     @include from(997px) {
+//         display: block;
+//     }
+// }
