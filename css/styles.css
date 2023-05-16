@@ -953,10 +953,10 @@ textarea {
 .youtube__content {
   display: flex;
   align-items: center;
-  border-radius: 10px;
   flex-direction: column;
   background-color: #fafbfa;
-  max-width: 640px;
+  max-width: 720px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 541px) {
   .youtube__content {
@@ -967,12 +967,6 @@ textarea {
   width: 100%;
   padding-left: 12px;
   padding-right: 12px;
-}
-@media screen and (min-width: 541px) {
-  .youtube__header {
-    padding-left: 26px;
-    padding-right: 26px;
-  }
 }
 @media screen and (min-width: 1024px) {
   .youtube__header {
