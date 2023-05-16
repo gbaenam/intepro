@@ -956,6 +956,7 @@ textarea {
   border-radius: 10px;
   flex-direction: column;
   background-color: #fafbfa;
+  max-width: 640px;
 }
 @media screen and (min-width: 541px) {
   .youtube__content {
@@ -964,7 +965,6 @@ textarea {
 }
 .youtube__header {
   width: 100%;
-  background-color: pink;
   padding-left: 12px;
   padding-right: 12px;
 }

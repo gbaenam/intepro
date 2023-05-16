@@ -11,6 +11,9 @@
     border-radius: 10px;
     flex-direction: column;
     background-color: #fafbfa;
+    // max-width: $max-width-content;
+    max-width: 640px;
+    // max-width: 40vw;
 
     @include from(541px) {
       border-radius: 0;
@@ -22,7 +25,7 @@
     width: 100%;
     // max-width: $max-width-text-alt;
 
-        background-color: pink;
+        // background-color: pink;
 
 
     padding-left: 12px;
