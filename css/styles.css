@@ -289,11 +289,11 @@ textarea {
 }
 
 .paragraph {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.18px;
   color: #333333;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Bitter", serif;
 }
 
 .icon {

@@ -225,11 +225,13 @@ textarea {
 
 // Párrafos
 .paragraph {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
+    // line-height: 130%;
     letter-spacing: -0.18px;
     color: $color-very-dark-text;
-    font-family: $font-family-primary-alt;
+    // font-family: $font-family-primary-alt;
+    font-family: $font-family-body;
 }
 
 // Font Awesome Icons
