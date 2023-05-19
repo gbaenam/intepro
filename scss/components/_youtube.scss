@@ -3,6 +3,45 @@
 /* ------------------ youtube.scss --------------------- */
 
 .youtube {
+  // youtube__content
+  --max-width-youtube-content: 720px;
+  --border-radius-youtube-content: 10px;
+  // youtube__wrapper
+  --margin-bottom-youtube-wrapper: 1.2rem;
+  // youtube-title-subtitle
+  --text-align-youtube-title-subtitle: start;
+
+
+  @include from(541px) {
+    // youtube__content
+    --border-radius-youtube-content: 0;
+  }
+
+  @include from(720px) {
+    // youtube-title-subtitle
+  --text-align-youtube-title-subtitle: center;
+  }
+
+  // Wide: 960px
+  @include from(xxmedium) {
+    // youtube__wrapper
+  --margin-bottom-youtube-wrapper: 1.5rem;
+  }
+
+  // Wide: 1160px
+  @include from(llarge) {
+    // youtube__wrapper
+  --margin-bottom-youtube-wrapper: 2rem;
+  }
+
+  @include from(1921px) {
+    // youtube__content
+    --max-width-youtube-content: 840px;
+  }
+}
+
+
+.youtube {
   padding: var(--padding-layout);
 
   &__content {
@@ -10,19 +49,8 @@
     align-items: center;
     flex-direction: column;
     background-color: #fafbfa;
-
-    max-width: 720px;
-
-    @include from(1921px) {
-      max-width: 840px;
-    }
-
-    border-radius: 10px;
-
-    @include from(541px) {
-      border-radius: 0;
-    }
-
+    max-width: var(--max-width-youtube-content);
+    border-radius: var(--border-radius-youtube-content);
   }
 
   &__header {
@@ -32,10 +60,7 @@
 
   &__title,
   &__subtitle {
-
-    @include from(720px) {
-      text-align: center;
-    }
+    text-align: var(--text-align-youtube-title-subtitle);
   }
 
   &__title {
@@ -53,30 +78,17 @@
 
   &__wrapper {
     width: 100%;
-    // max-width: 640px;
-    // max-width: $max-width-text;
-    margin-bottom: 1.2rem;
-
-        // background-color: lightblue;
-
-    // Wide 960px
-    @include from(xxmedium) {
-      margin-bottom: 1.5rem;
-    }
-
-    @include from(llarge) {
-      margin-bottom: 2rem;
-    }
+    margin-bottom: var(--margin-bottom-youtube-wrapper);
   }
 
   &__video {
     @include ratio(16,9);
-    border-top: 1px solid #fafbfa;
-    border-bottom: 1px solid #fafbfa;
+    border-top: 1px solid $color-light-gray-alt;
+    border-bottom: 1px solid $color-light-gray-alt;
 
-    @include from(645px) {
-      border-left: 1px solid #fafbfa;
-      border-right: 1px solid #fafbfa;
+    @include from(725px) {
+      border-left: 1px solid $color-light-gray-alt;
+      border-right: 1px solid $color-light-gray-alt;
     }
 
     > iframe,
@@ -89,9 +101,6 @@
 
   &__description {
     width: 100%;
-    // max-width: $max-width-text;
     padding: var(--padding-text);
-
-                    font-family: $font-family-primary-alt;
   }
 }
