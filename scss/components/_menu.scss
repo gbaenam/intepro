@@ -231,7 +231,7 @@
     }
 
     &__title {
-        color: $color-text-white;
+        color: $color-light-text;
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
     }
@@ -243,7 +243,7 @@
     }
 
     a {
-        color: $color-text-white;
+        color: $color-light-text;
         border: var(--border-link);
         width: var(--width-social-bar-a);
         height: var(--height-social-bar-a);
