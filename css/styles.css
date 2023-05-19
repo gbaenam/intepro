@@ -911,11 +911,11 @@ textarea {
   object-position: var(--objet-position-hero-image);
 }
 .banner__content {
-  color: #fff;
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
+  color: #fff;
 }
 .banner__title {
   max-width: 95%;
