@@ -25,10 +25,9 @@
 @media screen and (min-width: 541px) {
   :root {
     --padding-layout: 0;
-    --padding-text: 0 25px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 740px) {
   :root {
     --padding-text: 0;
   }
@@ -958,6 +957,11 @@ textarea {
   max-width: 720px;
   border-radius: 10px;
 }
+@media screen and (min-width: 1921px) {
+  .youtube__content {
+    max-width: 840px;
+  }
+}
 @media screen and (min-width: 541px) {
   .youtube__content {
     border-radius: 0;
@@ -965,13 +969,7 @@ textarea {
 }
 .youtube__header {
   width: 100%;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-@media screen and (min-width: 1024px) {
-  .youtube__header {
-    padding: 0;
-  }
+  padding: var(--padding-text);
 }
 .youtube__title {
   color: #444;

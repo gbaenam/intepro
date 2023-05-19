@@ -13,6 +13,10 @@
 
     max-width: 720px;
 
+    @include from(1921px) {
+      max-width: 840px;
+    }
+
     border-radius: 10px;
 
     @include from(541px) {
@@ -23,18 +27,7 @@
 
   &__header {
     width: 100%;
-
-    padding-left: 12px;
-    padding-right: 12px;
-
-    // @include from(541px) {
-    //   padding-left: 26px;
-    //   padding-right: 26px;
-    // }
-
-    @include from(large) {
-      padding: 0;
-    }
+    padding: var(--padding-text);
   }
 
   &__title {
