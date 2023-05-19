@@ -124,15 +124,4 @@
 
                     font-family: $font-family-primary-alt;
   }
-
-    &__description p {
-      font-size: 18px;
-      line-height: 150%;
-      letter-spacing: -0.18px;
-      color: #333;
-
-    // @include from(360px) {
-    //   font-size: 20px;
-    // }
-  }
 }

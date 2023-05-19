@@ -238,6 +238,13 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
+.paragraph {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.18px;
+  color: #333;
+}
+
 .icon {
   position: relative;
 }
@@ -1060,12 +1067,6 @@ textarea {
   width: 100%;
   padding: var(--padding-text);
   font-family: "Montserrat", sans-serif;
-}
-.youtube__description p {
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: -0.18px;
-  color: #333;
 }
 
 /* ---------------- about-us.scss -------------------- */

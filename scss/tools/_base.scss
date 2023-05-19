@@ -185,6 +185,14 @@ textarea {
                 font-family: $font-family-primary;
 }
 
+// Párrafos
+.paragraph {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.18px;
+    color: #333;
+}
+
 // Font Awesome Icons
 .icon {
     position: relative;
