@@ -290,10 +290,15 @@ textarea {
 
 .paragraph {
   font-size: 20px;
-  line-height: 130%;
+  line-height: 150%;
   letter-spacing: -0.18px;
   color: #333333;
   font-family: "Bitter", serif;
+}
+@media screen and (min-width: 1921px) {
+  .paragraph {
+    font-size: 22px;
+  }
 }
 
 .icon {
