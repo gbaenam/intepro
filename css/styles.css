@@ -769,7 +769,7 @@ textarea {
   padding: var(--padding-wrapper);
 }
 .social-bar__title {
-  color: #ffffff;
+  color: #fff;
   font-size: var(--font-size-title);
   margin-bottom: var(--margin-bottom-title);
 }
@@ -779,7 +779,7 @@ textarea {
   font-size: var(--font-size-icons);
 }
 .social-bar a {
-  color: #ffffff;
+  color: #fff;
   border: var(--border-link);
   width: var(--width-social-bar-a);
   height: var(--height-social-bar-a);
@@ -1349,7 +1349,7 @@ textarea {
   background-color: #cc0000;
 }
 .main-footer__container {
-  color: #ffffff;
+  color: #fff;
 }
 .main-footer__separator {
   border: 0;
