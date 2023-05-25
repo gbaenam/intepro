@@ -85,35 +85,14 @@
     @include from(541px) {
         padding: 0;
     }
-
-    // @include from(541px) {
-    //     padding-top: .5rem;
-    //     padding-bottom: 1rem;
-    // }
-
-    // @include from(xmedium) {
-    //     padding-top: 1rem;
-    // }
-
-    // @include from(xxmedium) {
-    //     padding-top: 1.5rem;
-    //     padding-bottom: 1.5rem;
-    // }
-
-    // @include from(xlarge) {
-    //     padding-top: 2rem;
-    //     padding-bottom: 2rem;
-    // }
 }
 
-
-// Todo: Pendiente de optimizar.
-.about-us-layout {
+// cards section
+.cards-layout {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    // padding-top: 1rem;
-    // padding-bottom: 1rem;
-    max-width: var(--max-width-layout);
+    max-width: $max-width;
 }
 
 
