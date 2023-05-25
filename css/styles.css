@@ -1102,7 +1102,38 @@ textarea {
   padding: var(--padding-text);
 }
 
-/* ---------------- cards.scss -------------------- */ /* ------------------ form.scss ---------------------- */
+/* ---------------- cards.scss -------------------- */
+.cards {
+  background: linear-gradient(180deg, #fff 50%, #000 50%);
+}
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  flex-grow: 1;
+  max-width: 450px;
+  flex-basis: 280px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.card__header {
+  flex-grow: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__image {
+  bottom: 1.5em;
+  position: relative;
+}
+
+/* ------------------ form.scss ---------------------- */
 .form {
   --height-form-container-height: 100%;
   --font-size-form-title: 2.6875rem;
