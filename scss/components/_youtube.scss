@@ -42,7 +42,7 @@
 
 
 .youtube {
-  padding: var(--padding-layout);
+  // padding: var(--padding-layout);
 
   &__content {
     display: flex;
@@ -50,7 +50,7 @@
     flex-direction: column;
     background-color: #fafbfa;
     max-width: var(--max-width-youtube-content);
-    border-radius: var(--border-radius-youtube-content);
+    // border-radius: var(--border-radius-youtube-content);
   }
 
   &__header {

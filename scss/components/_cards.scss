@@ -3,13 +3,13 @@
 /* ---------------- cards.scss -------------------- */
 
 .cards {
-    background: linear-gradient(180deg, #fff 50%, #000 50%);
+    // background: linear-gradient(180deg, #fff 50%, #000 50%);
 
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
+        // justify-content: center;
+        // gap: 3rem;
 
 
         // min-height: 100vh;
@@ -22,28 +22,30 @@
     flex-basis: 280px;
     background-color: #fff;
 
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    width: 100%;
 
-    display: flex;
-    flex-direction: column;
+    // box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
-    &__header {
-        flex-grow: 1;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // display: flex;
+    // flex-direction: column;
 
-    &__image {
-        bottom: 1.5em;
-        position: relative;
-    }
+    // &__header {
+    //     flex-grow: 1;
+    //     width: 95%;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 
-    &__footer {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // &__image {
+    //     bottom: 1.5em;
+    //     position: relative;
+    // }
+
+    // &__footer {
+    //     width: 90%;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 }
 
 
