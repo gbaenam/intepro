@@ -7,24 +7,16 @@
 }
 
 :root {
-  --padding-layout: 0 0.6rem;
   --padding-text: 0 8px;
 }
 @media screen and (min-width: 360px) {
   :root {
-    --padding-layout: 0 0.8rem;
     --padding-text: 0 10px;
   }
 }
 @media screen and (min-width: 412px) {
   :root {
-    --padding-layout: 0 1rem;
     --padding-text: 0 12px;
-  }
-}
-@media screen and (min-width: 541px) {
-  :root {
-    --padding-layout: 0;
   }
 }
 @media screen and (min-width: 740px) {

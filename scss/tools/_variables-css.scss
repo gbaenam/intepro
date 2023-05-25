@@ -18,23 +18,23 @@
 
 // Padding para viewport de móvil
 :root {
-    --padding-layout: 0 0.6rem;
+    // --padding-layout: 0 0.6rem;
 
     --padding-text: 0 8px;
 
     @include from(360px) {
-        --padding-layout: 0 0.8rem;
+        // --padding-layout: 0 0.8rem;
         --padding-text: 0 10px;
     }
 
     @include from(412px) {
-        --padding-layout: 0 1rem;
+        // --padding-layout: 0 1rem;
         --padding-text: 0 12px;
     }
 
-    @include from(541px) {
-        --padding-layout: 0;
-    }
+    // @include from(541px) {
+    //     --padding-layout: 0;
+    // }
 
     @include from(740px) {
         --padding-text: 0;
