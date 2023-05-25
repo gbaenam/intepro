@@ -1101,28 +1101,7 @@ textarea {
   padding: var(--padding-text);
 }
 
-/* ---------------- about-us.scss -------------------- */
-.about-us {
-  padding: var(--padding-layout);
-  background-color: #e7e7e7;
-}
-.about-us__content {
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background-color: #fff;
-  height: 500px;
-}
-@media screen and (min-width: 541px) {
-  .about-us__content {
-    background-color: #e7e7e7;
-  }
-}
-.about-us__title {
-  margin-bottom: 2em;
-}
-
-/* ------------------ form.scss ---------------------- */
+/* ---------------- cards.scss -------------------- */ /* ------------------ form.scss ---------------------- */
 .form {
   --height-form-container-height: 100%;
   --font-size-form-title: 2.6875rem;
