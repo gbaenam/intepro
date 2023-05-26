@@ -843,7 +843,7 @@ textarea {
   gap: 16px;
   font-size: 1rem;
   padding-bottom: 1.2rem;
-  background-color: #e7e7e7;
+  background-color: #fff;
 }
 @media screen and (min-width: 541px) {
   .main {
@@ -863,11 +863,6 @@ textarea {
 @media screen and (min-width: 1280px) {
   .main {
     gap: 90px;
-  }
-}
-@media screen and (min-width: 541px) {
-  .main {
-    background-color: #fafbfa;
   }
 }
 
@@ -1034,8 +1029,14 @@ textarea {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #fafbfa;
+  background-color: #fff;
   max-width: var(--max-width-youtube-content);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 541px) {
+  .youtube__content {
+    box-shadow: none;
+  }
 }
 .youtube__header {
   width: 100%;
@@ -1088,6 +1089,11 @@ textarea {
 }
 
 /* ---------------- cards.scss -------------------- */
+@media screen and (min-width: 986px) {
+  .cards {
+    background: linear-gradient(180deg, #fff 50%, #000 50%);
+  }
+}
 .cards__container {
   gap: 3rem;
   display: flex;
@@ -1100,6 +1106,24 @@ textarea {
   max-width: 450px;
   flex-basis: 280px;
   background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+.card__header {
+  flex-grow: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__image {
+  bottom: 2em;
+  position: relative;
+}
+.card__footer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ------------------ form.scss ---------------------- */

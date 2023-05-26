@@ -27,10 +27,12 @@
     padding-bottom: 1.2rem;
     // background-color: $color-light-gray-alt;
 
-    background-color: #e7e7e7;
+    // background-color: #e7e7e7;
 
-    @include from(541px) {
-        // background-color: #fff;
-        background-color: #fafbfa;
-    }
+    background-color: #fff;
+
+    // @include from(541px) {
+    //     // background-color: #fff;
+    //     background-color: #fafbfa;
+    // }
 }
