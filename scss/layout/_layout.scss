@@ -3,13 +3,11 @@
 /* ------------------ _layout.scss ---------------------- */
 
 .main-header-layout {
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    min-width: $min-width;
-    padding: var(--padding-layout);
-    max-width: var(--max-width-layout);
+    max-width: $max-width;
 }
 
 
@@ -28,12 +26,6 @@
     @include from(541px) {
         padding-top: 4rem;
     }
-
-    // Wide 560px
-    // @include from(560px) {
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
 
     // Wide 960px
     @include from(xxmedium) {
@@ -62,9 +54,10 @@
 
 // Todo: Pendiente de optimizar.
 .youtube-layout {
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--max-width-layout);
+    max-width: var(--max-width);
 
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -87,7 +80,7 @@
     }
 }
 
-// cards section
+
 .cards-layout {
     width: 95%;
     margin-left: auto;
@@ -98,10 +91,10 @@
 
 .social-bar-layout,
 .main-footer-layout {
-    // Todo: Pendiente width y height definir al 100%
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--max-width-layout);
+    max-width: $max-width;
 }
 
 

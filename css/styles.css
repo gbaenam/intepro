@@ -336,13 +336,11 @@ textarea {
 
 /* ------------------ _layout.scss ---------------------- */
 .main-header-layout {
-  width: 100%;
+  width: 95%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
-  padding: var(--padding-layout);
-  max-width: var(--max-width-layout);
+  max-width: 1430px;
 }
 
 .banner-layout {
@@ -384,9 +382,10 @@ textarea {
 }
 
 .youtube-layout {
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--max-width-layout);
+  max-width: var(--max-width);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -421,9 +420,10 @@ textarea {
 
 .social-bar-layout,
 .main-footer-layout {
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--max-width-layout);
+  max-width: 1430px;
 }
 
 .main-footer-layout {
