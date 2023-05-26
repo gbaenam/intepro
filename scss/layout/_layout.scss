@@ -3,11 +3,22 @@
 /* ------------------ _layout.scss ---------------------- */
 
 .main-header-layout {
-    width: 95%;
     height: 100%;
+}
+
+.main-header-layout,
+.youtube-layout,
+.cards-layout,
+.social-bar-layout,
+.main-footer-layout {
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     max-width: $max-width;
+
+    @include from(large) {
+        width: 100%;
+    }
 }
 
 
@@ -54,11 +65,6 @@
 
 // Todo: Pendiente de optimizar.
 .youtube-layout {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--max-width);
-
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -78,23 +84,6 @@
     @include from(541px) {
         padding: 0;
     }
-}
-
-
-.cards-layout {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $max-width;
-}
-
-
-.social-bar-layout,
-.main-footer-layout {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $max-width;
 }
 
 

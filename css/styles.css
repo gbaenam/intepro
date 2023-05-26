@@ -336,11 +336,27 @@ textarea {
 
 /* ------------------ _layout.scss ---------------------- */
 .main-header-layout {
-  width: 95%;
   height: 100%;
+}
+
+.main-header-layout,
+.youtube-layout,
+.cards-layout,
+.social-bar-layout,
+.main-footer-layout {
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   max-width: 1430px;
+}
+@media screen and (min-width: 1024px) {
+  .main-header-layout,
+  .youtube-layout,
+  .cards-layout,
+  .social-bar-layout,
+  .main-footer-layout {
+    width: 100%;
+  }
 }
 
 .banner-layout {
@@ -382,10 +398,6 @@ textarea {
 }
 
 .youtube-layout {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--max-width);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -409,21 +421,6 @@ textarea {
   .youtube-layout {
     padding: 0;
   }
-}
-
-.cards-layout {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1430px;
-}
-
-.social-bar-layout,
-.main-footer-layout {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1430px;
 }
 
 .main-footer-layout {
