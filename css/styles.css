@@ -1073,7 +1073,7 @@ textarea {
   display: block;
   padding-bottom: 100%;
 }
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 541px) {
   .youtube__video {
     border-left: 1px solid #e7e7e7;
     border-right: 1px solid #e7e7e7;
@@ -1092,8 +1092,10 @@ textarea {
 
 /* ---------------- cards.scss -------------------- */
 .cards__container {
+  gap: 3rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -1101,7 +1103,6 @@ textarea {
   max-width: 450px;
   flex-basis: 280px;
   background-color: #fff;
-  width: 100%;
 }
 
 /* ------------------ form.scss ---------------------- */

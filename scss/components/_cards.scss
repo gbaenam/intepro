@@ -6,10 +6,10 @@
     // background: linear-gradient(180deg, #fff 50%, #000 50%);
 
     &__container {
+        gap: 3rem;
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
-        // gap: 3rem;
+        justify-content: center;
 
 
         // min-height: 100vh;
@@ -22,7 +22,8 @@
     flex-basis: 280px;
     background-color: #fff;
 
-    width: 100%;
+
+    // padding: var(--padding-text);
 
     // box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 

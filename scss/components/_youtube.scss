@@ -86,7 +86,7 @@
     border-top: 1px solid $color-light-gray-alt;
     border-bottom: 1px solid $color-light-gray-alt;
 
-    @include from(725px) {
+    @include from(541px) {
       border-left: 1px solid $color-light-gray-alt;
       border-right: 1px solid $color-light-gray-alt;
     }
