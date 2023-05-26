@@ -40,8 +40,12 @@
     }
 
     &__image {
-        bottom: 2em;
+        bottom: 1.5rem;
         position: relative;
+
+        @include from(986px) {
+            bottom: 2rem;
+        }
     }
 
     &__footer {

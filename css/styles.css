@@ -1117,8 +1117,13 @@ textarea {
   margin-right: auto;
 }
 .card__image {
-  bottom: 2em;
+  bottom: 1.5rem;
   position: relative;
+}
+@media screen and (min-width: 986px) {
+  .card__image {
+    bottom: 2rem;
+  }
 }
 .card__footer {
   width: 90%;
