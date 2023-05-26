@@ -28,7 +28,7 @@
         --padding-text: 0 12px;
     }
 
-    @include from(740px) {
+    @include from(541px) {
         --padding-text: 0;
     }
 }

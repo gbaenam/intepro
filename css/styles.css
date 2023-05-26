@@ -19,7 +19,7 @@
     --padding-text: 0 12px;
   }
 }
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 541px) {
   :root {
     --padding-text: 0;
   }
