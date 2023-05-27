@@ -1016,6 +1016,9 @@ textarea {
   }
 }
 
+.youtube {
+  background-color: #fafbfa;
+}
 .youtube__content {
   display: flex;
   align-items: center;
