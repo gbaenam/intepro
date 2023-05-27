@@ -471,7 +471,7 @@ textarea {
 
 .button {
   color: #fff;
-  padding: 0.3em 0;
+  padding: 0.15em 0;
   font-weight: 500;
   border-radius: 2em;
   border: 0.125em solid;
@@ -1075,9 +1075,13 @@ textarea {
 }
 
 /* ---------------- cards.scss -------------------- */
+.cards {
+  background-color: #fafbfa;
+  padding-top: 1.5rem;
+}
 @media screen and (min-width: 986px) {
   .cards {
-    background: linear-gradient(180deg, #fff 50%, #000 50%);
+    background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
   }
 }
 .cards__container {

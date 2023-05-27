@@ -4,8 +4,12 @@
 
 .cards {
 
+    background-color: #fafbfa;
+    // background-color: $color-red-canada-alt;
+    padding-top: 1.5rem;
+
     @include from(986px) {
-        background: linear-gradient(180deg, #fff 50%, #000 50%);
+        background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
     }
 
     &__container {
@@ -24,6 +28,9 @@
     max-width: 450px;
     flex-basis: 280px;
     background-color: #fff;
+
+    // position: relative;
+    // bottom: 1rem;
 
 
 
