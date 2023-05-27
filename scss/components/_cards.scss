@@ -64,7 +64,19 @@
 
     &__description {
         color: $color-very-dark-text;
-        font-family: $font-family-body;
+        // font-family: $font-family-body;
+
+        // font-size: 20px;
+
+        // // Wide 1280px
+        // @include from(xlarge) {
+        //     font-size: 16px;
+        // }
+
+        font-family: 'Manrope', sans-serif;
+
+        font-size: 16px;
+
     }
 
     &__footer {
