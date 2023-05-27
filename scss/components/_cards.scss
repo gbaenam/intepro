@@ -62,6 +62,11 @@
         margin-bottom: .5rem;
     }
 
+    &__description {
+        color: $color-very-dark-text;
+        font-family: $font-family-body;
+    }
+
     &__footer {
         width: 90%;
         margin-left: auto;

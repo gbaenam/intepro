@@ -1120,6 +1120,10 @@ textarea {
   font-size: 22px;
   margin-bottom: 0.5rem;
 }
+.card__description {
+  color: #333333;
+  font-family: "Bitter", serif;
+}
 .card__footer {
   width: 90%;
   margin-left: auto;
