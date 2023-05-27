@@ -57,6 +57,11 @@
         }
     }
 
+    &__title {
+        font-size: 22px;
+        margin-bottom: .5rem;
+    }
+
     &__footer {
         width: 90%;
         margin-left: auto;
@@ -71,10 +76,10 @@
         color: #fff;
         // background-color: $blue-dark;
         background-color: #0279d3;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-family: $font-family-primary;
         font-weight: 500;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 

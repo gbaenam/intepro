@@ -1116,6 +1116,10 @@ textarea {
     bottom: 2rem;
   }
 }
+.card__title {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
 .card__footer {
   width: 90%;
   margin-left: auto;
@@ -1127,10 +1131,9 @@ textarea {
   padding: 0.4em 1.5em;
   color: #fff;
   background-color: #0279d3;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* ------------------ form.scss ---------------------- */
