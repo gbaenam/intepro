@@ -344,19 +344,10 @@ textarea {
 .cards-layout,
 .social-bar-layout,
 .main-footer-layout {
-  width: 95%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   max-width: 1430px;
-}
-@media screen and (min-width: 1024px) {
-  .main-header-layout,
-  .youtube-layout,
-  .cards-layout,
-  .social-bar-layout,
-  .main-footer-layout {
-    width: 90%;
-  }
 }
 
 .banner-layout {
@@ -843,7 +834,7 @@ textarea {
   gap: 16px;
   font-size: 1rem;
   padding-bottom: 1.2rem;
-  background-color: #fff;
+  background-color: #e7e7e7;
 }
 @media screen and (min-width: 541px) {
   .main {
@@ -1029,18 +1020,11 @@ textarea {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fafbfa;
   max-width: var(--max-width-youtube-content);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-@media screen and (min-width: 541px) {
-  .youtube__content {
-    box-shadow: none;
-  }
 }
 .youtube__header {
   width: 100%;
-  padding: var(--padding-text);
 }
 .youtube__title, .youtube__subtitle {
   text-align: var(--text-align-youtube-title-subtitle);
@@ -1085,7 +1069,6 @@ textarea {
 }
 .youtube__description {
   width: 100%;
-  padding: var(--padding-text);
 }
 
 /* ---------------- cards.scss -------------------- */
