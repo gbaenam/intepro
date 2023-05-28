@@ -1081,7 +1081,7 @@ textarea {
     background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
   }
 }
-.cards__container {
+.cards__wrapper {
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;
