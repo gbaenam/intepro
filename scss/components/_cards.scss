@@ -79,7 +79,11 @@
         // font-family: 'Roboto Serif', serif;
         // color: #000;
 
-        font-size: 18px;
+        font-size: 20px;
+
+        @include from(large) {
+            font-size: 18px;
+        }
         font-weight: 400;
 
     }

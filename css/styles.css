@@ -1123,8 +1123,13 @@ textarea {
 .card__description {
   color: #333333;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .card__description {
+    font-size: 18px;
+  }
 }
 .card__footer {
   width: 90%;
