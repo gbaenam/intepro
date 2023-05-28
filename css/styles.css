@@ -86,8 +86,6 @@
 body {
   margin: 0;
   background-color: #f5f8ff;
-  font-family: "Bitter", serif;
-  font-weight: var(--font-weight-body);
 }
 
 img {
@@ -1119,17 +1117,13 @@ textarea {
 .card__title {
   font-size: 22px;
   margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
 }
 .card__description {
   color: #333333;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-}
-@media screen and (min-width: 1024px) {
-  .card__description {
-    font-size: 18px;
-  }
 }
 .card__footer {
   width: 90%;
