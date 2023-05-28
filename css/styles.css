@@ -1075,7 +1075,6 @@ textarea {
 /* ---------------- cards.scss -------------------- */
 .cards {
   background-color: #fafbfa;
-  padding-top: 1.5rem;
 }
 @media screen and (min-width: 986px) {
   .cards {
@@ -1118,6 +1117,7 @@ textarea {
   font-size: 22px;
   margin-bottom: 0.5rem;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 .card__description {
   color: #333333;
@@ -1136,9 +1136,9 @@ textarea {
   padding: 0.4em 1.5em;
   color: #fff;
   background-color: #0279d3;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.125em;
 }
 
 /* ------------------ form.scss ---------------------- */
