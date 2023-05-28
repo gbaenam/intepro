@@ -832,7 +832,7 @@ textarea {
   gap: 16px;
   font-size: 1rem;
   padding-bottom: 1.2rem;
-  background-color: #fafbfa;
+  background-color: #e7e7e7;
 }
 @media screen and (min-width: 541px) {
   .main {
@@ -1090,12 +1090,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 1.5rem;
-}
-@media screen and (min-width: 1040px) {
-  .cards__wrapper {
-    padding-top: 2rem;
-  }
+  padding-top: 1rem;
 }
 
 .card {
@@ -1115,13 +1110,8 @@ textarea {
   margin-right: auto;
 }
 .card__image {
-  bottom: 1.5rem;
+  bottom: 1rem;
   position: relative;
-}
-@media screen and (min-width: 1040px) {
-  .card__image {
-    bottom: 2rem;
-  }
 }
 .card__title {
   font-size: 22px;
@@ -1129,6 +1119,7 @@ textarea {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  color: #cc0000;
 }
 .card__description {
   color: #333333;

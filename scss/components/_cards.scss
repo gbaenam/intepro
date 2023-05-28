@@ -22,11 +22,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        padding-top: 1.5rem;
+        padding-top: 1rem;
 
-        @include from(1040px) {
-            padding-top: 2rem;
-        }
+        // @include from(1040px) {
+        //     padding-top: 2rem;
+        // }
 
         // min-height: 100vh;
     }
@@ -58,16 +58,16 @@
     }
 
     &__image {
-        bottom: 1.5rem;
+        bottom: 1rem;
         position: relative;
 
         // aspect-ratio: 1 / .7;
         // object-fit: cover;
         // width: 85%;
 
-        @include from(1040px) {
-            bottom: 2rem;
-        }
+        // @include from(1040px) {
+        //     bottom: 2rem;
+        // }
     }
 
     &__title {
@@ -77,6 +77,7 @@
         font-weight: 500;
 
         text-transform: uppercase;
+        color: $color-red-canada-alt;
         // text-align: center;
     }
 
