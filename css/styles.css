@@ -832,7 +832,7 @@ textarea {
   gap: 16px;
   font-size: 1rem;
   padding-bottom: 1.2rem;
-  background-color: #e7e7e7;
+  background-color: #fafbfa;
 }
 @media screen and (min-width: 541px) {
   .main {
@@ -1076,16 +1076,26 @@ textarea {
 .cards {
   background-color: #fafbfa;
 }
-@media screen and (min-width: 986px) {
+@media screen and (min-width: 1040px) {
   .cards {
     background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
   }
+}
+.cards__title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .cards__wrapper {
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 1040px) {
+  .cards__wrapper {
+    padding-top: 2rem;
+  }
 }
 
 .card {
@@ -1108,7 +1118,7 @@ textarea {
   bottom: 1.5rem;
   position: relative;
 }
-@media screen and (min-width: 986px) {
+@media screen and (min-width: 1040px) {
   .card__image {
     bottom: 2rem;
   }
@@ -1118,6 +1128,7 @@ textarea {
   margin-bottom: 0.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .card__description {
   color: #333333;

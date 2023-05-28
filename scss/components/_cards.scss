@@ -6,10 +6,14 @@
 
     background-color: #fafbfa;
     // background-color: $color-red-canada-alt;
-    // padding-top: 1.5rem;
 
-    @include from(986px) {
+    @include from(1040px) {
         background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
     &__wrapper {
@@ -18,6 +22,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        padding-top: 1.5rem;
+
+        @include from(1040px) {
+            padding-top: 2rem;
+        }
 
         // min-height: 100vh;
     }
@@ -52,7 +61,11 @@
         bottom: 1.5rem;
         position: relative;
 
-        @include from(986px) {
+        // aspect-ratio: 1 / .7;
+        // object-fit: cover;
+        // width: 85%;
+
+        @include from(1040px) {
             bottom: 2rem;
         }
     }
@@ -62,6 +75,9 @@
         margin-bottom: .5rem;
         font-family: $font-family-menu;
         font-weight: 500;
+
+        text-transform: uppercase;
+        // text-align: center;
     }
 
     &__description {
