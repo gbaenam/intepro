@@ -57,17 +57,24 @@
         margin-right: auto;
     }
 
-    &__image {
+    &__images {
         bottom: 1rem;
         position: relative;
 
-        // aspect-ratio: 1 / .7;
-        // object-fit: cover;
+    }
+
+    &__image {
+        aspect-ratio: 1 / .7;
+        object-fit: cover;
         // width: 85%;
 
-        // @include from(1040px) {
-        //     bottom: 2rem;
-        // }
+    }
+
+    &__logo {
+        top: 1px;
+        left: 10px;
+        width: 70%;
+        position: absolute;
     }
 
     &__title {
