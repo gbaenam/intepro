@@ -1082,10 +1082,25 @@ textarea {
   }
 }
 .cards__title {
+  font-family: "Poppins", sans-serif;
+  font-size: calc(2em + 1vw);
   text-align: center;
+  margin-bottom: 0.1em;
+  font-weight: 600;
 }
 .cards__description {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
   text-align: center;
+  font-size: calc(1em + 1vw);
+  font-weight: 400;
+  color: #333333;
+}
+.cards__description span {
+  text-transform: uppercase;
+}
+.cards__title span {
+  color: #cc0000;
 }
 .cards__wrapper {
   gap: 3rem;
@@ -1097,7 +1112,7 @@ textarea {
 
 .card {
   flex-grow: 1;
-  max-width: 400px;
+  max-width: 450px;
   flex-basis: 280px;
   background-color: #fff;
   font-size: 1rem;

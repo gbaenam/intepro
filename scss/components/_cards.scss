@@ -12,12 +12,32 @@
     }
 
     &__title {
+        font-family: $font-family-primary;
+        font-size: calc(2em + 1vw);
         text-align: center;
-        // margin-bottom: 2rem;
+        margin-bottom: .1em;
+        font-weight: 600;
     }
 
     &__description {
+        // font-family: $font-family-primary;
+        // font-weight: 500;
+        font-family: $font-family-tertiary;
+        // text-transform: uppercase;
+        margin-bottom: 1rem;
         text-align: center;
+        font-size: calc(1em + 1vw);
+
+        font-weight: 400;
+        color: $color-very-dark-text;
+    }
+
+    &__description span {
+        text-transform: uppercase;
+    }
+
+    &__title span {
+        color: $color-red-canada-alt;
     }
 
     &__wrapper {
@@ -38,7 +58,7 @@
 
 .card {
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 450px;
     flex-basis: 280px;
     background-color: #fff;
     font-size: 1rem; // Todo: Referencia para medidas "em"
