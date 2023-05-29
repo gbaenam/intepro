@@ -13,7 +13,11 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
+    }
+
+    &__description {
+        text-align: center;
     }
 
     &__wrapper {
@@ -34,14 +38,10 @@
 
 .card {
     flex-grow: 1;
-    max-width: 450px;
+    max-width: 400px;
     flex-basis: 280px;
     background-color: #fff;
-
-    // position: relative;
-    // bottom: 1rem;
-
-    font-size: 1rem;
+    font-size: 1rem; // Todo: Referencia para medidas "em"
 
 
 
@@ -51,8 +51,8 @@
     flex-direction: column;
 
     &__header {
-        flex-grow: 1;
         width: 90%;
+        flex-grow: 1;
         margin-left: auto;
         margin-right: auto;
     }
@@ -64,17 +64,25 @@
     }
 
     &__image {
-        aspect-ratio: 1 / .7;
         object-fit: cover;
-        // width: 85%;
-
+        aspect-ratio: 1 / .5;
+        object-position: left 40%;
     }
 
     &__logo {
+        position: absolute;
+    }
+
+    &__bcs {
         top: 1px;
         left: 10px;
-        width: 70%;
-        position: absolute;
+        width: 65%;
+    }
+
+    &__cibc {
+        top: 3px;
+        left: 8px;
+        width: 40%;
     }
 
     &__title {
