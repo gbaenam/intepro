@@ -19,26 +19,23 @@
         font-weight: 600;
     }
 
-    &__description {
-        // font-family: $font-family-primary;
-        // font-weight: 500;
-        font-family: $font-family-tertiary;
-        // text-transform: uppercase;
-        margin-bottom: 1rem;
-        text-align: center;
-        font-size: calc(1em + 1vw);
-
-        font-weight: 400;
-        color: $color-very-dark-text;
-    }
-
-    &__description span {
-        text-transform: uppercase;
-    }
-
     &__title span {
         color: $color-red-canada-alt;
     }
+
+    &__subtitle {
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: .6em;
+        font-size: calc(1em + 1vw);
+        color: $color-very-dark-text;
+        font-family: $font-family-tertiary;
+    }
+
+    &__subtitle span {
+        text-transform: uppercase;
+    }
+
 
     &__wrapper {
         gap: 3rem;
@@ -48,12 +45,30 @@
 
         padding-top: 1rem;
 
-        // @include from(1040px) {
-        //     padding-top: 2rem;
-        // }
-
-        // min-height: 100vh;
+        margin-bottom: 1rem;
     }
+
+    &__footer {
+        text-align: center;
+
+        @include from(1040px) {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+
+
+
+    // &__footer p {
+    //     font-size: calc(1.3em + .5vw);
+    //     margin-bottom: .5rem;
+    //     font-family: $font-family-menu;
+    //     text-transform: uppercase;
+    //     font-weight: 500;
+    // }
+
+
+
 }
 
 .card {
@@ -89,17 +104,21 @@
         object-position: left 40%;
     }
 
+    &__info {
+        font-family: $font-family-menu;
+    }
+
     &__logo {
         position: absolute;
     }
 
-    &__bcs {
+    &__logo--bcs {
         top: 1px;
         left: 10px;
         width: 65%;
     }
 
-    &__cibc {
+    &__logo--cibc {
         top: 3px;
         left: 8px;
         width: 35%;
@@ -108,7 +127,7 @@
     &__title {
         font-size: 22px;
         margin-bottom: .5rem;
-        font-family: $font-family-menu;
+        // font-family: $font-family-menu;
         font-weight: 500;
 
         text-transform: uppercase;
@@ -119,7 +138,7 @@
     &__description {
         color: $color-very-dark-text;
 
-        font-family: $font-family-menu;
+        // font-family: $font-family-menu;
 
         font-size: 18px;
 

@@ -1088,19 +1088,19 @@ textarea {
   margin-bottom: 0.1em;
   font-weight: 600;
 }
-.cards__description {
-  font-family: "Ubuntu", sans-serif;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: calc(1em + 1vw);
-  font-weight: 400;
-  color: #333333;
-}
-.cards__description span {
-  text-transform: uppercase;
-}
 .cards__title span {
   color: #cc0000;
+}
+.cards__subtitle {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.6em;
+  font-size: calc(1em + 1vw);
+  color: #333333;
+  font-family: "Ubuntu", sans-serif;
+}
+.cards__subtitle span {
+  text-transform: uppercase;
 }
 .cards__wrapper {
   gap: 3rem;
@@ -1108,6 +1108,16 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cards__footer {
+  text-align: center;
+}
+@media screen and (min-width: 1040px) {
+  .cards__footer {
+    color: #fff;
+    background-color: #000;
+  }
 }
 
 .card {
@@ -1135,15 +1145,18 @@ textarea {
   aspect-ratio: 1/0.5;
   object-position: left 40%;
 }
+.card__info {
+  font-family: "Roboto", sans-serif;
+}
 .card__logo {
   position: absolute;
 }
-.card__bcs {
+.card__logo--bcs {
   top: 1px;
   left: 10px;
   width: 65%;
 }
-.card__cibc {
+.card__logo--cibc {
   top: 3px;
   left: 8px;
   width: 35%;
@@ -1151,14 +1164,12 @@ textarea {
 .card__title {
   font-size: 22px;
   margin-bottom: 0.5rem;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #cc0000;
 }
 .card__description {
   color: #333333;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
