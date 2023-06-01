@@ -1126,6 +1126,58 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+.cards__figure {
+  bottom: 1rem;
+  position: relative;
+}
+.cards__image {
+  object-fit: cover;
+  aspect-ratio: 1/0.5;
+  object-position: left 40%;
+}
+.cards__logo {
+  position: absolute;
+}
+.cards__logo--bcs {
+  top: 1px;
+  left: 10px;
+  width: 65%;
+}
+.cards__logo--cibc {
+  top: 3px;
+  left: 8px;
+  width: 35%;
+}
+.cards__content {
+  font-family: "Roboto", sans-serif;
+}
+.cards__article-title {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+.cards__article-text {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+}
+.cards__article-footer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 0;
+}
+.cards__link {
+  display: inline-block;
+  padding: 0.4em 1.5em;
+  color: #fff;
+  background-color: #0279d3;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+}
 .cards__footer {
   text-align: center;
 }
@@ -1134,59 +1186,6 @@ textarea {
     color: #fff;
     background-color: #000;
   }
-}
-
-.card__images {
-  bottom: 1rem;
-  position: relative;
-}
-.card__image {
-  object-fit: cover;
-  aspect-ratio: 1/0.5;
-  object-position: left 40%;
-}
-.card__info {
-  font-family: "Roboto", sans-serif;
-}
-.card__logo {
-  position: absolute;
-}
-.card__logo--bcs {
-  top: 1px;
-  left: 10px;
-  width: 65%;
-}
-.card__logo--cibc {
-  top: 3px;
-  left: 8px;
-  width: 35%;
-}
-.card__title {
-  font-size: 22px;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #cc0000;
-}
-.card__description {
-  color: #333333;
-  font-size: 18px;
-  font-weight: 400;
-}
-.card__footer {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem 0;
-}
-.card__link {
-  display: inline-block;
-  padding: 0.4em 1.5em;
-  color: #fff;
-  background-color: #0279d3;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
 }
 
 /* ------------------ form.scss ---------------------- */
