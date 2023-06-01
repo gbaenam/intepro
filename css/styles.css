@@ -1081,6 +1081,9 @@ textarea {
     background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
   }
 }
+.cards__container {
+  font-family: "Roboto", sans-serif;
+}
 .cards__title {
   font-family: "Poppins", sans-serif;
   font-size: calc(2em + 1vw);
@@ -1097,7 +1100,6 @@ textarea {
   margin-bottom: 0.6em;
   font-size: calc(1.2em + 1vw);
   color: #333333;
-  font-family: "Roboto", sans-serif;
 }
 .cards__subtitle span {
   text-transform: uppercase;

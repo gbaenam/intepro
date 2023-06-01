@@ -11,6 +11,10 @@
         background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
     }
 
+    &__container {
+        font-family: $font-family-body-alt;
+    }
+
     &__title {
         font-family: $font-family-primary;
         font-size: calc(2em + 1vw);
@@ -29,8 +33,6 @@
         margin-bottom: .6em;
         font-size: calc(1.2em + 1vw);
         color: $color-very-dark-text;
-        // font-family: $font-family-tertiary;
-        font-family: $font-family-body-alt;
     }
 
     &__subtitle span {
