@@ -1132,8 +1132,13 @@ textarea {
 }
 .cards__image {
   object-fit: cover;
-  aspect-ratio: 1/0.5;
+  aspect-ratio: 1/0.7;
   object-position: left 40%;
+}
+@media screen and (min-width: 676px) {
+  .cards__image {
+    aspect-ratio: 1/0.5;
+  }
 }
 .cards__logo {
   position: absolute;

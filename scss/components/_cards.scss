@@ -77,8 +77,12 @@
 
     &__image {
         object-fit: cover;
-        aspect-ratio: 1 / .5;
+        aspect-ratio: 1 / .7;
         object-position: left 40%;
+
+        @include from(676px) {
+            aspect-ratio: 1 / .5;
+        }
     }
 
     &__logo {
