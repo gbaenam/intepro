@@ -12,7 +12,7 @@
     }
 
     &__container {
-        font-family: $font-family-body-alt;
+        font-family: $font-family-tempo;
     }
 
     &__title {
@@ -104,9 +104,9 @@
         width: 35%;
     }
 
-    &__content {
-        font-family: $font-family-menu;
-    }
+    // &__content {
+    //     font-family: $font-family-menu;
+    // }
 
     &__article-title {
         font-size: 22px;
@@ -145,7 +145,7 @@
         background-color: #0279d3;
         // text-transform: uppercase;
         // font-family: $font-family-primary;
-        font-family: $font-family-menu;
+        // font-family: $font-family-menu;
         font-weight: 500;
         font-size: 1.125em;
     }
@@ -161,7 +161,7 @@
 
     &__footer-title {
         text-transform: uppercase;
-        font-family: $font-family-body-alt;
+        // font-family: $font-family-body-alt;
         font-size: calc(1.2em + 1vw);
         font-weight: 500;
     }

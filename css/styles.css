@@ -1155,9 +1155,6 @@ textarea {
   left: 8px;
   width: 35%;
 }
-.cards__content {
-  font-family: "Roboto", sans-serif;
-}
 .cards__article-title {
   font-size: 22px;
   margin-bottom: 0.5rem;
@@ -1181,7 +1178,6 @@ textarea {
   padding: 0.4em 1.5em;
   color: #fff;
   background-color: #0279d3;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.125em;
 }
@@ -1196,7 +1192,6 @@ textarea {
 }
 .cards__footer-title {
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-size: calc(1.2em + 1vw);
   font-weight: 500;
 }
