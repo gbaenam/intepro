@@ -136,10 +136,10 @@ h1 {
 
 h2 {
   font-weight: 600;
-  color: #444444;
+  line-height: 120%;
   font-size: calc(2em + 1vw);
+  color: #444444;
   font-family: "Poppins", sans-serif;
-  line-height: 125%;
 }
 
 hr {
