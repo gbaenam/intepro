@@ -5,7 +5,6 @@
 .cards {
 
     background-color: #fafbfa;
-    // background-color: $color-red-canada-alt;
 
     @include from(1040px) {
         background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
@@ -16,11 +15,8 @@
     }
 
     &__title {
-        // font-family: $font-family-primary;
-        // font-size: calc(2em + 1vw);
         text-align: center;
         margin-bottom: .1em;
-        // font-weight: 600;
     }
 
     &__title span {

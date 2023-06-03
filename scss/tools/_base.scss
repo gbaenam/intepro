@@ -163,46 +163,46 @@ textarea {
 // Clases predefinidas
 
 // Subtítulos
-.caption {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: $color-darker-text;
-    font-family: $font-family-primary;
+// .caption {
+//     font-size: 22px;
+//     font-weight: 500;
+//     margin-bottom: 1rem;
+//     color: $color-darker-text;
+//     font-family: $font-family-primary;
 
-    @include from(360px) {
-        font-size: 24px;
-    }
+//     @include from(360px) {
+//         font-size: 24px;
+//     }
 
-    @include from(412px) {
-        font-size: 26px;
-    }
+//     @include from(412px) {
+//         font-size: 26px;
+//     }
 
-    @include from(medium) {
-        font-size: 28px;
-        margin-bottom: 1.2rem;
-    }
+//     @include from(medium) {
+//         font-size: 28px;
+//         margin-bottom: 1.2rem;
+//     }
 
-    @include from(720px) {
-        margin-bottom: 1.5rem;
-    }
+//     @include from(720px) {
+//         margin-bottom: 1.5rem;
+//     }
 
-    @include from(large) {
-        font-size: 32px;
-    }
+//     @include from(large) {
+//         font-size: 32px;
+//     }
 
-    @include from(llarge) {
-        margin-bottom: 2rem;
-    }
+//     @include from(llarge) {
+//         margin-bottom: 2rem;
+//     }
 
-    @include from(zzlarge) {
-        font-size: 38px;
-    }
+//     @include from(zzlarge) {
+//         font-size: 38px;
+//     }
 
-    @include from(ultrawide) {
-        font-size: 40px;
-    }
-}
+//     @include from(ultrawide) {
+//         font-size: 40px;
+//     }
+// }
 
 // Párrafos
 .paragraph {
