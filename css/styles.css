@@ -1016,9 +1016,6 @@ textarea {
     background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
   }
 }
-.cards__container {
-  font-family: "Roboto", sans-serif;
-}
 .cards__title {
   text-align: center;
   margin-bottom: 0.1em;
@@ -1037,14 +1034,14 @@ textarea {
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  justify-content: center;
 }
 .cards__article {
   flex-grow: 1;
-  max-width: 450px;
-  flex-basis: 280px;
+  max-width: 28.125rem;
+  flex-basis: 17.5rem;
   background-color: #fff;
   font-size: 1rem;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
@@ -1084,10 +1081,13 @@ textarea {
   left: 8px;
   width: 35%;
 }
+.cards__content {
+  font-family: "Roboto", sans-serif;
+}
 .cards__article-title {
   font-size: 22px;
-  margin-bottom: 0.5rem;
   font-weight: 500;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: #cc0000;
 }
