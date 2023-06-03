@@ -206,6 +206,13 @@ textarea {
   color: #495057;
 }
 
+.caption {
+  font-weight: 500;
+  font-size: calc(1.2em + 1vw);
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+}
+
 .paragraph {
   font-size: 20px;
   line-height: 150%;
@@ -1020,11 +1027,8 @@ textarea {
   color: #cc0000;
 }
 .cards__subtitle {
-  font-weight: 500;
   text-align: center;
   margin-bottom: 0.6em;
-  font-size: calc(1.2em + 1vw);
-  color: #333333;
 }
 .cards__subtitle span {
   text-transform: uppercase;

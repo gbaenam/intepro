@@ -163,6 +163,14 @@ textarea {
 // Clases predefinidas
 
 // Subtítulos
+.caption {
+    font-weight: 500;
+    font-size: calc(1.2em + 1vw);
+    color: $color-very-dark-text;
+    font-family: $font-family-tempo;
+}
+
+
 // .caption {
 //     font-size: 22px;
 //     font-weight: 500;
