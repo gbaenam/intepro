@@ -1027,12 +1027,6 @@ textarea {
   text-align: center;
   margin-bottom: 0.6em;
 }
-.cards__subtitle::before {
-  content: "¡";
-}
-.cards__subtitle::after {
-  content: "!";
-}
 .cards__subtitle span {
   text-transform: uppercase;
 }
