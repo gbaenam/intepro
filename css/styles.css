@@ -158,6 +158,12 @@ p {
   font-weight: 400;
   color: #444444;
   font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 a {
@@ -219,19 +225,6 @@ textarea {
   color: #444444;
   font-size: calc(1.2em + 1vw);
   font-family: "Roboto", sans-serif;
-}
-
-.paragraph {
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: -0.18px;
-  color: #333333;
-  font-family: "Bitter", serif;
-}
-@media screen and (min-width: 1921px) {
-  .paragraph {
-    font-size: 22px;
-  }
 }
 
 .icon {
@@ -1100,9 +1093,6 @@ textarea {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: #cc0000;
-}
-.cards__article-text {
-  font-size: 18px;
 }
 .cards__article-footer {
   width: 90%;

@@ -43,7 +43,7 @@ h6 {
 h1 {
     line-height: 1;
     font-weight: 400;
-    font-family: $font-family-primary;
+    font-family: $font-family-primary; // Todo: Optimizar!!
 }
 
 h1 {
@@ -96,6 +96,12 @@ p {
     font-weight: 400;
     color: $color-darker-text; //Todo: Optimizar!!
     font-family: $font-family-tempo; //Todo: Optimizar!!
+
+    font-size: 1.25rem;
+
+    @include from(large) {
+        font-size: 1.125rem;
+    }
 }
 
 
@@ -180,19 +186,6 @@ textarea {
     font-family: $font-family-tempo;
 }
 
-
-// Párrafos
-.paragraph {
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: -0.18px;
-    color: $color-very-dark-text;
-    font-family: $font-family-body;
-
-    @include from(1921px) {
-        font-size: 22px;
-    }
-}
 
 // Font Awesome Icons
 .icon {
