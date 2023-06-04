@@ -24,6 +24,15 @@
         margin-bottom: .6em;
     }
 
+    &__subtitle {
+        &::before {
+            content: "¡";
+        }
+        &::after {
+            content: "!";
+        }
+    }
+
     &__subtitle span {
         text-transform: uppercase;
     }
