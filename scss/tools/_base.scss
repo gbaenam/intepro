@@ -88,10 +88,9 @@ h3 {
 p {
     font-weight: 400;
     line-height: 140%;
+    font-size: 1.25rem;
     color: $color-darker-text; //Todo: Optimizar!!
     font-family: $font-family-tempo; //Todo: Optimizar!!
-
-    font-size: 1.25rem;
 
     @include from(large) {
         font-size: 1.125rem;
