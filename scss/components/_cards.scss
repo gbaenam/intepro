@@ -96,9 +96,9 @@
         top: 0.1875rem;
     }
 
-    &__content {
-        font-family: $font-family-tempo; // Todo: Optimizar!
-    }
+    // &__content {
+    //     font-family: $font-family-tempo; // Todo: Optimizar!
+    // }
 
     &__article-title {
         font-weight: 500;
@@ -109,13 +109,13 @@
     }
 
     &__article-text {
-        color: $color-very-dark-text;
+        // color: $color-very-dark-text;
 
         // font-family: $font-family-menu;
 
         font-size: 18px;
 
-        font-weight: 400;
+        // font-weight: 400;
     }
 
     &__article-footer {
@@ -141,7 +141,7 @@
 
     &__footer {
         text-align: center;
-        font-family: $font-family-tempo;
+        // font-family: $font-family-tempo;
 
         @include from(1040px) {
             color: #fff;
