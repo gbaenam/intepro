@@ -15,6 +15,15 @@
         margin-bottom: .1em;
     }
 
+    &__title {
+        &::before {
+            content: "¡";
+        }
+        &::after {
+            content: "!";
+        }
+    }
+
     &__title span {
         color: $color-red-canada-alt;
     }

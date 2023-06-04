@@ -1020,6 +1020,12 @@ textarea {
   text-align: center;
   margin-bottom: 0.1em;
 }
+.cards__title::before {
+  content: "¡";
+}
+.cards__title::after {
+  content: "!";
+}
 .cards__title span {
   color: #cc0000;
 }
