@@ -12,8 +12,11 @@
 
 body {
     margin: 0;
-                        // color: $color-body;
-    background-color: $background-color-body;
+    padding: 0;
+
+
+    // color: $color-body;
+    // background-color: $background-color-body;
 
     // font: {
     //     family: $font-family-body;
@@ -41,32 +44,46 @@ hr {
     margin-bottom: 0;
 }
 
-
 h1 {
-    line-height: 1;
+    font-size: calc(3em + 1vw);
+}
+
+h1,
+h2 {
+    font-family: $font-family-primary;
     font-weight: 400;
-    font-family: $font-family-primary; // Todo: Optimizar!!
+    line-height: 1;
 }
 
-h1 {
-    font-size: 2.625rem;
 
-    @include from(360px) {
-        font-size: 3rem;
-    }
+// h1 {
 
-    @include from(400px) {
-        font-size: 3.5rem;
-    }
+// }
+// h1 {
+//     line-height: 1;
+//     font-weight: 400;
+//     font-family: $font-family-primary; // Todo: Optimizar!!
+// }
 
-    @include from(medium) {
-        font-size: 4.125rem;
-    }
+// h1 {
+//     font-size: 2.625rem;
 
-    @include from(zzlarge) {
-        font-size: 4.375rem;
-    }
-}
+//     @include from(360px) {
+//         font-size: 3rem;
+//     }
+
+//     @include from(400px) {
+//         font-size: 3.5rem;
+//     }
+
+//     @include from(medium) {
+//         font-size: 4.125rem;
+//     }
+
+//     @include from(zzlarge) {
+//         font-size: 4.375rem;
+//     }
+// }
 
 
 h2 {
@@ -74,7 +91,6 @@ h2 {
     line-height: 120%;
     color: $color-darker-text;
     font-size: calc(2em + 1vw);
-    font-family: $font-family-primary; //Todo: Optimizar!!
 }
 
 
@@ -175,7 +191,7 @@ textarea {
 
 // Clases predefinidas
 
-// Subtítulos
+// Titulares
 .headline {
     font-weight: 500;
     margin-bottom: .6em;
