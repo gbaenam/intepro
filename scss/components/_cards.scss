@@ -104,7 +104,6 @@
     }
 
     // &__article-text {
-    //     font-size: 18px;
     // }
 
     &__article-footer {
@@ -130,19 +129,16 @@
 
     &__footer {
         text-align: center;
-        // font-family: $font-family-tempo;
+    }
+
+    &__footer-title {
+        text-transform: uppercase;
+        font-size: calc(1.2em + 1vw);
 
         @include from(1040px) {
             color: #fff;
             background-color: #000;
         }
-    }
-
-    &__footer-title {
-        text-transform: uppercase;
-        // font-family: $font-family-body-alt;
-        font-size: calc(1.2em + 1vw);
-        // font-weight: 500;
     }
 
 }

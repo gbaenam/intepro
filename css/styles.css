@@ -158,12 +158,7 @@ p {
   font-weight: 400;
   color: #444444;
   font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-}
-@media screen and (min-width: 1024px) {
-  p {
-    font-size: 1.125rem;
-  }
+  font-size: 18px;
 }
 
 a {
@@ -1111,15 +1106,15 @@ textarea {
 .cards__footer {
   text-align: center;
 }
-@media screen and (min-width: 1040px) {
-  .cards__footer {
-    color: #fff;
-    background-color: #000;
-  }
-}
 .cards__footer-title {
   text-transform: uppercase;
   font-size: calc(1.2em + 1vw);
+}
+@media screen and (min-width: 1040px) {
+  .cards__footer-title {
+    color: #fff;
+    background-color: #000;
+  }
 }
 
 /* ------------------ form.scss ---------------------- */

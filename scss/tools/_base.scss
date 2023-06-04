@@ -97,11 +97,13 @@ p {
     color: $color-darker-text; //Todo: Optimizar!!
     font-family: $font-family-tempo; //Todo: Optimizar!!
 
-    font-size: 1.25rem;
+    font-size: 18px;
 
-    @include from(large) {
-        font-size: 1.125rem;
-    }
+    // font-size: 1.25rem;
+
+    // @include from(large) {
+    //     font-size: 1.125rem;
+    // }
 }
 
 
