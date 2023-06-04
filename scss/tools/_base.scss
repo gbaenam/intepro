@@ -13,16 +13,6 @@
 body {
     margin: 0;
     padding: 0;
-
-
-    // color: $color-body;
-    // background-color: $background-color-body;
-
-    // font: {
-    //     family: $font-family-body;
-    //     size: var(--font-size-body);
-    //     weight: var(--font-weight-body);
-    // }
 }
 
 // Reset <img>
@@ -45,63 +35,30 @@ hr {
 }
 
 h1 {
+    line-height: 1;
     font-size: calc(3em + 1vw);
 }
-
-h1,
-h2 {
-    font-family: $font-family-primary;
-    font-weight: 400;
-    line-height: 1;
-}
-
-
-// h1 {
-
-// }
-// h1 {
-//     line-height: 1;
-//     font-weight: 400;
-//     font-family: $font-family-primary; // Todo: Optimizar!!
-// }
-
-// h1 {
-//     font-size: 2.625rem;
-
-//     @include from(360px) {
-//         font-size: 3rem;
-//     }
-
-//     @include from(400px) {
-//         font-size: 3.5rem;
-//     }
-
-//     @include from(medium) {
-//         font-size: 4.125rem;
-//     }
-
-//     @include from(zzlarge) {
-//         font-size: 4.375rem;
-//     }
-// }
-
 
 h2 {
     font-weight: 600;
     line-height: 120%;
-    color: $color-darker-text;
     font-size: calc(2em + 1vw);
 }
 
+h1,
+h2 {
+    color: $color-darker-text;
+    font-family: $font-family-primary; //Todo: Optimizar!!
+}
 
+h1,
 h3 {
     font-weight: 500;
 }
 
-
 p,
 h3 {
-    font-family: $font-family-tempo;
+    font-family: $font-family-tempo; //Todo: Optimizar!!
 }
 
 
@@ -110,7 +67,7 @@ p {
     font-weight: 400;
     line-height: 140%;
     font-size: 1.25rem;
-    color: $color-darker-text; //Todo: Optimizar!!
+    color: $color-darker-text;
 
     @include from(large) {
         font-size: 1.125rem;
