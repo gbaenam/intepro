@@ -63,7 +63,6 @@
 
   &__header {
     width: 100%;
-    // padding: var(--padding-text);
   }
 
   &__title,
@@ -73,8 +72,6 @@
 
   &__title {
     margin-bottom: .5rem;
-
-            // font-size: calc(2em + 1vw);
   }
 
   &__subtitle {
@@ -111,6 +108,5 @@
 
   &__description {
     width: 100%;
-    // padding: var(--padding-text);
   }
 }
