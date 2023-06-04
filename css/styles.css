@@ -1026,7 +1026,7 @@ textarea {
 .cards__title::after {
   content: "!";
 }
-.cards__title span {
+.cards__title::after, .cards__title span {
   color: #cc0000;
 }
 .cards__subtitle {

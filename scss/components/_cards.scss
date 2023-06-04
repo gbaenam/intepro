@@ -24,6 +24,7 @@
         }
     }
 
+    &__title::after,
     &__title span {
         color: $color-red-canada-alt;
     }
