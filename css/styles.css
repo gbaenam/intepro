@@ -114,6 +114,7 @@ h1 {
 h2 {
   font-weight: 600;
   line-height: 120%;
+  margin-bottom: 0.2em;
   font-size: calc(2em + 1vw);
 }
 
@@ -945,9 +946,6 @@ textarea {
 .youtube__title, .youtube__subtitle {
   text-align: var(--text-align-youtube-title-subtitle);
 }
-.youtube__title {
-  margin-bottom: 0.5rem;
-}
 .youtube__subtitle::before {
   content: "¡";
 }
@@ -998,7 +996,6 @@ textarea {
 }
 .cards__title {
   text-align: center;
-  margin-bottom: 0.1em;
 }
 .cards__title::before {
   content: "¡";

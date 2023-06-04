@@ -70,10 +70,6 @@
     text-align: var(--text-align-youtube-title-subtitle);
   }
 
-  &__title {
-    margin-bottom: .5rem;
-  }
-
   &__subtitle {
     &::before {
         content: "¡";
