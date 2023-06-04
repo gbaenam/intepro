@@ -80,7 +80,13 @@ h2 {
 
 h3 {
     font-weight: 500;
-    font-family: $font-family-tempo;  //Todo: Optimizar!!
+}
+
+
+p,
+h3,
+.caption {
+    font-family: $font-family-tempo;
 }
 
 
@@ -90,7 +96,6 @@ p {
     line-height: 140%;
     font-size: 1.25rem;
     color: $color-darker-text; //Todo: Optimizar!!
-    font-family: $font-family-tempo; //Todo: Optimizar!!
 
     @include from(large) {
         font-size: 1.125rem;
@@ -176,7 +181,6 @@ textarea {
     font-weight: 500;
     color: $color-darker-text;
     font-size: calc(1.2em + 1vw);
-    font-family: $font-family-tempo; //Todo: Optimizar!!
 }
 
 
