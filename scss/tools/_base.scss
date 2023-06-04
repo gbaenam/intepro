@@ -84,8 +84,7 @@ h3 {
 
 
 p,
-h3,
-.caption {
+h3 {
     font-family: $font-family-tempo;
 }
 
@@ -177,9 +176,8 @@ textarea {
 // Clases predefinidas
 
 // Subtítulos
-.caption {
+.headline {
     font-weight: 500;
-    color: $color-darker-text;
     font-size: calc(1.2em + 1vw);
 }
 

@@ -133,7 +133,7 @@
 
     &__footer-title {
         text-transform: uppercase;
-        font-size: calc(1.2em + 1vw);
+        // font-size: calc(1.2em + 1vw);
 
         @include from(1040px) {
             color: #fff;

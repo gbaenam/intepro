@@ -149,8 +149,7 @@ h3 {
 }
 
 p,
-h3,
-.caption {
+h3 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -220,9 +219,8 @@ textarea {
   color: #495057;
 }
 
-.caption {
+.headline {
   font-weight: 500;
-  color: #444444;
   font-size: calc(1.2em + 1vw);
 }
 
@@ -1112,7 +1110,6 @@ textarea {
 }
 .cards__footer-title {
   text-transform: uppercase;
-  font-size: calc(1.2em + 1vw);
 }
 @media screen and (min-width: 1040px) {
   .cards__footer-title {
