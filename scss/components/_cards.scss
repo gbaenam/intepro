@@ -24,8 +24,8 @@
         }
     }
 
-    &__title::after,
-    &__title span {
+    &__title span,
+    &__title::after {
         color: $color-red-canada-alt;
     }
 
@@ -49,17 +49,13 @@
 
     &__article {
         flex-grow: 1;
-        max-width: 28.125rem;
-        flex-basis: 17.5rem;
-        background-color: #fff;
-        font-size: 1rem; // Todo: Referencia para medidas "em"
-
-
-
-        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-
         display: flex;
+        flex-basis: 17.5rem;
+        max-width: 28.125rem;
         flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 0 0.375rem rgba(0, 0, 0, .5);
+        font-size: 1rem; // Todo: Referencia para medidas "em"
     }
 
     &__article-header {
@@ -89,15 +85,15 @@
     }
 
     &__logo--bcs {
-        top: 1px;
-        left: 10px;
         width: 65%;
+        left: 0.625rem;
+        top: 0.0625rem;
     }
 
     &__logo--cibc {
-        top: 3px;
-        left: 8px;
         width: 35%;
+        left: 0.5rem;
+        top: 0.1875rem;
     }
 
     &__content {
@@ -105,8 +101,8 @@
     }
 
     &__article-title {
-        font-size: 22px;
         font-weight: 500;
+        font-size: 1.375rem;
         margin-bottom: .5rem;
         text-transform: uppercase;
         color: $color-red-canada-alt;
@@ -145,6 +141,7 @@
 
     &__footer {
         text-align: center;
+        font-family: $font-family-tempo;
 
         @include from(1040px) {
             color: #fff;
@@ -160,4 +157,3 @@
     }
 
 }
-
