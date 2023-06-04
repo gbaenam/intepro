@@ -66,12 +66,19 @@ h1 {
     }
 }
 
+
 h2 {
     font-weight: 600;
     line-height: 120%;
     color: $color-darker-text;
     font-size: calc(2em + 1vw);
     font-family: $font-family-primary;
+}
+
+
+h3 {
+    font-weight: 500;
+    font-family: $font-family-tempo;  //Todo: Optimizar!!
 }
 
 
@@ -87,8 +94,8 @@ p {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    font-family: $font-family-tempo;
-    color: $color-darker-text;
+    color: $color-darker-text; //Todo: Optimizar!!
+    font-family: $font-family-tempo; //Todo: Optimizar!!
 }
 
 
