@@ -5,9 +5,7 @@
 .banner {
     // hero-image
     --objet-position-hero-image: center;
-    // call-us-now
-    --font-size-calle-us-now: 2rem;
-    --margin-bottom-call-us-now: 1rem;
+                     
     // flag
     --width-banner-flag: 2.8125rem;
     --height-banner-flag: 1.625rem;
@@ -15,8 +13,7 @@
     --font-size-banner-phone: 1.75rem;
 
     @include from(360px) {
-         // call-us-now
-        --font-size-calle-us-now: 2.25rem;
+                     
         // flag
         --width-banner-flag: 3rem;
         --height-banner-flag: 1.8125rem;
@@ -26,8 +23,7 @@
 
     // Wide 412px
     @include from(412px) {
-        // call-us-now
-        --font-size-calle-us-now: 2.375rem;
+                     
         // phone
         --font-size-banner-phone: 2.0625rem;
     }
@@ -70,8 +66,7 @@
 
     // Wide 1600px
     @include from(zlarge) {
-        // call-us-now
-        --font-size-calle-us-now: 3rem;
+                     
         // flag
         --width-banner-flag: 3.25rem;
         --height-banner-flag: 2.0625rem;
@@ -83,9 +78,7 @@
     @include from(zzlarge) {
         // hero-image
         --objet-position-hero-image: center top;
-        // call-us-now
-        --font-size-calle-us-now: 3.125rem;
-        --margin-bottom-call-us-now: 1.5rem;
+                     
     }
 }
 
@@ -125,8 +118,9 @@
     }
 
     &__subtitle {
-        font-size: var(--font-size-calle-us-now);
-        margin-bottom: var(--margin-bottom-call-us-now);
+
+        // font-size: var(--font-size-calle-us-now);
+        // margin-bottom: var(--margin-bottom-call-us-now);
 
         // line-height: 1;
                             color: #fff;

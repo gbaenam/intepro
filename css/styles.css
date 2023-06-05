@@ -207,6 +207,11 @@ textarea {
   font-size: calc(1.2em + 1vw);
 }
 
+.headline-big {
+  font-weight: 400;
+  font-size: calc(2em + 1vw);
+}
+
 .icon {
   position: relative;
 }
@@ -774,15 +779,12 @@ textarea {
 /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: center;
-  --font-size-calle-us-now: 2rem;
-  --margin-bottom-call-us-now: 1rem;
   --width-banner-flag: 2.8125rem;
   --height-banner-flag: 1.625rem;
   --font-size-banner-phone: 1.75rem;
 }
 @media screen and (min-width: 360px) {
   .banner {
-    --font-size-calle-us-now: 2.25rem;
     --width-banner-flag: 3rem;
     --height-banner-flag: 1.8125rem;
     --font-size-banner-phone: 1.9375rem;
@@ -790,7 +792,6 @@ textarea {
 }
 @media screen and (min-width: 412px) {
   .banner {
-    --font-size-calle-us-now: 2.375rem;
     --font-size-banner-phone: 2.0625rem;
   }
 }
@@ -826,7 +827,6 @@ textarea {
 }
 @media screen and (min-width: 1600px) {
   .banner {
-    --font-size-calle-us-now: 3rem;
     --width-banner-flag: 3.25rem;
     --height-banner-flag: 2.0625rem;
     --font-size-banner-phone: 2.375rem;
@@ -835,8 +835,6 @@ textarea {
 @media screen and (min-width: 1920px) {
   .banner {
     --objet-position-hero-image: center top;
-    --font-size-calle-us-now: 3.125rem;
-    --margin-bottom-call-us-now: 1.5rem;
   }
 }
 
@@ -868,8 +866,6 @@ textarea {
   text-align: center;
 }
 .banner__subtitle {
-  font-size: var(--font-size-calle-us-now);
-  margin-bottom: var(--margin-bottom-call-us-now);
   color: #fff;
 }
 .banner__title::before, .banner__subtitle::before {
