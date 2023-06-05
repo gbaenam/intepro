@@ -840,7 +840,6 @@ textarea {
 
 .banner {
   position: relative;
-  font-family: "Lato", sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .banner__hero-image {

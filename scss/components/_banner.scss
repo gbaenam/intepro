@@ -79,7 +79,7 @@
 
 .banner {
     position: relative;
-    font-family: $font-family-secondary; //Todo: Revisar!!!
+    // font-family: $font-family-secondary; //Todo: Revisar!!!
     background-color: rgba($color: #000000, $alpha: .8);
 
     &__hero-image {
@@ -143,7 +143,7 @@
 
     &__phone {
         font-style: normal;
-        font-size: var(--font-size-banner-phone);
+        font-size: var(--font-size-banner-phone);  //Todo: Revisar!!
     }
 
     &__button {
