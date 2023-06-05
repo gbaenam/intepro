@@ -161,9 +161,12 @@ textarea {
     font-weight: 400;
     font-size: calc(2.1em + 1vw);
 
-    margin-bottom: .6em; // Todo: Pendiente!!
-
     font-family: $font-family-secondary; // Todo: Pendiente!!
+}
+
+.headline,
+.headline-big {
+    margin-bottom: .6em;
 }
 
 
