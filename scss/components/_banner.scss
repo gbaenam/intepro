@@ -79,7 +79,7 @@
 
 .banner {
     position: relative;
-    // font-family: $font-family-secondary; //Todo: Revisar!!!
+    // font-family: $font-family-secondary; // Todo: Revisar!!!
     background-color: rgba($color: #000000, $alpha: .8);
 
     &__hero-image {
@@ -98,11 +98,11 @@
         position: relative;
         align-items: center;
         flex-direction: column;
-        color: $color-light-text; //Todo: Actualizar!!
+        color: $color-light-text; // Todo: Revisar!!
     }
 
     &__title {
-        color: #fff; //Todo: Revisar!!
+        color: #fff; // Todo: Revisar!!
         max-width: 95%;
         text-align: center;
         // background-color: aquamarine;
@@ -110,7 +110,7 @@
 
     &__subtitle {
 
-        color: #fff; //Todo: Revisar!!
+        color: #fff; // Todo: Revisar!!
         // background-color: pink;
     }
 
@@ -138,12 +138,13 @@
         width: var(--width-banner-flag);
         height: var(--height-banner-flag);
 
-        border: 1px solid $color-light-gray;
+        border: 1px solid $color-light-gray; // Todo: Revisar!!
     }
 
     &__phone {
         font-style: normal;
-        font-size: var(--font-size-banner-phone);  //Todo: Revisar!!
+        font-size: var(--font-size-banner-phone);  // Todo: Revisar!!
+        font-family: $font-family-secondary; // Todo: Revisar!!
     }
 
     &__button {
