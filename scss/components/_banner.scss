@@ -5,7 +5,6 @@
 .banner {
     // hero-image
     --objet-position-hero-image: center;
-                     
     // flag
     --width-banner-flag: 2.8125rem;
     --height-banner-flag: 1.625rem;
@@ -13,7 +12,6 @@
     --font-size-banner-phone: 1.75rem;
 
     @include from(360px) {
-                     
         // flag
         --width-banner-flag: 3rem;
         --height-banner-flag: 1.8125rem;
@@ -23,7 +21,6 @@
 
     // Wide 412px
     @include from(412px) {
-                     
         // phone
         --font-size-banner-phone: 2.0625rem;
     }
@@ -66,7 +63,6 @@
 
     // Wide 1600px
     @include from(zlarge) {
-                     
         // flag
         --width-banner-flag: 3.25rem;
         --height-banner-flag: 2.0625rem;
@@ -78,7 +74,6 @@
     @include from(zzlarge) {
         // hero-image
         --objet-position-hero-image: center top;
-                     
     }
 }
 
@@ -107,26 +102,16 @@
     }
 
     &__title {
-        color: #fff;
+        color: #fff; //Todo: Revisar!!
         max-width: 95%;
         text-align: center;
-        // margin-bottom: 1rem;
-        // margin-bottom: .2em;
-
         // background-color: aquamarine;
-
     }
 
     &__subtitle {
 
-        // font-size: var(--font-size-calle-us-now);
-        // margin-bottom: var(--margin-bottom-call-us-now);
-
-        // line-height: 1;
-                            color: #fff;
-                            // background-color: pink;
-
-                            // line-height: normal;
+        color: #fff; //Todo: Revisar!!
+        // background-color: pink;
     }
 
     &__title,
