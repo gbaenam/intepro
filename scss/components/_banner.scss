@@ -117,12 +117,22 @@
         color: #fff;
         max-width: 95%;
         text-align: center;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
+        // margin-bottom: .2em;
+
+        // background-color: aquamarine;
+
     }
 
     &__call-us-now {
         font-size: var(--font-size-calle-us-now);
         margin-bottom: var(--margin-bottom-call-us-now);
+
+        // line-height: 1;
+                            color: #fff;
+                            // background-color: pink;
+
+                            // line-height: normal;
     }
 
     &__title,
@@ -139,6 +149,8 @@
         display: flex;
         align-items: center;
         margin-bottom: 4rem;
+
+        background-color: lightblue;
     }
 
     &__flag {

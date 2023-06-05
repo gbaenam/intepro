@@ -108,6 +108,7 @@ hr {
 
 h1 {
   line-height: 1;
+  margin-bottom: 0.2em;
   font-size: calc(3em + 1vw);
 }
 
@@ -865,11 +866,11 @@ textarea {
   color: #fff;
   max-width: 95%;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .banner__call-us-now {
   font-size: var(--font-size-calle-us-now);
   margin-bottom: var(--margin-bottom-call-us-now);
+  color: #fff;
 }
 .banner__title::before, .banner__call-us-now::before {
   content: "¡";
@@ -881,6 +882,7 @@ textarea {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
+  background-color: lightblue;
 }
 .banner__flag {
   margin-right: 5px;
@@ -943,8 +945,14 @@ textarea {
 .youtube__header {
   width: 100%;
 }
+.youtube__title {
+  background-color: lightblue;
+}
 .youtube__title, .youtube__subtitle {
   text-align: var(--text-align-youtube-title-subtitle);
+}
+.youtube__subtitle {
+  background-color: pink;
 }
 .youtube__subtitle::before {
   content: "¡";
