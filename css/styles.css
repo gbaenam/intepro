@@ -108,7 +108,7 @@ hr {
 
 h1 {
   line-height: 1;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
   font-size: calc(3em + 1vw);
 }
 
@@ -210,6 +210,7 @@ textarea {
 .headline-big {
   font-weight: 400;
   font-size: calc(2em + 1vw);
+  margin-bottom: 0.6em;
 }
 
 .icon {
@@ -878,7 +879,6 @@ textarea {
   display: flex;
   align-items: center;
   margin-bottom: 4rem;
-  background-color: lightblue;
 }
 .banner__flag {
   margin-right: 5px;
