@@ -867,15 +867,15 @@ textarea {
   max-width: 95%;
   text-align: center;
 }
-.banner__call-us-now {
+.banner__subtitle {
   font-size: var(--font-size-calle-us-now);
   margin-bottom: var(--margin-bottom-call-us-now);
   color: #fff;
 }
-.banner__title::before, .banner__call-us-now::before {
+.banner__title::before, .banner__subtitle::before {
   content: "¡";
 }
-.banner__title::after, .banner__call-us-now::after {
+.banner__title::after, .banner__subtitle::after {
   content: "!";
 }
 .banner__wrapper-address {

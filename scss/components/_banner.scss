@@ -124,7 +124,7 @@
 
     }
 
-    &__call-us-now {
+    &__subtitle {
         font-size: var(--font-size-calle-us-now);
         margin-bottom: var(--margin-bottom-call-us-now);
 
@@ -136,7 +136,7 @@
     }
 
     &__title,
-    &__call-us-now {
+    &__subtitle {
         &::before {
             content: "¡";
         }
