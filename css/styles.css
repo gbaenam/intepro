@@ -834,8 +834,8 @@ textarea {
   margin-bottom: 4rem;
 }
 .banner__flag {
-  margin-right: 5px;
-  border-radius: 1px;
+  margin-right: 0.3125rem;
+  border-radius: 0.0625rem;
   width: var(--width-banner-flag);
   height: var(--height-banner-flag);
   border: 1px solid #c2c2c2;

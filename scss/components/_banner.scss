@@ -100,17 +100,14 @@
         display: flex;
         align-items: center;
         margin-bottom: 4rem;
-
-        // background-color: lightblue;
     }
 
     &__flag {
-        margin-right: 5px;
-        border-radius: 1px;
+        margin-right: 0.3125rem;
+        border-radius: 0.0625rem;
         width: var(--width-banner-flag);
         height: var(--height-banner-flag);
-
-        border: 1px solid $color-light-gray; // Todo: Revisar!!
+        border: 1px solid $color-light-gray;
     }
 
     &__phone {
