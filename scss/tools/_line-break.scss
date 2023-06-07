@@ -3,17 +3,17 @@
 /* ------------------ line-break.scss ---------------------- */
 
 // Estudia en Canadá, USA...
-.line-break485::before {
+.line-break-banner::before {
     display: inline;
     content: "";
 
-    @include from(329px) {
+    @include from(426px) {
         display: block;
     }
-    @include from(698px) {
+    @include from(595px) {
         display: inline;
     }
-    @include from(914px) {
+    @include from(808px) {
         display: block;
     }
     @include from(1260px) {
