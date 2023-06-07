@@ -275,6 +275,8 @@ textarea {
 }
 
 .banner-layout {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
   margin-top: var(--height-header);
 }
 
@@ -832,12 +834,12 @@ textarea {
   position: relative;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 165, 0, 0.3);
 }
 .banner__title {
   color: #fff;
   max-width: 95%;
   text-align: center;
+  font-weight: 400;
 }
 .banner__subtitle {
   color: #fff;
