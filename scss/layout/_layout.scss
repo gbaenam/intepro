@@ -21,46 +21,46 @@
     // }
 }
 
-.banner-layout {
-    padding-top: 10rem;
-    padding-bottom: 3rem;
-    margin-top: var(--height-header);
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+// .banner-layout {
+//     padding-top: 10rem;
+//     padding-bottom: 3rem;
+//     margin-top: var(--height-header);
+//     // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 
-    // Wide 384px
-    @include from(384px) {
-        padding-top: 11rem;
-    }
+//     // Wide 384px
+//     @include from(384px) {
+//         padding-top: 11rem;
+//     }
 
-    // Wide 541px
-    @include from(541px) {
-        padding-top: 4rem;
-    }
+//     // Wide 541px
+//     @include from(541px) {
+//         padding-top: 4rem;
+//     }
 
-    // Wide 960px
-    @include from(xxmedium) {
-        padding-top: 7rem;
-        padding-bottom: 4rem;
-        // --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
-        // clip-path: 0 0, 100% 0, 100% 100%, 0 94%;
-    }
+//     // Wide 960px
+//     @include from(xxmedium) {
+//         padding-top: 7rem;
+//         padding-bottom: 4rem;
+//         // --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
+//         // clip-path: 0 0, 100% 0, 100% 100%, 0 94%;
+//     }
 
-    // Wide 1024px
-    @include from(large) {
-        padding-top: 11rem;
-    }
+//     // Wide 1024px
+//     @include from(large) {
+//         padding-top: 11rem;
+//     }
 
-    // Wide 1900px
-    @include from(zzlarge) {
-        padding-top: 14rem;
-    }
+//     // Wide 1900px
+//     @include from(zzlarge) {
+//         padding-top: 14rem;
+//     }
 
-    // Wide 2100px
-    @include from(ultrawide) {
-        padding-top: 18rem;
-        padding-bottom: 5rem;
-    }
-}
+//     // Wide 2100px
+//     @include from(ultrawide) {
+//         padding-top: 18rem;
+//         padding-bottom: 5rem;
+//     }
+// }
 
 // Todo: Pendiente de optimizar.
 .youtube-layout {

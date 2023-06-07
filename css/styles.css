@@ -274,44 +274,6 @@ textarea {
   max-width: 1430px;
 }
 
-.banner-layout {
-  padding-top: 10rem;
-  padding-bottom: 3rem;
-  margin-top: var(--height-header);
-}
-@media screen and (min-width: 384px) {
-  .banner-layout {
-    padding-top: 11rem;
-  }
-}
-@media screen and (min-width: 541px) {
-  .banner-layout {
-    padding-top: 4rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .banner-layout {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .banner-layout {
-    padding-top: 11rem;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .banner-layout {
-    padding-top: 14rem;
-  }
-}
-@media screen and (min-width: 2100px) {
-  .banner-layout {
-    padding-top: 18rem;
-    padding-bottom: 5rem;
-  }
-}
-
 .youtube-layout {
   padding-top: 1rem;
   padding-bottom: 1rem;
