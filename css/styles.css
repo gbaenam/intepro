@@ -274,6 +274,10 @@ textarea {
   max-width: 1430px;
 }
 
+.banner-layout {
+  margin-top: var(--height-header);
+}
+
 .youtube-layout {
   padding-top: 1rem;
   padding-bottom: 1rem;
