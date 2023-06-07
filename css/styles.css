@@ -792,12 +792,12 @@ textarea {
 }
 
 .banner {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
+  min-height: 75vh;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 75vh;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .banner__hero-image {
   top: 0;
@@ -816,11 +816,10 @@ textarea {
   flex-direction: column;
 }
 .banner__title {
-  color: #fff;
   max-width: 95%;
   text-align: center;
 }
-.banner__subtitle {
+.banner__title, .banner__subtitle {
   color: #fff;
 }
 .banner__title::before, .banner__subtitle::before {
