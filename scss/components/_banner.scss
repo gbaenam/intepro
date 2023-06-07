@@ -99,6 +99,16 @@
         position: absolute;
         // object-position: var(--objet-position-hero-image);
         object-position: 10% top;
+
+        @include from(medium) {
+            object-position: center 12%;
+        }
+        @include from(541px) {
+            object-position: 70%;
+        }
+        @include from(large) {
+            object-position: 90%;
+        }
     }
 
     &__content {

@@ -829,6 +829,21 @@ textarea {
   position: absolute;
   object-position: 10% top;
 }
+@media screen and (min-width: 540px) {
+  .banner__hero-image {
+    object-position: center 12%;
+  }
+}
+@media screen and (min-width: 541px) {
+  .banner__hero-image {
+    object-position: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner__hero-image {
+    object-position: 90%;
+  }
+}
 .banner__content {
   display: flex;
   position: relative;
