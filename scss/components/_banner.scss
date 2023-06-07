@@ -82,6 +82,11 @@
     // font-family: $font-family-secondary; // Todo: Revisar!!!
     background-color: rgba($color: #000000, $alpha: .8);
 
+    display: flex;
+    flex-direction: column;
+
+    min-height: 70vh;
+
     &__hero-image {
         top: 0;
         left: 0;
@@ -90,7 +95,8 @@
         height: 100%;
         object-fit: cover;
         position: absolute;
-        object-position: var(--objet-position-hero-image);
+        object-position: top;
+        // object-position: var(--objet-position-hero-image);
     }
 
     &__content {
@@ -98,7 +104,9 @@
         position: relative;
         align-items: center;
         flex-direction: column;
-        color: $color-light-text; // Todo: Revisar!!
+        // color: $color-light-text; // Todo: Revisar!!
+
+        // background-color: rgba($color: #000000, $alpha: .3);
     }
 
     &__title {
