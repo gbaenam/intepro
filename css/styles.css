@@ -826,11 +826,11 @@ textarea {
   margin-bottom: 4rem;
 }
 .banner__flag {
-  margin-right: 0.3125rem;
+  margin-right: 0.9375rem;
   border-radius: 0.0625rem;
+  border: 0.0625rem solid #fff;
   width: var(--width-banner-flag);
   height: var(--height-banner-flag);
-  border: 0.0625rem solid #c2c2c2;
 }
 .banner__phone {
   font-style: normal;
