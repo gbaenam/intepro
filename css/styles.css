@@ -751,7 +751,7 @@ textarea {
 
 /* ------------------ banner.scss --------------------- */
 .banner {
-  --objet-position-hero-image: center;
+  --objet-position-hero-image: 10% top;
   --width-banner-flag: 2.8125rem;
   --height-banner-flag: 1.625rem;
   --font-size-banner-phone: 1.75rem;
@@ -768,9 +768,9 @@ textarea {
     --font-size-banner-phone: 2.0625rem;
   }
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 540px) {
   .banner {
-    --objet-position-hero-image: center 10%;
+    --objet-position-hero-image: center 12%;
   }
 }
 @media screen and (min-width: 541px) {
@@ -778,24 +778,9 @@ textarea {
     --objet-position-hero-image: 70%;
   }
 }
-@media screen and (min-width: 840px) {
-  .banner {
-    --objet-position-hero-image: center bottom;
-  }
-}
-@media screen and (min-width: 960px) {
-  .banner {
-    --objet-position-hero-image: center 90%;
-  }
-}
 @media screen and (min-width: 1024px) {
   .banner {
     --objet-position-hero-image: 90%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .banner {
-    --objet-position-hero-image: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -803,11 +788,6 @@ textarea {
     --width-banner-flag: 3.25rem;
     --height-banner-flag: 2.0625rem;
     --font-size-banner-phone: 2.375rem;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .banner {
-    --objet-position-hero-image: center top;
   }
 }
 
@@ -827,22 +807,7 @@ textarea {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  object-position: 10% top;
-}
-@media screen and (min-width: 540px) {
-  .banner__hero-image {
-    object-position: center 12%;
-  }
-}
-@media screen and (min-width: 541px) {
-  .banner__hero-image {
-    object-position: 70%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .banner__hero-image {
-    object-position: 90%;
-  }
+  object-position: var(--objet-position-hero-image);
 }
 .banner__content {
   display: flex;
@@ -854,7 +819,6 @@ textarea {
   color: #fff;
   max-width: 95%;
   text-align: center;
-  font-weight: 400;
 }
 .banner__subtitle {
   color: #fff;

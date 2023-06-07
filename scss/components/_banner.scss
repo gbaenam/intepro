@@ -4,7 +4,7 @@
 
 .banner {
     // hero-image
-    --objet-position-hero-image: center;
+    --objet-position-hero-image: 10% top;
     // flag
     --width-banner-flag: 2.8125rem;
     --height-banner-flag: 1.625rem;
@@ -25,10 +25,10 @@
         --font-size-banner-phone: 2.0625rem;
     }
 
-    // Wide 420px
-    @include from(420px) {
+    // Wide 540px
+    @include from(medium) {
         // hero-image
-        --objet-position-hero-image: center 10%;
+        --objet-position-hero-image: center 12%;
     }
 
     // Wide 541px
@@ -37,17 +37,17 @@
         --objet-position-hero-image: 70%;
     }
 
-    // Wide 840px
-    @include from(840px) {
-        // hero-image
-        --objet-position-hero-image: center bottom;
-    }
+    // // Wide 840px
+    // @include from(840px) {
+    //     // hero-image
+    //     --objet-position-hero-image: center bottom;
+    // }
 
-    // Wide 960px
-    @include from(xxmedium) {
-        // hero-image
-        --objet-position-hero-image: center 90%;
-    }
+    // // Wide 960px
+    // @include from(xxmedium) {
+    //     // hero-image
+    //     --objet-position-hero-image: center 90%;
+    // }
 
     // Wide 1024px
     @include from(large) {
@@ -55,11 +55,11 @@
         --objet-position-hero-image: 90%;
     }
 
-    // Wide 1280px
-    @include from(xlarge) {
-        // hero-image
-        --objet-position-hero-image: 100%;
-    }
+    // // Wide 1280px
+    // @include from(xlarge) {
+    //     // hero-image
+    //     --objet-position-hero-image: 100%;
+    // }
 
     // Wide 1600px
     @include from(zlarge) {
@@ -70,11 +70,11 @@
         --font-size-banner-phone: 2.375rem;
     }
 
-    // Wide 1920px
-    @include from(zzlarge) {
-        // hero-image
-        --objet-position-hero-image: center top;
-    }
+    // // Wide 1920px
+    // @include from(zzlarge) {
+    //     // hero-image
+    //     --objet-position-hero-image: center top;
+    // }
 }
 
 .banner {
@@ -97,18 +97,18 @@
         height: 100%;
         object-fit: cover;
         position: absolute;
-        // object-position: var(--objet-position-hero-image);
-        object-position: 10% top;
+        object-position: var(--objet-position-hero-image);
+        // object-position:
 
-        @include from(medium) {
-            object-position: center 12%;
-        }
-        @include from(541px) {
-            object-position: 70%;
-        }
-        @include from(large) {
-            object-position: 90%;
-        }
+        // @include from(medium) {
+        //     // object-position: 
+        // }
+        // @include from(541px) {
+        //     object-position: 70%;
+        // }
+        // @include from(large) {
+        //     object-position: 90%;
+        // }
     }
 
     &__content {
@@ -130,7 +130,7 @@
         text-align: center;
         // background-color: aquamarine;
 
-        font-weight: 400;
+        // font-weight: 400;
     }
 
     &__subtitle {
