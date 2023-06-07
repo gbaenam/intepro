@@ -838,12 +838,12 @@ textarea {
   border-radius: 0.0625rem;
   width: var(--width-banner-flag);
   height: var(--height-banner-flag);
-  border: 1px solid #c2c2c2;
+  border: 0.0625rem solid #c2c2c2;
 }
 .banner__phone {
   font-style: normal;
-  font-size: var(--font-size-banner-phone);
   font-family: "Lato", sans-serif;
+  font-size: calc(1.4em + 1vw);
 }
 .banner__button {
   text-transform: none;

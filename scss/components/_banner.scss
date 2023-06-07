@@ -107,13 +107,14 @@
         border-radius: 0.0625rem;
         width: var(--width-banner-flag);
         height: var(--height-banner-flag);
-        border: 1px solid $color-light-gray;
+        border: 0.0625rem solid $color-light-gray;
     }
 
     &__phone {
         font-style: normal;
-        font-size: var(--font-size-banner-phone);  // Todo: Revisar!!
+        // font-size: var(--font-size-banner-phone);  // Todo: Revisar!!
         font-family: $font-family-secondary; // Todo: Revisar!!
+        font-size: calc(1.4em + 1vw);
     }
 
     &__button {
