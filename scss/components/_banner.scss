@@ -37,29 +37,11 @@
         --objet-position-hero-image: 70%;
     }
 
-    // // Wide 840px
-    // @include from(840px) {
-    //     // hero-image
-    //     --objet-position-hero-image: center bottom;
-    // }
-
-    // // Wide 960px
-    // @include from(xxmedium) {
-    //     // hero-image
-    //     --objet-position-hero-image: center 90%;
-    // }
-
     // Wide 1024px
     @include from(large) {
         // hero-image
         --objet-position-hero-image: 90%;
     }
-
-    // // Wide 1280px
-    // @include from(xlarge) {
-    //     // hero-image
-    //     --objet-position-hero-image: 100%;
-    // }
 
     // Wide 1600px
     @include from(zlarge) {
@@ -69,12 +51,6 @@
         // phone
         --font-size-banner-phone: 2.375rem;
     }
-
-    // // Wide 1920px
-    // @include from(zzlarge) {
-    //     // hero-image
-    //     --objet-position-hero-image: center top;
-    // }
 }
 
 .banner {
@@ -98,17 +74,6 @@
         object-fit: cover;
         position: absolute;
         object-position: var(--objet-position-hero-image);
-        // object-position:
-
-        // @include from(medium) {
-        //     // object-position: 
-        // }
-        // @include from(541px) {
-        //     object-position: 70%;
-        // }
-        // @include from(large) {
-        //     object-position: 90%;
-        // }
     }
 
     &__content {
