@@ -8,21 +8,11 @@
     // flag
     --width-banner-flag: 2.8125rem;
     --height-banner-flag: 1.625rem;
-    // phone
-    --font-size-banner-phone: 1.75rem;
 
     @include from(360px) {
         // flag
         --width-banner-flag: 3rem;
         --height-banner-flag: 1.8125rem;
-        // phone
-        --font-size-banner-phone: 1.9375rem;
-    }
-
-    // Wide 412px
-    @include from(412px) {
-        // phone
-        --font-size-banner-phone: 2.0625rem;
     }
 
     // Wide 540px
@@ -48,8 +38,6 @@
         // flag
         --width-banner-flag: 3.25rem;
         --height-banner-flag: 2.0625rem;
-        // phone
-        --font-size-banner-phone: 2.375rem;
     }
 }
 
@@ -85,9 +73,13 @@
     }
 
     &__title,
-    &__subtitle {
+    &__subtitle,
+    &__phone {
         color: #fff;
+    }
 
+    &__title,
+    &__subtitle {
         &::before {
             content: "¡";
         }
@@ -112,9 +104,8 @@
 
     &__phone {
         font-style: normal;
-        // font-size: var(--font-size-banner-phone);  // Todo: Revisar!!
-        font-family: $font-family-secondary; // Todo: Revisar!!
         font-size: calc(1.4em + 1vw);
+        font-family: $font-family-secondary; // Todo: Optimizar!!
     }
 
     &__button {
