@@ -888,14 +888,8 @@ textarea {
 .youtube__header {
   width: 100%;
 }
-.youtube__title {
-  background-color: lightblue;
-}
 .youtube__title, .youtube__subtitle {
   text-align: var(--text-align-youtube-title-subtitle);
-}
-.youtube__subtitle {
-  background-color: pink;
 }
 .youtube__subtitle::before {
   content: "¡";
