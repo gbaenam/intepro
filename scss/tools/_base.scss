@@ -157,6 +157,7 @@ textarea {
 
 .headline-medium {
     font-size: calc(1.5em + 1vw);
+    margin-bottom: .3em;
 }
 
 .headline-big {
@@ -165,8 +166,7 @@ textarea {
 }
 
 .headline,
-.headline-big,
-.headline-medium {
+.headline-big {
     margin-bottom: .6em;
 }
 
