@@ -422,12 +422,12 @@ textarea {
 }
 
 .button-square {
-  display: inline-block;
-  padding: 0.4em 1.5em;
+  padding: 0.5em 0;
   color: #fff;
   background-color: #0279d3;
   font-weight: 500;
   font-size: 1.125em;
+  min-width: 12em;
 }
 
 /* ----------------- burger-button.scss ------------------ */
