@@ -41,7 +41,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         justify-content: center;
     }
 
@@ -131,6 +131,7 @@
 
     &__footer-title {
         text-transform: uppercase;
+        color: $color-red-canada-alt;
 
         @include from(1040px) {
             color: #fff;
