@@ -43,6 +43,10 @@
         padding-top: 1rem;
         margin-bottom: 2rem;
         justify-content: center;
+
+        @include from(1040px) {
+            margin-bottom: 4rem;
+        }
     }
 
     &__article {

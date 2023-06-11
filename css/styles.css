@@ -968,6 +968,11 @@ textarea {
   margin-bottom: 2rem;
   justify-content: center;
 }
+@media screen and (min-width: 1040px) {
+  .cards__articles {
+    margin-bottom: 4rem;
+  }
+}
 .cards__article {
   flex-grow: 1;
   display: flex;
