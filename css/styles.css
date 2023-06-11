@@ -421,6 +421,15 @@ textarea {
   transform: scale(0.98);
 }
 
+.button-square {
+  display: inline-block;
+  padding: 0.4em 1.5em;
+  color: #fff;
+  background-color: #0279d3;
+  font-weight: 500;
+  font-size: 1.125em;
+}
+
 /* ----------------- burger-button.scss ------------------ */
 .burger-button {
   --display-button: visibility;
