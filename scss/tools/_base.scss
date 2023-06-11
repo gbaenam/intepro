@@ -151,18 +151,22 @@ textarea {
 
 // Titulares
 .headline {
-    font-weight: 500;
     font-size: calc(1.2em + 1vw);
 }
 
 .headline-medium {
-    font-size: calc(1.5em + 1vw);
     margin-bottom: .3em;
+    font-size: calc(1.5em + 1vw);
 }
 
 .headline-big {
     font-size: calc(2.1em + 1vw);
     font-family: $font-family-secondary; // Todo: Pendiente!!
+}
+
+.headline,
+.headline-medium {
+    font-weight: 500;
 }
 
 .headline,
