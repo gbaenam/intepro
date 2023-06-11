@@ -1058,6 +1058,9 @@ textarea {
     background-color: #000;
   }
 }
+.cards__footer-text {
+  margin-bottom: 1rem;
+}
 
 /* ------------------ form.scss ---------------------- */
 .form {
