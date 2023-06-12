@@ -150,4 +150,13 @@
         margin-bottom: 1rem;
     }
 
+    &__footer-button {
+        // color: #fff;
+        background-color: $color-red-canada-alt;
+        // color: unset;
+        border-color: $color-red-canada-alt;
+        text-transform: unset;
+
+    }
+
 }
