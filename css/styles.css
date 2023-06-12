@@ -1071,9 +1071,9 @@ textarea {
   margin-bottom: 1rem;
 }
 .cards__footer-button {
-  background-color: #cc0000;
-  border-color: #cc0000;
   text-transform: unset;
+  border-color: #cc0000;
+  background-color: #cc0000;
 }
 
 /* ------------------ form.scss ---------------------- */
