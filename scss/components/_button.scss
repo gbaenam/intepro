@@ -14,7 +14,7 @@ $buttonGhost: false;
 		position: relative;
 		border: .125em solid;
 		text-transform: uppercase;
-		font-family: 'Poppins', sans-serif;
+		font-family: $font-family-primary;
 		text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
 		&-short {
@@ -47,10 +47,6 @@ $buttonGhost: false;
 		}
 
 		@include from(large) {
-
-			&:hover {
-				cursor: pointer;
-			}
 
 			&-green:hover {
 				border-color: $green-dark;

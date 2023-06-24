@@ -380,9 +380,6 @@ textarea {
   background-color: #ff6227;
 }
 @media screen and (min-width: 1024px) {
-  .button:hover {
-    cursor: pointer;
-  }
   .button-green:hover {
     border-color: #009100;
     background-color: #009100;
