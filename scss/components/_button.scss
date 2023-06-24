@@ -1,5 +1,6 @@
 @use '../tools-sass/' as *;
 
+$buttonSolid: true;
 $buttonGhost: false;
 
 /* -------------------- button.scss ---------------------- */
@@ -37,7 +38,7 @@ $buttonGhost: false;
 
 
 
-// TODO: ghost button is disabled
+// TODO: La variable $buttonGhost is disabled
 
 @if $buttonGhost {
 	// Variables.
