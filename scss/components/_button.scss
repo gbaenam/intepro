@@ -1,7 +1,44 @@
 @use '../tools-sass/' as *;
 
 $buttonGhost: false;
+
 /* -------------------- button.scss ---------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// TODO: ghost button is disabled
+
 @if $buttonGhost {
 	// Variables.
 	.button {
@@ -91,28 +128,4 @@ $buttonGhost: false;
 			transform: scale(.98);
 		}
 	}
-}
-
-
-
-
-
-// square button
-
-.button-square {
-	// display: inline-block;
-
-	// padding: .4em 1.5em;
-	padding: .5em 0;
-	color: #fff;
-	// color: #0279d3;
-	background-color: #0279d3;
-	font-weight: 500;
-	font-size: 1.125em;
-	// font-size: 1.5em;
-	// font-size: 2em;
-
-	min-width: 12em;
-
-	// text-transform: uppercase;
 }

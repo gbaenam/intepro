@@ -346,15 +346,6 @@ textarea {
 }
 
 /* -------------------- button.scss ---------------------- */
-.button-square {
-  padding: 0.5em 0;
-  color: #fff;
-  background-color: #0279d3;
-  font-weight: 500;
-  font-size: 1.125em;
-  min-width: 12em;
-}
-
 /* ----------------- burger-button.scss ------------------ */
 .burger-button {
   --display-button: visibility;
