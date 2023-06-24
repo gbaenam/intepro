@@ -1,6 +1,6 @@
 @use '../tools-sass/' as *;
 
-$buttonGhost: true;
+$buttonGhost: false;
 /* -------------------- button.scss ---------------------- */
 @if $buttonGhost {
 	// Variables.
