@@ -1,8 +1,8 @@
 @use '../tools-sass/' as *;
 
-$button: true;
+$buttonGhost: true;
 /* -------------------- button.scss ---------------------- */
-@if $button {
+@if $buttonGhost {
 	// Variables.
 	.button {
 		--font-size-button: 1.4em;
