@@ -346,6 +346,76 @@ textarea {
 }
 
 /* -------------------- button.scss ---------------------- */
+.button {
+  color: #fff;
+  padding: 0.3em 0;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 2rem;
+  border: 0.125em solid;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
+}
+.button:last-child {
+  margin-bottom: 0;
+}
+.button-short {
+  min-width: 12em;
+  font-size: 1.1em;
+}
+.button-long {
+  min-width: 15em;
+  font-size: 1.25em;
+}
+.button-round {
+  border-radius: 2em;
+}
+.button-green {
+  border-color: #00bb2d;
+  background-color: #00bb2d;
+}
+.button-blue {
+  border-color: #0080ff;
+  background-color: #0080ff;
+}
+.button-orange-red {
+  border-color: #ff6227;
+  background-color: #ff6227;
+}
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    cursor: pointer;
+  }
+  .button-green:hover {
+    border-color: #009100;
+    background-color: #009100;
+  }
+  .button-blue:hover {
+    border-color: #1f51ff;
+    background-color: #1f51ff;
+  }
+  .button-orange-red:hover {
+    border-color: #e63e00;
+    background-color: #e63e00;
+  }
+}
+.button:active {
+  top: 0.125rem;
+}
+.button-green:active {
+  border-color: #006d00;
+  background-color: #006d00;
+}
+.button-blue:active {
+  border-color: #002fd2;
+  background-color: #002fd2;
+}
+.button-orange-red:active {
+  border-color: #b33000;
+  background-color: #b33000;
+}
+
 /* ----------------- burger-button.scss ------------------ */
 .burger-button {
   --display-button: visibility;

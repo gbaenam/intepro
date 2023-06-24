@@ -7,11 +7,91 @@ $buttonGhost: false;
 
 @if $buttonSolid {
 
+	.button {
+		color: #fff;
+		padding: .3em 0;
+		font-weight: 500;
+		position: relative;
+		margin-bottom: 2rem;
+		border: .125em solid;
+		text-transform: uppercase;
+		font-family: 'Poppins', sans-serif;
+		text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
+		&:last-child {
+			margin-bottom: 0;
+		}
 
+		&-short {
+			min-width: 12em;
+			font-size: 1.1em;
+		}
 
+		&-long {
+			min-width: 15em;
+			font-size: 1.25em;
+		}
 
+		&-round {
+			border-radius: 2em;
+		}
 
+		&-green {
+			border-color: $green-light;
+			background-color: $green-light;
+		}
+
+		&-blue {
+			border-color: $blue-light;
+			background-color: $blue-light;
+		}
+
+		&-orange-red {
+			border-color: $orange-red-light;
+			background-color: $orange-red-light;
+		}
+
+		@include from(large) {
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&-green:hover {
+				border-color: $green-dark;
+				background-color: $green-dark;
+			}
+
+			&-blue:hover {
+				border-color: $blue-dark;
+				background-color: $blue-dark;
+			}
+
+			&-orange-red:hover {
+				border-color: $orange-red-dark;
+				background-color: $orange-red-dark;
+			}
+		}
+
+		&:active {
+			top: 0.125rem;
+		}
+
+		&-green:active {
+			border-color: $green-darker;
+			background-color: $green-darker;
+		}
+
+		&-blue:active {
+			border-color: $blue-darker;
+			background-color: $blue-darker;
+		}
+
+		&-orange-red:active {
+			border-color: $orange-red-darker;
+			background-color: $orange-red-darker;
+		}
+	}
 }
 
 
