@@ -17,10 +17,6 @@ $buttonGhost: false;
 		font-family: 'Poppins', sans-serif;
 		text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-
 		&-short {
 			min-width: 12em;
 			font-size: 1.1em;
