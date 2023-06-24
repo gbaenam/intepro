@@ -384,22 +384,22 @@ textarea {
   background-color: unset;
 }
 .button-green {
-  border-color: #00c600;
-  background-color: #00c600;
+  border-color: #009100;
+  background-color: #009100;
 }
 .button-green:hover {
-  color: #00ff00;
+  color: #00bb2d;
 }
 .button-green:active {
-  border-color: #00aa00;
-  background-color: #00aa00;
+  border-color: #006d00;
+  background-color: #006d00;
 }
 .button-blue {
-  border-color: #1F51FF;
-  background-color: #1F51FF;
+  border-color: #0080ff;
+  background-color: #0080ff;
 }
 .button-blue:hover {
-  color: #0034eb;
+  color: #1f51ff;
 }
 .button-blue:active {
   border-color: #002fd2;
@@ -410,11 +410,11 @@ textarea {
   background-color: #ff6227;
 }
 .button-orange-red:hover {
-  color: #ff4500;
+  color: #e63e00;
 }
 .button-orange-red:active {
-  border-color: #eb4000;
-  background-color: #eb4000;
+  border-color: #b33000;
+  background-color: #b33000;
 }
 .button:active {
   color: #fff;
