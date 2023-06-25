@@ -361,8 +361,20 @@ textarea {
   font-size: 1.1em;
 }
 .button-long {
-  min-width: 15em;
+  min-width: 14em;
   font-size: 1.25em;
+}
+@media screen and (min-width: 412px) {
+  .button-long {
+    padding: 0.15em 0;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-long {
+    padding: 0.2em 0;
+    font-size: 1.4em;
+  }
 }
 .button-round {
   border-radius: 2em;
