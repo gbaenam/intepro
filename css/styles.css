@@ -1050,6 +1050,12 @@ textarea {
     background-color: #000;
   }
 }
+.cards__footer-title::before {
+  content: "¿";
+}
+.cards__footer-title::after {
+  content: "?";
+}
 .cards__footer-text {
   margin-bottom: 1rem;
 }

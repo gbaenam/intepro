@@ -146,6 +146,15 @@
         }
     }
 
+    &__footer-title {
+        &::before {
+            content: "¿";
+        }
+        &::after {
+            content: "?";
+        }
+    }
+
     &__footer-text {
         margin-bottom: 1rem;
     }
