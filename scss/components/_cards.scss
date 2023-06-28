@@ -139,7 +139,8 @@
     &__footer-text {
         margin: 0 auto 3rem;
 
-        @include from(large) {
+        @include from(1040px) {
+            color: #fff;
             max-width: 70%;
         }
     }
