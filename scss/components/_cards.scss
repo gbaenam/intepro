@@ -26,9 +26,7 @@
 
     &__title {
         text-align: center;
-    }
 
-    &__title {
         &::before {
             content: "¡";
         }
