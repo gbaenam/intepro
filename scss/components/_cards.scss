@@ -116,9 +116,7 @@
     }
 
     &__footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        text-align: center;
     }
 
     &__footer-title {
@@ -139,8 +137,11 @@
     }
 
     &__footer-text {
-        // max-width: 60%;
-        margin-bottom: 3rem;
+        margin: 0 auto 3rem;
+
+        @include from(large) {
+            max-width: 70%;
+        }
     }
 
     &__footer-button {

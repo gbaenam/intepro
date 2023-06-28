@@ -1038,9 +1038,7 @@ textarea {
   margin-right: auto;
 }
 .cards__footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 .cards__footer-title {
   text-transform: uppercase;
@@ -1059,7 +1057,12 @@ textarea {
   content: "?";
 }
 .cards__footer-text {
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .cards__footer-text {
+    max-width: 70%;
+  }
 }
 .cards__footer-button {
   text-transform: unset;
