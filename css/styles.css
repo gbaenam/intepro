@@ -1057,7 +1057,7 @@ textarea {
   content: "?";
 }
 .cards__footer-text {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .cards__footer-button {
   text-transform: unset;
