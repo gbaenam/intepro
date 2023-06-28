@@ -3,15 +3,18 @@
 /* ---------------- cards.scss -------------------- */
 
 .cards {
+    // cards__articles
     --mb-articles: 2rem;
 
     // Wide 1040px
     @include from(1040px) {
+        // cards__articles
         --mb-articles: 3rem;
     }
 
     // Wide 1920px
     @include from(zzlarge) {
+        // cards__articles
         --mb-articles: 4.5rem;
     }
 }
