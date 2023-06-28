@@ -391,6 +391,10 @@ textarea {
   border-color: #ff6227;
   background-color: #ff6227;
 }
+.button-neon-pink {
+  border-color: #ff33b0;
+  background-color: #ff33b0;
+}
 @media screen and (min-width: 1024px) {
   .button-green:hover {
     border-color: #009100;
@@ -403,6 +407,10 @@ textarea {
   .button-orange-red:hover {
     border-color: #e63e00;
     background-color: #e63e00;
+  }
+  .button-neon-pink:hover {
+    border-color: #e6008c;
+    background-color: #e6008c;
   }
 }
 .button:active {
@@ -419,6 +427,10 @@ textarea {
 .button-orange-red:active {
   border-color: #b33000;
   background-color: #b33000;
+}
+.button-neon-pink:active {
+  border-color: #cc007d;
+  background-color: #cc007d;
 }
 
 /* ----------------- burger-button.scss ------------------ */
@@ -1067,8 +1079,6 @@ textarea {
 }
 .cards__footer-button {
   text-transform: unset;
-  border-color: #cc0000;
-  background-color: #cc0000;
 }
 
 /* ------------------ form.scss ---------------------- */

@@ -56,6 +56,12 @@ $buttonGhost: false;
 			background-color: $orange-red-light;
 		}
 
+		// Todo: Incluir con variables de colores.
+		&-neon-pink {
+			border-color: #ff33b0;
+			background-color: #ff33b0;
+		}
+
 		@include from(large) {
 
 			&-green:hover {
@@ -71,6 +77,12 @@ $buttonGhost: false;
 			&-orange-red:hover {
 				border-color: $orange-red-dark;
 				background-color: $orange-red-dark;
+			}
+
+			// Todo: Incluir con variables de colores.
+			&-neon-pink:hover {
+				border-color: #e6008c;
+				background-color:#e6008c;
 			}
 		}
 
@@ -91,6 +103,12 @@ $buttonGhost: false;
 		&-orange-red:active {
 			border-color: $orange-red-darker;
 			background-color: $orange-red-darker;
+		}
+
+		// Todo: Incluir con variables de colores.
+		&-neon-pink:active {
+			border-color: #cc007d;
+			background-color: #cc007d;
 		}
 	}
 }
