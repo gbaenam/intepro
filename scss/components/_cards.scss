@@ -3,6 +3,20 @@
 /* ---------------- cards.scss -------------------- */
 
 .cards {
+    --mb-articles: 2rem;
+
+    // Wide 1040px
+    @include from(1040px) {
+        --mb-articles: 3rem;
+    }
+
+    // Wide 1920px
+    @include from(zzlarge) {
+        --mb-articles: 4.5rem;
+    }
+}
+
+.cards {
 
     background-color: #fafbfa;
 
@@ -41,15 +55,8 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 1rem;
-        margin-bottom: 2rem;
         justify-content: center;
-
-        @include from(1040px) {
-            margin-bottom: 3rem;
-        }
-        @include from(zzlarge) {
-            margin-bottom: 4.5rem;
-        }
+        margin-bottom: var(--mb-articles);
     }
 
     &__article {
@@ -77,11 +84,13 @@
 
     &__image {
         object-fit: cover;
-        aspect-ratio: 1 / .7;
+        --ar-image: 1 / .7;
+        aspect-ratio: var(--ar-image);
         object-position: left 40%;
 
         @include from(676px) {
-            aspect-ratio: 1 / .5;
+            --ar-image: 1 / .5;
+            aspect-ratio: var(--ar-image);
         }
     }
 
