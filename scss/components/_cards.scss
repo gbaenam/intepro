@@ -118,11 +118,13 @@
         margin-right: auto;
     }
 
-    &__footer {
-        text-align: center;
-    }
+    // &__footer {
+    //     text-align: center;
+    // }
 
     &__footer-title {
+        // text-align: center;
+
         text-transform: uppercase;
         color: $color-red-canada-alt;
 
@@ -130,6 +132,12 @@
             color: #fff;
             background-color: #000;
         }
+    }
+
+    &__footer-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__footer-title {
@@ -142,6 +150,7 @@
     }
 
     &__footer-text {
+        // max-width: 60%;
         margin-bottom: 3rem;
     }
 
