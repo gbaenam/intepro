@@ -1056,13 +1056,6 @@ textarea {
 }
 .cards__footer-title {
   text-transform: uppercase;
-  color: #cc0000;
-}
-@media screen and (min-width: 1040px) {
-  .cards__footer-title {
-    color: #fff;
-    background-color: #000;
-  }
 }
 .cards__footer-title::before {
   content: "¿";
@@ -1075,8 +1068,15 @@ textarea {
 }
 @media screen and (min-width: 1040px) {
   .cards__footer-text {
-    color: #fff;
     max-width: 70%;
+  }
+}
+.cards__footer-title, .cards__footer-text {
+  color: none;
+}
+@media screen and (min-width: 1040px) {
+  .cards__footer-title, .cards__footer-text {
+    color: #fff;
   }
 }
 .cards__footer-button {

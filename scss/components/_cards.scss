@@ -133,12 +133,6 @@
 
     &__footer-title {
         text-transform: uppercase;
-        color: $color-red-canada-alt;
-
-        @include from(1040px) {
-            color: #fff;
-            background-color: #000;
-        }
 
         &::before {
             content: "¿";
@@ -152,8 +146,16 @@
         margin: 0 auto 3rem;
 
         @include from(1040px) {
-            color: #fff;
             max-width: 70%;
+        }
+    }
+
+    &__footer-title,
+    &__footer-text {
+        color: none;
+
+        @include from(1040px) {
+            color: #fff;
         }
     }
 
