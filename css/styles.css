@@ -1323,16 +1323,20 @@ textarea {
 }
 .main-footer__separator {
   border: 0;
-  background-color: #e00000;
   height: var(--h-mfooter-separator);
+  background-color: #e00000;
   margin-bottom: var(--mb-mfooter-separator);
+}
+.main-footer__copyright {
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.main-footer__info {
+  font-style: normal;
 }
 .main-footer__copyright, .main-footer__info p {
   color: #fff;
   font-size: calc(1em + 0.2vw);
-}
-.main-footer__info {
-  font-style: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

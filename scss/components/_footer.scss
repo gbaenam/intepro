@@ -21,9 +21,18 @@
 
     &__separator {
         border: 0;
-        background-color: $color-red-canada-line;
         height: var(--h-mfooter-separator);
+        background-color: $color-red-canada-line;
         margin-bottom: var(--mb-mfooter-separator);
+    }
+
+    &__copyright {
+        margin-bottom: .5em;
+        display: inline-block;
+    }
+
+    &__info {
+        font-style: normal;
     }
 
     &__copyright,
@@ -31,8 +40,6 @@
         color: #fff;
         font-size: calc(1em + .2vw);
     }
-
-    &__info {
-        font-style: normal;
-    }
 }
+
+
