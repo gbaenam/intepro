@@ -956,6 +956,7 @@ textarea {
   --ar-image: 1 / .7;
   --mw-footer-text: none;
   --cl-footer-title-text: #444;
+  --fw-footer-text: 700;
 }
 @media screen and (min-width: 676px) {
   .cards {
@@ -968,6 +969,7 @@ textarea {
     --mb-articles: 3rem;
     --mw-footer-text: 70%;
     --cl-footer-title-text: #fff;
+    --fw-footer-text: 400;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1073,6 +1075,9 @@ textarea {
 }
 .cards__footer-title, .cards__footer-text {
   color: var(--cl-footer-title-text);
+}
+.cards__footer-text span:first-child, .cards__footer-text span:nth-child(2), .cards__footer-text span:nth-child(3) {
+  font-weight: var(--fw-footer-text);
 }
 .cards__footer-button {
   text-transform: unset;

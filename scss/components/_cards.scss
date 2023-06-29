@@ -13,6 +13,8 @@
     --mw-footer-text: none;
     // cards__footer-title // cards__footer-text
     --cl-footer-title-text: #444;
+    // cards__footer-text span
+    --fw-footer-text: 700;
 
     // Wide 676px
     @include from(676px) {
@@ -30,6 +32,8 @@
         --mw-footer-text: 70%;
         // cards__footer-title // cards__footer-text
         --cl-footer-title-text: #fff;
+        // cards__footer-text span
+        --fw-footer-text: 400;
     }
 
     // Wide 1920px
@@ -159,6 +163,12 @@
     &__footer-title,
     &__footer-text {
         color: var(--cl-footer-title-text);
+    }
+
+    &__footer-text span:first-child,
+    &__footer-text span:nth-child(2),
+    &__footer-text span:nth-child(3) {
+        font-weight: var(--fw-footer-text);
     }
 
     &__footer-button {
