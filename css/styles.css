@@ -1307,13 +1307,13 @@ textarea {
 
 /* ------------------ footer.scss ---------------------- */
 .main-footer {
-  --height-main-footer-separator: unset;
-  --margin-bottom-main-footer-separator: unset;
+  --h-mfooter-separator: unset;
+  --mb-mfooter-separator: unset;
 }
 @media screen and (min-width: 1024px) {
   .main-footer {
-    --height-main-footer-separator: 0.0625rem;
-    --margin-bottom-main-footer-separator: 2rem;
+    --h-mfooter-separator: 0.0625rem;
+    --mb-mfooter-separator: 2rem;
   }
 }
 
@@ -1324,8 +1324,8 @@ textarea {
 .main-footer__separator {
   border: 0;
   background-color: #e00000;
-  height: var(--height-main-footer-separator);
-  margin-bottom: var(--margin-bottom-main-footer-separator);
+  height: var(--h-mfooter-separator);
+  margin-bottom: var(--mb-mfooter-separator);
 }
 
 /*# sourceMappingURL=styles.css.map */

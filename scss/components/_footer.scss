@@ -3,15 +3,15 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-    // separator
-    --height-main-footer-separator: unset;
-    --margin-bottom-main-footer-separator: unset;
+    // main-footer__separator
+    --h-mfooter-separator: unset;
+    --mb-mfooter-separator: unset;
 
 
     @include from(large) {
-        // separator
-        --height-main-footer-separator: 0.0625rem;
-        --margin-bottom-main-footer-separator: 2rem;
+        // main-footer__separator
+        --h-mfooter-separator: 0.0625rem;
+        --mb-mfooter-separator: 2rem;
     }
 }
 
@@ -23,7 +23,7 @@
     &__separator {
         border: 0;
         background-color: $color-red-canada-line;
-        height: var(--height-main-footer-separator);
-        margin-bottom: var(--margin-bottom-main-footer-separator);
+        height: var(--h-mfooter-separator);
+        margin-bottom: var(--mb-mfooter-separator);
     }
 }
