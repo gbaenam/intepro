@@ -1327,5 +1327,8 @@ textarea {
   height: var(--h-mfooter-separator);
   margin-bottom: var(--mb-mfooter-separator);
 }
+.main-footer__copyright, .main-footer__info p {
+  color: #fff;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,7 +7,6 @@
     --h-mfooter-separator: unset;
     --mb-mfooter-separator: unset;
 
-
     @include from(large) {
         // main-footer__separator
         --h-mfooter-separator: 0.0625rem;
@@ -25,5 +24,10 @@
         background-color: $color-red-canada-line;
         height: var(--h-mfooter-separator);
         margin-bottom: var(--mb-mfooter-separator);
+    }
+
+    &__copyright,
+    &__info p {
+        color: #fff;
     }
 }
