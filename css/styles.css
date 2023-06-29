@@ -954,6 +954,8 @@ textarea {
   --bg-cards: #fafbfa;
   --mb-articles: 2rem;
   --ar-image: 1 / .7;
+  --mw-footer-text: none;
+  --cl-footer-title-text: none;
 }
 @media screen and (min-width: 676px) {
   .cards {
@@ -964,6 +966,8 @@ textarea {
   .cards {
     --bg-cards: linear-gradient(180deg, #fafbfa 50%, #000 50%);
     --mb-articles: 3rem;
+    --mw-footer-text: 70%;
+    --cl-footer-title-text: #fff;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1065,19 +1069,10 @@ textarea {
 }
 .cards__footer-text {
   margin: 0 auto 3rem;
-}
-@media screen and (min-width: 1040px) {
-  .cards__footer-text {
-    max-width: 70%;
-  }
+  max-width: var(--mw-footer-text);
 }
 .cards__footer-title, .cards__footer-text {
-  color: none;
-}
-@media screen and (min-width: 1040px) {
-  .cards__footer-title, .cards__footer-text {
-    color: #fff;
-  }
+  color: var(--cl-footer-title-text);
 }
 .cards__footer-button {
   text-transform: unset;
