@@ -54,16 +54,18 @@
         margin-bottom: var(--margin-bottom-main-footer-separator);
     }
 
-    &__copyright,
-    &__info {
-        font-size: var(--font-size-main-footer-info);
-    }
+    // &__copyright,
+    // &__info {
+    //     font-size: var(--font-size-main-footer-info);
+    // }
 
     // Todo: Tener presente este selector.
-    &__copyright,
-    &__info :first-child {
-        line-height: var(--line-height-main-footer-copyright);
-    }
+    // &__copyright,
+    // &__info p:first-child {
+    //     // line-height: var(--line-height-main-footer-copyright);
+    //     // line-height: 120%;
+    // }
+
 
     &__copyright {
         margin-bottom: 1rem;

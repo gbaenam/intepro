@@ -1350,12 +1350,6 @@ textarea {
   height: var(--height-main-footer-separator);
   margin-bottom: var(--margin-bottom-main-footer-separator);
 }
-.main-footer__copyright, .main-footer__info {
-  font-size: var(--font-size-main-footer-info);
-}
-.main-footer__copyright, .main-footer__info :first-child {
-  line-height: var(--line-height-main-footer-copyright);
-}
 .main-footer__copyright {
   margin-bottom: 1rem;
   display: inline-block;
