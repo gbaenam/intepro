@@ -1330,5 +1330,8 @@ textarea {
 .main-footer__copyright, .main-footer__info p {
   color: #fff;
 }
+.main-footer__info {
+  font-style: normal;
+}
 
 /*# sourceMappingURL=styles.css.map */
