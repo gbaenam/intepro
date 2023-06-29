@@ -3,11 +3,23 @@
 /* ---------------- cards.scss -------------------- */
 
 .cards {
+    // cards
+    --bg-cards: #fafbfa;
     // cards__articles
     --mb-articles: 2rem;
+    // cards__images
+    --ar-image: 1 / .7;
+
+    // Wide 676px
+    @include from(676px) {
+        // cards__images
+        --ar-image: 1 / .5;
+    }
 
     // Wide 1040px
     @include from(1040px) {
+        // cards
+        --bg-cards: linear-gradient(180deg, #fafbfa 50%, #000 50%);
         // cards__articles
         --mb-articles: 3rem;
     }
@@ -21,11 +33,7 @@
 
 .cards {
 
-    background-color: #fafbfa;
-
-    @include from(1040px) {
-        background: linear-gradient(180deg, #fafbfa 50%, #000 50%);
-    }
+    background: var(--bg-cards);
 
     &__title {
         text-align: center;
@@ -85,14 +93,8 @@
 
     &__image {
         object-fit: cover;
-        --ar-image: 1 / .7;
-        aspect-ratio: var(--ar-image);
         object-position: left 40%;
-
-        @include from(676px) {
-            --ar-image: 1 / .5;
-            aspect-ratio: var(--ar-image);
-        }
+        aspect-ratio: var(--ar-image);
     }
 
     &__logo {
