@@ -3,32 +3,10 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-    // copyright // info
-    --font-size-main-footer-info: 1.1rem;
-    // copyright // info :first-child
-    --line-height-main-footer-copyright: 1.1;
     // separator
     --height-main-footer-separator: unset;
     --margin-bottom-main-footer-separator: unset;
 
-    @include from(360px) {
-         // copyright // info
-        --font-size-main-footer-info: 1.2rem;
-        // copyright // info :first-child
-        --line-height-main-footer-copyright: 1.15;
-    }
-
-    @include from(412px) {
-         // copyright // info
-        --font-size-main-footer-info: 1.3rem;
-        // copyright // info :first-child
-        --line-height-main-footer-copyright: 1.2;
-    }
-
-    @include from(592px) {
-        // copyright // info :first-child
-        --line-height-main-footer-copyright: 1;
-    }
 
     @include from(large) {
         // separator
@@ -39,44 +17,13 @@
 
 
 .main-footer {
-    font-size: 1rem; // Todo: Referencia para el contenedor.
     text-align: center;
     background-color: $color-red-canada-alt;
-
-    &__container {
-        color: $color-light-text;
-    }
 
     &__separator {
         border: 0;
         background-color: $color-red-canada-line;
         height: var(--height-main-footer-separator);
         margin-bottom: var(--margin-bottom-main-footer-separator);
-    }
-
-    // &__copyright,
-    // &__info {
-    //     font-size: var(--font-size-main-footer-info);
-    // }
-
-    // Todo: Tener presente este selector.
-    // &__copyright,
-    // &__info p:first-child {
-    //     // line-height: var(--line-height-main-footer-copyright);
-    //     // line-height: 120%;
-    // }
-
-
-    &__copyright {
-        margin-bottom: 1rem;
-        display: inline-block;
-    }
-
-    &__info {
-        font-style: normal;
-    }
-
-    &__info :first-child {
-        margin-bottom: 1rem;
     }
 }

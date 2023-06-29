@@ -1307,27 +1307,8 @@ textarea {
 
 /* ------------------ footer.scss ---------------------- */
 .main-footer {
-  --font-size-main-footer-info: 1.1rem;
-  --line-height-main-footer-copyright: 1.1;
   --height-main-footer-separator: unset;
   --margin-bottom-main-footer-separator: unset;
-}
-@media screen and (min-width: 360px) {
-  .main-footer {
-    --font-size-main-footer-info: 1.2rem;
-    --line-height-main-footer-copyright: 1.15;
-  }
-}
-@media screen and (min-width: 412px) {
-  .main-footer {
-    --font-size-main-footer-info: 1.3rem;
-    --line-height-main-footer-copyright: 1.2;
-  }
-}
-@media screen and (min-width: 592px) {
-  .main-footer {
-    --line-height-main-footer-copyright: 1;
-  }
 }
 @media screen and (min-width: 1024px) {
   .main-footer {
@@ -1337,28 +1318,14 @@ textarea {
 }
 
 .main-footer {
-  font-size: 1rem;
   text-align: center;
   background-color: #cc0000;
-}
-.main-footer__container {
-  color: #fff;
 }
 .main-footer__separator {
   border: 0;
   background-color: #e00000;
   height: var(--height-main-footer-separator);
   margin-bottom: var(--margin-bottom-main-footer-separator);
-}
-.main-footer__copyright {
-  margin-bottom: 1rem;
-  display: inline-block;
-}
-.main-footer__info {
-  font-style: normal;
-}
-.main-footer__info :first-child {
-  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
