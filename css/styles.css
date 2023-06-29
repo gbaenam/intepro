@@ -955,7 +955,7 @@ textarea {
   --mb-articles: 2rem;
   --ar-image: 1 / .7;
   --mw-footer-text: none;
-  --cl-footer-title-text: none;
+  --cl-footer-title-text: #444;
 }
 @media screen and (min-width: 676px) {
   .cards {

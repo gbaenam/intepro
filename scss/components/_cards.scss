@@ -12,7 +12,7 @@
     // cards__footer-text
     --mw-footer-text: none;
     // cards__footer-title // cards__footer-text
-    --cl-footer-title-text: none;
+    --cl-footer-title-text: #444;
 
     // Wide 676px
     @include from(676px) {
