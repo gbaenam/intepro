@@ -31,8 +31,21 @@
         display: inline-block;
     }
 
+    &__copyright span,
+    &__info p:first-child span {
+        display: block;
+
+        @include from(medium) {
+            display: inline;
+        }
+    }
+
     &__info {
         font-style: normal;
+    }
+
+    &__info p:first-child {
+        margin-bottom: .5em;
     }
 
     &__copyright,
