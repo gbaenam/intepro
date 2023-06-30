@@ -1348,6 +1348,12 @@ textarea {
 .main-footer__copyright, .main-footer__info p {
   color: #fff;
   font-size: calc(1em + 0.2vw);
+  line-height: 125%;
+}
+@media screen and (min-width: 540px) {
+  .main-footer__copyright, .main-footer__info p {
+    line-height: 150%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

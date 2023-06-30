@@ -52,6 +52,11 @@
     &__info p {
         color: #fff;
         font-size: calc(1em + .2vw);
+        line-height: 125%;
+
+        @include from(medium) {
+            line-height: 150%;
+        }
     }
 }
 
