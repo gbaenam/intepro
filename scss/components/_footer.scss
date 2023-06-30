@@ -31,15 +31,6 @@
         display: inline-block;
     }
 
-    &__copyright span,
-    &__info p:first-child span {
-        display: block;
-
-        @include from(medium) {
-            display: inline;
-        }
-    }
-
     &__info {
         font-style: normal;
     }
@@ -51,11 +42,20 @@
     &__copyright,
     &__info p {
         color: #fff;
-        font-size: calc(1em + .2vw);
         line-height: 125%;
+        font-size: calc(1em + .2vw);
 
         @include from(medium) {
             line-height: 150%;
+        }
+    }
+
+    &__copyright span,
+    &__info p:first-child span {
+        display: block;
+
+        @include from(medium) {
+            display: inline;
         }
     }
 }

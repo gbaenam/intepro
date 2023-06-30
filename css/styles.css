@@ -1331,14 +1331,6 @@ textarea {
   margin-bottom: 0.5em;
   display: inline-block;
 }
-.main-footer__copyright span, .main-footer__info p:first-child span {
-  display: block;
-}
-@media screen and (min-width: 540px) {
-  .main-footer__copyright span, .main-footer__info p:first-child span {
-    display: inline;
-  }
-}
 .main-footer__info {
   font-style: normal;
 }
@@ -1347,12 +1339,20 @@ textarea {
 }
 .main-footer__copyright, .main-footer__info p {
   color: #fff;
-  font-size: calc(1em + 0.2vw);
   line-height: 125%;
+  font-size: calc(1em + 0.2vw);
 }
 @media screen and (min-width: 540px) {
   .main-footer__copyright, .main-footer__info p {
     line-height: 150%;
+  }
+}
+.main-footer__copyright span, .main-footer__info p:first-child span {
+  display: block;
+}
+@media screen and (min-width: 540px) {
+  .main-footer__copyright span, .main-footer__info p:first-child span {
+    display: inline;
   }
 }
 
