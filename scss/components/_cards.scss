@@ -3,42 +3,29 @@
 /* ---------------- cards.scss -------------------- */
 
 .cards {
-    // cards
-    --bg-cards: #fafbfa;
-    // cards__articles
-    --mb-articles: 2rem;
-    // cards__images
     --ar-image: 1 / .7;
-    // cards__footer-text
-    --mw-footer-text: none;
-    // cards__footer-title // cards__footer-text
-    --cl-footer-title-text: #444;
-    // cards__footer-text span
+    --mb-articles: 2rem;
+    --bg-cards: #fafbfa;
     --fw-footer-text: 700;
+    --mw-footer-text: none;
+    --cl-footer-title-text: #444;
 
     // Wide 676px
     @include from(676px) {
-        // cards__images
         --ar-image: 1 / .5;
     }
 
     // Wide 1040px
     @include from(1040px) {
-        // cards
-        --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
-        // cards__articles
         --mb-articles: 3rem;
-        // cards__footer-text
         --mw-footer-text: 70%;
-        // cards__footer-title // cards__footer-text
-        --cl-footer-title-text: #fff;
-        // cards__footer-text span
         --fw-footer-text: 400;
+        --cl-footer-title-text: #fff;
+        --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
     }
 
     // Wide 1920px
     @include from(zzlarge) {
-        // cards__articles
         --mb-articles: 4.5rem;
     }
 }

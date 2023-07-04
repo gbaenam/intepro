@@ -951,12 +951,12 @@ textarea {
 
 /* ---------------- cards.scss -------------------- */
 .cards {
-  --bg-cards: #fafbfa;
-  --mb-articles: 2rem;
   --ar-image: 1 / .7;
+  --mb-articles: 2rem;
+  --bg-cards: #fafbfa;
+  --fw-footer-text: 700;
   --mw-footer-text: none;
   --cl-footer-title-text: #444;
-  --fw-footer-text: 700;
 }
 @media screen and (min-width: 676px) {
   .cards {
@@ -965,11 +965,11 @@ textarea {
 }
 @media screen and (min-width: 1040px) {
   .cards {
-    --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
     --mb-articles: 3rem;
     --mw-footer-text: 70%;
-    --cl-footer-title-text: #fff;
     --fw-footer-text: 400;
+    --cl-footer-title-text: #fff;
+    --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
   }
 }
 @media screen and (min-width: 1920px) {
