@@ -8,7 +8,7 @@
     --bg-cards: #fafbfa;
     --fw-footer-text: 700;
     --mw-footer-text: none;
-    --cl-footer-title-text: #444;
+    --c-footer-title-text: #444;
 
     // Wide 676px
     @include from(676px) {
@@ -20,7 +20,7 @@
         --mb-articles: 3rem;
         --mw-footer-text: 70%;
         --fw-footer-text: 400;
-        --cl-footer-title-text: #fff;
+        --c-footer-title-text: #fff;
         --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
     }
 
@@ -149,7 +149,7 @@
 
     &__footer-title,
     &__footer-text {
-        color: var(--cl-footer-title-text);
+        color: var(--c-footer-title-text);
     }
 
     &__footer-text span:first-child,
