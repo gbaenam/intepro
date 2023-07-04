@@ -1310,10 +1310,12 @@ textarea {
   --h-separator: unset;
   --mb-separator: unset;
   --lh-copyright-p: 125%;
+  --d-span-p: block;
 }
 @media screen and (min-width: 540px) {
   .main-footer {
     --lh-copyright-p: 150%;
+    --d-span-p: inline;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1349,14 +1351,7 @@ textarea {
   line-height: var(--lh-copyright-p);
 }
 .main-footer__copyright span, .main-footer__info p:first-child span {
-  --d-span-p: block;
   display: var(--d-span-p);
-}
-@media screen and (min-width: 540px) {
-  .main-footer__copyright span, .main-footer__info p:first-child span {
-    --d-span-p: inline;
-    display: var(--d-span-p);
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

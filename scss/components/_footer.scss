@@ -3,21 +3,19 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-    // main-footer__separator
     --h-separator: unset;
     --mb-separator: unset;
-    // main-footer__copyright // main-footer__info
     --lh-copyright-p: 125%;
+    --d-span-p: block;
 
     // Wide 540px
     @include from(medium) {
-        // main-footer__copyright // main-footer__info
         --lh-copyright-p: 150%;
+        --d-span-p: inline;
     }
 
     // Wide 1024px
     @include from(large) {
-        // main-footer__separator
         --mb-separator: 2rem;
         --h-separator: 0.0625rem;
     }
@@ -56,13 +54,7 @@
 
     &__copyright span,
     &__info p:first-child span {
-        --d-span-p: block;
         display: var(--d-span-p);
-
-        @include from(medium) {
-            --d-span-p: inline;
-            display: var(--d-span-p);
-        }
     }
 }
 
