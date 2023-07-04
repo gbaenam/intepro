@@ -965,7 +965,7 @@ textarea {
 }
 @media screen and (min-width: 1040px) {
   .cards {
-    --bg-cards: linear-gradient(180deg, #fafbfa 50%, #000 50%);
+    --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
     --mb-articles: 3rem;
     --mw-footer-text: 70%;
     --cl-footer-title-text: #fff;
