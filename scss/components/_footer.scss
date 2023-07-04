@@ -3,15 +3,15 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
+    --d-span-p: block;
     --h-separator: unset;
     --mb-separator: unset;
     --lh-copyright-p: 125%;
-    --d-span-p: block;
 
     // Wide 540px
     @include from(medium) {
-        --lh-copyright-p: 150%;
         --d-span-p: inline;
+        --lh-copyright-p: 150%;
     }
 
     // Wide 1024px

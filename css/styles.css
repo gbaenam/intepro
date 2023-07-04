@@ -1307,15 +1307,15 @@ textarea {
 
 /* ------------------ footer.scss ---------------------- */
 .main-footer {
+  --d-span-p: block;
   --h-separator: unset;
   --mb-separator: unset;
   --lh-copyright-p: 125%;
-  --d-span-p: block;
 }
 @media screen and (min-width: 540px) {
   .main-footer {
-    --lh-copyright-p: 150%;
     --d-span-p: inline;
+    --lh-copyright-p: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
