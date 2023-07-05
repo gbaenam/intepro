@@ -3,14 +3,14 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-    --d-span-p: block;
+    --d-span: block;
     --h-separator: unset;
     --mb-separator: unset;
     --lh-copyright-p: 125%;
 
     // Wide 540px
     @include from(medium) {
-        --d-span-p: inline;
+        --d-span: inline;
         --lh-copyright-p: 150%;
     }
 
@@ -54,7 +54,7 @@
 
     &__copyright span,
     &__info p:first-child span {
-        display: var(--d-span-p);
+        display: var(--d-span);
     }
 }
 
