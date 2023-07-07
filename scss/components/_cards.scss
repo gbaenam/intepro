@@ -21,7 +21,7 @@
         --mw-footer-text: 70%;
         --fw-footer-text: 400;
         --c-footer-title-text: #fff;
-        --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
+        --bg-cards: linear-gradient(180deg, #fafbfa 47%, #252525 47%);
     }
 
     // Wide 1920px
@@ -160,5 +160,7 @@
 
     &__footer-button {
         text-transform: unset;
+
+        margin-bottom: calc(1.5em + 1.5vw);
     }
 }

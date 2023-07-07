@@ -287,32 +287,6 @@ textarea {
   margin-top: var(--height-header);
 }
 
-.youtube-layout {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-@media screen and (min-width: 360px) {
-  .youtube-layout {
-    padding-bottom: 1.2rem;
-  }
-}
-@media screen and (min-width: 412px) {
-  .youtube-layout {
-    padding-bottom: 1.5rem;
-  }
-}
-@media screen and (min-width: 540px) {
-  .youtube-layout {
-    padding-top: 1.5rem;
-    padding-bottom: 1.8rem;
-  }
-}
-@media screen and (min-width: 541px) {
-  .youtube-layout {
-    padding: 0;
-  }
-}
-
 .main-footer-layout {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -969,7 +943,7 @@ textarea {
     --mw-footer-text: 70%;
     --fw-footer-text: 400;
     --c-footer-title-text: #fff;
-    --bg-cards: linear-gradient(180deg, #fafbfa 50%, #252525 50%);
+    --bg-cards: linear-gradient(180deg, #fafbfa 47%, #252525 47%);
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1081,6 +1055,7 @@ textarea {
 }
 .cards__footer-button {
   text-transform: unset;
+  margin-bottom: calc(1.5em + 1.5vw);
 }
 
 /* ------------------ form.scss ---------------------- */
