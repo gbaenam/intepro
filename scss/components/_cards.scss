@@ -175,9 +175,7 @@
         background-color: lightgrey;
 
         // Centrando el contenido
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        place-items: center;
     }
 }

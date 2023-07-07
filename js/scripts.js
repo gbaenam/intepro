@@ -144,9 +144,6 @@ addEventListener('resize', elementHeight)
 // addEventListener('resize', viewportWidth)
 
 
-// Cards Modal
-const cards = document.querySelector('.cards__modal')
-
 
 
 /* ================= BEGIN FORMULARIO =====================*/

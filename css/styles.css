@@ -1065,10 +1065,8 @@ textarea {
   visibility: visible;
   z-index: 1000;
   background-color: lightgrey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 /* ------------------ form.scss ---------------------- */
