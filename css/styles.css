@@ -1054,7 +1054,6 @@ textarea {
   font-weight: var(--fw-footer-text);
 }
 .cards__footer-button {
-  text-transform: unset;
   margin-bottom: calc(1.5em + 1.5vw);
 }
 
