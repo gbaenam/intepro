@@ -149,7 +149,11 @@ const cards = document.querySelector('.cards__container')
 
 cards.addEventListener('click', e => {
 	e.stopPropagation()
-	console.log(e.target.id)
+
+	if(e.target.id) {
+		console.log(e.target.id)
+		document.querySelector('.cards__modal').style.visibility = 'visible'
+	}
 })
 
 

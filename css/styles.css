@@ -239,6 +239,17 @@ textarea {
   -webkit-font-smoothing: antialiased;
 }
 
+.modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* ------------------ line-break.scss ---------------------- */
 .line-break-banner::before {
   display: inline;
@@ -1057,14 +1068,7 @@ textarea {
   margin-bottom: calc(1.5em + 1.5vw);
 }
 .cards__modal {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  visibility: hidden;
-  z-index: 1000;
-  background-color: lightgrey;
+  color: #fff;
   display: grid;
   place-items: center;
 }
