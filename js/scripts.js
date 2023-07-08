@@ -145,15 +145,12 @@ addEventListener('resize', elementHeight)
 
 
 // Cards Modal
-const cards = document.querySelectorAll('.cards__article')
+const cards = document.querySelector('.cards__container')
 
-cards.forEach(card => {
-	card.addEventListener('click', e => {
-		e.stopPropagation()
-		console.log(e.target.id)
-	})
-} )
-
+cards.addEventListener('click', e => {
+	e.stopPropagation()
+	console.log(e.target.id)
+})
 
 
 /* ================= BEGIN FORMULARIO =====================*/
