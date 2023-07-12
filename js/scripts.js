@@ -112,17 +112,8 @@ addEventListener('resize', elementHeight)
 
 
 // Cards Modal
-const cards = document.querySelector('.cards__articles')
 
-cards.addEventListener('click', e => {
-	e.stopPropagation()
-	console.log(e.target)
 
-	if(e.target.id) {
-		console.log(e.target.id)
-		document.querySelector('.cards__modal').style.visibility = 'visible'
-	}
-})
 
 
 /* ================= BEGIN FORMULARIO =====================*/
