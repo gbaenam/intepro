@@ -111,39 +111,6 @@ addEventListener('resize', elementHeight)
 
 
 
-
-// // Accediendo a los estilos de la variable "--max-width-layout"
-// const style = document.documentElement.style
-
-// // Función calcular ancho del viewport
-// const viewportWidth = () => {
-
-// 	// Asignando valor "none" a la variable CSS "--max-width-layout"
-// 	style.setProperty('--max-width-layout', 'none')
-
-// 	// Consulta de medios para "min-width: 1024px"
-// 	if (mql1024.matches) {
-// 		// Viewport width
-// 		const vw = innerWidth,
-// 		// Ancho máximo
-// 		maxWidthLayout = `calc(${vw-(vw*10/100)}px)`
-
-// 	// Asignando "maxWidthLayout" a la variable CSS "--max-width-layout"
-// 		style.setProperty('--max-width-layout', maxWidthLayout)
-
-// 		// Consulta de medios para "min-width: 1600px
-// 		if (mql1600.matches) {
-// 			// Asignando valor de "1430px" a la variable "--max-width-layout"
-// 			style.setProperty('--max-width-layout', '1430px')
-// 		}
-// 	}
-// }
-// // Ejecución de la función calcular ancho del viewport
-// viewportWidth()
-// // Evento 'resize' función calcular ancho del viewport
-// addEventListener('resize', viewportWidth)
-
-
 // Cards Modal
 const cards = document.querySelector('.cards__articles')
 
