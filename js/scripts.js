@@ -113,6 +113,14 @@ addEventListener('resize', elementHeight)
 
 // Cards Modal
 
+cardsModal = document.querySelector('.cards__modal')
+
+document.querySelector('.cards__articles').addEventListener('click', e => {
+
+	e.stopPropagation()
+	const id = e.target.id
+	if (e.target.id) cardsModal.setAttribute('style', 'opacity: 1; visibility: visible')
+})
 
 
 
