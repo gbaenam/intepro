@@ -123,15 +123,15 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 
 	switch (id) {
         case 'cards-budget':
-            cardsModal.appendChild(document.getElementById('template-1').content.cloneNode(true))
+            cardsModal.appendChild(document.getElementById('cards-template1').content.cloneNode(true))
         break;
 
         case 'cards-credit':
-            cardsModal.appendChild(document.getElementById('template-2').content.cloneNode(true))
+            cardsModal.appendChild(document.getElementById('cards-template2').content.cloneNode(true))
         break;
 
         case 'cards-certificate':
-            cardsModal.appendChild(document.getElementById('template-3').content.cloneNode(true))
+            cardsModal.appendChild(document.getElementById('cards-template3').content.cloneNode(true))
         break;
     }
 })

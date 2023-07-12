@@ -1072,6 +1072,8 @@ textarea {
   color: #fff;
   display: grid;
   place-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 /* ------------------ form.scss ---------------------- */
