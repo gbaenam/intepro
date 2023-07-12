@@ -138,6 +138,7 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 
 // Función cerrar Cards Modal.
 cardsModal.addEventListener('click', e => {
+	e.stopPropagation()
     document.querySelector('.cards__template-content').remove()
     cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden' )
 })

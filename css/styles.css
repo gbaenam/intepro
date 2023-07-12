@@ -1071,9 +1071,9 @@ textarea {
 .cards__modal {
   color: #fff;
   display: grid;
+  font-size: 3rem;
   place-items: center;
   text-transform: uppercase;
-  font-size: 3rem;
 }
 
 /* ------------------ form.scss ---------------------- */
