@@ -112,16 +112,35 @@ addEventListener('resize', elementHeight)
 
 
 // Cards Modal
-
 cardsModal = document.querySelector('.cards__modal')
 
+// Función abrir Modal.
 document.querySelector('.cards__articles').addEventListener('click', e => {
 
 	e.stopPropagation()
 	const id = e.target.id
 	if (e.target.id) cardsModal.setAttribute('style', 'opacity: 1; visibility: visible')
+
+	switch (id) {
+        case 'cards-budget':
+            cardsModal.appendChild(document.getElementById('template-1').content.cloneNode(true))
+        break;
+
+        case 'cards-credit':
+            cardsModal.appendChild(document.getElementById('template-2').content.cloneNode(true))
+        break;
+
+        case 'cards-certificate':
+            cardsModal.appendChild(document.getElementById('template-3').content.cloneNode(true))
+        break;
+    }
 })
 
+// Función cerrar Modal.
+cardsModal.addEventListener('click', e => {
+    document.querySelector('.cards__template-content').remove()
+    cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden' )
+})
 
 
 /* ================= BEGIN FORMULARIO =====================*/
