@@ -114,7 +114,7 @@ addEventListener('resize', elementHeight)
 // Cards Modal
 cardsModal = document.querySelector('.cards__modal')
 
-// Función abrir Cards Modal.
+// Evento abrir Cards Modal.
 document.querySelector('.cards__articles').addEventListener('click', e => {
 
 	e.stopPropagation()
@@ -136,7 +136,7 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
     }
 })
 
-// Función cerrar Cards Modal.
+// Evento cerrar Cards Modal.
 cardsModal.addEventListener('click', e => {
 	e.stopPropagation()
     document.querySelector('.cards__template-content').remove()
