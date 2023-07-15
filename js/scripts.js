@@ -114,6 +114,11 @@ addEventListener('resize', elementHeight)
 // Cards Modal
 cardsModal = document.querySelector('.cards__modal')
 
+// Función mostrar Cards Modal.
+const showCardsModal = () => {
+	setTimeout(() => document.querySelector('.cards__template-content').setAttribute('style', 'transform: translateY(0); transition: transform 1s'),1000)
+}
+
 // Evento abrir Cards Modal.
 document.querySelector('.cards__articles').addEventListener('click', e => {
 
@@ -124,6 +129,7 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 	switch (id) {
         case 'cards-budget':
             cardsModal.appendChild(document.getElementById('cards-template1').content.cloneNode(true))
+			showCardsModal()
         break;
 
         case 'cards-credit':

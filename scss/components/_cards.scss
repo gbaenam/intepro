@@ -164,13 +164,39 @@
 
     // Cards Modal
     &__modal {
-        color: #fff;
-        // background-color: lightgrey;
+        // color: #fff;
+        // background-color: #fff;
 
         // Centrando el contenido
-        display: grid;
-        font-size: 3rem;
-        place-items: center;
+        // display: grid;
+        // font-size: 3rem;
+        // place-items: center;
         text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__template-content {
+        background-color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        transform: translateY(-100vh);
+        // transition: transform 1s;
+    }
+
+    // &__template-image {
+    //     width: 50%;
+    // }
+
+    // &__template-title {
+    //     background-color: yellow;
+    // }
+
+    &--show {
+        transform: translateY(0);
     }
 }
