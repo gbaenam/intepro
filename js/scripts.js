@@ -116,7 +116,7 @@ cardsModal = document.querySelector('.cards__modal')
 
 // Función mostrar Cards Modal.
 const showCardsModal = () => {
-	setTimeout(() => document.querySelector('.cards__template-content').setAttribute('style', 'transform: translateY(0); transition: transform 1s'),200)
+	setTimeout(() => document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(1); transition: transform 1s'),300)
 }
 
 // Evento abrir Cards Modal.
