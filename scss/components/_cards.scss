@@ -220,6 +220,7 @@
         list-style: disc;
         line-height: 20px;
         margin-bottom: 2rem;
+        padding: 0 0 0 5px;
 
         // Wide 540px
         @include from(medium) {

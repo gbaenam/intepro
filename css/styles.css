@@ -1118,6 +1118,7 @@ textarea {
   list-style: disc;
   line-height: 20px;
   margin-bottom: 2rem;
+  padding: 0 0 0 5px;
 }
 @media screen and (min-width: 540px) {
   .cards__template-list {
