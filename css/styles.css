@@ -1108,6 +1108,17 @@ textarea {
 .cards__template-button::after {
   content: "!";
 }
+.cards__template-list {
+  list-style: disc;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+.cards__template-list li {
+  margin-bottom: 0.5rem;
+}
+.cards__template-list li:last-child {
+  margin-bottom: 0;
+}
 
 /* ------------------ form.scss ---------------------- */
 .form {
@@ -1153,7 +1164,7 @@ textarea {
 }
 .form__container {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   padding-left: 0;
   padding-right: 0;
   overflow-y: scroll;

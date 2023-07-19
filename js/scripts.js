@@ -134,10 +134,12 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 
         case 'cards-credit':
             cardsModal.appendChild(document.getElementById('cards-template2').content.cloneNode(true))
+			showCardsModal()
         break;
 
         case 'cards-certificate':
             cardsModal.appendChild(document.getElementById('cards-template3').content.cloneNode(true))
+			showCardsModal()
         break;
     }
 })

@@ -210,4 +210,18 @@
     &__template-button::after {
         content: "!";
     }
+
+    &__template-list {
+        list-style: disc;
+        line-height: 20px;
+        margin-bottom: 2rem;
+    }
+
+    &__template-list li {
+        margin-bottom: .5rem;
+    }
+
+    &__template-list li:last-child {
+        margin-bottom: 0;
+    }
 }
