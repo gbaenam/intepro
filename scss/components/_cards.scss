@@ -173,12 +173,17 @@
         width: 90%;
         display: flex;
         margin: 0 auto;
+        max-width: 60rem;
         padding: 1.25rem;
         position: relative;
         transform: scale(0);
         flex-direction: column;
         border-radius: 0.625rem;
         background-color: #fff;
+
+        @include from(xxmedium) {
+            padding: 2.5rem 2.5rem 1.875rem;
+        }
     }
 
     &__template-close {
@@ -215,6 +220,11 @@
         list-style: disc;
         line-height: 20px;
         margin-bottom: 2rem;
+
+        // Wide 540px
+        @include from(medium) {
+            padding: 10px 20px 10px;
+        }
     }
 
     &__template-list li {
