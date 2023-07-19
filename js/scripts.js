@@ -145,8 +145,17 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 // Evento cerrar Cards Modal.
 cardsModal.addEventListener('click', e => {
 	e.stopPropagation()
-    document.querySelector('.cards__template-content').remove()
-    cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden' )
+	const sourceClass = e.target.classList
+
+	if (sourceClass.contains('cards__modal') || sourceClass.contains('cards__template-close'))  {
+
+		document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
+
+		setTimeout(() => {
+			document.querySelector('.cards__template-content').remove()
+			cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
+		},1500)
+	}
 })
 
 

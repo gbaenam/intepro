@@ -248,7 +248,7 @@ textarea {
   position: fixed;
   z-index: 1000;
   visibility: hidden;
-  background-color: rgba(7, 18, 43, 0.96);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* ------------------ line-break.scss ---------------------- */
@@ -1075,14 +1075,21 @@ textarea {
 }
 .cards__template-content {
   width: 90%;
-  padding: 20px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 1.25rem;
+  position: relative;
   transform: scale(0);
-  border-radius: 10px;
   flex-direction: column;
-  background-color: white;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+.cards__template-close {
+  right: 0;
+  top: -60px;
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
 }
 .cards__template-info {
   margin-bottom: 2rem;
