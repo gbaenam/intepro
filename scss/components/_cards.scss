@@ -9,10 +9,22 @@
     --fw-footer-text: 700;
     --mw-footer-text: none;
     --c-footer-title-text: #444;
+    --p-template-content: 1.25rem;
+    --p-template-list: 0 0 0 0.3125rem;
+
+    // Wide 540px
+    @include from(medium) {
+        --p-template-list: 0.625rem 1.25rem 0.625rem;
+    }
 
     // Wide 676px
     @include from(676px) {
         --ar-image: 1 / .5;
+    }
+
+    // Wide 960px
+    @include from(xxmedium) {
+        --p-template-content: 2.5rem 2.5rem 1.875rem;
     }
 
     // Wide 1040px
@@ -174,18 +186,12 @@
         display: flex;
         margin: 0 auto;
         max-width: 60rem;
-        --p-template-content: 1.25rem;
-        padding: var(--p-template-content);
         position: relative;
         transform: scale(0);
         flex-direction: column;
         border-radius: 0.625rem;
         background-color: #fff;
-
-        @include from(xxmedium) {
-            --p-template-content: 2.5rem 2.5rem 1.875rem;
-            padding: var(--p-template-content);
-        }
+        padding: var(--p-template-content);
     }
 
     &__template-close {
@@ -222,14 +228,7 @@
         list-style: disc;
         margin-bottom: 2rem;
         line-height: 1.25rem;
-        --p-template-list: 0 0 0 0.3125rem;
         padding: var(--p-template-list);
-
-        // Wide 540px
-        @include from(medium) {
-            --p-template-list: 0.625rem 1.25rem 0.625rem;
-            padding: var(--p-template-list);
-        }
     }
 
     &__template-list li {

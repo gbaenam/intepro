@@ -943,10 +943,22 @@ textarea {
   --fw-footer-text: 700;
   --mw-footer-text: none;
   --c-footer-title-text: #444;
+  --p-template-content: 1.25rem;
+  --p-template-list: 0 0 0 0.3125rem;
+}
+@media screen and (min-width: 540px) {
+  .cards {
+    --p-template-list: 0.625rem 1.25rem 0.625rem;
+  }
 }
 @media screen and (min-width: 676px) {
   .cards {
     --ar-image: 1 / .5;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cards {
+    --p-template-content: 2.5rem 2.5rem 1.875rem;
   }
 }
 @media screen and (min-width: 1040px) {
@@ -1078,19 +1090,12 @@ textarea {
   display: flex;
   margin: 0 auto;
   max-width: 60rem;
-  --p-template-content: 1.25rem;
-  padding: var(--p-template-content);
   position: relative;
   transform: scale(0);
   flex-direction: column;
   border-radius: 0.625rem;
   background-color: #fff;
-}
-@media screen and (min-width: 960px) {
-  .cards__template-content {
-    --p-template-content: 2.5rem 2.5rem 1.875rem;
-    padding: var(--p-template-content);
-  }
+  padding: var(--p-template-content);
 }
 .cards__template-close {
   right: 0;
@@ -1120,14 +1125,7 @@ textarea {
   list-style: disc;
   margin-bottom: 2rem;
   line-height: 1.25rem;
-  --p-template-list: 0 0 0 0.3125rem;
   padding: var(--p-template-list);
-}
-@media screen and (min-width: 540px) {
-  .cards__template-list {
-    --p-template-list: 0.625rem 1.25rem 0.625rem;
-    padding: var(--p-template-list);
-  }
 }
 .cards__template-list li {
   margin-bottom: 0.5rem;
