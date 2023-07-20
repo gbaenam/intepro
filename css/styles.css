@@ -1078,7 +1078,8 @@ textarea {
   display: flex;
   margin: 0 auto;
   max-width: 60rem;
-  padding: 1.25rem;
+  --p-template-content: 1.25rem;
+  padding: var(--p-template-content);
   position: relative;
   transform: scale(0);
   flex-direction: column;
@@ -1087,7 +1088,8 @@ textarea {
 }
 @media screen and (min-width: 960px) {
   .cards__template-content {
-    padding: 2.5rem 2.5rem 1.875rem;
+    --p-template-content: 2.5rem 2.5rem 1.875rem;
+    padding: var(--p-template-content);
   }
 }
 .cards__template-close {
@@ -1118,11 +1120,13 @@ textarea {
   list-style: disc;
   margin-bottom: 2rem;
   line-height: 1.25rem;
-  padding: 0 0 0 0.3125rem;
+  --p-template-list: 0 0 0 0.3125rem;
+  padding: var(--p-template-list);
 }
 @media screen and (min-width: 540px) {
   .cards__template-list {
-    padding: 0.625rem 1.25rem 0.625rem;
+    --p-template-list: 0.625rem 1.25rem 0.625rem;
+    padding: var(--p-template-list);
   }
 }
 .cards__template-list li {
