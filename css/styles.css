@@ -317,9 +317,9 @@ textarea {
   bottom: 3.5rem;
   height: 3.75rem;
   position: fixed;
-  z-index: 100;
   font-size: 3.75rem;
   align-items: center;
+  z-index: 10000;
   color: #1bd741;
   justify-content: center;
   background-color: transparent;

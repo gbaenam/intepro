@@ -9,9 +9,9 @@
     bottom: 3.5rem;
     height: 3.75rem;
     position: fixed;
-    z-index: $z-fixed;
     font-size: 3.75rem;
     align-items: center;
+    z-index: $z-modal-alt;
     color: $color-whatsapp;
     justify-content: center;
     background-color: transparent;
