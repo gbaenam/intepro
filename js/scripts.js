@@ -114,10 +114,23 @@ addEventListener('resize', elementHeight)
 // Cards Modal
 cardsModal = document.querySelector('.cards__modal')
 
+
 // Función mostrar Cards Modal.
 const showCardsModal = () => {
+	document.querySelector('.cards__template-button').addEventListener('click', openForm)
 	setTimeout(() => document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(1); transition: transform 400ms'),300)
 }
+
+// Función cerrar Cards Modal
+const closeCardsModal = () => {
+	setTimeout(() => {
+		document.querySelector('.cards__template-content').remove()
+		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
+	},1500)
+
+	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
+}
+
 
 // Evento abrir Cards Modal.
 document.querySelector('.cards__articles').addEventListener('click', e => {
@@ -148,17 +161,13 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
 cardsModal.addEventListener('click', e => {
 	e.stopPropagation()
 	const sourceClass = e.target.classList
-
-	if (sourceClass.contains('cards__modal') || sourceClass.contains('cards__template-close'))  {
-
-		document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
-
-		setTimeout(() => {
-			document.querySelector('.cards__template-content').remove()
-			cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
-		},1500)
-	}
+	if (sourceClass.contains('cards__modal') || sourceClass.contains('cards__template-close')) closeCardsModal()
 })
+
+
+
+
+
 
 
 /* ================= BEGIN FORMULARIO =====================*/
@@ -218,9 +227,9 @@ const closeForm = () => {
 	if (nav.classList.contains('main-nav__move')) {
 		burgerLine.classList.toggle('cruz')
 		nav.classList.toggle('main-nav__move')
-	}
+	} else if (document.querySelector('.cards__template-content')) closeCardsModal()
 	formContainer.classList.remove('form--show')
-	setTimeout(() => form.style.visibility = 'hidden',1500)
+	setTimeout(() => form.style.visibility = 'hidden',1000)
 }
 
 
