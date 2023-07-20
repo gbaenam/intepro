@@ -1092,7 +1092,7 @@ textarea {
 }
 .cards__template-close {
   right: 0;
-  top: -60px;
+  top: -3.75rem;
   color: #fff;
   font-size: 3rem;
   position: absolute;
@@ -1116,13 +1116,13 @@ textarea {
 }
 .cards__template-list {
   list-style: disc;
-  line-height: 20px;
   margin-bottom: 2rem;
-  padding: 0 0 0 5px;
+  line-height: 1.25rem;
+  padding: 0 0 0 0.3125rem;
 }
 @media screen and (min-width: 540px) {
   .cards__template-list {
-    padding: 10px 20px 10px;
+    padding: 0.625rem 1.25rem 0.625rem;
   }
 }
 .cards__template-list li {
