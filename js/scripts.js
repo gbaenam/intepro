@@ -116,7 +116,6 @@ cardsModal = document.querySelector('.cards__modal')
 
 // Función mostrar Cards Modal.
 const showCardsModal = () => {
-	document.querySelector('.cards__template-button').addEventListener('click', openForm)
 	setTimeout(() => document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(1); transition: transform 400ms'),300)
 }
 
@@ -134,10 +133,9 @@ const closeCardsModal = () => {
 document.querySelector('.cards__articles').addEventListener('click', e => {
 
 	e.stopPropagation()
-	const id = e.target.id
 	if (e.target.id) cardsModal.setAttribute('style', 'opacity: 1; visibility: visible')
 
-	switch (id) {
+	switch (e.target.id) {
         case 'cards-budget':
             cardsModal.appendChild(document.getElementById('cards-template1').content.cloneNode(true))
 			showCardsModal()
@@ -155,11 +153,11 @@ document.querySelector('.cards__articles').addEventListener('click', e => {
     }
 })
 
-// Evento cerrar Cards Modal.
+// Evento cerrar Cards Modal / Abrir formulario.
 cardsModal.addEventListener('click', e => {
 	e.stopPropagation()
-	const sourceClass = e.target.classList
-	if (sourceClass.contains('cards__modal') || sourceClass.contains('cards__template-close')) closeCardsModal()
+	if (e.target.classList.contains('cards__template-button')) openForm(e)
+	else if (e.target.classList.contains('cards__modal') || e.target.classList.contains('cards__template-close')) closeCardsModal()
 })
 
 
