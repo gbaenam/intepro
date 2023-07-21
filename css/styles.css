@@ -1021,6 +1021,8 @@ textarea {
 .cards__article-header {
   width: 90%;
   flex-grow: 1;
+}
+.cards__article-header, .cards__article-footer {
   margin-left: auto;
   margin-right: auto;
 }
@@ -1054,8 +1056,6 @@ textarea {
 .cards__article-footer {
   width: 90%;
   padding: 1.5rem 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 .cards__footer-title {
   color: var(--c-footer-title);
@@ -1081,7 +1081,6 @@ textarea {
 .cards__template-content {
   width: 90%;
   display: flex;
-  margin: 0 auto;
   max-width: 60rem;
   position: relative;
   transform: scale(0);

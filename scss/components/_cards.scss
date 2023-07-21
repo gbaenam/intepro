@@ -104,6 +104,10 @@
     &__article-header {
         width: 90%;
         flex-grow: 1;
+    }
+
+    &__article-header,
+    &__article-footer {
         margin-left: auto;
         margin-right: auto;
     }
@@ -144,8 +148,6 @@
     &__article-footer {
         width: 90%;
         padding: 1.5rem 0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     &__footer-title {
@@ -180,7 +182,6 @@
     &__template-content {
         width: 90%;
         display: flex;
-        margin: 0 auto;
         max-width: 60rem;
         position: relative;
         transform: scale(0);
