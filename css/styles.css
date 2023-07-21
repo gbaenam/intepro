@@ -1004,11 +1004,13 @@ textarea {
   gap: 3rem;
   flex-wrap: wrap;
   padding-top: 1rem;
-  justify-content: center;
   margin-bottom: var(--mb-articles);
 }
 .cards__articles, .cards__article, .cards__modal, .cards__template-content {
   display: flex;
+}
+.cards__articles, .cards__modal {
+  justify-content: center;
 }
 .cards__article {
   flex-basis: 17.5rem;
@@ -1078,7 +1080,6 @@ textarea {
 }
 .cards__modal {
   align-items: center;
-  justify-content: center;
 }
 .cards__template-content {
   max-width: 60rem;

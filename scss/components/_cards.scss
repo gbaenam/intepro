@@ -84,7 +84,6 @@
         gap: 3rem;
         flex-wrap: wrap;
         padding-top: 1rem;
-        justify-content: center;
         margin-bottom: var(--mb-articles);
     }
 
@@ -93,6 +92,11 @@
     &__modal,
     &__template-content {
         display: flex;
+    }
+
+    &__articles,
+    &__modal {
+        justify-content: center;
     }
 
     &__article {
@@ -187,7 +191,6 @@
     // Cards Modal
     &__modal {
         align-items: center;
-        justify-content: center;
     }
 
     &__template-content {
