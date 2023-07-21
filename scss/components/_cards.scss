@@ -91,7 +91,6 @@
     }
 
     &__article {
-        flex-grow: 1;
         display: flex;
         flex-basis: 17.5rem;
         max-width: 28.125rem;
@@ -101,9 +100,13 @@
         font-size: 1rem; // Todo: Referencia para medidas "em"
     }
 
+    &__article,
+    &__article-header {
+        flex-grow: 1;
+    }
+
     &__article-header {
         width: 90%;
-        flex-grow: 1;
     }
 
     &__article-header,
