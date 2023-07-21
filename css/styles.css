@@ -985,19 +985,19 @@ textarea {
 .cards {
   background: var(--bg-cards);
 }
-.cards__title, .cards__subtitle {
+.cards__title, .cards__subtitle, .cards__footer {
   text-align: center;
 }
-.cards__title::before, .cards__footer-title::before {
+.cards__title::before, .cards__footer-title::before, .cards__template-button::before, .cards__template-button::before {
   content: "¡";
 }
-.cards__title::after, .cards__footer-title::after {
+.cards__title::after, .cards__footer-title::after, .cards__template-button::after, .cards__template-button::after {
   content: "!";
 }
 .cards__title span, .cards__title::after {
   color: #cc0000;
 }
-.cards__subtitle span {
+.cards__subtitle span, .cards__article-title, .cards__footer-title {
   text-transform: uppercase;
 }
 .cards__articles {
@@ -1049,7 +1049,6 @@ textarea {
 .cards__article-title {
   font-size: 1.375rem;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
   color: #cc0000;
 }
 .cards__article-footer {
@@ -1058,11 +1057,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-.cards__footer {
-  text-align: center;
-}
 .cards__footer-title {
-  text-transform: uppercase;
   color: var(--c-footer-title);
   font-weight: var(--fw-footer-title);
 }
@@ -1112,12 +1107,6 @@ textarea {
   align-self: center;
   margin-bottom: 1rem;
   text-transform: none;
-}
-.cards__template-button::before {
-  content: "¡";
-}
-.cards__template-button::after {
-  content: "!";
 }
 .cards__template-list {
   list-style: disc;

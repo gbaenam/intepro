@@ -52,12 +52,15 @@
     background: var(--bg-cards);
 
     &__title,
-    &__subtitle {
+    &__subtitle,
+    &__footer {
         text-align: center;
     }
 
     &__title,
-    &__footer-title {
+    &__footer-title,
+    &__template-button,
+    &__template-button {
         &::before {
             content: "¡";
         }
@@ -72,7 +75,9 @@
         color: $color-red-canada-alt;
     }
 
-    &__subtitle span {
+    &__subtitle span,
+    &__article-title,
+    &__footer-title {
         text-transform: uppercase;
     }
 
@@ -133,7 +138,6 @@
     &__article-title {
         font-size: 1.375rem;
         margin-bottom: .5rem;
-        text-transform: uppercase;
         color: $color-red-canada-alt;
     }
 
@@ -144,12 +148,7 @@
         margin-right: auto;
     }
 
-    &__footer {
-        text-align: center;
-    }
-
     &__footer-title {
-        text-transform: uppercase;
         color: var(--c-footer-title);
         font-weight: var(--fw-footer-title);
     }
@@ -211,14 +210,6 @@
         align-self: center;
         margin-bottom: 1rem;
         text-transform: none;
-    }
-
-    &__template-button::before {
-        content: "¡";
-    }
-
-    &__template-button::after {
-        content: "!";
     }
 
     &__template-list {
