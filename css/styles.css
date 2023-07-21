@@ -1002,14 +1002,15 @@ textarea {
 }
 .cards__articles {
   gap: 3rem;
-  display: flex;
   flex-wrap: wrap;
   padding-top: 1rem;
   justify-content: center;
   margin-bottom: var(--mb-articles);
 }
-.cards__article {
+.cards__articles, .cards__article, .cards__modal, .cards__template-content {
   display: flex;
+}
+.cards__article {
   flex-basis: 17.5rem;
   max-width: 28.125rem;
   flex-direction: column;
@@ -1074,12 +1075,10 @@ textarea {
   margin-bottom: calc(1.5em + 1.5vw);
 }
 .cards__modal {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 .cards__template-content {
-  display: flex;
   max-width: 60rem;
   position: relative;
   transform: scale(0);

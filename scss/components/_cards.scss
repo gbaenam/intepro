@@ -82,15 +82,20 @@
 
     &__articles {
         gap: 3rem;
-        display: flex;
         flex-wrap: wrap;
         padding-top: 1rem;
         justify-content: center;
         margin-bottom: var(--mb-articles);
     }
 
-    &__article {
+    &__articles,
+    &__article,
+    &__modal,
+    &__template-content {
         display: flex;
+    }
+
+    &__article {
         flex-basis: 17.5rem;
         max-width: 28.125rem;
         flex-direction: column;
@@ -177,13 +182,11 @@
 
     // Cards Modal
     &__modal {
-        display: flex;
         align-items: center;
         justify-content: center;
     }
 
     &__template-content {
-        display: flex;
         max-width: 60rem;
         position: relative;
         transform: scale(0);
