@@ -218,12 +218,13 @@ cleanForm()
 
 // Función cerrar formulario
 const closeForm = () => {
+	formContainer.classList.remove('form--show')
+	setTimeout(() => form.style.visibility = 'hidden',1000)
+
 	if (nav.classList.contains('main-nav__move')) {
 		burgerLine.classList.toggle('cruz')
 		nav.classList.toggle('main-nav__move')
-	} else if (document.querySelector('.cards__template-content')) closeCardsModal()
-	formContainer.classList.remove('form--show')
-	setTimeout(() => form.style.visibility = 'hidden',1000)
+	}
 }
 
 
