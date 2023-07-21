@@ -6,9 +6,9 @@
     --ar-image: 1 / .7;
     --mb-articles: 3rem;
     --bg-cards: #fafbfa;
-    --fw-footer-text: 700; // Todo: Ojo!!
     --mw-footer-text: none;
     --c-footer-text: #444; // Todo: Ojo!!
+    --fw-footer-text-span: 700;
     --p-template-content: 1.25rem;
     --p-template-list: 0 0 0 0.3125rem;
 
@@ -31,8 +31,8 @@
     @include from(1040px) {
         --mb-articles: 4rem;
         --mw-footer-text: 70%;
-        --fw-footer-text: 400;
         --c-footer-text: #fff;
+        --fw-footer-text-span: 400;
         --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
     }
 
@@ -179,7 +179,7 @@
     &__footer-text span:first-child,
     &__footer-text span:nth-child(2),
     &__footer-text span:nth-child(3) {
-        font-weight: var(--fw-footer-text);
+        font-weight: var(--fw-footer-text-span);
     }
 
     &__footer-button {
