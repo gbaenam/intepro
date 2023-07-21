@@ -201,8 +201,9 @@
         position: absolute;
     }
 
-    &__template-info {
-        margin-bottom: 2rem; // Todo: aquí
+    &__template-info,
+    &__template-list {
+        margin-bottom: 2rem;
     }
 
     &__template-info span {
@@ -217,7 +218,6 @@
 
     &__template-list {
         list-style: disc;
-        margin-bottom: 2rem; // Todo: aquí
         line-height: 1.25rem;
         padding: var(--p-template-list);
     }

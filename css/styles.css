@@ -1095,7 +1095,7 @@ textarea {
   font-size: 3rem;
   position: absolute;
 }
-.cards__template-info {
+.cards__template-info, .cards__template-list {
   margin-bottom: 2rem;
 }
 .cards__template-info span {
@@ -1108,7 +1108,6 @@ textarea {
 }
 .cards__template-list {
   list-style: disc;
-  margin-bottom: 2rem;
   line-height: 1.25rem;
   padding: var(--p-template-list);
 }
