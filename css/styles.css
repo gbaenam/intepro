@@ -988,10 +988,10 @@ textarea {
 .cards__title {
   text-align: center;
 }
-.cards__title::before {
+.cards__title::before, .cards__footer-title::before {
   content: "¡";
 }
-.cards__title::after {
+.cards__title::after, .cards__footer-title::after {
   content: "!";
 }
 .cards__title span, .cards__title::after {
@@ -1068,12 +1068,6 @@ textarea {
   text-transform: uppercase;
   color: var(--c-footer-title);
   font-weight: var(--fw-footer-title);
-}
-.cards__footer-title::before {
-  content: "¡";
-}
-.cards__footer-title::after {
-  content: "!";
 }
 .cards__footer-text {
   margin: 0 auto 3rem;

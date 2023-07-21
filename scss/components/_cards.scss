@@ -53,7 +53,10 @@
 
     &__title {
         text-align: center;
+    }
 
+    &__title,
+    &__footer-title {
         &::before {
             content: "¡";
         }
@@ -152,14 +155,6 @@
         text-transform: uppercase;
         color: var(--c-footer-title);
         font-weight: var(--fw-footer-title);
-
-        &::before {
-            content: "¡";
-        }
-
-        &::after {
-            content: "!";
-        }
     }
 
     &__footer-text {
