@@ -1061,15 +1061,18 @@ textarea {
   text-align: center;
 }
 .cards__footer-title {
-  font-weight: 700;
+  --fw-footer-title: 700;
+  font-weight: var(--fw-footer-title);
   text-transform: uppercase;
   --c-footer-title: #444;
   color: var(--c-footer-title);
 }
 @media screen and (min-width: 1040px) {
   .cards__footer-title {
-    color: #fff;
-    font-weight: 500;
+    --c-footer-title: #fff;
+    color: var(--c-footer-title);
+    --fw-footer-title: 500;
+    font-weight: var(--fw-footer-title);
   }
 }
 .cards__footer-title::before {
