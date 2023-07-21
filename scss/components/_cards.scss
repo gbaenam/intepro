@@ -6,9 +6,9 @@
     --ar-image: 1 / .7;
     --mb-articles: 3rem;
     --bg-cards: #fafbfa;
-    --fw-footer-text: 700;
+    --fw-footer-text: 700; // Todo: Ojo!!
     --mw-footer-text: none;
-    --c-footer-title-text: #444;
+    --c-footer-text: #444; // Todo: Ojo!!
     --p-template-content: 1.25rem;
     --p-template-list: 0 0 0 0.3125rem;
 
@@ -32,7 +32,7 @@
         --mb-articles: 4rem;
         --mw-footer-text: 70%;
         --fw-footer-text: 400;
-        --c-footer-title-text: #fff;
+        --c-footer-text: #fff;
         --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
     }
 
@@ -138,10 +138,6 @@
         margin-right: auto;
     }
 
-    // &__button {
-    //     background-color: $color-red-canada-alt;
-    // }
-
     &__footer {
         text-align: center;
     }
@@ -149,8 +145,8 @@
     &__footer-title {
         font-weight: 700;
         text-transform: uppercase;
-
-        color: #cc0000;
+        --c-footer-title: #444;
+        color: var(--c-footer-title);
 
         @include from(1040px) {
             // color: #48ff42;
@@ -169,12 +165,16 @@
 
     &__footer-text {
         margin: 0 auto 3rem;
+        color: var(--c-footer-text);
         max-width: var(--mw-footer-text);
+
+        @include from(1040px) {
+            font-weight: 300;
+        }
     }
 
-    &__footer-text {
-        color: var(--c-footer-title-text);
-    }
+    // &__footer-text {
+    // }
 
     &__footer-text span:first-child,
     &__footer-text span:nth-child(2),
@@ -184,6 +184,7 @@
 
     &__footer-button {
         margin-bottom: calc(1.5em + 1.5vw);
+        // text-transform: none;
 
         // background-color: #00ee00;
         // border-color:#00ee00;

@@ -942,7 +942,7 @@ textarea {
   --bg-cards: #fafbfa;
   --fw-footer-text: 700;
   --mw-footer-text: none;
-  --c-footer-title-text: #444;
+  --c-footer-text: #444;
   --p-template-content: 1.25rem;
   --p-template-list: 0 0 0 0.3125rem;
 }
@@ -966,7 +966,7 @@ textarea {
     --mb-articles: 4rem;
     --mw-footer-text: 70%;
     --fw-footer-text: 400;
-    --c-footer-title-text: #fff;
+    --c-footer-text: #fff;
     --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
   }
 }
@@ -1061,7 +1061,8 @@ textarea {
 .cards__footer-title {
   font-weight: 700;
   text-transform: uppercase;
-  color: #cc0000;
+  --c-footer-title: #444;
+  color: var(--c-footer-title);
 }
 @media screen and (min-width: 1040px) {
   .cards__footer-title {
@@ -1077,10 +1078,13 @@ textarea {
 }
 .cards__footer-text {
   margin: 0 auto 3rem;
+  color: var(--c-footer-text);
   max-width: var(--mw-footer-text);
 }
-.cards__footer-text {
-  color: var(--c-footer-title-text);
+@media screen and (min-width: 1040px) {
+  .cards__footer-text {
+    font-weight: 300;
+  }
 }
 .cards__footer-text span:first-child, .cards__footer-text span:nth-child(2), .cards__footer-text span:nth-child(3) {
   font-weight: var(--fw-footer-text);
