@@ -985,7 +985,7 @@ textarea {
 .cards {
   background: var(--bg-cards);
 }
-.cards__title {
+.cards__title, .cards__subtitle {
   text-align: center;
 }
 .cards__title::before, .cards__footer-title::before {
@@ -996,9 +996,6 @@ textarea {
 }
 .cards__title span, .cards__title::after {
   color: #cc0000;
-}
-.cards__subtitle {
-  text-align: center;
 }
 .cards__subtitle span {
   text-transform: uppercase;

@@ -51,7 +51,8 @@
 .cards {
     background: var(--bg-cards);
 
-    &__title {
+    &__title,
+    &__subtitle {
         text-align: center;
     }
 
@@ -69,10 +70,6 @@
     &__title span,
     &__title::after {
         color: $color-red-canada-alt;
-    }
-
-    &__subtitle {
-        text-align: center;
     }
 
     &__subtitle span {
