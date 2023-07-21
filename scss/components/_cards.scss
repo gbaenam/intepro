@@ -6,8 +6,9 @@
     --ar-image: 1 / .7;
     --mb-articles: 3rem;
     --bg-cards: #fafbfa;
+    --fw-footer-text: 400;
     --mw-footer-text: none;
-    --c-footer-text: #444; // Todo: Ojo!!
+    --c-footer-text: #444;
     --fw-footer-text-span: 700;
     --p-template-content: 1.25rem;
     --p-template-list: 0 0 0 0.3125rem;
@@ -31,6 +32,7 @@
     @include from(1040px) {
         --mb-articles: 4rem;
         --mw-footer-text: 70%;
+        --fw-footer-text: 300;
         --c-footer-text: #fff;
         --fw-footer-text-span: 400;
         --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
@@ -167,10 +169,7 @@
         margin: 0 auto 3rem;
         color: var(--c-footer-text);
         max-width: var(--mw-footer-text);
-
-        @include from(1040px) {
-            font-weight: 300;
-        }
+        font-weight: var(--fw-footer-text);
     }
 
     &__footer-text span:first-child,

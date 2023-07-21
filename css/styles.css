@@ -940,6 +940,7 @@ textarea {
   --ar-image: 1 / .7;
   --mb-articles: 3rem;
   --bg-cards: #fafbfa;
+  --fw-footer-text: 400;
   --mw-footer-text: none;
   --c-footer-text: #444;
   --fw-footer-text-span: 700;
@@ -965,6 +966,7 @@ textarea {
   .cards {
     --mb-articles: 4rem;
     --mw-footer-text: 70%;
+    --fw-footer-text: 300;
     --c-footer-text: #fff;
     --fw-footer-text-span: 400;
     --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
@@ -1080,11 +1082,7 @@ textarea {
   margin: 0 auto 3rem;
   color: var(--c-footer-text);
   max-width: var(--mw-footer-text);
-}
-@media screen and (min-width: 1040px) {
-  .cards__footer-text {
-    font-weight: 300;
-  }
+  font-weight: var(--fw-footer-text);
 }
 .cards__footer-text span:first-child, .cards__footer-text span:nth-child(2), .cards__footer-text span:nth-child(3) {
   font-weight: var(--fw-footer-text-span);
