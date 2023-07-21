@@ -8,7 +8,9 @@
     --bg-cards: #fafbfa;
     --fw-footer-text: 400;
     --mw-footer-text: none;
+    --fw-footer-title: 700;
     --c-footer-text: #444;
+    --c-footer-title: #444;
     --fw-footer-text-span: 700;
     --p-template-content: 1.25rem;
     --p-template-list: 0 0 0 0.3125rem;
@@ -33,7 +35,9 @@
         --mb-articles: 4rem;
         --mw-footer-text: 70%;
         --fw-footer-text: 300;
+        --fw-footer-title: 500;
         --c-footer-text: #fff;
+        --c-footer-title: #fff;
         --fw-footer-text-span: 400;
         --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
     }
@@ -145,18 +149,9 @@
     }
 
     &__footer-title {
-        --fw-footer-title: 700;
-        font-weight: var(--fw-footer-title);
         text-transform: uppercase;
-        --c-footer-title: #444;
         color: var(--c-footer-title);
-
-        @include from(1040px) {
-            --c-footer-title: #fff;
-            color: var(--c-footer-title);
-            --fw-footer-title: 500;
-            font-weight: var(--fw-footer-title);
-        }
+        font-weight: var(--fw-footer-title);
 
         &::before {
             content: "¡";
