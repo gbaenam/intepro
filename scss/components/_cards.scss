@@ -64,7 +64,6 @@
         &::before {
             content: "¡";
         }
-
         &::after {
             content: "!";
         }
@@ -105,7 +104,9 @@
         flex-grow: 1;
     }
 
-    &__article-header {
+    &__article-header,
+    &__article-footer,
+    &__template-content {
         width: 90%;
     }
 
@@ -149,7 +150,6 @@
     }
 
     &__article-footer {
-        width: 90%;
         padding: 1.5rem 0;
     }
 
@@ -183,7 +183,6 @@
     }
 
     &__template-content {
-        width: 90%;
         display: flex;
         max-width: 60rem;
         position: relative;
@@ -203,7 +202,7 @@
     }
 
     &__template-info {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; // Todo: aquí
     }
 
     &__template-info span {
@@ -218,7 +217,7 @@
 
     &__template-list {
         list-style: disc;
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; // Todo: aquí
         line-height: 1.25rem;
         padding: var(--p-template-list);
     }

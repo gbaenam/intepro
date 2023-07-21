@@ -1020,7 +1020,7 @@ textarea {
 .cards__article, .cards__article-header {
   flex-grow: 1;
 }
-.cards__article-header {
+.cards__article-header, .cards__article-footer, .cards__template-content {
   width: 90%;
 }
 .cards__article-header, .cards__article-footer {
@@ -1055,7 +1055,6 @@ textarea {
   color: #cc0000;
 }
 .cards__article-footer {
-  width: 90%;
   padding: 1.5rem 0;
 }
 .cards__footer-title {
@@ -1080,7 +1079,6 @@ textarea {
   justify-content: center;
 }
 .cards__template-content {
-  width: 90%;
   display: flex;
   max-width: 60rem;
   position: relative;
