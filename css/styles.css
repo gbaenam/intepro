@@ -206,7 +206,7 @@ textarea {
 
 .headline-medium {
   margin-bottom: 0.4em;
-  font-size: calc(1.5em + 1vw);
+  font-size: calc(1.4em + 1vw);
 }
 
 .headline-big {
@@ -938,7 +938,7 @@ textarea {
 /* ---------------- cards.scss -------------------- */
 .cards {
   --ar-image: 1 / .7;
-  --mb-articles: 2rem;
+  --mb-articles: 3rem;
   --bg-cards: #fafbfa;
   --fw-footer-text: 700;
   --mw-footer-text: none;
@@ -963,16 +963,16 @@ textarea {
 }
 @media screen and (min-width: 1040px) {
   .cards {
-    --mb-articles: 3rem;
+    --mb-articles: 4rem;
     --mw-footer-text: 70%;
     --fw-footer-text: 400;
     --c-footer-title-text: #fff;
-    --bg-cards: linear-gradient(180deg, #fafbfa 47%, #252525 47%);
+    --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
   }
 }
 @media screen and (min-width: 1920px) {
   .cards {
-    --mb-articles: 4.5rem;
+    --mb-articles: 5rem;
   }
 }
 
@@ -1059,19 +1059,27 @@ textarea {
   text-align: center;
 }
 .cards__footer-title {
+  font-weight: 700;
   text-transform: uppercase;
+  color: #cc0000;
+}
+@media screen and (min-width: 1040px) {
+  .cards__footer-title {
+    color: #fff;
+    font-weight: 500;
+  }
 }
 .cards__footer-title::before {
-  content: "¿";
+  content: "¡";
 }
 .cards__footer-title::after {
-  content: "?";
+  content: "!";
 }
 .cards__footer-text {
   margin: 0 auto 3rem;
   max-width: var(--mw-footer-text);
 }
-.cards__footer-title, .cards__footer-text {
+.cards__footer-text {
   color: var(--c-footer-title-text);
 }
 .cards__footer-text span:first-child, .cards__footer-text span:nth-child(2), .cards__footer-text span:nth-child(3) {

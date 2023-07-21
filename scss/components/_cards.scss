@@ -4,7 +4,7 @@
 
 .cards {
     --ar-image: 1 / .7;
-    --mb-articles: 2rem;
+    --mb-articles: 3rem;
     --bg-cards: #fafbfa;
     --fw-footer-text: 700;
     --mw-footer-text: none;
@@ -29,16 +29,16 @@
 
     // Wide 1040px
     @include from(1040px) {
-        --mb-articles: 3rem;
+        --mb-articles: 4rem;
         --mw-footer-text: 70%;
         --fw-footer-text: 400;
         --c-footer-title-text: #fff;
-        --bg-cards: linear-gradient(180deg, #fafbfa 47%, #252525 47%);
+        --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
     }
 
     // Wide 1920px
     @include from(zzlarge) {
-        --mb-articles: 4.5rem;
+        --mb-articles: 5rem;
     }
 }
 
@@ -138,19 +138,32 @@
         margin-right: auto;
     }
 
+    // &__button {
+    //     background-color: $color-red-canada-alt;
+    // }
+
     &__footer {
         text-align: center;
     }
 
     &__footer-title {
+        font-weight: 700;
         text-transform: uppercase;
 
+        color: #cc0000;
+
+        @include from(1040px) {
+            // color: #48ff42;
+            color: #fff;
+            font-weight: 500;
+        }
+
         &::before {
-            content: "¿";
+            content: "¡";
         }
 
         &::after {
-            content: "?";
+            content: "!";
         }
     }
 
@@ -159,7 +172,6 @@
         max-width: var(--mw-footer-text);
     }
 
-    &__footer-title,
     &__footer-text {
         color: var(--c-footer-title-text);
     }
@@ -172,6 +184,9 @@
 
     &__footer-button {
         margin-bottom: calc(1.5em + 1.5vw);
+
+        // background-color: #00ee00;
+        // border-color:#00ee00;
     }
 
     // Cards Modal
