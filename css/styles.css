@@ -1043,7 +1043,7 @@ textarea {
   object-position: left 40%;
   aspect-ratio: var(--ar-image);
 }
-.cards__logo {
+.cards__logo, .cards__template-close {
   position: absolute;
 }
 .cards__logo--bcs {
@@ -1094,7 +1094,6 @@ textarea {
   top: -3.75rem;
   color: #fff;
   font-size: 3rem;
-  position: absolute;
 }
 .cards__template-info, .cards__template-list {
   margin-bottom: 2rem;

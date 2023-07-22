@@ -144,7 +144,8 @@
         aspect-ratio: var(--ar-image);
     }
 
-    &__logo {
+    &__logo,
+    &__template-close {
         position: absolute;
     }
 
@@ -209,7 +210,6 @@
         top: -3.75rem;
         color: #fff;
         font-size: 3rem;
-        position: absolute;
     }
 
     &__template-info,
