@@ -131,6 +131,10 @@
 
     &__figure {
         bottom: 1rem;
+    }
+
+    &__figure,
+    &__template-content {
         position: relative;
     }
 
@@ -195,7 +199,6 @@
 
     &__template-content {
         max-width: 60rem;
-        position: relative;
         transform: scale(0);
         border-radius: 0.625rem;
         padding: var(--p-template-content);

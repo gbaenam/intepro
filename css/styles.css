@@ -1034,6 +1034,8 @@ textarea {
 }
 .cards__figure {
   bottom: 1rem;
+}
+.cards__figure, .cards__template-content {
   position: relative;
 }
 .cards__image {
@@ -1083,7 +1085,6 @@ textarea {
 }
 .cards__template-content {
   max-width: 60rem;
-  position: relative;
   transform: scale(0);
   border-radius: 0.625rem;
   padding: var(--p-template-content);
