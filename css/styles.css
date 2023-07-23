@@ -206,7 +206,7 @@ textarea {
 
 .headline-medium {
   margin-bottom: 0.4em;
-  font-size: calc(1.4em + 1vw);
+  font-size: calc(1.7em + 0.8vw);
 }
 
 .headline-big {

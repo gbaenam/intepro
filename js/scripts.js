@@ -124,7 +124,7 @@ const closeCardsModal = () => {
 	setTimeout(() => {
 		document.querySelector('.cards__template-content').remove()
 		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
-	},1500)
+	},1200)
 
 	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
 }
@@ -217,7 +217,7 @@ cleanForm()
 // Función cerrar formulario
 const closeForm = () => {
 	formContainer.classList.remove('form--show')
-	setTimeout(() => form.style.visibility = 'hidden',1000)
+	setTimeout(() => form.style.visibility = 'hidden',900)
 
 	if (nav.classList.contains('main-nav__move')) {
 		burgerLine.classList.toggle('cruz')
@@ -230,7 +230,7 @@ const closeForm = () => {
 // Función cerrar modal de confirmación
 const closeModal = () => {
 	formModalContent.classList.remove('form--modal-open')
-	setTimeout(() => formModal.style.visibility = 'hidden',1000)
+	setTimeout(() => formModal.style.visibility = 'hidden',900)
 }
 
 
@@ -253,6 +253,7 @@ const close = e => {
 		cleanForm()
 		closeModal()
 		closeForm()
+		closeCardsModal()
 	}
 }
 
