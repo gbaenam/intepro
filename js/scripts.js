@@ -76,14 +76,13 @@ moveSocialBar()
 mql1024.addEventListener('change', moveSocialBar)
 
 
-// Función altura del NAV
-const navHeight = () => {
+// Evento "resize" para calcular altura del NAV
+addEventListener('resize', e => {
+	e.stopPropagation()
 	const heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 	if (mql1024.matches) nav.style.height = 'auto'
 	else nav.style.height = `calc(${innerHeight/16}rem - ${heightHeader})`
-}
-navHeight()
-addEventListener('resize', navHeight)
+})
 
 
 // Función ajustar altura formulario
