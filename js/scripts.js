@@ -76,19 +76,26 @@ moveSocialBar()
 mql1024.addEventListener('change', moveSocialBar)
 
 
+// Función altura del NAV
+const navHeight = () => {
+	const heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
+	if (mql1024.matches) nav.style.height = 'auto'
+	else nav.style.height = `calc(${innerHeight/16}rem - ${heightHeader})`
+}
+
+navHeight()
+addEventListener('resize', navHeight)
+
+
 // Función Altura Elemento.
 const elementHeight = () => {
     // Altura interna del viewport.
-    const vh = innerHeight,
+    const vh = innerHeight
     // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
-    heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
+    // heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 
     if (mql1024.matches) {
 
-		console.log(mql1024.matches) // Todo: Ojo: Aquí!!!
-
-			// Altura del NAV
-			nav.style.height = 'auto'
 
 		if (vh <= formContHeight.clientHeight) {
 			// padding-top formContainer
@@ -101,9 +108,7 @@ const elementHeight = () => {
 		}
 
     } else {
-        // Altura del NAV
-		nav.setAttribute('style', `height: calc(${vh/16}rem - ${heightHeader})`)
-		// padding-top formContainer
+		// nav.setAttribute('style', `height: calc(${vh/16}rem - ${heightHeader})`)
 		formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
     }
 }
