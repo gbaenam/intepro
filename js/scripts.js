@@ -84,6 +84,9 @@ const elementHeight = () => {
     heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 
     if (mql1024.matches) {
+
+		console.log(mql1024.matches) // Todo: Ojo: Aquí!!!
+
 			// Altura del NAV
 			nav.style.height = 'auto'
 
