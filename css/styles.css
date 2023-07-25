@@ -1269,7 +1269,6 @@ textarea {
   margin-right: auto;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 1.25rem;
 }
 .form__button {
   margin-bottom: 1.875rem;

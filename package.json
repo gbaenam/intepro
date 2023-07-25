@@ -23,6 +23,6 @@
     "sass": "^1.59.3"
   },
   "dependencies": {
-    "vercel": "^31.0.3"
+    "vercel": "^31.1.0"
   }
 }

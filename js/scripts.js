@@ -93,6 +93,7 @@ const elementHeight = () => {
 		if (vh <= formContHeight.clientHeight) {
 			// padding-top formContainer
 			formContainer.style.paddingTop = '20px'
+			console.log('aquí ingresó')
 
 		} else {
 			// Calculando padding-top para formContainer
@@ -103,7 +104,7 @@ const elementHeight = () => {
         // Altura del NAV
 		nav.setAttribute('style', `height: calc(${vh/16}rem - ${heightHeader})`)
 		// padding-top formContainer
-		formContainer.style.paddingTop = '50px'
+		formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
     }
 }
 // Ejecución de la función Altura Elemento.
