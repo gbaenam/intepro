@@ -86,24 +86,13 @@ navHeight()
 addEventListener('resize', navHeight)
 
 
-// Función Altura Elemento.
-const elementHeight = () => {
-
-    if (mql1024.matches) {
-
-		if (innerHeight <= formContHeight.clientHeight) {
-			formContainer.style.paddingTop = '20px'
-
-		} else {
-			formContainer.style.paddingTop =  `calc(${(innerHeight-formContHeight.clientHeight)/2}px)`
-		}
-
-    } else {
-		formContainer.style.paddingTop =  `calc(${(innerHeight-formContHeight.clientHeight)/2}px)`
-    }
+// Función ajustar altura formulario
+const setForm = () => {
+	if (innerHeight > formContHeight.clientHeight) formContainer.style.paddingTop =  `calc(${(innerHeight-formContHeight.clientHeight)/2}px)`
+	else formContainer.style.padding = '25px 0'
 }
-elementHeight()
-addEventListener('resize', elementHeight)
+setForm()
+addEventListener('resize', setForm)
 
 
 
