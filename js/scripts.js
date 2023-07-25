@@ -89,7 +89,7 @@ addEventListener('resize', navHeight)
 // Función ajustar altura del formulario
 const formHeight = () => {
 	if (innerHeight > formContHeight.clientHeight) formContainer.style.padding = `calc(${(innerHeight-formContHeight.clientHeight)/2}px) 0 0`
-	else formContainer.style.padding = '25px 0'
+	else formContainer.style.padding = '1.5625rem 0'
 }
 formHeight()
 addEventListener('resize', formHeight)
