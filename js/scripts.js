@@ -86,15 +86,6 @@ navHeight()
 addEventListener('resize', navHeight)
 
 
-// Función ajustar altura del formulario
-const formHeight = () => {
-	if (innerHeight > formContHeight.clientHeight) formContainer.style.padding = `calc(${(innerHeight-formContHeight.clientHeight)/2}px) 0 0`
-	else formContainer.style.padding = '1.5625rem 0'
-}
-formHeight()
-addEventListener('resize', formHeight)
-
-
 
 // Cards Modal
 cardsModal = document.querySelector('.cards__modal')
@@ -181,6 +172,16 @@ const errorMessage = {
 	emailConfirmError: 'Los correos no son iguales',
 	textareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
 }
+
+
+
+// Función ajustar altura del formulario
+const formHeight = () => {
+	if (innerHeight > formContHeight.clientHeight) formContainer.style.padding = `calc(${(innerHeight-formContHeight.clientHeight)/2}px) 0 0`
+	else formContainer.style.padding = '1.5625rem 0'
+}
+formHeight()
+addEventListener('resize', formHeight)
 
 
 
