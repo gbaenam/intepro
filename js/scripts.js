@@ -101,10 +101,9 @@ const elementHeight = () => {
 
     } else {
         // Altura del NAV
-        const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
-        nav.setAttribute('style', navHeight)
-				// padding-top formContainer
-				formContainer.style.paddingTop = '50px'
+		nav.setAttribute('style', `height: calc(${vh/16}rem - ${heightHeader})`)
+		// padding-top formContainer
+		formContainer.style.paddingTop = '50px'
     }
 }
 // Ejecución de la función Altura Elemento.
