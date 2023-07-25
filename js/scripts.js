@@ -161,6 +161,12 @@ cardsModal.addEventListener('click', e => {
 })
 
 
+// Evento apertura de formulario para "cards__footer-button"
+document.querySelector('.cards__footer').addEventListener('click', e => {
+	if (e.target.classList.contains('cards__footer-button')) openForm(e)
+})
+
+
 
 /* ================= BEGIN FORMULARIO =====================*/
 
