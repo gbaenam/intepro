@@ -76,25 +76,26 @@ moveSocialBar()
 mql1024.addEventListener('change', moveSocialBar)
 
 
-// Evento "resize" para calcular altura del NAV
-addEventListener('resize', e => {
-	e.stopPropagation()
+// Función ajustar altura del NAV
+const navHeight = () => {
 	const heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 	if (mql1024.matches) nav.style.height = 'auto'
 	else nav.style.height = `calc(${innerHeight/16}rem - ${heightHeader})`
-})
+}
+navHeight()
+addEventListener('resize', navHeight)
 
 
-// Función ajustar altura formulario
-const setForm = () => {
+// Función ajustar altura del formulario
+const setFormHeight = () => {
 	if (innerHeight > formContHeight.clientHeight) {
 		formContainer.style.paddingBottom = 0
 		formContainer.style.paddingTop = `calc(${(innerHeight-formContHeight.clientHeight)/2}px)`
 	}
 	else formContainer.style.padding = '25px 0'
 }
-setForm()
-addEventListener('resize', setForm)
+setFormHeight()
+addEventListener('resize', setFormHeight)
 
 
 
