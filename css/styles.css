@@ -200,6 +200,10 @@ textarea {
   color: #495057;
 }
 
+fieldset {
+  padding: 0;
+}
+
 .headline {
   font-size: calc(1.2em + 1vw);
 }
@@ -1160,6 +1164,10 @@ textarea {
   transition: transform 1s;
   transform: translateY(-200%);
 }
+.form__container-height {
+  margin: 0 auto;
+  max-width: 465px;
+}
 .form__title {
   line-height: 1;
   font-size: var(--font-size-form-title);
@@ -1167,25 +1175,11 @@ textarea {
 .form__subtitle {
   font-size: 1.4375rem;
 }
-.form__title, .form__subtitle {
-  text-align: center;
-}
-.form__icon-close {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 29.0625rem;
-}
-.form__icon-close::before {
-  content: "\f00d";
-  top: var(--top-form-icon-close-before);
-  right: var(--right-form-icon-close-before);
-  font-size: var(--font-size-form-icon-close-before);
-}
 .form__fieldset {
-  margin: 0;
+  width: 90%;
   border: none;
-  padding: 2.5rem 1.25rem var(--padding-bottom-form-fieldset);
+  padding-top: 2.5rem;
+  padding-bottom: var(--padding-bottom-form-fieldset);
 }
 .form__box {
   margin-bottom: 1.25rem;
@@ -1194,6 +1188,10 @@ textarea {
   display: flex;
   margin-bottom: 0;
   align-items: center;
+}
+.form__box:last-child input {
+  margin-left: 3px;
+  border: 0;
 }
 .form__label, .form__label-checkbox, .form__icon-close::before {
   cursor: var(--cursor-button);
@@ -1253,13 +1251,6 @@ textarea {
 }
 .form__input-emailconfirm {
   padding-left: 2.375rem;
-}
-.form__input-terms {
-  left: 0.4375rem;
-  width: 1.125rem;
-  height: 1.125rem;
-  position: relative;
-  margin-right: 0.875rem;
 }
 .form__wrapper {
   display: flex;

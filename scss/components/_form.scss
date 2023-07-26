@@ -56,6 +56,11 @@
         transform: translateY(-200%);
     }
 
+    &__container-height {
+        margin: 0 auto;
+        max-width: 465px;
+    }
+
     &__title {
         line-height: 1;
         font-size: var(--font-size-form-title);
@@ -65,39 +70,32 @@
         font-size: 1.4375rem;
     }
 
-    &__title,
-    &__subtitle {
-        text-align: center;
-    }
-
-    &__icon-close {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 29.0625rem;
-
-        &::before {
-            content: "\f00d";
-            top: var(--top-form-icon-close-before);
-            right: var(--right-form-icon-close-before);
-            font-size: var(--font-size-form-icon-close-before);
-        }
-    }
+    // &__title,
+    // &__subtitle {
+    //     text-align: center;
+    // }
 
     &__fieldset {
-        margin: 0;
+        width: 90%;
         border: none;
-        padding: 2.5rem 1.25rem var(--padding-bottom-form-fieldset);
+        padding-top: 2.5rem;
+        padding-bottom: var(--padding-bottom-form-fieldset);
     }
 
     &__box {
         margin-bottom: 1.25rem;
     }
 
+    // Todo: Ojo, revisar todo este selector!!!
     &__box:last-child {
         display: flex;
         margin-bottom: 0;
         align-items: center;
+    }
+
+    &__box:last-child input {
+        margin-left: 3px;
+        border: 0;
     }
 
     &__label,
@@ -175,14 +173,15 @@
         padding-left: 2.375rem;
     }
 
-    &__input-terms {
-        left: .4375rem;
-        width: 1.125rem;
-        height: 1.125rem;
-        position: relative;
-        margin-right: .875rem;
-    }
+    // &__input-terms {
+    //     left: .4375rem;
+    //     width: 1.125rem;
+    //     height: 1.125rem;
+    //     position: relative;
+    //     margin-right: .875rem;
+    // }
 
+    // Todo: Ojo, revisar todo el selector!!!
     &__wrapper {
         display: flex;
         margin-left: auto;
