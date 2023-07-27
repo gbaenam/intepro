@@ -59,16 +59,18 @@
     &__container-height {
         margin: 0 auto;
         max-width: 465px;
+
+        background-color: pink;
     }
 
-    &__title {
-        line-height: 1;
-        font-size: var(--font-size-form-title);
-    }
+    // &__title {
+    //     line-height: 1;
+    //     font-size: var(--font-size-form-title);
+    // }
 
-    &__subtitle {
-        font-size: 1.4375rem;
-    }
+    // &__subtitle {
+    //     font-size: 1.4375rem;
+    // }
 
     // &__title,
     // &__subtitle {
@@ -78,8 +80,10 @@
     &__fieldset {
         width: 90%;
         border: none;
-        padding-top: 2.5rem;
+        // padding-top: 2.5rem;
         padding-bottom: var(--padding-bottom-form-fieldset);
+
+        background-color: lightblue;
     }
 
     &__box {

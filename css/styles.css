@@ -1167,19 +1167,13 @@ fieldset {
 .form__container-height {
   margin: 0 auto;
   max-width: 465px;
-}
-.form__title {
-  line-height: 1;
-  font-size: var(--font-size-form-title);
-}
-.form__subtitle {
-  font-size: 1.4375rem;
+  background-color: pink;
 }
 .form__fieldset {
   width: 90%;
   border: none;
-  padding-top: 2.5rem;
   padding-bottom: var(--padding-bottom-form-fieldset);
+  background-color: lightblue;
 }
 .form__box {
   margin-bottom: 1.25rem;
