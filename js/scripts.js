@@ -328,7 +328,7 @@ const changeState = (condition, elemento) => {
 		validateInputs[elemento.name] = false
 		message.style.marginBottom = '8px'
 	}
-	elementHeight()
+	formHeight()
 	submitController()
 }
 
