@@ -1246,13 +1246,6 @@ fieldset {
 .form__input-emailconfirm {
   padding-left: 2.375rem;
 }
-.form__wrapper {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  flex-direction: column;
-}
 .form__button {
   margin-bottom: 1.875rem;
 }
