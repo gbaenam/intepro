@@ -60,7 +60,12 @@
         margin: 0 auto;
         max-width: 465px;
 
-        background-color: pink;
+                        background-color: pink;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     // &__title {
@@ -83,12 +88,16 @@
         // padding-top: 2.5rem;
         padding-bottom: var(--padding-bottom-form-fieldset);
 
-        background-color: lightblue;
+                        background-color: lightblue;
+
+        position: relative;
     }
 
-    // &__close {
-    //     background-color: lightgray;
-    // }
+    &__icon-close {
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
 
     &__box {
         margin-bottom: 1.25rem;

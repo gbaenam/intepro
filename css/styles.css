@@ -1168,12 +1168,21 @@ fieldset {
   margin: 0 auto;
   max-width: 465px;
   background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form__fieldset {
   width: 90%;
   border: none;
   padding-bottom: var(--padding-bottom-form-fieldset);
   background-color: lightblue;
+  position: relative;
+}
+.form__icon-close {
+  position: absolute;
+  right: 0;
+  top: -20px;
 }
 .form__box {
   margin-bottom: 1.25rem;
