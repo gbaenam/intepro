@@ -60,12 +60,16 @@
         margin: 0 auto;
         max-width: 465px;
 
-                        // background-color: pink;
+                        // background-color: lightblue;
 
 
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
+        // width: 90%;
+        // border-radius: 10px;
     }
 
 
@@ -73,7 +77,8 @@
         // line-height: 1;
         // font-size: var(--font-size-form-title);
         margin-bottom: 0;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        font-size: calc(2.5em + .5vw);
     }
 
     &__subtitle {
@@ -83,7 +88,9 @@
     &__fieldset {
         width: 90%;
         border: none;
-        padding-bottom: var(--padding-bottom-form-fieldset);
+        // padding-bottom: var(--padding-bottom-form-fieldset);
+
+        padding-bottom: calc(1em + 1.5vw);
 
                         // background-color: lightblue;
 
@@ -92,10 +99,10 @@
 
     &__icon-close {
         right: 0;
+        color: #444;
         top: -2.0625rem;
         font-size: 2.5rem;
         position: absolute;
-        color: $color-red-canada-alt;
     }
 
 

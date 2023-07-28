@@ -1173,7 +1173,7 @@ fieldset {
 }
 .form__title {
   margin-bottom: 0;
-  text-transform: uppercase;
+  font-size: calc(2.5em + 0.5vw);
 }
 .form__subtitle {
   margin-bottom: 1.5rem;
@@ -1181,15 +1181,15 @@ fieldset {
 .form__fieldset {
   width: 90%;
   border: none;
-  padding-bottom: var(--padding-bottom-form-fieldset);
+  padding-bottom: calc(1em + 1.5vw);
   position: relative;
 }
 .form__icon-close {
   right: 0;
+  color: #444;
   top: -2.0625rem;
   font-size: 2.5rem;
   position: absolute;
-  color: #cc0000;
 }
 .form__box {
   margin-bottom: 1.25rem;
