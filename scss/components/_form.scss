@@ -60,7 +60,7 @@
         margin: 0 auto;
         max-width: 465px;
 
-                        background-color: pink;
+                        // background-color: pink;
 
 
         display: flex;
@@ -68,36 +68,36 @@
         align-items: center;
     }
 
-    // &__title {
-    //     line-height: 1;
-    //     font-size: var(--font-size-form-title);
-    // }
 
-    // &__subtitle {
-    //     font-size: 1.4375rem;
-    // }
+    &__title {
+        // line-height: 1;
+        // font-size: var(--font-size-form-title);
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
 
-    // &__title,
-    // &__subtitle {
-    //     text-align: center;
-    // }
+    &__subtitle {
+        margin-bottom: 1.5rem;
+    }
 
     &__fieldset {
         width: 90%;
         border: none;
-        // padding-top: 2.5rem;
         padding-bottom: var(--padding-bottom-form-fieldset);
 
-                        background-color: lightblue;
+                        // background-color: lightblue;
 
         position: relative;
     }
 
     &__icon-close {
-        position: absolute;
         right: 0;
-        top: -20px;
+        top: -2.0625rem;
+        font-size: 2.5rem;
+        position: absolute;
+        color: $color-red-canada-alt;
     }
+
 
     &__box {
         margin-bottom: 1.25rem;
@@ -110,6 +110,7 @@
         align-items: center;
     }
 
+    // Todo: Revisar!!!
     &__box:last-child input {
         margin-left: 3px;
         border: 0;

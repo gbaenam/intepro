@@ -1167,22 +1167,29 @@ fieldset {
 .form__container-height {
   margin: 0 auto;
   max-width: 465px;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.form__title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.form__subtitle {
+  margin-bottom: 1.5rem;
 }
 .form__fieldset {
   width: 90%;
   border: none;
   padding-bottom: var(--padding-bottom-form-fieldset);
-  background-color: lightblue;
   position: relative;
 }
 .form__icon-close {
-  position: absolute;
   right: 0;
-  top: -20px;
+  top: -2.0625rem;
+  font-size: 2.5rem;
+  position: absolute;
+  color: #cc0000;
 }
 .form__box {
   margin-bottom: 1.25rem;
