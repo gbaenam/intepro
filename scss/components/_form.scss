@@ -25,12 +25,20 @@
 
     &__title {
         margin-bottom: 0;
-        font-size: calc(2.5em + .5vw);
+        font-size: calc(2.5em + 1vw);
     }
 
     &__subtitle {
         margin-bottom: 1.5rem;
     }
+
+    // &__subtitle::before {
+    //     content: "¡";
+    // }
+
+    // &__subtitle::after {
+    //     content: "!";
+    // }
 
     &__fieldset {
         width: 90%;

@@ -1144,7 +1144,7 @@ fieldset {
 }
 .form__title {
   margin-bottom: 0;
-  font-size: calc(2.5em + 0.5vw);
+  font-size: calc(2.5em + 1vw);
 }
 .form__subtitle {
   margin-bottom: 1.5rem;
