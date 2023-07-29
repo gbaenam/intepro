@@ -3,48 +3,7 @@
 /* ------------------ form.scss ---------------------- */
 
 .form {
-    // form__container-height
-    --height-form-container-height: 100%;
-    // form__title
-    --font-size-form-title: 2.6875rem;
-    // form__icon-close::before
-    --top-form-icon-close-before: .625rem;
-    --right-form-icon-close-before: 1.4375rem;
-    --font-size-form-icon-close-before: 2rem;
-    // form__fieldset
-    --padding-bottom-form-fieldset: 3.75rem;
-    // form__copyright-small
-    --font-size-form-copyright-small: 1rem;
-
-
-    // Wide 360px
-    @include from(360px) {
-        // form__title
-        --font-size-form-title: 3.0625rem;
-        // form__copyright-small
-        --font-size-form-copyright-small: 1.125rem;
-    }
-
-    // Wide 412px
-    @include from(412px) {
-        // form__title
-        --font-size-form-title: 3.25rem;
-        // form__icon-close::before
-        --top-form-icon-close-before: .3125rem;
-        --font-size-form-icon-close-before: 2.5rem;
-    }
-
-    // Wide 1024px
-    @include from(large) {
-        // form__container-height
-        --height-form-container-height: auto;
-        // form__fieldset
-        --padding-bottom-form-fieldset: 3.125rem;
-    }
-}
-
-.form {
-    line-height: normal;
+    line-height: normal; // Todo: Revisar esta declaración.
     font-size: 1rem; // TODO: Referencia de "font-size" para "button"
 
     &__container {
@@ -57,26 +16,15 @@
     }
 
     &__container-height {
+        display: flex;
         margin: 0 auto;
         max-width: 465px;
-
-
-
-        display: flex;
-        flex-direction: column;
         align-items: center;
-
-
-        // width: 90%;
-        // border-radius: 10px;
+        flex-direction: column;
     }
 
-
     &__title {
-        // line-height: 1;
-        // font-size: var(--font-size-form-title);
         margin-bottom: 0;
-        // text-transform: uppercase;
         font-size: calc(2.5em + .5vw);
     }
 
@@ -87,13 +35,8 @@
     &__fieldset {
         width: 90%;
         border: none;
-        // padding-bottom: var(--padding-bottom-form-fieldset);
-
-        padding-bottom: calc(1em + 1.5vw);
-
-                        // background-color: lightblue;
-
         position: relative;
+        padding-bottom: calc(1em + 1.5vw);
     }
 
     &__icon-close {
@@ -205,14 +148,6 @@
     //     margin-right: .875rem;
     // }
 
-    // Todo: Ojo, revisar todo el selector!!!
-    // &__wrapper {
-    //     display: flex;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     align-items: center;
-    //     flex-direction: column;
-    // }
 
     &__button {
         margin-bottom: 1.875rem;

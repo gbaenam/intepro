@@ -1124,35 +1124,6 @@ fieldset {
 
 /* ------------------ form.scss ---------------------- */
 .form {
-  --height-form-container-height: 100%;
-  --font-size-form-title: 2.6875rem;
-  --top-form-icon-close-before: .625rem;
-  --right-form-icon-close-before: 1.4375rem;
-  --font-size-form-icon-close-before: 2rem;
-  --padding-bottom-form-fieldset: 3.75rem;
-  --font-size-form-copyright-small: 1rem;
-}
-@media screen and (min-width: 360px) {
-  .form {
-    --font-size-form-title: 3.0625rem;
-    --font-size-form-copyright-small: 1.125rem;
-  }
-}
-@media screen and (min-width: 412px) {
-  .form {
-    --font-size-form-title: 3.25rem;
-    --top-form-icon-close-before: .3125rem;
-    --font-size-form-icon-close-before: 2.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .form {
-    --height-form-container-height: auto;
-    --padding-bottom-form-fieldset: 3.125rem;
-  }
-}
-
-.form {
   line-height: normal;
   font-size: 1rem;
 }
@@ -1165,11 +1136,11 @@ fieldset {
   transform: translateY(-200%);
 }
 .form__container-height {
+  display: flex;
   margin: 0 auto;
   max-width: 465px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .form__title {
   margin-bottom: 0;
@@ -1181,8 +1152,8 @@ fieldset {
 .form__fieldset {
   width: 90%;
   border: none;
-  padding-bottom: calc(1em + 1.5vw);
   position: relative;
+  padding-bottom: calc(1em + 1.5vw);
 }
 .form__icon-close {
   right: 0;
