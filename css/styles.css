@@ -1148,6 +1148,7 @@ fieldset {
 }
 .form__subtitle {
   margin-bottom: 1.5rem;
+  font-size: calc(1.25em + 0.2vw);
 }
 .form__fieldset {
   width: 90%;

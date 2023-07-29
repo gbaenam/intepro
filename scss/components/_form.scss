@@ -30,15 +30,8 @@
 
     &__subtitle {
         margin-bottom: 1.5rem;
+        font-size: calc(1.25em + .2vw);
     }
-
-    // &__subtitle::before {
-    //     content: "¡";
-    // }
-
-    // &__subtitle::after {
-    //     content: "!";
-    // }
 
     &__fieldset {
         width: 90%;
