@@ -165,18 +165,15 @@
         position: relative;
         transition: transform 1s;
         transform: translateY(-100vh);
-
-        // & i {
-        //     left: 50%;
-        //     top: -6.25rem;
-        //     color: #fff;
-        //     position: absolute;
-        //     font-size: 3.75rem;
-        //     cursor: var(--cursor-button);
-        //     transform: translateX(-50%);
-        // }
     }
 
+    &__modal-close {
+        right: 0;
+        top: -3.75rem;
+        color: #fff;
+        font-size: 3rem;
+        position: absolute;
+    }
 
     &__modal-confirmation {
         font-weight: 600;
