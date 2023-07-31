@@ -378,9 +378,8 @@ async function handleSubmit(event) {
 	})
 
 	if (response.ok) {
-		formModal.style.visibility = 'visible'
-		formModal.style.opacity = 1
 		formModalContent.classList.add('form--modal-open')
+		formModal.setAttribute('style', 'visibility: visible; opacity: 1')
 	}
 }
 
