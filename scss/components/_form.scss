@@ -151,11 +151,10 @@
         }
     }
 
-    &__copyright small {
-        color: $color-darker-gray-alt;
-        font-size: var(--font-size-form-copyright-small);
+    &__copyright {
+        font-style: normal;
+        font-size: calc(.9em + .15vw);
     }
-
 
 
     // Ventana Modal para confirmación

@@ -1244,9 +1244,9 @@ fieldset {
   border-color: transparent;
   background-color: #eeeeee;
 }
-.form__copyright small {
-  color: #333333;
-  font-size: var(--font-size-form-copyright-small);
+.form__copyright {
+  font-style: normal;
+  font-size: calc(0.9em + 0.15vw);
 }
 .form__modal {
   top: 0;
