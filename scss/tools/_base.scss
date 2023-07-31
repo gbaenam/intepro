@@ -86,7 +86,7 @@ a,
 i,
 button {
     outline: none;
-    cursor: var(--cursor-button);
+    // cursor: var(--cursor-button);
 }
 
 
@@ -181,21 +181,21 @@ fieldset {
 
 
 // Font Awesome Icons
-.icon {
-    position: relative;
+// .icon {
+//     position: relative;
 
-    &::before {
-        font-weight: 900;
-        font-style: normal;
-        position: absolute;
-        font-variant: normal;
-        text-rendering: auto;
-        display: inline-block;
-        color: $color-dark-gray;
-        font-family: "Font Awesome 5 Free";
-        -webkit-font-smoothing: antialiased;
-    }
-}
+//     &::before {
+//         font-weight: 900;
+//         font-style: normal;
+//         position: absolute;
+//         font-variant: normal;
+//         text-rendering: auto;
+//         display: inline-block;
+//         color: $color-dark-gray;
+//         font-family: "Font Awesome 5 Free";
+//         -webkit-font-smoothing: antialiased;
+//     }
+// }
 
 
 // Clase predefinida modal

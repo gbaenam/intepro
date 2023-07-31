@@ -58,11 +58,11 @@
         align-items: center;
     }
 
-    &__label,
-    &__label-checkbox,
-    &__icon-close::before {
-        cursor: var(--cursor-button);
-    }
+    // &__label,
+    // &__label-checkbox,
+    // &__icon-close::before {
+    //     cursor: var(--cursor-button);
+    // }
 
     &__label {
         position: relative;

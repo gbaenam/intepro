@@ -154,7 +154,6 @@ a,
 i,
 button {
   outline: none;
-  cursor: var(--cursor-button);
 }
 
 button {
@@ -226,21 +225,6 @@ fieldset {
 .headline,
 .headline-big {
   margin-bottom: 0.6em;
-}
-
-.icon {
-  position: relative;
-}
-.icon::before {
-  font-weight: 900;
-  font-style: normal;
-  position: absolute;
-  font-variant: normal;
-  text-rendering: auto;
-  display: inline-block;
-  color: #6a7477;
-  font-family: "Font Awesome 5 Free";
-  -webkit-font-smoothing: antialiased;
 }
 
 .modal {
@@ -1170,9 +1154,6 @@ fieldset {
   display: flex;
   margin-bottom: 0;
   align-items: center;
-}
-.form__label, .form__label-checkbox, .form__icon-close::before {
-  cursor: var(--cursor-button);
 }
 .form__label {
   position: relative;
