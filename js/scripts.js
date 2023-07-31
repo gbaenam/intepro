@@ -32,8 +32,7 @@ const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
 
 // Captura elementos Modal confirmación envío mail de contacto.
 const formModal = document.getElementById('form-modal'),
-	formModalContent = document.getElementById('form-modal-content'),
-	iconFormModal = document.querySelector('.form__modal-content i')
+	formModalContent = document.getElementById('form-modal-content')
 
 
 // Creando consulta de medios para ancho mínimo de 1024px
@@ -241,7 +240,7 @@ const close = e => {
     if (e.target.classList.contains('form__icon-close'))  {
 		cleanForm()
         closeForm()
-    } else if (e.target === formModal || e.target === iconFormModal) {
+    } else if (e.target === formModal || e.target.classList.contains('form__modal-close')) {
 		cleanForm()
 		closeModal()
 		closeForm()
