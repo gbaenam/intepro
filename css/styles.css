@@ -1228,6 +1228,7 @@ fieldset {
 .form__copyright {
   font-style: normal;
   font-size: calc(0.9em + 0.15vw);
+  font-family: "Roboto", sans-serif;
 }
 .form__modal {
   top: 0;
