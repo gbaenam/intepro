@@ -239,7 +239,7 @@ const openForm = e => {
 // Función cerrar
 const close = e => {
     e.stopPropagation()
-    if (e.target === iconFormClose)  {
+    if (e.target.classList.contains('form__icon-close'))  {
 		cleanForm()
         closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
@@ -257,7 +257,7 @@ iconMail.addEventListener('click', openForm)
 buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
-formContainer.addEventListener('click', close)
+document.querySelector('.form__fieldset').addEventListener('click', close)
 
 // Evento cerrar Modal de confirmación
 formModal.addEventListener('click', close)
