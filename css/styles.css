@@ -1231,14 +1231,6 @@ fieldset {
   font-family: "Roboto", sans-serif;
 }
 .form__modal {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  visibility: hidden;
-  z-index: 10000;
-  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1247,15 +1239,6 @@ fieldset {
   position: relative;
   transition: transform 1s;
   transform: translateY(-100vh);
-}
-.form__modal-content i {
-  left: 50%;
-  top: -6.25rem;
-  color: #fff;
-  position: absolute;
-  font-size: 3.75rem;
-  cursor: var(--cursor-button);
-  transform: translateX(-50%);
 }
 .form__modal-confirmation {
   font-weight: 600;
