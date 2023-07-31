@@ -12,7 +12,7 @@
         overflow-y: scroll;
         background-color: #fff;
         transition: transform 1s;
-        transform: translateY(-200%);
+        transform: translateY(-200%); //Todo: Revisar esta declaración.
     }
 
     &__container-height {
@@ -57,12 +57,6 @@
         margin-bottom: 0;
         align-items: center;
     }
-
-    // &__label,
-    // &__label-checkbox,
-    // &__icon-close::before {
-    //     cursor: var(--cursor-button);
-    // }
 
     &__label {
         position: relative;
@@ -169,8 +163,6 @@
 
     &__modal-content {
         position: relative;
-
-        // Animación de modal__content
         transition: transform 1s;
         transform: translateY(-100vh);
 
