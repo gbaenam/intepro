@@ -1171,10 +1171,6 @@ fieldset {
   margin-bottom: 0;
   align-items: center;
 }
-.form__box:last-child input {
-  margin-left: 3px;
-  border: 0;
-}
 .form__label, .form__label-checkbox, .form__icon-close::before {
   cursor: var(--cursor-button);
 }
@@ -1233,6 +1229,12 @@ fieldset {
 }
 .form__input-emailconfirm {
   padding-left: 2.375rem;
+}
+.form__input-terms {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-left: 0.5rem;
+  margin-right: 0.625rem;
 }
 .form__button {
   margin-bottom: 1.875rem;

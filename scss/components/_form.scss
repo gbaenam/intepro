@@ -52,17 +52,10 @@
         margin-bottom: 1.25rem;
     }
 
-    // Todo: Ojo, revisar todo este selector!!!
     &__box:last-child {
         display: flex;
         margin-bottom: 0;
         align-items: center;
-    }
-
-    // Todo: Revisar!!!
-    &__box:last-child input {
-        margin-left: 3px;
-        border: 0;
     }
 
     &__label,
@@ -140,13 +133,12 @@
         padding-left: 2.375rem;
     }
 
-    // &__input-terms {
-    //     left: .4375rem;
-    //     width: 1.125rem;
-    //     height: 1.125rem;
-    //     position: relative;
-    //     margin-right: .875rem;
-    // }
+    &__input-terms {
+        width: 1.125rem;
+        height: 1.125rem;
+        margin-left: 0.5rem;
+        margin-right: 0.625rem;
+    }
 
 
     &__button {
