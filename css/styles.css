@@ -1239,6 +1239,12 @@ fieldset {
   position: relative;
   transition: transform 1s;
   transform: translateY(-100vh);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  max-width: 60rem;
+  border-radius: 0.625rem;
+  background-color: #fff;
 }
 .form__modal-close {
   right: 0;
@@ -1246,14 +1252,6 @@ fieldset {
   color: #fff;
   font-size: 3rem;
   position: absolute;
-}
-.form__modal-confirmation {
-  width: 90%;
-  margin: 0 auto;
-  padding: 1.25rem;
-  border-radius: 10px;
-  background-color: #fff;
-  max-width: 960px;
 }
 .form--show {
   transform: translateY(0);
