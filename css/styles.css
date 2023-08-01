@@ -1247,16 +1247,6 @@ fieldset {
   font-size: 3rem;
   position: absolute;
 }
-.form__modal-confirmation {
-  font-weight: 600;
-  text-align: center;
-  font-size: 2.125rem;
-  color: #6a7477;
-  border-radius: 0.3125rem;
-  background-color: #fff;
-  padding: 1.875rem 1.25rem;
-  font-family: "Poppins", sans-serif;
-}
 .form--show {
   transform: translateY(0);
 }
