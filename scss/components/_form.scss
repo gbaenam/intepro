@@ -175,6 +175,15 @@
         position: absolute;
     }
 
+    &__modal-confirmation {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.25rem;
+        border-radius: 10px;
+        background-color: #fff;
+        max-width: 960px;
+    }
+
     // &__modal-confirmation {
     //     font-weight: 600;
     //     text-align: center;
