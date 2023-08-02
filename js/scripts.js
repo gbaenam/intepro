@@ -222,6 +222,8 @@ const closeForm = () => {
 const closeModal = () => {
 	formModalContent.classList.remove('form--modal-open')
 	setTimeout(() => formModal.style.visibility = 'hidden',900)
+
+	// setTimeout(( => formModal.setAttribute('style', 'visibility ')))
 }
 
 
@@ -378,8 +380,9 @@ async function handleSubmit(event) {
 	})
 
 	if (response.ok) {
+		formModal.style.opacity = 1
+		formModal.style.visibility = 'visible'
 		formModalContent.classList.add('form--modal-open')
-		formModal.setAttribute('style', 'visibility: visible; opacity: 1')
 	}
 }
 
