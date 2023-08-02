@@ -231,8 +231,9 @@ const closeModal = () => {
 // Función abrir formulario
 const openForm = e => {
     e.stopPropagation()
+	form.style.opacity = 1
+	form.style.visibility = 'visible'
 	formContainer.classList.add('form--show')
-	form.setAttribute('style', 'visibility: visible; opacity: 1')
 }
 
 
