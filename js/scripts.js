@@ -246,14 +246,12 @@ const openForm = e => {
 
 // Función cerrar
 const close = e => {
+	cleanForm()
+	closeForm()
     e.stopPropagation()
-    if (e.target.classList.contains('form__icon-close'))  {
-		cleanForm()
-        closeForm()
-    } else if (e.target === formModal || e.target.classList.contains('form__modal-close')) {
-		cleanForm()
+
+	if (e.target === formModal || e.target.classList.contains('form__modal-close')) {
 		closeModal()
-		closeForm()
 		closeCardsModal()
 	}
 }
