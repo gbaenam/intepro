@@ -98,7 +98,7 @@ const closeCardsModal = () => {
 	setTimeout(() => {
 		document.querySelector('.cards__template-content').remove()
 		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
-	},2000)
+	},1500)
 
 	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
 }
@@ -218,7 +218,7 @@ const closeForm = () => {
 	setTimeout(() => {
 		form.style.opacity = 0
 		form.style.visibility = 'hidden'
-	},1500)
+	},1000)
 }
 
 
@@ -228,7 +228,7 @@ const closeModal = () => {
 	setTimeout(() => {
 		formModal.style.opacity = 0
 		formModal.style.visibility = 'hidden'
-	},1500)
+	},1000)
 
 	formModalContent.classList.remove('form--modal-open')
 }
