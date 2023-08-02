@@ -98,7 +98,7 @@ const closeCardsModal = () => {
 	setTimeout(() => {
 		document.querySelector('.cards__template-content').remove()
 		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
-	},4500)
+	},2000)
 
 	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
 }
@@ -207,13 +207,18 @@ cleanForm()
 
 // Función cerrar formulario
 const closeForm = () => {
+
 	formContainer.classList.remove('form--show')
-	setTimeout(() => form.style.visibility = 'hidden',3500)
 
 	if (nav.classList.contains('main-nav__move')) {
 		burgerLine.classList.toggle('cruz')
 		nav.classList.toggle('main-nav__move')
 	}
+
+	setTimeout(() => {
+		form.style.opacity = 0
+		form.style.visibility = 'hidden'
+	},1500)
 }
 
 
@@ -223,7 +228,7 @@ const closeModal = () => {
 	setTimeout(() => {
 		formModal.style.opacity = 0
 		formModal.style.visibility = 'hidden'
-	},2500)
+	},1500)
 
 	formModalContent.classList.remove('form--modal-open')
 }
