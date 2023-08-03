@@ -247,7 +247,7 @@ const openForm = e => {
 // Función cerrar
 const close =  e => {
 	e.stopPropagation()
-	elementVisibility = getComputedStyle(formModal).getPropertyValue('visibility')
+	const elementVisibility = getComputedStyle(formModal).getPropertyValue('visibility')
 
 	if (e.target.classList.contains('form__icon-close') || e.target === formModal || e.target.classList.contains('form__modal-close')) {
 		cleanForm()
