@@ -89,22 +89,19 @@ addEventListener('resize', navHeight)
 const cardsModal = document.querySelector('.cards__modal')
 
 // Función mostrar Cards Modal.
-const showCardsModal = () => {
-	setTimeout(() => {
-		document.querySelector('.cards__template-content').style.transform = 'scale(1)'
-		document.querySelector('.cards__template-content').style.transition = 'transform 400ms'
-	},300)
-}
+const showCardsModal = () => setTimeout(() => document.querySelector('.cards__template-content').style.transform = 'scale(1)',300)
+
 
 // Función cerrar Cards Modal
 const closeCardsModal = () => {
+
+	document.querySelector('.cards__template-content').style.transform = 'scale(0)'
+
 	setTimeout(() => {
 		cardsModal.style.opacity = '0'
 		cardsModal.style.visibility = 'hidden'
 		document.querySelector('.cards__template-content').remove()
 	},1500)
-	document.querySelector('.cards__template-content').style.transition = '700ms'
-	document.querySelector('.cards__template-content').style.transform = 'scale(0'
 }
 
 // Evento abrir Cards Modal.

@@ -1075,6 +1075,7 @@ fieldset {
   max-width: 60rem;
   transform: scale(0);
   border-radius: 0.625rem;
+  transition: transform 700ms;
   padding: var(--p-template-content);
 }
 .cards__template-close {
