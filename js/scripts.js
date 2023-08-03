@@ -86,7 +86,7 @@ addEventListener('resize', navHeight)
 
 
 // Captura de Cards Modal
-cardsModal = document.querySelector('.cards__modal')
+const cardsModal = document.querySelector('.cards__modal')
 
 // Función mostrar Cards Modal.
 const showCardsModal = () => {
