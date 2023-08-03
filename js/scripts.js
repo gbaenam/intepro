@@ -100,7 +100,7 @@ const showCardsModal = () => {
 const closeCardsModal = () => {
 	setTimeout(() => {
 		document.querySelector('.cards__template-content').remove()
-		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden')
+		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden') // Todo: Pendiente de corregir.
 	},1500)
 
 	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
@@ -108,9 +108,11 @@ const closeCardsModal = () => {
 
 // Evento abrir Cards Modal.
 document.querySelector('.cards__articles').addEventListener('click', e => {
-
 	e.stopPropagation()
-	if (e.target.id) cardsModal.setAttribute('style', 'opacity: 1; visibility: visible')
+	if (e.target.id) {
+		cardsModal.style.opacity = '1'
+		cardsModal.style.visibility = 'visible'
+	}
 
 	switch (e.target.id) {
         case 'cards-budget':
