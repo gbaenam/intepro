@@ -99,11 +99,12 @@ const showCardsModal = () => {
 // Función cerrar Cards Modal
 const closeCardsModal = () => {
 	setTimeout(() => {
+		cardsModal.style.opacity = '0'
+		cardsModal.style.visibility = 'hidden'
 		document.querySelector('.cards__template-content').remove()
-		cardsModal.setAttribute('style', 'opacity: 0; visibility: hidden') // Todo: Pendiente de corregir.
 	},1500)
-
-	document.querySelector('.cards__template-content').setAttribute('style', 'transform: scale(0); transition: transform 700ms')
+	document.querySelector('.cards__template-content').style.transition = '700ms'
+	document.querySelector('.cards__template-content').style.transform = 'scale(0'
 }
 
 // Evento abrir Cards Modal.
