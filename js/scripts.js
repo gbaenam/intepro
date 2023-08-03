@@ -85,7 +85,7 @@ addEventListener('resize', navHeight)
 
 
 
-// Cards Modal
+// Captura de Cards Modal
 cardsModal = document.querySelector('.cards__modal')
 
 // Función mostrar Cards Modal.
@@ -245,16 +245,22 @@ const openForm = e => {
 
 
 // Función cerrar
-const close = e => {
-	cleanForm()
-	closeForm()
-    e.stopPropagation()
+const close =  e => {
+	e.stopPropagation()
+	elementVisibility = getComputedStyle(formModal).getPropertyValue('visibility')
 
-	if (e.target === formModal || e.target.classList.contains('form__modal-close')) {
-		closeModal()
-		closeCardsModal()
+	if (e.target.classList.contains('form__icon-close') || e.target === formModal || e.target.classList.contains('form__modal-close')) {
+		cleanForm()
+		closeForm()
+
+		if (elementVisibility === 'visible') {
+			closeModal()
+			if (document.querySelector('.cards__template-content') !== null) closeCardsModal()
+		}
 	}
 }
+
+
 
 // Evento abrir formulario
 iconMail.addEventListener('click', openForm)
