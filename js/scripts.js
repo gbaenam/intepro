@@ -147,7 +147,7 @@ document.querySelector('.cards__footer').addEventListener('click', e => {
 // Objeto Expresiones Regulares.
 const er = {
 	erName: /^(([A-ZÁÉÍÓÚa-zñáéíóú])[\s]?)+$/,
-	erEmail: /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/,
+	erEmail: /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/,f3d3f140d485b5f03a577b7dcdb992d6754df703
 	erTextArea: /^([\w]\s?)([\w\,\.\$\&\#\%\"\¡\!\¿\?\(\)\@\ñ\á\é\í\ó\ú]\s?)+$/
 }
 
@@ -269,7 +269,7 @@ iconMail.addEventListener('click', openForm)
 buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
-document.querySelector('.form__fieldset').addEventListener('click', close)
+document.querySelector('.form__icon-close').addEventListener('click', close)
 
 // Evento cerrar Modal de confirmación
 formModal.addEventListener('click', close)
