@@ -1247,6 +1247,13 @@ fieldset {
   background-color: #fff;
   padding: calc(1.25em + 2vw);
 }
+.form__modal-content i {
+  right: 0;
+  top: -3.75rem;
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+}
 .form__modal-content p:first-of-type {
   font-weight: 700;
   text-align: center;
@@ -1258,13 +1265,6 @@ fieldset {
 }
 .form__modal-content p:last-of-type span {
   font-weight: 700;
-}
-.form__modal-close {
-  right: 0;
-  top: -3.75rem;
-  color: #fff;
-  font-size: 3rem;
-  position: absolute;
 }
 .form--show {
   transform: translateY(0);
