@@ -3,21 +3,15 @@
 /* ------------------ youtube.scss --------------------- */
 
 .youtube {
-  --max-width-youtube-content: 45rem;
-  --border-radius-youtube-content: 0.625rem;
-  --text-align-youtube-title-subtitle: start;
-
-
-  @include from(541px) {
-    --border-radius-youtube-content: 0;
-  }
+  --mw-content: 45rem;
+  --ta-title-subtitle: start;
 
   @include from(720px) {
-  --text-align-youtube-title-subtitle: center;
+  --ta-title-subtitle: center;
   }
 
   @include from(1921px) {
-    --max-width-youtube-content: 52.5rem;
+    --mw-content: 52.5rem;
   }
 }
 
@@ -30,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #fafbfa;
-    max-width: var(--max-width-youtube-content);
+    max-width: var(--mw-content);
   }
 
   &__header {
@@ -39,7 +33,7 @@
 
   &__title,
   &__subtitle {
-    text-align: var(--text-align-youtube-title-subtitle);
+    text-align: var(--ta-title-subtitle);
   }
 
   &__subtitle {
