@@ -52,7 +52,7 @@
 
   &__video {
     @include ratio(16,9);
-    border: 1xp solid $color-light-gray-alt;;
+    border: 0.0625rem solid $color-light-gray-alt;;
 
     > iframe,
     > video {

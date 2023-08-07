@@ -862,7 +862,7 @@ fieldset {
   position: relative;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  border: 1xp solid #e7e7e7;
+  border: 0.0625rem solid #e7e7e7;
 }
 .youtube__video::before {
   content: "";
