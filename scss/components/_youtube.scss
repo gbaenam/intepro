@@ -4,10 +4,8 @@
 
 .youtube {
   // youtube__content
-  --max-width-youtube-content: 720px;
-  --border-radius-youtube-content: 10px;
-  // youtube__wrapper
-  --margin-bottom-youtube-wrapper: 1.2rem;
+  --max-width-youtube-content: 45rem;
+  --border-radius-youtube-content: 0.625rem;
   // youtube-title-subtitle
   --text-align-youtube-title-subtitle: start;
 
@@ -22,21 +20,9 @@
   --text-align-youtube-title-subtitle: center;
   }
 
-  // Wide: 960px
-  @include from(xxmedium) {
-    // youtube__wrapper
-  --margin-bottom-youtube-wrapper: 1.5rem;
-  }
-
-  // Wide: 1160px
-  @include from(llarge) {
-    // youtube__wrapper
-  --margin-bottom-youtube-wrapper: 2rem;
-  }
-
   @include from(1921px) {
     // youtube__content
-    --max-width-youtube-content: 840px;
+    --max-width-youtube-content: 52.5rem;
   }
 }
 
@@ -72,7 +58,7 @@
 
   &__wrapper {
     width: 100%;
-    margin-bottom: var(--margin-bottom-youtube-wrapper);
+    margin-bottom: calc(1em + 1vw);
   }
 
   &__video {
