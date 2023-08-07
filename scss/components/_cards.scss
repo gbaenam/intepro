@@ -11,12 +11,6 @@
     --c-footer-text: #444;
     --c-footer-title: #444;
     --fw-footer-text-span: 700;
-    --p-template-list: 0 0 0 0.3125rem;
-
-    // Wide 540px
-    @include from(medium) {
-        --p-template-list: 0.625rem 1.25rem 0.625rem;
-    }
 
     // Wide 676px
     @include from(676px) {
@@ -218,7 +212,6 @@
     &__template-list {
         list-style: disc;
         line-height: 1.25rem;
-        padding: var(--p-template-list);
     }
 
     &__template-list li {

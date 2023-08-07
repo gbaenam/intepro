@@ -933,12 +933,6 @@ fieldset {
   --c-footer-text: #444;
   --c-footer-title: #444;
   --fw-footer-text-span: 700;
-  --p-template-list: 0 0 0 0.3125rem;
-}
-@media screen and (min-width: 540px) {
-  .cards {
-    --p-template-list: 0.625rem 1.25rem 0.625rem;
-  }
 }
 @media screen and (min-width: 676px) {
   .cards {
@@ -1085,7 +1079,6 @@ fieldset {
 .cards__template-list {
   list-style: disc;
   line-height: 1.25rem;
-  padding: var(--p-template-list);
 }
 .cards__template-list li {
   margin-bottom: 0.5rem;
