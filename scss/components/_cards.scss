@@ -81,10 +81,10 @@
     }
 
     &__article {
+        font-size: 1rem; // Referencia.
         flex-basis: 17.5rem;
         max-width: 28.125rem;
         box-shadow: 0 0 0.375rem rgba(0, 0, 0, .5);
-        font-size: 1rem; // Todo: Referencia para medidas "em"
     }
 
     &__article,
