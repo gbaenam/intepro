@@ -716,30 +716,10 @@ fieldset {
 /* ------------------ _main.scss ---------------------- */
 .main {
   display: grid;
-  gap: 16px;
+  gap: calc(1.5em + 3vw);
   font-size: 1rem;
   padding-bottom: 1.2rem;
-  background-color: #e7e7e7;
-}
-@media screen and (min-width: 541px) {
-  .main {
-    gap: 28px;
-  }
-}
-@media screen and (min-width: 640px) {
-  .main {
-    gap: 50px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .main {
-    gap: 70px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .main {
-    gap: 90px;
-  }
+  background-color: #fafbfa;
 }
 
 /* ------------------ banner.scss --------------------- */

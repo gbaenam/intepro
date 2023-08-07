@@ -4,36 +4,16 @@
 
 .main {
     display: grid;
-    gap: 16px;
+    gap: calc(1.5em + 3vw);
 
-    @include from(541px) {
-        gap: 28px;
-    }
 
-    @include from(640px) {
-        gap: 50px;
-    }
-
-    @include from(960px) {
-        gap: 70px;
-    }
-
-    @include from(xlarge) {
-        gap: 90px;
-    }
 
 
     font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
     padding-bottom: 1.2rem;
     // background-color: $color-light-gray-alt;
 
-    background-color: #e7e7e7;
-    // background-color: #fafbfa;
+    // background-color: #e7e7e7;
+    background-color: #fafbfa;
 
-    // background-color: #fff;
-
-    // @include from(541px) {
-    //     // background-color: #fff;
-    //     background-color: #fafbfa;
-    // }
 }
