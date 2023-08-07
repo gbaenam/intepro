@@ -3,25 +3,20 @@
 /* ------------------ youtube.scss --------------------- */
 
 .youtube {
-  // youtube__content
   --max-width-youtube-content: 45rem;
   --border-radius-youtube-content: 0.625rem;
-  // youtube-title-subtitle
   --text-align-youtube-title-subtitle: start;
 
 
   @include from(541px) {
-    // youtube__content
     --border-radius-youtube-content: 0;
   }
 
   @include from(720px) {
-    // youtube-title-subtitle
   --text-align-youtube-title-subtitle: center;
   }
 
   @include from(1921px) {
-    // youtube__content
     --max-width-youtube-content: 52.5rem;
   }
 }
