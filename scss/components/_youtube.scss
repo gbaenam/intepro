@@ -42,7 +42,6 @@
 
 
 .youtube {
-  // padding: var(--padding-layout);
   background-color: #fafbfa;
 
   &__content {
@@ -50,33 +49,17 @@
     align-items: center;
     flex-direction: column;
     background-color: #fafbfa;
-          // background-color: #fff;
     max-width: var(--max-width-youtube-content);
-    // border-radius: var(--border-radius-youtube-content);
-
-    // box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-
-    // @include from(541px) {
-    //   box-shadow: none;
-    // }
   }
 
   &__header {
     width: 100%;
   }
 
-  // &__title {
-  //   background-color: lightblue;
-  // }
-
   &__title,
   &__subtitle {
     text-align: var(--text-align-youtube-title-subtitle);
   }
-
-  // &__subtitle {
-  //   background-color: pink;
-  // }
 
   &__subtitle {
     &::before {
