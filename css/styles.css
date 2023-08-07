@@ -716,10 +716,10 @@ fieldset {
 /* ------------------ _main.scss ---------------------- */
 .main {
   display: grid;
-  gap: calc(1em + 3vw);
   font-size: 1rem;
-  padding-bottom: 1.2rem;
+  gap: calc(1em + 3vw);
   background-color: #fafbfa;
+  padding-bottom: 1.2rem;
 }
 
 /* ------------------ banner.scss --------------------- */
