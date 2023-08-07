@@ -12,7 +12,6 @@
     --c-footer-text: #444;
     --c-footer-title: #444;
     --fw-footer-text-span: 700;
-    --p-template-content: 1.25rem;
     --p-template-list: 0 0 0 0.3125rem;
 
     // Wide 540px
@@ -23,11 +22,6 @@
     // Wide 676px
     @include from(676px) {
         --ar-image: 1 / .5;
-    }
-
-    // Wide 960px
-    @include from(xxmedium) {
-        --p-template-content: 2.5rem 2.5rem 1.875rem;
     }
 
     // Wide 1040px
@@ -202,8 +196,8 @@
         max-width: 60rem;
         transform: scale(0);
         border-radius: 0.625rem;
+        padding: calc(1.25em + 2vw);
         transition: transform 400ms;
-        padding: var(--p-template-content);
     }
 
     &__template-close {
