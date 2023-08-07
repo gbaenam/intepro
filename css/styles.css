@@ -926,7 +926,6 @@ fieldset {
 /* ---------------- cards.scss -------------------- */
 .cards {
   --ar-image: 1 / .7;
-  --mb-articles: 3rem;
   --bg-cards: #fafbfa;
   --fw-footer-text: 400;
   --mw-footer-text: none;
@@ -948,7 +947,6 @@ fieldset {
 }
 @media screen and (min-width: 1040px) {
   .cards {
-    --mb-articles: 4rem;
     --mw-footer-text: 70%;
     --fw-footer-text: 300;
     --fw-footer-title: 500;
@@ -956,11 +954,6 @@ fieldset {
     --c-footer-title: #fff;
     --fw-footer-text-span: 400;
     --bg-cards: linear-gradient(180deg, #fafbfa 47%, #1a2040 47%);
-  }
-}
-@media screen and (min-width: 1920px) {
-  .cards {
-    --mb-articles: 5rem;
   }
 }
 
@@ -986,7 +979,7 @@ fieldset {
   gap: 3rem;
   flex-wrap: wrap;
   padding-top: 1rem;
-  margin-bottom: var(--mb-articles);
+  margin-bottom: calc(3em + 1vw);
 }
 .cards__articles, .cards__article, .cards__modal, .cards__template-content {
   display: flex;
