@@ -1211,12 +1211,14 @@ fieldset {
 
 /* ------------------ footer.scss ---------------------- */
 .main-footer {
+  --lh-p: 1.255em;
   --d-span: block;
   --h-separator: unset;
   --mb-separator: unset;
 }
 @media screen and (min-width: 540px) {
   .main-footer {
+    --lh-p: 1.516em;
     --d-span: inline;
   }
 }
@@ -1243,14 +1245,8 @@ fieldset {
 .main-footer__info p {
   color: #fff;
   margin-bottom: 0.5em;
-  font-size: calc(1em + 0.2vw);
-  --lh-p: 125%;
   line-height: var(--lh-p);
-}
-@media screen and (min-width: 540px) {
-  .main-footer__info p {
-    line-height: 150%;
-  }
+  font-size: calc(1em + 0.2vw);
 }
 .main-footer__info p:last-child {
   margin-bottom: 0;

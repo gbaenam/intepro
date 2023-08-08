@@ -3,14 +3,14 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
-
+    --lh-p: 1.255em;
     --d-span: block;
     --h-separator: unset;
     --mb-separator: unset;
 
     // Wide 540px
     @include from(medium) {
-
+        --lh-p: 1.516em;
         --d-span: inline;
     }
 
@@ -39,14 +39,8 @@
     &__info p {
         color: #fff;
         margin-bottom: .5em;
-        font-size: calc(1em + .2vw);
-
-        --lh-p: 125%;
         line-height: var(--lh-p);
-
-        @include from(medium) {
-            line-height: 150%;
-        }
+        font-size: calc(1em + .2vw);
     }
 
     &__info p:last-child {
