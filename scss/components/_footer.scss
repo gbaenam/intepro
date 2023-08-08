@@ -3,15 +3,15 @@
 /* ------------------ footer.scss ---------------------- */
 
 .main-footer {
+
     --d-span: block;
     --h-separator: unset;
     --mb-separator: unset;
-    --lh-copyright-p: 125%;
 
     // Wide 540px
     @include from(medium) {
+
         --d-span: inline;
-        --lh-copyright-p: 150%;
     }
 
     // Wide 1024px
@@ -32,28 +32,28 @@
         background-color: $color-red-canada-line;
     }
 
-    &__copyright {
-        margin-bottom: .5em;
-        display: inline-block;
-    }
-
     &__info {
         font-style: normal;
     }
 
-    &__info p:first-child {
-        margin-bottom: .5em;
-    }
-
-    &__copyright,
     &__info p {
         color: #fff;
+        margin-bottom: .5em;
         font-size: calc(1em + .2vw);
-        line-height: var(--lh-copyright-p);
+
+        --lh-p: 125%;
+        line-height: var(--lh-p);
+
+        @include from(medium) {
+            line-height: 150%;
+        }
     }
 
-    &__copyright span,
-    &__info p:first-child span {
+    &__info p:last-child {
+        margin-bottom: 0;
+    }
+
+    &__info span {
         display: var(--d-span);
     }
 }
