@@ -183,7 +183,7 @@
         max-width: 60rem;
         transform: scale(0);
         border-radius: 0.625rem;
-        padding: calc(1.25em + 2vw);
+        padding: calc(1.25em + 1.5vw);
         transition: transform 400ms;
     }
 
@@ -196,7 +196,7 @@
 
     &__template-info,
     &__template-list {
-        margin-bottom: 2rem;
+        margin-bottom: calc(2em + 1vw);
     }
 
     &__template-info span {
@@ -205,7 +205,6 @@
 
     &__template-button {
         align-self: center;
-        margin-bottom: 1rem;
         text-transform: none;
     }
 

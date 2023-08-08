@@ -1012,7 +1012,7 @@ fieldset {
   max-width: 60rem;
   transform: scale(0);
   border-radius: 0.625rem;
-  padding: calc(1.25em + 2vw);
+  padding: calc(1.25em + 1.5vw);
   transition: transform 400ms;
 }
 .cards__template-close {
@@ -1022,14 +1022,13 @@ fieldset {
   font-size: 3rem;
 }
 .cards__template-info, .cards__template-list {
-  margin-bottom: 2rem;
+  margin-bottom: calc(2em + 1vw);
 }
 .cards__template-info span {
   font-weight: 700;
 }
 .cards__template-button {
   align-self: center;
-  margin-bottom: 1rem;
   text-transform: none;
 }
 .cards__template-list {
