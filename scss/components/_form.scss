@@ -4,7 +4,7 @@
 
 .form {
     line-height: normal; // Todo: Revisar esta declaración.
-    font-size: 1rem; // TODO: Referencia de "font-size" para "button"
+    font-size: 1rem; // Referencia
 
     &__container {
         width: 100%;
@@ -12,7 +12,7 @@
         overflow-y: scroll;
         background-color: #fff;
         transition: transform 1s;
-        transform: translateY(-200%); //Todo: Revisar esta declaración.
+        transform: translateY(-200%); //Todo: Pendiente de optimizar.
     }
 
     &__container-height {
