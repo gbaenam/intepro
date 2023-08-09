@@ -657,9 +657,6 @@ fieldset {
 .main-nav__link:hover {
   color: var(--color-hover-second);
 }
-.main-nav__link:focus {
-  border-color: var(--color-focus-alt);
-}
 
 .contact-bar {
   display: flex;
