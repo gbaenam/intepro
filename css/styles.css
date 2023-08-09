@@ -672,9 +672,6 @@ fieldset {
 .contact-bar__mail:hover {
   color: var(--color-hover);
 }
-.contact-bar__mail:focus {
-  border-color: var(--color-focus-alt);
-}
 
 .social-bar {
   margin-top: var(--margin-top-social-bar);
