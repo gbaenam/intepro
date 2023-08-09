@@ -46,10 +46,10 @@
         border-radius: var(--border-radius-link);
     }
 
-    &__link-logo:focus,
-    &__title-link:focus {
-        border-color: var(--color-focus-alt);
-    }
+    // &__link-logo:focus,
+    // &__title-link:focus {
+    //     border-color: var(--color-focus-alt);
+    // }
 
     &__logo {
         width: var(--width-logo);

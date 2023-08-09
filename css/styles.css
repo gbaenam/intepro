@@ -493,9 +493,6 @@ fieldset {
   border: var(--border-link);
   border-radius: var(--border-radius-link);
 }
-.main-header__link-logo:focus, .main-header__title-link:focus {
-  border-color: var(--color-focus-alt);
-}
 .main-header__logo {
   width: var(--width-logo);
 }
