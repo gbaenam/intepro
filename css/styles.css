@@ -1034,9 +1034,8 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
-.schools__container {
-  display: flex;
-  flex-direction: column;
+.schools__title {
+  text-align: center;
 }
 
 /* ------------------ form.scss ---------------------- */
