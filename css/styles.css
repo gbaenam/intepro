@@ -1034,14 +1034,29 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
-.schools__container p:last-of-type {
-  margin-bottom: calc(1em + 1vw);
+.schools__header {
+  text-align: center;
+  padding: 20px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: calc(1em + 2vw);
+  background: linear-gradient(45deg, #cc0000 50%, #f97012 50%);
+}
+@media screen and (min-width: 1040px) {
+  .schools__header {
+    background: unset;
+  }
 }
 .schools__title, .schools__subtitle {
-  text-align: center;
+  color: #fff;
 }
-.schools__subtitle strong {
-  color: #cc0000;
+@media screen and (min-width: 1040px) {
+  .schools__title, .schools__subtitle {
+    color: #444;
+  }
+}
+.schools__subtitle {
+  margin-bottom: 0;
 }
 
 /* ------------------ form.scss ---------------------- */
