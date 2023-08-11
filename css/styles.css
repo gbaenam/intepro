@@ -1033,7 +1033,7 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
-.schools {
+.schools__container {
   display: flex;
   flex-direction: column;
 }
