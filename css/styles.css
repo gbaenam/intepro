@@ -1032,7 +1032,13 @@ fieldset {
   margin-bottom: 0;
 }
 
-/* ---------------- schools.scss -------------------- */ /* ------------------ form.scss ---------------------- */
+/* ---------------- schools.scss -------------------- */
+.schools {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------ form.scss ---------------------- */
 .form {
   line-height: normal;
   font-size: 1rem;
