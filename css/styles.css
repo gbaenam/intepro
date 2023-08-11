@@ -1037,6 +1037,9 @@ fieldset {
 .schools__title, .schools__subtitle {
   text-align: center;
 }
+.schools__subtitle strong {
+  color: #cc0000;
+}
 
 /* ------------------ form.scss ---------------------- */
 .form {
