@@ -1034,6 +1034,9 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
+.schools__container p:last-of-type {
+  margin-bottom: calc(1em + 1vw);
+}
 .schools__title, .schools__subtitle {
   text-align: center;
 }

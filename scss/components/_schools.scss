@@ -4,6 +4,10 @@
 
 .schools {
 
+    &__container p:last-of-type {
+        margin-bottom: calc(1em + 1vw);
+    }
+
     &__title ,
     &__subtitle {
         text-align: center;
@@ -12,6 +16,4 @@
     &__subtitle strong {
         color: $color-red-canada-alt;
     }
-
-
 }
