@@ -1034,7 +1034,7 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
-.schools__title {
+.schools__title, .schools__subtitle {
   text-align: center;
 }
 
