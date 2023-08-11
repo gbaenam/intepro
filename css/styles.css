@@ -710,7 +710,6 @@ fieldset {
   font-size: 1rem;
   gap: calc(1em + 3vw);
   background-color: #fafbfa;
-  padding-bottom: 1.2rem;
 }
 
 /* ------------------ banner.scss --------------------- */
