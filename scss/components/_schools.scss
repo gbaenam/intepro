@@ -6,31 +6,7 @@
 
     &__header {
         text-align: center;
-        // background-color: $color-red-canada-alt;
-        padding: 20px 0;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        // margin-bottom: calc(1em + 2vw);
-
-        // background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
-
-        // @include from(1040px) {
-        //     background: unset;
-        // }
     }
-
-    // &__title {
-    //     margin-bottom: 0;
-    // }
-
-    // &__title ,
-    // &__subtitle {
-    //     color: #fff;
-
-    //     // @include from(1040px) {
-    //     //     color: #444;
-    //     // }
-    // }
 
     &__subtitle {
         color: #fff;
