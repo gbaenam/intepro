@@ -4,35 +4,59 @@
 
 .schools {
 
-    // &__container p:last-of-type {
-    //     margin-bottom: calc(1em + 1vw);
-    // }
-
     &__header {
         text-align: center;
         // background-color: $color-red-canada-alt;
         padding: 20px 0;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        margin-bottom: calc(1em + 2vw);
+        // margin-bottom: calc(1em + 2vw);
 
-        background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
+        // background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
 
-        @include from(1040px) {
-            background: unset;
-        }
+        // @include from(1040px) {
+        //     background: unset;
+        // }
     }
 
-    &__title ,
-    &__subtitle {
-        color: #fff;
-
-        @include from(1040px) {
-            color: #444;
-        }
+    &__title {
+        margin-bottom: 0;
     }
+
+    // &__title ,
+    // &__subtitle {
+    //     color: #fff;
+
+    //     @include from(1040px) {
+    //         color: #444;
+    //     }
+    // }
 
     &__subtitle {
         margin-bottom: 0;
     }
+
+    &__wrapper-content {
+        display: flex;
+        gap: 20px;
+
+        margin-bottom: 5rem;
+        // background-color: pink;
+    }
+
+    &__wrapper-image {
+        flex-basis: 400px;
+        flex-grow: 1;
+    }
+
+    &__image {
+        aspect-ratio: 1 / .6;
+        object-fit: cover;
+    }
+
+    &__wrapper-description {
+        flex-basis: 400px;
+        flex-grow: 1;
+    }
+
 }
