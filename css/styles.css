@@ -1047,21 +1047,28 @@ fieldset {
   margin-bottom: 0;
 }
 .schools__wrapper-content {
-  display: flex;
-  gap: 20px;
   margin-bottom: 5rem;
+  clear: both;
 }
 .schools__wrapper-image {
-  flex-basis: 400px;
-  flex-grow: 1;
+  width: 60%;
 }
 .schools__image {
-  aspect-ratio: 1/0.6;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  aspect-ratio: 1/0.5;
   object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
 }
-.schools__wrapper-description {
-  flex-basis: 400px;
-  flex-grow: 1;
+.schools__wrapper-description p {
+  line-height: 1.5;
+  padding-top: 10px;
+  text-align: justify;
+}
+.schools__wrapper-description p:first-child {
+  padding-top: 0;
 }
 
 /* ------------------ form.scss ---------------------- */
