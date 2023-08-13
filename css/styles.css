@@ -1040,11 +1040,10 @@ fieldset {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.schools__title {
-  margin-bottom: 0;
-}
 .schools__subtitle {
+  color: #fff;
   margin-bottom: 0;
+  background: linear-gradient(45deg, #cc0000 50%, #f97012 50%);
 }
 .schools__wrapper-content {
   margin-bottom: 5rem;
@@ -1055,12 +1054,13 @@ fieldset {
 }
 .schools__image {
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-bottom: 5px;
   aspect-ratio: 1/0.52;
   object-fit: cover;
   object-position: top;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .schools__wrapper-description p {
   line-height: 1.6;

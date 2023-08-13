@@ -19,9 +19,9 @@
         // }
     }
 
-    &__title {
-        margin-bottom: 0;
-    }
+    // &__title {
+    //     margin-bottom: 0;
+    // }
 
     // &__title ,
     // &__subtitle {
@@ -33,7 +33,9 @@
     // }
 
     &__subtitle {
+        color: #fff;
         margin-bottom: 0;
+        background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
     }
 
     &__wrapper-content {
@@ -47,17 +49,17 @@
 
     &__image {
         float: left;
-        margin-right: 15px;
+        margin-right: 20px;
         margin-bottom: 5px;
 
         aspect-ratio: 1 / .52;
         object-fit: cover;
         object-position: top;
 
-        // border-bottom-left-radius: 10px;
-        // border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 
     &__wrapper-description p {
