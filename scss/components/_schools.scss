@@ -47,10 +47,10 @@
 
     &__image {
         float: left;
-        margin-right: 20px;
+        margin-right: 15px;
         margin-bottom: 5px;
 
-        aspect-ratio: 1 / .5;
+        aspect-ratio: 1 / .52;
         object-fit: cover;
         object-position: top;
 
@@ -62,7 +62,7 @@
 
     &__wrapper-description p {
         // margin-bottom: .7rem;
-        line-height: 1.5;
+        line-height: 1.6;
         padding-top: 10px;
         text-align: justify;
     }
