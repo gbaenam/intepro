@@ -38,39 +38,4 @@
         background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
     }
 
-    &__wrapper-content {
-        margin-bottom: 5rem;
-        clear: both;
-    }
-
-    &__wrapper-image {
-        width: 60%;
-    }
-
-    &__image {
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 5px;
-
-        aspect-ratio: 1 / .5;
-        object-fit: cover;
-        object-position: top;
-
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-
-        // border-radius: 10px;
-    }
-
-    &__wrapper-description p {
-        // margin-bottom: .7rem;
-        line-height: 1.5;
-        padding-top: 10px;
-        text-align: justify;
-    }
-
-    &__wrapper-description p:first-child {
-        padding-top: 0;
-    }
-
 }
