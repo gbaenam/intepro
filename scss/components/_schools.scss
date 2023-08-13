@@ -52,7 +52,7 @@
         margin-right: 20px;
         margin-bottom: 5px;
 
-        aspect-ratio: 1 / .52;
+        aspect-ratio: 1 / .5;
         object-fit: cover;
         object-position: top;
 
@@ -64,7 +64,7 @@
 
     &__wrapper-description p {
         // margin-bottom: .7rem;
-        line-height: 1.6;
+        line-height: 1.5;
         padding-top: 10px;
         text-align: justify;
     }

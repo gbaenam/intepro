@@ -1056,14 +1056,14 @@ fieldset {
   float: left;
   margin-right: 20px;
   margin-bottom: 5px;
-  aspect-ratio: 1/0.52;
+  aspect-ratio: 1/0.5;
   object-fit: cover;
   object-position: top;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 .schools__wrapper-description p {
-  line-height: 1.6;
+  line-height: 1.5;
   padding-top: 10px;
   text-align: justify;
 }
