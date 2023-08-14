@@ -1061,11 +1061,12 @@ fieldset {
   background-color: #f98012;
 }
 .schools__image-wrapper {
+  width: 80%;
   margin: 0 auto;
 }
 .schools__image {
-  aspect-ratio: 1/0.6;
   object-fit: fill;
+  aspect-ratio: 1/0.6;
 }
 @media screen and (min-width: 1024px) {
   .schools__description-wrapper {
@@ -1079,7 +1080,6 @@ fieldset {
     flex-grow: 1;
     max-width: 400px;
     flex-basis: 280px;
-    text-align: justify;
   }
 }
 
