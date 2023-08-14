@@ -43,8 +43,13 @@
     }
 
     &__image-wrapper {
-        width: 50%;
+        // width: 50%;
         margin: 0 auto;
+    }
+
+    &__image {
+        aspect-ratio: 1 / .6;
+        object-fit: fill;
     }
 
     &__description-wrapper {
@@ -56,12 +61,12 @@
     }
 
     &__description {
-        text-align: justify;
 
         @include from(large) {
             flex-grow: 1;
             max-width: 400px;
             flex-basis: 280px;
+            text-align: justify;
         }
     }
 }
