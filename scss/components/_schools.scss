@@ -4,14 +4,44 @@
 
 .schools {
 
+    // &__container {
+    //     background-color: pink;
+    // }
+
     &__header {
         text-align: center;
     }
 
-    &__subtitle {
-        color: #fff;
+    &__title {
         margin-bottom: 0;
-        background: linear-gradient(45deg, $color-red-canada-alt 50%, #f97012 50%);
+    }
+
+    &__articles {
+        gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__article {
+        flex-grow: 1;
+        max-width: 32rem;
+        flex-basis: 18rem;
+        padding-bottom: 1rem;
+        background-color: #f2f2f2;
+    }
+
+    &__article--ilac {
+        background-color:#c72127;
+    }
+
+    &__article--ilsc {
+        background-color:#f98012;
+    }
+
+    &__image-wrapper {
+        width: 50%;
+        margin: 0 auto;
     }
 
 }

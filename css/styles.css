@@ -711,6 +711,7 @@ fieldset {
   font-size: 1rem;
   gap: calc(1em + 3vw);
   background-color: #fafbfa;
+  padding-bottom: 5rem;
 }
 
 /* ------------------ banner.scss --------------------- */
@@ -1036,39 +1037,32 @@ fieldset {
 /* ---------------- schools.scss -------------------- */
 .schools__header {
   text-align: center;
-  padding: 20px 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
-.schools__subtitle {
-  color: #fff;
+.schools__title {
   margin-bottom: 0;
-  background: linear-gradient(45deg, #cc0000 50%, #f97012 50%);
 }
-.schools__wrapper-content {
-  margin-bottom: 5rem;
-  clear: both;
+.schools__articles {
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.schools__wrapper-image {
-  width: 60%;
+.schools__article {
+  flex-grow: 1;
+  max-width: 32rem;
+  flex-basis: 18rem;
+  padding-bottom: 1rem;
+  background-color: #f2f2f2;
 }
-.schools__image {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 5px;
-  aspect-ratio: 1/0.5;
-  object-fit: cover;
-  object-position: top;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.schools__article--ilac {
+  background-color: #c72127;
 }
-.schools__wrapper-description p {
-  line-height: 1.5;
-  padding-top: 10px;
-  text-align: justify;
+.schools__article--ilsc {
+  background-color: #f98012;
 }
-.schools__wrapper-description p:first-child {
-  padding-top: 0;
+.schools__image-wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* ------------------ form.scss ---------------------- */
