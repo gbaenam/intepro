@@ -21,6 +21,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        margin-bottom: calc(2em + 1vw);
+
+        // background-color: pink;
     }
 
     &__article {
@@ -43,5 +47,15 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    &__description-wrapper {
+        margin: 0 auto;
+        text-align: justify;
+        max-width: $max-width-content;
+    }
+
+    // &__description-wrapper p {
+    //     margin-bottom: .7rem;
+    // }
 
 }
