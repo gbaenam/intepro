@@ -1064,9 +1064,22 @@ fieldset {
   width: 50%;
   margin: 0 auto;
 }
-.schools__description-wrapper {
-  gap: 3rem;
-  display: flex;
+@media screen and (min-width: 1024px) {
+  .schools__description-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+.schools__description {
+  text-align: justify;
+}
+@media screen and (min-width: 1024px) {
+  .schools__description {
+    flex-grow: 1;
+    max-width: 400px;
+    flex-basis: 280px;
+  }
 }
 
 /* ------------------ form.scss ---------------------- */

@@ -48,7 +48,20 @@
     }
 
     &__description-wrapper {
-        gap: 3rem;
-        display: flex;
+        @include from(large) {
+            gap: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__description {
+        text-align: justify;
+
+        @include from(large) {
+            flex-grow: 1;
+            max-width: 400px;
+            flex-basis: 280px;
+        }
     }
 }
