@@ -24,14 +24,13 @@
 
         margin-bottom: calc(2em + 1vw);
 
-        // background-color: pink;
     }
 
     &__article {
         flex-grow: 1;
         max-width: 32rem;
         flex-basis: 18rem;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         background-color: #f2f2f2;
     }
 
@@ -49,13 +48,7 @@
     }
 
     &__description-wrapper {
-        margin: 0 auto;
-        text-align: justify;
-        max-width: $max-width-content;
+        gap: 3rem;
+        display: flex;
     }
-
-    // &__description-wrapper p {
-    //     margin-bottom: .7rem;
-    // }
-
 }
