@@ -1054,15 +1054,19 @@ fieldset {
   flex-basis: 18rem;
   background-color: #f2f2f2;
 }
-.schools__image-wrapper--ilac {
+.schools__image-background--ilac {
   background-color: #c72127;
 }
-.schools__image-wrapper--ilsc {
+.schools__image-background--ilsc {
   background-color: #f98012;
+}
+.schools__image-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 .schools__image {
   object-fit: fill;
-  aspect-ratio: 1/0.5;
+  aspect-ratio: 1/0.6;
 }
 .schools__content {
   width: 80%;
