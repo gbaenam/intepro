@@ -34,23 +34,29 @@
         background-color: #f2f2f2;
     }
 
-    &__article--ilac {
+    // &__image-wrapper {
+    //     width: 80%;
+    //     margin: 0 auto;
+    // }
+
+    &__image-wrapper--ilac {
         background-color:#c72127;
     }
 
-    &__article--ilsc {
+    &__image-wrapper--ilsc {
         background-color:#f98012;
-    }
-
-    &__image-wrapper {
-        width: 80%;
-        margin: 0 auto;
     }
 
     &__image {
         object-fit: fill;
-        aspect-ratio: 1 / .6;
+        aspect-ratio: 1 / .5;
     }
+
+    &__content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 
     &__description-wrapper {
         @include from(large) {
