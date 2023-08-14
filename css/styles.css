@@ -117,6 +117,10 @@ h2 {
   font-size: calc(2em + 1vw);
 }
 
+h3 {
+  line-height: 125%;
+}
+
 h1,
 h2 {
   margin-bottom: 0.2em;
@@ -1053,24 +1057,32 @@ fieldset {
   max-width: 32rem;
   flex-basis: 18rem;
   background-color: #f2f2f2;
+  padding-bottom: 15px;
 }
-.schools__image-background--ilac {
+.schools__background-wrapper--ilac {
   background-color: #c72127;
 }
-.schools__image-background--ilsc {
+.schools__background-wrapper--ilsc {
   background-color: #f98012;
 }
 .schools__image-wrapper {
   width: 80%;
   margin: 0 auto;
 }
-.schools__image {
-  object-fit: fill;
-  aspect-ratio: 1/0.6;
-}
 .schools__content {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.schools__link {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  translate: 0 -50%;
+}
+.schools__title {
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .schools__description-wrapper {
