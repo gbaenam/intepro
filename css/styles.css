@@ -1056,7 +1056,7 @@ fieldset {
   flex-grow: 1;
   max-width: 450px;
   flex-basis: 288px;
-  background-color: #e7e7e7;
+  background-color: #f2f2f2;
   padding-bottom: 15px;
 }
 .schools__background-wrapper {
@@ -1096,10 +1096,10 @@ fieldset {
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 .schools__link--ilac {
-  background-color: #22c74d;
+  background-color: #21c7c1;
 }
 .schools__link--ilsc {
-  background-color: #008efa;
+  background-color: #128bf9;
 }
 .schools__title {
   text-align: center;
