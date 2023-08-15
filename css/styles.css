@@ -1059,11 +1059,12 @@ fieldset {
   background-color: #e6e6e6;
   padding-bottom: 15px;
 }
+.schools__background-wrapper {
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
 .schools__background-wrapper--ilac {
   background-color: #c72127;
-}
-.schools__background-wrapper--ilsc {
-  background-color: #f98012;
 }
 .schools__image-wrapper {
   width: 80%;
@@ -1076,10 +1077,19 @@ fieldset {
   flex-direction: column;
 }
 .schools__link {
-  display: inline-block;
+  translate: 0 -50%;
   text-align: center;
   align-self: center;
-  translate: 0 -50%;
+  display: inline-block;
+  font-size: 1em;
+  color: #fff;
+  padding: 0.7em 2em;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
+}
+.schools__link--ilac {
+  background-color: #22c74d;
 }
 .schools__title {
   text-align: center;
