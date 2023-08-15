@@ -53,7 +53,7 @@ h1,
 h2 {
     margin-bottom: .2em;
     color: $color-darker-text;
-    font-family: $font-family-secondary; // Todo: Optimizar!!
+    font-family: $font-family-secondary;
 }
 
 h1,
@@ -61,9 +61,10 @@ h3 {
     font-weight: 500;
 }
 
+// Todo: Revisar la declaración de la variable para "h3"
 p,
 h3 {
-    font-family: $font-family-primary; // Todo: Optimizar!!
+    font-family: $font-family-primary;
 }
 
 
@@ -107,7 +108,7 @@ button {
 
 // Reset small
 small {
-    font-family: $font-family-alternative; // Todo: Optimizar!!
+    font-family: $font-family-alternative;
 }
 
 
@@ -139,7 +140,7 @@ textarea {
 label,
 input,
 textarea {
-    font-family: $font-family-alternative; // Todo: Optimizar!!
+    font-family: $font-family-alternative;
 }
 
 
@@ -170,7 +171,7 @@ fieldset {
 
 .headline-big {
     font-size: calc(2.1em + 1vw);
-    font-family: $font-family-alternative; // Todo: Pendiente!!
+    font-family: $font-family-alternative;
 }
 
 .headline,
