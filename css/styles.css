@@ -661,8 +661,8 @@ fieldset {
   padding: var(--padding-link);
   line-height: var(--line-height-link);
   border-radius: var(--border-radius-link);
-  font-family: "Roboto", sans-serif;
   font-size: var(--font-size-link);
+  font-family: "Roboto", sans-serif;
   font-weight: var(--font-weight-link);
 }
 .main-nav__link:hover {
