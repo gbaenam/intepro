@@ -1056,7 +1056,7 @@ fieldset {
   flex-grow: 1;
   max-width: 32rem;
   flex-basis: 18rem;
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
   padding-bottom: 15px;
 }
 .schools__background-wrapper--ilac {
@@ -1070,7 +1070,7 @@ fieldset {
   margin: 0 auto;
 }
 .schools__content {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
