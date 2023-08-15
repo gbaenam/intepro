@@ -1,5 +1,6 @@
 @use '../tools-sass/' as *;
 
+$link: true;
 $buttonSolid: true;
 
 /* -------------------- button.scss ---------------------- */
@@ -110,4 +111,15 @@ $buttonSolid: true;
 			background-color: #cc007d;
 		}
 	}
+}
+
+
+// Estilos de botón para los enlaces.
+
+@if $link {
+
+
+
+
+
 }
