@@ -1,7 +1,6 @@
 @use '../tools-sass/' as *;
 
 $buttonSolid: true;
-$buttonGhost: false;
 
 /* -------------------- button.scss ---------------------- */
 
@@ -109,101 +108,6 @@ $buttonGhost: false;
 		&-neon-pink:active {
 			border-color: #cc007d;
 			background-color: #cc007d;
-		}
-	}
-}
-
-
-
-// TODO: La variable $buttonGhost is disabled
-
-@if $buttonGhost {
-	// Variables.
-	.button {
-		--font-size-button: 1.4em;
-		--min-width-button: 15.625rem;
-
-		@include from(360px) {
-			--min-width-button: 17rem;
-		}
-
-		@include from(412px) {
-			--font-size-button: 1.45em;
-			--min-width-button: 18.75rem;
-		}
-
-		@include from(ultrawide) {
-			--font-size-button: 1.6em;
-			--min-width-button: 20rem;
-		}
-	}
-
-
-	.button {
-		color: #fff;
-		padding: .15em 0;
-		font-weight: 500;
-		border-radius: 2em;
-		border: .125em solid;
-		text-transform: uppercase;
-		font-family: $font-family-primary;
-		min-width: var(--min-width-button);
-		font-size: var(--font-size-button);
-
-		&-blue,
-		&-green,
-		&-orange-red {
-			&:hover {
-				border-color: unset;
-				background-color: unset;
-			}
-		}
-
-		&-green {
-			border-color: $green-dark;
-			background-color: $green-dark;
-
-			&:hover {
-				color: $green-light;
-			}
-
-			&:active {
-				border-color: $green-darker;
-				background-color: $green-darker;
-			}
-		}
-
-		&-blue {
-			border-color: $blue-light;
-			background-color:$blue-light;
-
-			&:hover {
-				color: $blue-dark;
-			}
-
-			&:active {
-				border-color: $blue-darker;
-				background-color: $blue-darker;
-			}
-		}
-
-		&-orange-red {
-			border-color: $orange-red-light;
-			background-color: $orange-red-light;
-
-			&:hover {
-				color: $orange-red-dark;
-			}
-
-			&:active {
-				border-color: $orange-red-darker;
-				background-color: $orange-red-darker;
-			}
-		}
-
-		&:active {
-			color: #fff;
-			transform: scale(.98);
 		}
 	}
 }
