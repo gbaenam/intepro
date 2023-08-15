@@ -118,6 +118,24 @@ $buttonSolid: true;
 
 @if $link {
 
+	.link {
+		font-size: 1.4em;
+        color: #fff;
+        padding: .4em 0;
+        min-width: 13em;
+        // border-radius: 2em;
+
+        text-transform: uppercase;
+        // font-weight: bold;
+        font-family: $font-family-primary;
+
+        text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
+
+
+
+
+	}
+
 
 
 
