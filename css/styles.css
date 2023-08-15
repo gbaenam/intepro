@@ -413,10 +413,8 @@ fieldset {
 }
 
 .link {
-  font-size: 1.4em;
   color: #fff;
   padding: 0.4em 0;
-  min-width: 13em;
   text-transform: uppercase;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
@@ -1096,13 +1094,6 @@ fieldset {
   text-align: center;
   align-self: center;
   display: inline-block;
-  font-size: 1.4em;
-  color: #fff;
-  padding: 0.4em 0;
-  min-width: 13em;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 .schools__link--ilac {
   background-color: #21c7c1;
