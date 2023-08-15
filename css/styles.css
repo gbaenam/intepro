@@ -1054,21 +1054,27 @@ fieldset {
 }
 .schools__article {
   flex-grow: 1;
-  max-width: 32rem;
-  flex-basis: 18rem;
-  background-color: #e6e6e6;
+  max-width: 450px;
+  flex-basis: 288px;
+  background-color: #e7e7e7;
   padding-bottom: 15px;
 }
 .schools__background-wrapper {
-  background-color: #fff;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 .schools__background-wrapper--ilac {
   background-color: #c72127;
 }
+.schools__background-wrapper--ilsc {
+  background-color: #f98012;
+}
 .schools__image-wrapper {
   width: 80%;
   margin: 0 auto;
+}
+.schools__image {
+  object-fit: fill;
+  aspect-ratio: 1/0.6;
 }
 .schools__content {
   width: 90%;
@@ -1081,15 +1087,19 @@ fieldset {
   text-align: center;
   align-self: center;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.4em;
   color: #fff;
-  padding: 0.7em 2em;
+  padding: 0.4em 0;
+  min-width: 13em;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 .schools__link--ilac {
   background-color: #22c74d;
+}
+.schools__link--ilsc {
+  background-color: #008efa;
 }
 .schools__title {
   text-align: center;
