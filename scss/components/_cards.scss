@@ -52,7 +52,7 @@
 
     &__title span,
     &__title::after {
-        color: $color-red-canada-alt;
+        color: $color-red;
     }
 
     &__subtitle span,
@@ -143,9 +143,9 @@
     }
 
     &__article-title {
+        color: $color-red;
         font-size: 1.375rem;
         margin-bottom: .5rem;
-        color: $color-red-canada-alt;
     }
 
     &__article-footer {
