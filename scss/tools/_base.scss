@@ -107,7 +107,7 @@ button {
 
 // Reset small
 small {
-    font-family: $font-family-mientras; // Todo: Optimizar!!
+    font-family: $font-family-alternative; // Todo: Optimizar!!
 }
 
 
@@ -139,7 +139,7 @@ textarea {
 label,
 input,
 textarea {
-    font-family: $font-family-mientras; // Todo: Optimizar!!
+    font-family: $font-family-alternative; // Todo: Optimizar!!
 }
 
 
@@ -170,7 +170,7 @@ fieldset {
 
 .headline-big {
     font-size: calc(2.1em + 1vw);
-    font-family: $font-family-mientras; // Todo: Pendiente!!
+    font-family: $font-family-alternative; // Todo: Pendiente!!
 }
 
 .headline,
