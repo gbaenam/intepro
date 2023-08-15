@@ -9,11 +9,21 @@ $z-modal: 1000;
 $z-modal-alt: 10000;
 
 
+
 // Variables ancho página "Width"
 $min-width: 320px;
 $max-width: 1430px;
 $max-width-content: 960px;
 $max-width-content-alt: 1100px;
+
+
+
+// Variables para font-family
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-secondary: 'Poppins', sans-serif;
+$font-family-alternative: 'Lato', sans-serif;
+$font-family-auxiliary: 'Ubuntu', sans-serif;
+
 
 
 // Paleta de Colores
@@ -80,25 +90,3 @@ $orange-red-dark: #e63e00;
 $orange-red-darker: #b33000;
 
 
-// font-family
-$font-family-primary: 'Roboto', sans-serif;
-$font-family-secondary: 'Poppins', sans-serif;
-$font-family-alternative: 'Lato', sans-serif;
-$font-family-auxiliary: 'Ubuntu', sans-serif;
-
-
-
-
-
-
-
-
-// $font-family-tempo: 'Roboto', sans-serif;
-
-
-// $font-family-body-alt:'Roboto', sans-serif;
-
-// $font-family-menu: 'Roboto', sans-serif;
-
-
-// $font-family-mientras: 'Lato', sans-serif;
