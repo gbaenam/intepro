@@ -1055,6 +1055,12 @@ fieldset {
 .schools__header {
   text-align: center;
 }
+.schools__header strong:first-child {
+  color: #cc0000;
+}
+.schools__header strong:last-child {
+  color: #f98012;
+}
 .schools__title {
   margin-bottom: 0;
 }

@@ -8,6 +8,14 @@
         text-align: center;
     }
 
+    &__header strong:first-child {
+        color: $color-red;
+    }
+
+    &__header strong:last-child {
+        color: #f98012;
+    }
+
     &__title {
         margin-bottom: 0;
     }
