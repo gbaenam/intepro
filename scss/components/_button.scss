@@ -122,22 +122,37 @@ $buttonSolid: true;
         color: #fff;
 		font-weight: 500;
 		font-size: 1.2em;
-        padding: .3em 1.3em;
+        // padding: .3em 0;
         text-transform: uppercase;
 		font-family: $font-family-titles;
         text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
 		border: 1px solid;
+		// min-width: 15rem;
 
-		@include from(360px) {
-			font-size: 1.3em;
-			padding: .3em 1.6em;
-		}
+		// flex-basis: 240px;
 
-		@include from(412px) {
-			// font-size: 1.5em;
-			padding: .3em 1.8em;
-		}
+
+
+
+
+
+
+		// @include from(360px) {
+		// 	font-size: 1.3em;
+		// 	min-width: 16rem;
+		// }
+
+		// @include from(412px) {
+		// 	font-size: 1.4em;
+		// 	padding: .4em 0;
+		// 	min-width: 18rem;
+		// }
+
+		// @include from(694px) {
+		// 	font-size: 1.2em;
+		// 	min-width: 16rem;
+		// }
 	}
 
 
