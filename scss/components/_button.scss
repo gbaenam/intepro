@@ -122,7 +122,7 @@ $buttonSolid: true;
         color: #fff;
 		font-weight: 500;
 		font-size: 1.2em;
-        padding: .4em 1.3em;
+        padding: .3em 1.3em;
         text-transform: uppercase;
 		font-family: $font-family-titles;
         text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
@@ -130,13 +130,13 @@ $buttonSolid: true;
 		border: 1px solid;
 
 		@include from(360px) {
-			font-size: 1.4em;
-			padding: .4em 1.6em;
+			font-size: 1.3em;
+			padding: .3em 1.6em;
 		}
 
 		@include from(412px) {
-			font-size: 1.5em;
-			padding: .4em 1.8em;
+			// font-size: 1.5em;
+			padding: .3em 1.8em;
 		}
 	}
 
