@@ -1086,6 +1086,11 @@ fieldset {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (min-width: 1024px) {
+  .schools__image-wrapper {
+    width: 60%;
+  }
+}
 .schools__image {
   object-fit: fill;
   aspect-ratio: 1/0.6;
