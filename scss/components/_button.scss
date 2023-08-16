@@ -127,6 +127,8 @@ $buttonSolid: true;
 		font-family: $font-family-titles;
         text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
+		border: 1px solid;
+
 		@include from(360px) {
 			font-size: 1.4em;
 			padding: .4em 1.6em;
