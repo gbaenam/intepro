@@ -415,6 +415,8 @@ fieldset {
 .link {
   color: #fff;
   padding: 0.4em 0;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }

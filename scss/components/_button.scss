@@ -119,9 +119,10 @@ $buttonSolid: true;
 @if $link {
 
 	.link {
-		// font-size: 1.4em;
         color: #fff;
         padding: .4em 0;
+		font-weight: 500;
+		font-family: $font-family-secondary;
 
 
 
