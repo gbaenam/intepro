@@ -4,10 +4,6 @@
 
 .schools {
 
-    // &__container {
-    //     background-color: pink;
-    // }
-
     &__header {
         text-align: center;
     }
@@ -22,16 +18,16 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        margin-bottom: calc(2em + 1vw);
+        margin-bottom: calc(2em + 1vw); // Todo: Pendiente!!!
 
     }
 
     &__article {
         flex-grow: 1;
-        max-width: 450px;
-        flex-basis: 288px;
-        background-color: #f2f2f2;
+        max-width: 28rem;
+        flex-basis: 18rem;
         padding-bottom: 15px;
+        background-color: #f2f2f2;
         box-shadow: 0 8px 10px -4px rgba(0,0,0,.8);
 
     }
@@ -105,7 +101,6 @@
             flex-grow: 1;
             max-width: 400px;
             flex-basis: 280px;
-            // text-align: justify;
         }
     }
 }
