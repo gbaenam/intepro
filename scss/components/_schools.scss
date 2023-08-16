@@ -19,21 +19,18 @@
         justify-content: center;
 
         margin-bottom: calc(2em + 1vw); // Todo: Pendiente!!!
-
     }
 
     &__article {
         flex-grow: 1;
         max-width: 28rem;
         flex-basis: 18rem;
-        padding-bottom: 15px;
+        padding-bottom: 1.25rem;
         background-color: #f2f2f2;
-        box-shadow: 0 8px 10px -4px rgba(0,0,0,.8);
-
+        box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0,0,0,.8);
     }
 
     &__background-wrapper {
-        // background-color: #fff;
         padding-bottom: 1.5rem;
     }
 
@@ -75,17 +72,20 @@
     }
 
     &__link--ilac {
-        background-color: #21c7c1;
+        background-color: #21c7c1; // Todo: Variables de colores.
     }
 
     &__link--ilsc {
-        background-color: #128bf9;
+        background-color: #128bf9; // Todo: Variables de colores.
     }
 
-    &__title {
+    &__title-article {
+        color: #333; // Todo: Variables de colores.
         text-align: center;
+        font-size: 1.375rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
     }
-
 
     &__description-wrapper {
         @include from(large) {
@@ -99,8 +99,8 @@
 
         @include from(large) {
             flex-grow: 1;
-            max-width: 400px;
-            flex-basis: 280px;
+            max-width: 25rem;
+            flex-basis: 17.5rem;
         }
     }
 }

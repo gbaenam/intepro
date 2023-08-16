@@ -1069,9 +1069,9 @@ fieldset {
   flex-grow: 1;
   max-width: 28rem;
   flex-basis: 18rem;
-  padding-bottom: 15px;
+  padding-bottom: 1.25rem;
   background-color: #f2f2f2;
-  box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0, 0, 0, 0.8);
 }
 .schools__background-wrapper {
   padding-bottom: 1.5rem;
@@ -1113,8 +1113,12 @@ fieldset {
 .schools__link--ilsc {
   background-color: #128bf9;
 }
-.schools__title {
+.schools__title-article {
+  color: #333;
   text-align: center;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
   .schools__description-wrapper {
@@ -1126,8 +1130,8 @@ fieldset {
 @media screen and (min-width: 1024px) {
   .schools__description {
     flex-grow: 1;
-    max-width: 400px;
-    flex-basis: 280px;
+    max-width: 25rem;
+    flex-basis: 17.5rem;
   }
 }
 
