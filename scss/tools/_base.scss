@@ -108,7 +108,7 @@ button {
 
 // Reset small
 small {
-    font-family: $font-family-alternative;
+    font-family: $font-family-alt;
 }
 
 
@@ -140,7 +140,7 @@ textarea {
 label,
 input,
 textarea {
-    font-family: $font-family-alternative;
+    font-family: $font-family-alt;
 }
 
 
@@ -171,7 +171,7 @@ fieldset {
 
 .headline-big {
     font-size: calc(2.1em + 1vw);
-    font-family: $font-family-alternative;
+    font-family: $font-family-alt;
 }
 
 .headline,
