@@ -35,11 +35,11 @@
     }
 
     &__background-wrapper--ilac {
-        background-color:#c72127;
+        background-color:#c72127; // Todo: Variables de colores.
     }
 
     &__background-wrapper--ilsc {
-        background-color:#f98012;
+        background-color:#f98012; // Todo: Variables de colores.
     }
 
     &__image-wrapper {
@@ -58,9 +58,8 @@
 
     &__content {
         width: 90%;
-        margin: 0 auto;
-
         display: flex;
+        margin: 0 auto;
         flex-direction: column;
     }
 

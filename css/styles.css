@@ -1097,8 +1097,8 @@ fieldset {
 }
 .schools__content {
   width: 90%;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
 }
 .schools__link {
