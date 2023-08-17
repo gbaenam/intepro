@@ -34,13 +34,12 @@
     &__article {
         flex-grow: 1;
         max-width: 28rem;
+        overflow: hidden;
         flex-basis: 18rem;
+        border-radius: 1.25rem;
         padding-bottom: 1.25rem;
         background-color: #fff;
         box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0,0,0,.8);
-
-        border-radius: 20px;
-        overflow: hidden;
     }
 
     &__background-wrapper {
