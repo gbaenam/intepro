@@ -18,6 +18,16 @@
     max-width: $max-width;
 }
 
+// Todo: Revisar para: ".social-bar-layout" y para ".main-footer-layout"
+// Todo: Deben tener también la misma declaración de estilos de estas llaves.
+.youtube-layout,
+.cards-layout,
+.schools-layout {
+    padding: calc(3rem + 2vw) 0;
+}
+
+// Todo: Revisar estas declaraciones para que se ajusten a:
+// Todo:  "padding: calc(3rem + 2vw) 0"
 .banner-layout {
     padding-top: 1rem;
     padding-bottom: 2.5rem;

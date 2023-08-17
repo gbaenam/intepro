@@ -286,6 +286,12 @@ fieldset {
   max-width: 1430px;
 }
 
+.youtube-layout,
+.cards-layout,
+.schools-layout {
+  padding: calc(3rem + 2vw) 0;
+}
+
 .banner-layout {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
@@ -722,15 +728,7 @@ fieldset {
   border-color: var(--color-focus-alt);
 }
 
-/* ------------------ _main.scss ---------------------- */
-.main {
-  display: grid;
-  font-size: 1rem;
-  gap: calc(1em + 3vw);
-  background-color: #fafbfa;
-}
-
-/* ------------------ banner.scss --------------------- */
+/* ------------------ _main.scss ---------------------- */ /* ------------------ banner.scss --------------------- */
 .banner {
   --objet-position-hero-image: 10% top;
   --width-banner-flag: 2.8125rem;
@@ -840,13 +838,13 @@ fieldset {
 }
 
 .youtube {
-  background-color: #fafbfa;
+  background-color: #ececec;
 }
 .youtube__content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #fafbfa;
+  background-color: #ececec;
   max-width: var(--mw-content);
 }
 .youtube__header {
@@ -1010,9 +1008,6 @@ fieldset {
 .cards__footer-text span:first-child, .cards__footer-text span:nth-child(2), .cards__footer-text span:nth-child(3) {
   font-weight: var(--fw-footer-text-span);
 }
-.cards__footer-button {
-  margin-bottom: calc(1.5em + 1.5vw);
-}
 .cards__modal {
   align-items: center;
 }
@@ -1062,8 +1057,6 @@ fieldset {
 
 .schools {
   background-color: var(--bgc-schools);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 .schools__header {
   text-align: center;
