@@ -3,7 +3,13 @@
 /* ---------------- schools.scss -------------------- */
 
 .schools {
+    --w-wrapper: 80%;
     --bgc-schools: #ececec;
+
+    // Wide 1024px
+    @include from(large) {
+        --w-wrapper: 60%;
+    }
 
     // Wide 1040px
     @include from(1040px) {
@@ -55,12 +61,8 @@
     }
 
     &__image-wrapper {
-        width: 80%;
         margin: 0 auto;
-
-        @include from(large) {
-            width: 60%;
-        }
+        width: var(--w-wrapper);
     }
 
     &__image {

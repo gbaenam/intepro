@@ -1047,7 +1047,13 @@ fieldset {
 
 /* ---------------- schools.scss -------------------- */
 .schools {
+  --w-wrapper: 80%;
   --bgc-schools: #ececec;
+}
+@media screen and (min-width: 1024px) {
+  .schools {
+    --w-wrapper: 60%;
+  }
 }
 @media screen and (min-width: 1040px) {
   .schools {
@@ -1091,13 +1097,8 @@ fieldset {
   background-color: #f98012;
 }
 .schools__image-wrapper {
-  width: 80%;
   margin: 0 auto;
-}
-@media screen and (min-width: 1024px) {
-  .schools__image-wrapper {
-    width: 60%;
-  }
+  width: var(--w-wrapper);
 }
 .schools__image {
   object-fit: fill;
