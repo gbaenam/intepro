@@ -1128,7 +1128,7 @@ fieldset {
 .schools__title-article {
   color: #444;
   text-align: center;
-  font-size: 26px;
+  font-size: 1.625rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 1024px) {
