@@ -728,7 +728,6 @@ fieldset {
   font-size: 1rem;
   gap: calc(1em + 3vw);
   background-color: #fafbfa;
-  padding-bottom: 5rem;
 }
 
 /* ------------------ banner.scss --------------------- */
@@ -1052,11 +1051,19 @@ fieldset {
 }
 
 /* ---------------- schools.scss -------------------- */
+.schools {
+  background-color: #e5e5e5;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .schools__header {
   text-align: center;
 }
 .schools__title {
   margin-bottom: 0;
+}
+.schools__subtitle {
+  color: #cc0000;
 }
 .schools__articles {
   gap: 3rem;
@@ -1070,8 +1077,10 @@ fieldset {
   max-width: 28rem;
   flex-basis: 18rem;
   padding-bottom: 1.25rem;
-  background-color: #f2f2f2;
+  background-color: #fff;
   box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
 }
 .schools__background-wrapper {
   padding-bottom: 1.5rem;
@@ -1135,11 +1144,9 @@ fieldset {
   }
 }
 .schools__description p:first-child {
-  text-align: center;
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* ------------------ form.scss ---------------------- */
