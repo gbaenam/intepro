@@ -1052,14 +1052,18 @@ fieldset {
 
 /* ---------------- schools.scss -------------------- */
 .schools {
-  background-color: #ececec;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  --bgc-schools: #ececec;
 }
 @media screen and (min-width: 1040px) {
   .schools {
-    background-color: #fafbfa;
+    --bgc-schools: #fafbfa;
   }
+}
+
+.schools {
+  background-color: var(--bgc-schools);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .schools__header {
   text-align: center;

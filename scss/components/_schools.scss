@@ -3,12 +3,18 @@
 /* ---------------- schools.scss -------------------- */
 
 .schools {
+    --bgc-schools: #ececec;
 
-    background-color: #ececec;
-
+    // Wide 1040px
     @include from(1040px) {
-        background-color: #fafbfa;
+        --bgc-schools: #fafbfa;
     }
+
+}
+
+.schools {
+    background-color: var(--bgc-schools);
+
 
     padding-top: 2rem;
     padding-bottom: 2rem;
