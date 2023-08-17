@@ -1069,7 +1069,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: calc(3em + 1vw);
+  margin-bottom: calc(3rem + 1vw);
 }
 .schools__article {
   flex-grow: 1;
