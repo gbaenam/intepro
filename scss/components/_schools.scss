@@ -4,7 +4,7 @@
 
 .schools {
 
-    background-color: #e5e5e5;
+    background-color: #ececec;
 
     @include from(1040px) {
         background-color: #fafbfa;
@@ -118,15 +118,8 @@
     }
 
     &__description p:first-child {
-
-        margin-bottom: 1.5rem;
-        font-size: 26px;
-        font-weight: 500;
-        color: #333;
-
-        @include from(1040px) {
-            // text-align: center;
-            font-size: 28px;
-        }
+        font-weight: 600;
+        font-size: calc(26px + .4vw);
+        margin-bottom: calc(.5rem + .6vw);
     }
 }
