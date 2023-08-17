@@ -1055,12 +1055,6 @@ fieldset {
 .schools__header {
   text-align: center;
 }
-.schools__header strong:first-child {
-  color: #cc0000;
-}
-.schools__header strong:last-child {
-  color: #f98012;
-}
 .schools__title {
   margin-bottom: 0;
 }
@@ -1069,7 +1063,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: calc(2em + 1vw);
+  margin-bottom: calc(3em + 1vw);
 }
 .schools__article {
   flex-grow: 1;
@@ -1139,6 +1133,13 @@ fieldset {
     max-width: 25rem;
     flex-basis: 17.5rem;
   }
+}
+.schools__description p:first-child {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 /* ------------------ form.scss ---------------------- */

@@ -8,13 +8,13 @@
         text-align: center;
     }
 
-    &__header strong:first-child {
-        color: $color-red;
-    }
+    // &__header strong:first-child {
+    //     color: $color-red;
+    // }
 
-    &__header strong:last-child {
-        color: #f98012;
-    }
+    // &__header strong:last-child {
+    //     color: #f98012;
+    // }
 
     &__title {
         margin-bottom: 0;
@@ -26,7 +26,7 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        margin-bottom: calc(2em + 1vw); // Todo: Pendiente!!!
+        margin-bottom: calc(3em + 1vw); // Todo: Pendiente!!!
     }
 
     &__article {
@@ -102,12 +102,30 @@
         }
     }
 
+    // &__separator {
+    //     margin-bottom: 2rem;
+    //     border: 0;
+    //     height: 1px;
+    //     background-color: #fff;
+    // }
+
     &__description {
+        // display: flex;
+        // flex-direction: column;
 
         @include from(large) {
             flex-grow: 1;
             max-width: 25rem;
             flex-basis: 17.5rem;
         }
+    }
+
+    &__description p:first-child {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        font-size: 26px;
+        font-weight: 700;
+        // color: #333;
     }
 }
