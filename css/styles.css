@@ -1056,6 +1056,11 @@ fieldset {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+@media screen and (min-width: 1040px) {
+  .schools {
+    background-color: #fafbfa;
+  }
+}
 .schools__header {
   text-align: center;
 }
@@ -1075,6 +1080,7 @@ fieldset {
   flex-basis: 18rem;
   padding-bottom: 1.25rem;
   background-color: #fff;
+  box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -1111,7 +1117,7 @@ fieldset {
   text-align: center;
   align-self: center;
   display: inline-block;
-  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.375rem rgba(0, 0, 0, 0.5);
 }
 .schools__link--ilac {
   background-color: #e00000;
@@ -1122,7 +1128,7 @@ fieldset {
   background-color: orange;
 }
 .schools__title-article {
-  color: #333;
+  color: #444;
   text-align: center;
   font-size: 26px;
   margin-bottom: 1rem;
@@ -1144,7 +1150,13 @@ fieldset {
 .schools__description p:first-child {
   margin-bottom: 1.5rem;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #333;
+}
+@media screen and (min-width: 1040px) {
+  .schools__description p:first-child {
+    font-size: 28px;
+  }
 }
 
 /* ------------------ form.scss ---------------------- */
