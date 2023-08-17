@@ -1062,9 +1062,6 @@ fieldset {
 .schools__title {
   margin-bottom: 0;
 }
-.schools__subtitle {
-  color: #cc0000;
-}
 .schools__articles {
   gap: 3rem;
   display: flex;
@@ -1115,19 +1112,21 @@ fieldset {
   text-align: center;
   align-self: center;
   display: inline-block;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
 }
 .schools__link--ilac {
-  background-color: #21c7c1;
+  background-color: #e00000;
+  border-color: #e00000;
 }
 .schools__link--ilsc {
-  background-color: #128bf9;
+  border-color: orange;
+  background-color: orange;
 }
 .schools__title-article {
   color: #333;
   text-align: center;
-  font-size: 1.375rem;
+  font-size: 26px;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 1024px) {
   .schools__description-wrapper {

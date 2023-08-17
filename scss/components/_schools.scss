@@ -17,10 +17,6 @@
         margin-bottom: 0;
     }
 
-    &__subtitle {
-        color: $color-red;
-    }
-
     &__articles {
         gap: 3rem;
         display: flex;
@@ -35,10 +31,9 @@
         max-width: 28rem;
         flex-basis: 18rem;
         padding-bottom: 1.25rem;
-        // background-color: #f2f2f2;
         background-color: #fff;
         box-shadow: 0 0.5rem 0.625rem -0.25rem rgba(0,0,0,.8);
-        // border: 1px solid #fff;
+
         border-radius: 20px;
         overflow: hidden;
     }
@@ -81,22 +76,25 @@
         text-align: center;
         align-self: center;
         display: inline-block;
+
+        box-shadow: 0px 0px 6px 2px rgba(0,0,0,.5);
     }
 
     &__link--ilac {
-        background-color: #21c7c1; // Todo: Variables de colores.
+        background-color: $color-red-canada-line; // Todo: Corregir!!!
+        border-color: $color-red-canada-line; // Todo: Corregir!!!
     }
 
     &__link--ilsc {
-        background-color: #128bf9; // Todo: Variables de colores.
+        border-color: orange; // Todo: Optimizar!!!
+        background-color: orange; // Todo: Optimizar!!!
     }
 
     &__title-article {
         color: #333; // Todo: Variables de colores.
         text-align: center;
-        font-size: 1.375rem;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
+        font-size: 26px; // Todo: Optimizar tamaño y color!!!
+        margin-bottom: 1rem; // Todo: Revisar!!!
     }
 
     &__description-wrapper {
@@ -108,8 +106,6 @@
     }
 
     &__description {
-        // display: flex;
-        // flex-direction: column;
 
         @include from(large) {
             flex-grow: 1;
@@ -119,8 +115,7 @@
     }
 
     &__description p:first-child {
-        // text-align: center;
-        // text-transform: uppercase;
+
         margin-bottom: 1.5rem;
         font-size: 26px;
         font-weight: 600;
