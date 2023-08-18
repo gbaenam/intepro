@@ -823,26 +823,16 @@ fieldset {
 
 /* ------------------ youtube.scss --------------------- */
 .youtube {
-  --mw-content: 720px;
-  --ta-title-subtitle: start;
-}
-@media screen and (min-width: 720px) {
-  .youtube {
-    --ta-title-subtitle: center;
-  }
-}
-@media screen and (min-width: 1921px) {
-  .youtube {
-    --mw-content: 840px;
-  }
-}
-
-.youtube {
   background-color: #ececec;
 }
 .youtube__container {
   display: flex;
+  align-items: center;
   flex-direction: column;
+}
+.youtube__header {
+  text-align: center;
+  max-width: 960px;
 }
 .youtube__subtitle::before {
   content: "¡";
@@ -852,8 +842,8 @@ fieldset {
 }
 .youtube__video-wrapper {
   width: 100%;
-  margin-bottom: calc(1em + 1vw);
-  max-width: 720px;
+  max-width: 640px;
+  margin-bottom: calc(1rem + 2vw);
 }
 .youtube__video {
   display: grid;

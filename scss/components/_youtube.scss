@@ -2,38 +2,23 @@
 
 /* ------------------ youtube.scss --------------------- */
 
-.youtube {
-  --mw-content: 720px;
-  --ta-title-subtitle: start;
-
-  @include from(720px) {
-  --ta-title-subtitle: center;
-  }
-
-  @include from(1921px) {
-    --mw-content: 840px;
-  }
-}
-
 
 .youtube {
-  background-color: #ececec;
+  background-color: #ececec; // Todo: Variables de colores.
 
   &__container {
     display: flex;
-    // align-items: center;
+    align-items: center;
     flex-direction: column;
   }
 
-  // Todo: Revisar esta declaración.
-  // &__header {
-  //   text-align: center;
-  //   // max-width: 70%;
-  // }
+  &__header {
+    text-align: center;
+    max-width: $max-width-content;
+  }
 
-  // &__title,
-  // &__subtitle {
-  //   text-align: var(--ta-title-subtitle);
+  // &__title {
+  //   text-align: left;
   // }
 
   &__subtitle {
@@ -47,10 +32,9 @@
 
   &__video-wrapper {
     width: 100%;
-    margin-bottom: calc(1em + 1vw);
+    max-width: 640px;
+    margin-bottom: calc(1rem + 2vw);
 
-    max-width: 720px;
-    // margin: 0 auto;
   }
 
   &__video {
