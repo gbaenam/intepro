@@ -21,21 +21,20 @@
 
   &__container {
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
-              // max-width: var(--mw-content);
   }
 
   // Todo: Revisar esta declaración.
-  &__header {
-    text-align: center;
-    // max-width: 70%;
-  }
+  // &__header {
+  //   text-align: center;
+  //   // max-width: 70%;
+  // }
 
-  &__title,
-  &__subtitle {
-    text-align: var(--ta-title-subtitle);
-  }
+  // &__title,
+  // &__subtitle {
+  //   text-align: var(--ta-title-subtitle);
+  // }
 
   &__subtitle {
     &::before {
@@ -46,9 +45,12 @@
     }
   }
 
-  &__wrapper {
+  &__video-wrapper {
     width: 100%;
     margin-bottom: calc(1em + 1vw);
+
+    max-width: 720px;
+    // margin: 0 auto;
   }
 
   &__video {
@@ -78,7 +80,7 @@
 
     @include from(large) {
       flex-grow: 1;
-      max-width: 300px;
+      max-width: 350px;
       flex-basis: 280px;
     }
   }

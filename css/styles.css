@@ -842,14 +842,7 @@ fieldset {
 }
 .youtube__container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-.youtube__header {
-  text-align: center;
-}
-.youtube__title, .youtube__subtitle {
-  text-align: var(--ta-title-subtitle);
 }
 .youtube__subtitle::before {
   content: "¡";
@@ -857,9 +850,10 @@ fieldset {
 .youtube__subtitle::after {
   content: "!";
 }
-.youtube__wrapper {
+.youtube__video-wrapper {
   width: 100%;
   margin-bottom: calc(1em + 1vw);
+  max-width: 720px;
 }
 .youtube__video {
   display: grid;
@@ -892,7 +886,7 @@ fieldset {
 @media screen and (min-width: 1024px) {
   .youtube__description {
     flex-grow: 1;
-    max-width: 300px;
+    max-width: 350px;
     flex-basis: 280px;
   }
 }
