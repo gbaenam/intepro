@@ -879,8 +879,22 @@ fieldset {
   height: 100%;
   position: absolute;
 }
-.youtube__description {
-  width: 100%;
+.youtube__description-wrapper {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .youtube__description-wrapper {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .youtube__description {
+    flex-grow: 1;
+    max-width: 300px;
+    flex-basis: 280px;
+  }
 }
 
 /* ---------------- cards.scss -------------------- */

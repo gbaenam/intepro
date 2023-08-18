@@ -53,7 +53,7 @@
 
   &__video {
     @include ratio(16,9);
-    border: 0.0625rem solid $color-light-gray-alt;;
+    border: 0.0625rem solid $color-light-gray-alt; // Todo: Corregir nombre variable.
 
     > iframe,
     > video {
@@ -63,12 +63,23 @@
     }
   }
 
+  &__description-wrapper {
+    display: block;
+
+    @include from(large) {
+      gap: 1.5rem;
+      display: flex;
+      justify-content: center;
+
+    }
+  }
+
   &__description {
-    width: 100%;
-    // @include from(large) {
-    //   gap: 1.5rem;
-    //   display: flex;
-    //   justify-content: center;
-    // }
+
+    @include from(large) {
+      flex-grow: 1;
+      max-width: 300px;
+      flex-basis: 280px;
+    }
   }
 }
