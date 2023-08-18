@@ -3,7 +3,7 @@
 /* ------------------ youtube.scss --------------------- */
 
 .youtube {
-  --mw-content: 45rem;
+  --mw-content: 720px;
   --ta-title-subtitle: start;
 
   @include from(720px) {
@@ -11,7 +11,7 @@
   }
 
   @include from(1921px) {
-    --mw-content: 52.5rem;
+    --mw-content: 840px;
   }
 }
 
@@ -23,12 +23,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #ececec;
-    max-width: var(--mw-content);
+              // max-width: var(--mw-content);
   }
 
+  // Todo: Revisar esta declaración.
   &__header {
-    width: 100%;
+    text-align: center;
+    // max-width: 70%;
   }
 
   &__title,

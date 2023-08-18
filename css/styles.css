@@ -823,7 +823,7 @@ fieldset {
 
 /* ------------------ youtube.scss --------------------- */
 .youtube {
-  --mw-content: 45rem;
+  --mw-content: 720px;
   --ta-title-subtitle: start;
 }
 @media screen and (min-width: 720px) {
@@ -833,7 +833,7 @@ fieldset {
 }
 @media screen and (min-width: 1921px) {
   .youtube {
-    --mw-content: 52.5rem;
+    --mw-content: 840px;
   }
 }
 
@@ -844,11 +844,9 @@ fieldset {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ececec;
-  max-width: var(--mw-content);
 }
 .youtube__header {
-  width: 100%;
+  text-align: center;
 }
 .youtube__title, .youtube__subtitle {
   text-align: var(--ta-title-subtitle);
