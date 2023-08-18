@@ -3,12 +3,18 @@
 /* ---------------- schools.scss -------------------- */
 
 .schools {
-    --w-wrapper: 80%;
+    --wdh-schools-iw: 80%;
+    --gap-schools-dw: unset;
+    --dpl-schools-dw: block;
+    --jfc-schools-dw: unset;
     --bgc-schools: #ececec;
 
     // Wide 1024px
     @include from(large) {
-        --w-wrapper: 60%;
+        --wdh-schools-iw: 60%;
+        --dpl-schools-dw: flex;
+        --jfc-schools-dw: center;
+        --gap-schools-dw: 1.5rem;
     }
 
     // Wide 1040px
@@ -62,7 +68,7 @@
 
     &__image-wrapper {
         margin: 0 auto;
-        width: var(--w-wrapper);
+        width: var(--wdh-schools-iw);
     }
 
     &__image {
@@ -103,11 +109,9 @@
     }
 
     &__description-wrapper {
-        @include from(large) {
-            gap: 1.5rem;
-            display: flex;
-            justify-content: center;
-        }
+        gap: var(--gap-schools-dw);
+        display: var(--dpl-schools-dw);
+        justify-content: var(--jfc-schools-dw);
     }
 
     &__description {

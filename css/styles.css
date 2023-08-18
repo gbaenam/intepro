@@ -1047,12 +1047,18 @@ fieldset {
 
 /* ---------------- schools.scss -------------------- */
 .schools {
-  --w-wrapper: 80%;
+  --wdh-schools-iw: 80%;
+  --gap-schools-dw: unset;
+  --dpl-schools-dw: block;
+  --jfc-schools-dw: unset;
   --bgc-schools: #ececec;
 }
 @media screen and (min-width: 1024px) {
   .schools {
-    --w-wrapper: 60%;
+    --wdh-schools-iw: 60%;
+    --dpl-schools-dw: flex;
+    --jfc-schools-dw: center;
+    --gap-schools-dw: 1.5rem;
   }
 }
 @media screen and (min-width: 1040px) {
@@ -1098,7 +1104,7 @@ fieldset {
 }
 .schools__image-wrapper {
   margin: 0 auto;
-  width: var(--w-wrapper);
+  width: var(--wdh-schools-iw);
 }
 .schools__image {
   object-fit: fill;
@@ -1131,12 +1137,10 @@ fieldset {
   font-size: 1.625rem;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 1024px) {
-  .schools__description-wrapper {
-    gap: 1.5rem;
-    display: flex;
-    justify-content: center;
-  }
+.schools__description-wrapper {
+  gap: var(--gap-schools-dw);
+  display: var(--dpl-schools-dw);
+  justify-content: var(--jfc-schools-dw);
 }
 @media screen and (min-width: 1024px) {
   .schools__description {
