@@ -840,7 +840,7 @@ fieldset {
 .youtube {
   background-color: #ececec;
 }
-.youtube__content {
+.youtube__container {
   display: flex;
   align-items: center;
   flex-direction: column;
