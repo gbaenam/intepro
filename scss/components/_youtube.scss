@@ -12,14 +12,15 @@
     flex-direction: column;
   }
 
-  &__header {
-    text-align: center;
-    max-width: $max-width-content;
-  }
-
-  // &__title {
-  //   text-align: left;
+  // &__header {
+  //   // text-align: center;
+  //   // max-width: $max-width-content;
+  //   width: 90%;
   // }
+
+  &__title {
+    text-align: left;
+  }
 
   &__subtitle {
     &::before {
