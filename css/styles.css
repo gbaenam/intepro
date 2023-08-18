@@ -1155,7 +1155,7 @@ fieldset {
 }
 .schools__description p:first-child {
   font-weight: 600;
-  font-size: calc(26px + 0.4vw);
+  font-size: calc(1.625rem + 0.4vw);
   margin-bottom: calc(0.5rem + 0.6vw);
 }
 
