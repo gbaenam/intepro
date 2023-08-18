@@ -1142,6 +1142,11 @@ fieldset {
   display: var(--dpl-schools-dw);
   justify-content: var(--jfc-schools-dw);
 }
+.schools__description {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
 @media screen and (min-width: 1024px) {
   .schools__description {
     flex-grow: 1;

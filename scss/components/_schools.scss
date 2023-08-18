@@ -115,6 +115,9 @@
     }
 
     &__description {
+        flex-grow: 0;
+        max-width: none;
+        flex-basis: auto;
 
         @include from(large) {
             flex-grow: 1;
