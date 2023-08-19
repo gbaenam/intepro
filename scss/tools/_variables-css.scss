@@ -3,45 +3,18 @@
 
 // VARIABLES GLOBALES.
 
-// Generales
 :root {
-    // Body font
-    --font-size-body: 20px;
-    // Body font-weight
-    --font-weight-body: 400;
-    // Logo Width
-    --width-logo: 2.8rem;
-    // Header height
     --height-header: 3.8rem;
 }
 
 
-// Padding para viewport de móvil
-:root {
-    --padding-text: 0 8px;
+// :root {
+//     --cursor-button: default;
 
-    @include from(360px) {
-        --padding-text: 0 10px;
-    }
-
-    @include from(412px) {
-        --padding-text: 0 12px;
-    }
-
-    @include from(541px) {
-        --padding-text: 0;
-    }
-}
-
-
-// Cursor.
-:root {
-    --cursor-button: default;
-
-    @include from(large) {
-        --cursor-button: pointer;
-    }
-}
+//     @include from(large) {
+//         --cursor-button: pointer;
+//     }
+// }
 
 
 // hover / focus

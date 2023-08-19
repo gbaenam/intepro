@@ -1,37 +1,6 @@
 @charset "UTF-8";
 :root {
-  --font-size-body: 20px;
-  --font-weight-body: 400;
-  --width-logo: 2.8rem;
   --height-header: 3.8rem;
-}
-
-:root {
-  --padding-text: 0 8px;
-}
-@media screen and (min-width: 360px) {
-  :root {
-    --padding-text: 0 10px;
-  }
-}
-@media screen and (min-width: 412px) {
-  :root {
-    --padding-text: 0 12px;
-  }
-}
-@media screen and (min-width: 541px) {
-  :root {
-    --padding-text: 0;
-  }
-}
-
-:root {
-  --cursor-button: default;
-}
-@media screen and (min-width: 1024px) {
-  :root {
-    --cursor-button: pointer;
-  }
 }
 
 :root {
