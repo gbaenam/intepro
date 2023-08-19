@@ -45,23 +45,23 @@
     }
   }
 
-  &__description-wrapper {
-    display: block;
+  // &__description-wrapper {
+  //   display: block;
 
-    @include from(large) {
-      gap: 1.5rem;
-      display: flex;
-      justify-content: center;
+  //   @include from(large) {
+  //     gap: 1.5rem;
+  //     display: flex;
+  //     justify-content: center;
 
-    }
-  }
+  //   }
+  // }
 
-  &__description {
+  // &__description {
 
-    @include from(large) {
-      flex-grow: 1;
-      max-width: 350px;
-      flex-basis: 280px;
-    }
-  }
+  //   @include from(large) {
+  //     flex-grow: 1;
+  //     max-width: 350px;
+  //     flex-basis: 280px;
+  //   }
+  // }
 }
