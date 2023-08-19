@@ -30,7 +30,6 @@
     width: 100%;
     max-width: 640px;
     margin-bottom: calc(1rem + 2vw);
-
   }
 
   &__video {
@@ -49,6 +48,24 @@
     columns: 3 20rem;
     column-gap: 4rem;
     column-rule: 0.0625rem solid #fff;
+  }
+
+  &__intro {
+    color: #333;
+    column-span: all;
+    text-align: center;
+    font-style: italic;
+    font-size: calc(20px + .3vw);
+    margin-bottom: calc(.7rem + 1.3vw);
+  }
+
+  &__intro {
+    &::before {
+      content: "";
+    }
+    &::after {
+        content: "";
+    }
   }
 
   &__description {

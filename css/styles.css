@@ -830,6 +830,20 @@ fieldset {
   column-gap: 4rem;
   column-rule: 0.0625rem solid #fff;
 }
+.youtube__intro {
+  color: #333;
+  column-span: all;
+  text-align: center;
+  font-style: italic;
+  font-size: calc(20px + 0.3vw);
+  margin-bottom: calc(0.7rem + 1.3vw);
+}
+.youtube__intro::before {
+  content: "";
+}
+.youtube__intro::after {
+  content: "";
+}
 .youtube__description {
   margin-bottom: 1rem;
 }
