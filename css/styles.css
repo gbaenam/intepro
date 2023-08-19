@@ -825,6 +825,14 @@ fieldset {
   height: 100%;
   position: absolute;
 }
+.youtube__description-wrapper {
+  columns: 3 20rem;
+  column-gap: 4rem;
+  column-rule: 0.0625rem solid #fff;
+}
+.youtube__description {
+  margin-bottom: 1rem;
+}
 
 /* ---------------- cards.scss -------------------- */
 .cards {

@@ -45,23 +45,14 @@
     }
   }
 
-  // &__description-wrapper {
-  //   display: block;
+  &__description-wrapper {
+    columns: 3 20rem;
+    column-gap: 4rem;
+    column-rule: 0.0625rem solid #fff;
+  }
 
-  //   @include from(large) {
-  //     gap: 1.5rem;
-  //     display: flex;
-  //     justify-content: center;
-
-  //   }
-  // }
-
-  // &__description {
-
-  //   @include from(large) {
-  //     flex-grow: 1;
-  //     max-width: 350px;
-  //     flex-basis: 280px;
-  //   }
-  // }
+  &__description {
+    margin-bottom: 1rem;
+  }
 }
+
