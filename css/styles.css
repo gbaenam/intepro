@@ -830,8 +830,9 @@ fieldset {
   align-items: center;
   flex-direction: column;
 }
-.youtube__title {
-  text-align: left;
+.youtube__header {
+  max-width: 64rem;
+  text-align: center;
 }
 .youtube__subtitle::before {
   content: "¡";
