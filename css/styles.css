@@ -828,6 +828,7 @@ fieldset {
 .youtube__description-wrapper {
   columns: 3 20rem;
   column-gap: 4rem;
+  max-width: 68.75rem;
   column-rule: 0.0625rem solid #fff;
 }
 .youtube__intro {
@@ -839,10 +840,10 @@ fieldset {
   margin-bottom: calc(0.7rem + 1.3vw);
 }
 .youtube__intro::before {
-  content: "";
+  content: "“";
 }
 .youtube__intro::after {
-  content: "";
+  content: "”";
 }
 .youtube__description {
   margin-bottom: 1rem;

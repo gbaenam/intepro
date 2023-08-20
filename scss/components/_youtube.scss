@@ -47,6 +47,7 @@
   &__description-wrapper {
     columns: 3 20rem;
     column-gap: 4rem;
+    max-width: 68.75rem;
     column-rule: 0.0625rem solid #fff;
   }
 
@@ -57,15 +58,15 @@
     font-style: italic;
     font-size: calc(20px + .3vw);
     margin-bottom: calc(.7rem + 1.3vw);
+
   }
 
-  &__intro {
-    &::before {
-      content: "";
-    }
-    &::after {
-        content: "";
-    }
+  &__intro::before {
+    content: '\201c';
+  }
+
+  &__intro::after {
+    content: '\201d';
   }
 
   &__description {
