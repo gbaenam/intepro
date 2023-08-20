@@ -1122,6 +1122,13 @@ fieldset {
   font-size: calc(1.625rem + 0.4vw);
   margin-bottom: calc(0.5rem + 0.6vw);
 }
+.schools__description p:first-child::before {
+  content: "";
+  padding: 0.25rem;
+  margin-right: 0.8125rem;
+  background-color: #1bd741;
+  border: 0.0625rem solid #1bd741;
+}
 
 /* ------------------ form.scss ---------------------- */
 .form {

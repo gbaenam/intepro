@@ -131,4 +131,12 @@
         font-size: calc(1.625rem + .4vw);
         margin-bottom: calc(.5rem + .6vw);
     }
+
+    &__description p:first-child::before {
+        content: '';
+        padding: 0.25rem;
+        margin-right: 0.8125rem;
+        background-color: $color-whatsapp; // Todo: Nombre variable!!!
+        border: 0.0625rem solid $color-whatsapp; // Todo: Nombre variable!!!
+    }
 }
