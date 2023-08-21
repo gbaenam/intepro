@@ -56,6 +56,7 @@
     color: #333;
     column-span: all;
     font-weight: 700;
+    font-style: italic;
     text-align: center;
     font-size: calc(1.5rem + .1vw);
     margin: 0 auto calc(.7rem + .8vw);
@@ -63,6 +64,7 @@
 
   &__intro::before {
     content: '\201c';
+    margin-right: 0.0625rem;
   }
 
   &__intro::after {
@@ -71,7 +73,7 @@
 
   &__intro::before,
   &__intro::after {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
     display: inline-block;
     font-family: $ff-quotes;
   }
