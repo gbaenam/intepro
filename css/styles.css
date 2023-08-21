@@ -832,13 +832,14 @@ fieldset {
   column-rule: 0.0625rem solid #fff;
 }
 .youtube__intro {
+  width: 90%;
   color: #333;
   column-span: all;
   font-weight: 400;
   text-align: center;
   font-family: "Noto Serif Toto", serif;
-  font-size: calc(24px + 0.1vw);
-  margin-bottom: calc(0.7rem + 0.8vw);
+  font-size: calc(22px + 0.1vw);
+  margin: 0 auto calc(0.7rem + 0.8vw);
 }
 .youtube__intro::before {
   content: "“";

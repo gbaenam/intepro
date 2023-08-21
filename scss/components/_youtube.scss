@@ -52,13 +52,14 @@
   }
 
   &__intro {
+    width: 90%;
     color: #333;
     column-span: all;
     font-weight: 400;
     text-align: center;
     font-family: $ff-quotes;
-    font-size: calc(24px + .1vw);
-    margin-bottom: calc(.7rem + .8vw);
+    font-size: calc(22px + .1vw);
+    margin: 0 auto calc(.7rem + .8vw);
   }
 
   &__intro::before {
