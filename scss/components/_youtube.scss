@@ -54,11 +54,11 @@
   &__intro {
     color: #333;
     column-span: all;
+    font-weight: 400;
     text-align: center;
-    font-style: italic;
-    font-size: calc(20px + .3vw);
-    margin-bottom: calc(.7rem + 1.3vw);
-
+    font-family: $ff-quotes;
+    font-size: calc(24px + .1vw);
+    margin-bottom: calc(.7rem + .8vw);
   }
 
   &__intro::before {
