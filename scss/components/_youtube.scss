@@ -69,6 +69,13 @@
     content: '\201d';
   }
 
+  &__intro::before,
+  &__intro::after {
+    font-size: 1.75rem;
+    display: inline-block;
+    font-family: $ff-quotes;
+  }
+
   &__description {
     margin-bottom: 1rem;
   }
