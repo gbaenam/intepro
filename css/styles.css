@@ -179,8 +179,8 @@ fieldset {
 }
 
 .headline-big {
-  font-size: calc(2.1em + 1vw);
   font-family: "Lato", sans-serif;
+  font-size: calc(2.1em + 1vw);
 }
 
 .headline,
@@ -776,8 +776,8 @@ fieldset {
 }
 .banner__phone {
   font-style: normal;
-  font-size: calc(1.4em + 1vw);
   font-family: "Lato", sans-serif;
+  font-size: calc(1.4em + 1vw);
 }
 .banner__button {
   text-transform: none;
