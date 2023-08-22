@@ -633,8 +633,8 @@ fieldset {
   padding: var(--padding-link);
   line-height: var(--line-height-link);
   border-radius: var(--border-radius-link);
-  font-size: var(--font-size-link);
   font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-link);
   font-weight: var(--font-weight-link);
 }
 .main-nav__link:hover {
@@ -1259,8 +1259,8 @@ fieldset {
 }
 .form__copyright {
   font-style: normal;
-  font-size: calc(0.9em + 0.15vw);
   font-family: "Roboto", sans-serif;
+  font-size: calc(0.9em + 0.15vw);
 }
 .form__modal {
   display: flex;

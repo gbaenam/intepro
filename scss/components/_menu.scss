@@ -177,8 +177,8 @@
         border-radius: var(--border-radius-link);
 
         font: {
+            family: $ff-main;
             size: var(--font-size-link);
-            family: $font-family-main;
             weight: var(--font-weight-link); // Todo: Revisar esta declaración.
         }
     }
