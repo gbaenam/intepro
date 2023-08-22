@@ -59,8 +59,8 @@
         margin-right: auto;
 
         font: {
+            family: $ff-titles;
             size: var(--font-size-title);
-            family: $font-family-titles;
             weight: var(--font-weight-title);
         }
     }

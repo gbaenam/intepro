@@ -86,8 +86,8 @@ h3 {
 h1,
 h2 {
   margin-bottom: 0.2em;
-  color: #444444;
   font-family: "Poppins", sans-serif;
+  color: #444444;
 }
 
 h1,
@@ -299,8 +299,8 @@ fieldset {
   font-weight: 500;
   position: relative;
   border: 0.125em solid;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 .button-short {
@@ -386,10 +386,10 @@ fieldset {
   max-width: 320px;
   font-weight: 500;
   border: 1px solid;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   padding: calc(0.3em + 0.1vw) 0;
   font-size: calc(1.3em + 0.1vw);
-  font-family: "Poppins", sans-serif;
   text-shadow: 0.0625rem 0.0625rem rgba(0, 0, 0, 0.3);
 }
 
@@ -484,8 +484,8 @@ fieldset {
 }
 .main-header__title {
   margin-right: auto;
-  font-size: var(--font-size-title);
   font-family: "Poppins", sans-serif;
+  font-size: var(--font-size-title);
   font-weight: var(--font-weight-title);
 }
 .main-header__title-link {

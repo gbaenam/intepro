@@ -13,8 +13,8 @@ $buttonSolid: true;
 		font-weight: 500;
 		position: relative;
 		border: .125em solid;
+		font-family: $ff-titles;
 		text-transform: uppercase;
-		font-family: $font-family-titles;
 		text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
 		&-short {
@@ -124,10 +124,10 @@ $buttonSolid: true;
 		max-width: 320px;
 		font-weight: 500;
 		border: 1px solid;
+		font-family: $ff-titles;
         text-transform: uppercase;
 		padding: calc(.3em + .1vw) 0;
 		font-size: calc(1.3em + .1vw);
-		font-family: $font-family-titles;
         text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
 
 	}
