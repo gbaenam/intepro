@@ -383,9 +383,11 @@ fieldset {
 .link {
   width: 90%;
   color: #fff;
-  max-width: 320px;
+  max-width: 20rem;
   font-weight: 500;
-  border: 1px solid;
+  text-align: center;
+  transition: all 0.4s;
+  border: 0.0625rem solid;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   padding: calc(0.3em + 0.1vw) 0;
@@ -779,8 +781,19 @@ fieldset {
   font-family: "Lato", sans-serif;
   font-size: calc(1.4em + 1vw);
 }
-.banner__button {
+.banner__link {
+  border-radius: 2em;
   text-transform: none;
+  border-color: #00bb2d;
+  background-color: #00bb2d;
+}
+.banner__link:hover {
+  border-color: #31df11;
+  background-color: #31df11;
+}
+.banner__link:active {
+  border-color: #2abf0f;
+  background-color: #2abf0f;
 }
 
 /* ------------------ youtube.scss --------------------- */

@@ -109,8 +109,21 @@
         font-size: calc(1.4em + 1vw);
     }
 
-    &__button {
+    &__link {
+        border-radius: 2em;
         text-transform: none;
+        border-color: $green-light; // Todo: Nombre variable
+        background-color: $green-light; // Todo: Nombre variable
+
+        &:hover {
+            border-color: #31df11; // Todo: Organizar
+            background-color: #31df11; // Todo: Organizar
+        }
+
+        &:active {
+            border-color: #2abf0f; //Todo: Nombre variable
+            background-color:#2abf0f; // Todo: Nombre variable
+        }
     }
 }
 

@@ -114,24 +114,22 @@ $buttonSolid: true;
 }
 
 
-// Estilos de botón para los enlaces.
-
+// Estilos para los enlaces.
 @if $link {
 
 	.link {
 		width: 90%;
         color: #fff;
-		max-width: 320px;
+		max-width: 20rem;
 		font-weight: 500;
-		border: 1px solid;
+		text-align: center;
+		transition: all .4s;
+		border: 0.0625rem solid;
 		font-family: $ff-titles;
         text-transform: uppercase;
 		padding: calc(.3em + .1vw) 0;
 		font-size: calc(1.3em + .1vw);
         text-shadow: 0.0625rem 0.0625rem rgba(0,0,0,.3);
-
 	}
-
-
-
 }
+
