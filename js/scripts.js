@@ -10,8 +10,8 @@ const burgerButton = document.querySelector('.burger-button'),
 	burgerLine = document.querySelector('.burger-button__line'),
 	iconMail = document.getElementById('contact-bar-mail'),
 	socialBar = document.getElementById('social-bar'),
-	socialBarWrapper = document.getElementById('social-bar-wrapper'),
-	buttonBanner = document.getElementById('banner-button')
+	socialBarWrapper = document.getElementById('social-bar-wrapper')
+	// buttonBanner = document.getElementById('banner-button')
 
 
 // Captura de elementos del formulario
@@ -269,7 +269,7 @@ const close =  e => {
 iconMail.addEventListener('click', openForm)
 
 // Evento abrir formulario
-buttonBanner.addEventListener('click', openForm)
+// buttonBanner.addEventListener('click', openForm) // Todo: Aquí !!!
 
 // Evento cerrar formulario
 document.querySelector('.form__icon-close').addEventListener('click', close)
