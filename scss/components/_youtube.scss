@@ -51,33 +51,6 @@
     column-rule: 0.0625rem solid #fff;
   }
 
-  &__intro {
-    width: 90%;
-    color: #333;
-    column-span: all;
-    font-weight: 700;
-    font-style: italic;
-    text-align: center;
-    font-size: calc(1.5rem + .1vw);
-    margin: 0 auto calc(.7rem + .8vw);
-  }
-
-  &__intro::before {
-    content: '\201c';
-    margin-right: 0.0625rem;
-  }
-
-  &__intro::after {
-    content: '\201d';
-  }
-
-  &__intro::before,
-  &__intro::after {
-    font-size: 1.625rem;
-    display: inline-block;
-    font-family: $ff-quotes;
-  }
-
   &__description {
     margin-bottom: 1rem;
   }
