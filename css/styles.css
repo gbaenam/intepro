@@ -1005,9 +1005,6 @@ textarea {
 .schools__header {
   text-align: center;
 }
-.schools__title {
-  margin-bottom: 0;
-}
 .schools__articles {
   gap: 3rem;
   display: flex;
