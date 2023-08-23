@@ -153,8 +153,11 @@
     }
 
     &__footer-title {
+        margin-bottom: .4em;
         color: var(--c-footer-title);
+        font-size: calc(1.7em + .8vw);
         font-weight: var(--fw-footer-title);
+
     }
 
     &__footer-text {

@@ -181,11 +181,6 @@ textarea {
   font-size: calc(1.2em + 1vw);
 }
 
-.headline-medium {
-  margin-bottom: 0.4em;
-  font-size: calc(1.7em + 0.8vw);
-}
-
 .modal {
   top: 0;
   left: 0;
@@ -951,7 +946,9 @@ textarea {
   padding: 1.5rem 0;
 }
 .cards__footer-title {
+  margin-bottom: 0.4em;
   color: var(--c-footer-title);
+  font-size: calc(1.7em + 0.8vw);
   font-weight: var(--fw-footer-title);
 }
 .cards__footer-text {
