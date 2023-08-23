@@ -247,7 +247,7 @@ textarea {
   justify-content: center;
   background-color: transparent;
   border-radius: var(--border-radius-link);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.0625rem 0.625rem rgba(0, 0, 0, 0.3);
 }
 .btn-whatsapp:hover {
   color: #32cd32;

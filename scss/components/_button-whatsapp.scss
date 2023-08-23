@@ -12,14 +12,14 @@
     font-size: 3.75rem;
     align-items: center;
     z-index: $z-modal-alt;
-    color: $color-whatsapp;
+    color: $color-whatsapp; // Todo: Actualizar
     justify-content: center;
     background-color: transparent;
-    border-radius: var(--border-radius-link);
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    border-radius: var(--border-radius-link); // Todo: Actualizar
+    box-shadow: 0 0.0625rem 0.625rem rgba(0,0,0,0.3);
 
     &:hover {
-        color: $color-whatsapp-alt;
-        background-color: $color-pale-grey;
+        color: $color-whatsapp-alt; // Todo: Actualizar
+        background-color: $color-pale-grey; // Todo: Actualizar
     }
 }
