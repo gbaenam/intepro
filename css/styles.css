@@ -186,10 +186,6 @@ textarea {
   font-size: calc(1.7em + 0.8vw);
 }
 
-.headline-medium {
-  font-weight: 500;
-}
-
 .modal {
   top: 0;
   left: 0;
