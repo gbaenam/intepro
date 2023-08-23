@@ -193,33 +193,7 @@ textarea {
 }
 
 /*********************************************/
-/* ------------------ line-break.scss ---------------------- */
-.line-break-banner::before {
-  display: inline;
-  content: "";
-}
-@media screen and (min-width: 426px) {
-  .line-break-banner::before {
-    display: block;
-  }
-}
-@media screen and (min-width: 595px) {
-  .line-break-banner::before {
-    display: inline;
-  }
-}
-@media screen and (min-width: 808px) {
-  .line-break-banner::before {
-    display: block;
-  }
-}
-@media screen and (min-width: 1260px) {
-  .line-break-banner::before {
-    display: inline;
-  }
-}
-
-/* ------------------ _layout.scss ---------------------- */
+/* ------------------ line-break.scss ---------------------- */ /* ------------------ _layout.scss ---------------------- */
 .main-header-layout {
   height: 100%;
 }
