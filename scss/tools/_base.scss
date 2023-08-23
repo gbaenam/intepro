@@ -28,18 +28,18 @@ hr {
 }
 
 h1 {
-    line-height: 1;
+    line-height: 100%;
     font-size: calc(3.1em + 1vw);
 }
 
 h2 {
     font-weight: 600;
-    line-height: 120%;
     font-size: calc(2em + 1vw);
 }
 
+h2,
 h3 {
-    line-height: 125%;
+    line-height: 120%;
 }
 
 h1,
