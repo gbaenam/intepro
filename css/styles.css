@@ -152,6 +152,24 @@ fieldset {
   border: none;
 }
 
+.subtitle {
+  font-weight: 500;
+  margin-bottom: 0.6em;
+  font-size: calc(1.2em + 1vw);
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 /**********************************************/
 small {
   font-family: "Lato", sans-serif;
@@ -175,24 +193,6 @@ textarea {
 }
 
 /*********************************************/
-.subtitle {
-  font-weight: 500;
-  margin-bottom: 0.6em;
-  font-size: calc(1.2em + 1vw);
-}
-
-.modal {
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1000;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 /* ------------------ line-break.scss ---------------------- */
 .line-break-banner::before {
   display: inline;

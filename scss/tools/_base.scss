@@ -113,6 +113,31 @@ fieldset {
 
 
 
+// CLASES PREDEFINIDAS
+
+// Subtítulos
+.subtitle {
+    font-weight: 500;
+    margin-bottom: .6em;
+    font-size: calc(1.2em + 1vw);
+}
+
+
+// Modal
+.modal {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: $z-modal;
+    visibility: hidden;
+    background-color: rgba(0,0,0,.9);
+}
+
+
+
 
 
 // Todo: Revisar estas declaraciones.
@@ -137,29 +162,4 @@ textarea {
 /*********************************************/
 
 
-
-
-
-// CLASES PREDEFINIDAS
-
-// Subtítulos
-.subtitle {
-    font-weight: 500;
-    margin-bottom: .6em;
-    font-size: calc(1.2em + 1vw);
-}
-
-
-// Modal
-.modal {
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: $z-modal;
-    visibility: hidden;
-    background-color: rgba(0,0,0,.9);
-}
 
