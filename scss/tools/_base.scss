@@ -144,6 +144,8 @@ textarea {
 
 // Titulares
 .headline {
+    font-weight: 500;
+    margin-bottom: .6em;
     font-size: calc(1.2em + 1vw);
 }
 
@@ -152,19 +154,8 @@ textarea {
     font-size: calc(1.7em + .8vw);
 }
 
-.headline-big {
-    font-family: $ff-alt;
-    font-size: calc(2.1em + 1vw);
-}
-
-.headline,
 .headline-medium {
     font-weight: 500;
-}
-
-.headline,
-.headline-big {
-    margin-bottom: .6em;
 }
 
 

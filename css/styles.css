@@ -176,6 +176,8 @@ textarea {
 
 /*********************************************/
 .headline {
+  font-weight: 500;
+  margin-bottom: 0.6em;
   font-size: calc(1.2em + 1vw);
 }
 
@@ -184,19 +186,8 @@ textarea {
   font-size: calc(1.7em + 0.8vw);
 }
 
-.headline-big {
-  font-family: "Lato", sans-serif;
-  font-size: calc(2.1em + 1vw);
-}
-
-.headline,
 .headline-medium {
   font-weight: 500;
-}
-
-.headline,
-.headline-big {
-  margin-bottom: 0.6em;
 }
 
 .modal {
@@ -754,6 +745,11 @@ textarea {
 .banner__title {
   max-width: 95%;
   text-align: center;
+}
+.banner__subtitle {
+  margin-bottom: 0.6em;
+  font-family: "Lato", sans-serif;
+  font-size: calc(2.1em + 1vw);
 }
 .banner__title, .banner__subtitle, .banner__phone {
   color: #fff;

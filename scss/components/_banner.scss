@@ -73,6 +73,12 @@
         text-align: center;
     }
 
+    &__subtitle {
+        margin-bottom: .6em;
+        font-family: $ff-alt;
+        font-size: calc(2.1em + 1vw);
+    }
+
     &__title,
     &__subtitle,
     &__phone {
