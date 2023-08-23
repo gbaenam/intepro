@@ -175,7 +175,7 @@ textarea {
 }
 
 /*********************************************/
-.headline {
+.subtitle {
   font-weight: 500;
   margin-bottom: 0.6em;
   font-size: calc(1.2em + 1vw);
