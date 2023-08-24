@@ -11,7 +11,6 @@ const burgerButton = document.querySelector('.burger-button'),
 	iconMail = document.getElementById('contact-bar-mail'),
 	socialBar = document.getElementById('social-bar'),
 	socialBarWrapper = document.getElementById('social-bar-wrapper')
-	// buttonBanner = document.getElementById('banner-button')
 
 
 // Captura de elementos del formulario
@@ -42,6 +41,7 @@ const mql1024 = matchMedia('(min-width: 1024px)')
 const mql1600 = matchMedia('(min-width: 1600px)')
 
 
+
 // Función hamburger button animation
 function buttonAnimation() {
     burgerLine.classList.toggle('cruz')
@@ -51,6 +51,7 @@ function buttonAnimation() {
 burgerButton.addEventListener('click', buttonAnimation)
 
 
+
 // Evento remover clase "main-nav__move"
 document.querySelector('.main-nav__menu').addEventListener('click', e => {
 	e.stopPropagation
@@ -58,11 +59,13 @@ document.querySelector('.main-nav__menu').addEventListener('click', e => {
 })
 
 
+
 // Creación elemento 'h3' de socialBar.
 const h3 = document.createElement('h3')
 h3.textContent = '¡Síguenos en redes sociales!'
 h3.classList.add('social-bar__title')
 h3.id = 'bar-text'
+
 
 
 // Función mover la Barra Social.
@@ -79,6 +82,7 @@ const moveSocialBar = () => {
 moveSocialBar()
 // Evento 'change'
 mql1024.addEventListener('change', moveSocialBar)
+
 
 
 // Función ajustar altura del NAV
@@ -274,9 +278,6 @@ const close =  e => {
 
 // Evento abrir formulario
 iconMail.addEventListener('click', openForm)
-
-// Evento abrir formulario
-// buttonBanner.addEventListener('click', openForm) // Todo: Aquí !!!
 
 // Evento cerrar formulario
 document.querySelector('.form__icon-close').addEventListener('click', close)
