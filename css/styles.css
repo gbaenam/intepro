@@ -52,9 +52,14 @@ html {
 }
 
 section[id] {
-  scroll-margin-top: 1rem;
+  scroll-margin-top: var(--height-header);
 }
 
+@media screen and (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 1rem;
+  }
+}
 body {
   padding: 0;
 }

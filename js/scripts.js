@@ -51,6 +51,13 @@ function buttonAnimation() {
 burgerButton.addEventListener('click', buttonAnimation)
 
 
+// Evento remover clase "main-nav__move"
+document.querySelector('.main-nav__menu').addEventListener('click', e => {
+	e.stopPropagation
+	if (nav.classList.contains('main-nav__move')) setTimeout(() => nav.classList.remove('main-nav__move'),600)
+})
+
+
 // Creación elemento 'h3' de socialBar.
 const h3 = document.createElement('h3')
 h3.textContent = '¡Síguenos en redes sociales!'
