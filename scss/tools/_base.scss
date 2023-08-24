@@ -4,6 +4,14 @@
 /* ------------------ base.scss ---------------------- */
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 1rem;
+}
+
 body {
     padding: 0;
 }
@@ -139,7 +147,6 @@ fieldset {
 
 
 
-
 // Todo: Revisar estas declaraciones.
 /**********************************************/
 small {
@@ -160,6 +167,7 @@ textarea {
     color: $color-dark-text;
 }
 /*********************************************/
+
 
 
 

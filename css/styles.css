@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --height-header: 3.8rem;
+  --height-section: 2rem;
 }
 
 :root {
@@ -46,6 +47,14 @@
 }
 
 /* ------------------ base.scss ---------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 1rem;
+}
+
 body {
   padding: 0;
 }
