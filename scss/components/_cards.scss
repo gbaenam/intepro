@@ -184,8 +184,8 @@
         max-width: 60rem;
         transform: scale(0);
         border-radius: 0.625rem;
-        padding: calc(1.25em + 1.5vw);
         transition: transform 400ms;
+        padding: calc(1.25em + 1.5vw);
     }
 
     &__template-close {

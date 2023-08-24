@@ -95,6 +95,16 @@
     &__link--ilac {
         border-color: $red-dark;
         background-color: $red-dark;
+
+        &:hover {
+            border-color: $red-dark;
+            background-color: $red-fire;
+        }
+
+        &:active {
+            border-color: $red-darkish;
+            background-color: $red-darkish;
+        }
     }
 
     &__link--ilsc {

@@ -941,8 +941,8 @@ textarea {
   max-width: 60rem;
   transform: scale(0);
   border-radius: 0.625rem;
-  padding: calc(1.25em + 1.5vw);
   transition: transform 400ms;
+  padding: calc(1.25em + 1.5vw);
 }
 .cards__template-close {
   right: 0;
@@ -1056,6 +1056,14 @@ textarea {
 .schools__link--ilac {
   border-color: #e00000;
   background-color: #e00000;
+}
+.schools__link--ilac:hover {
+  border-color: #e00000;
+  background-color: #ff0000;
+}
+.schools__link--ilac:active {
+  border-color: #b81206;
+  background-color: #b81206;
 }
 .schools__link--ilsc {
   border-color: #ffa500;
