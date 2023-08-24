@@ -28,8 +28,8 @@
     &__separator {
         border: 0;
         height: var(--h-separator);
+        background-color: $red-light;
         margin-bottom: var(--mb-separator);
-        background-color: $color-red-canada-line;
     }
 
     &__info {

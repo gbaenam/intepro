@@ -1283,8 +1283,8 @@ textarea {
 .main-footer__separator {
   border: 0;
   height: var(--h-separator);
-  margin-bottom: var(--mb-separator);
   background-color: #e00000;
+  margin-bottom: var(--mb-separator);
 }
 .main-footer__info {
   font-style: normal;
