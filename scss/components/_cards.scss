@@ -52,7 +52,7 @@
 
     &__title span,
     &__title::after {
-        color: $color-red;
+        color: $red-main;
     }
 
     &__subtitle span,
@@ -143,7 +143,7 @@
     }
 
     &__article-title {
-        color: $color-red;
+        color: $red-main;
         font-size: 1.375rem;
         margin-bottom: .5rem;
     }
