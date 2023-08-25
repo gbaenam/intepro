@@ -32,13 +32,6 @@
 .cards {
     background: var(--bg-cards);
 
-    &__subtitle {
-        width: 90%;
-        line-height: 115%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     &__title,
     &__subtitle,
     &__footer {
@@ -52,6 +45,7 @@
         &::before {
             content: "¡";
         }
+
         &::after {
             content: "!";
         }
@@ -105,12 +99,14 @@
         flex-grow: 1;
     }
 
+    &__subtitle,
     &__article-header,
     &__article-footer,
     &__template-content {
         width: 90%;
     }
 
+    &__subtitle,
     &__article-header,
     &__article-footer {
         margin-left: auto;

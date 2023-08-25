@@ -163,6 +163,7 @@ fieldset {
 
 .subtitle {
   font-weight: 500;
+  line-height: 115%;
   margin-bottom: 0.8em;
   font-size: calc(1.2em + 1vw);
 }
@@ -849,12 +850,6 @@ textarea {
 .cards {
   background: var(--bg-cards);
 }
-.cards__subtitle {
-  width: 90%;
-  line-height: 115%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .cards__title, .cards__subtitle, .cards__footer {
   text-align: center;
 }
@@ -895,10 +890,10 @@ textarea {
 .cards__article, .cards__article-header {
   flex-grow: 1;
 }
-.cards__article-header, .cards__article-footer, .cards__template-content {
+.cards__subtitle, .cards__article-header, .cards__article-footer, .cards__template-content {
   width: 90%;
 }
-.cards__article-header, .cards__article-footer {
+.cards__subtitle, .cards__article-header, .cards__article-footer {
   margin-left: auto;
   margin-right: auto;
 }
