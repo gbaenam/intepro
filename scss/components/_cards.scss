@@ -32,6 +32,10 @@
 .cards {
     background: var(--bg-cards);
 
+    &__subtitle {
+        line-height: 115%;
+    }
+
     &__title,
     &__subtitle,
     &__footer {
