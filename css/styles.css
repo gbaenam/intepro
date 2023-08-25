@@ -786,6 +786,9 @@ textarea {
   max-width: 64rem;
   text-align: center;
 }
+.youtube__subtitle span {
+  color: #cc0000;
+}
 .youtube__subtitle::before {
   content: "¡";
 }

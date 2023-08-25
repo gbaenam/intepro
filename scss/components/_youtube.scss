@@ -17,6 +17,10 @@
     text-align: center;
   }
 
+  &__subtitle span {
+    color: $red-main;
+  }
+
   &__subtitle {
     &::before {
         content: "¡";
