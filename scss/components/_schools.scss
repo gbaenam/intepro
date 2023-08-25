@@ -65,7 +65,7 @@
     }
 
     &__background-wrapper--ilsc {
-        background-color:#f98012; // Todo: Variables de colores.
+        background-color: $orange-pumpkin;
     }
 
     &__image-wrapper {
@@ -110,6 +110,16 @@
     &__link--ilsc {
         border-color: $orange-yellow;
         background-color: $orange-yellow;
+
+        &:hover {
+            border-color: $orange-squash;
+            background-color: $orange-squash;
+        }
+
+        &:active {
+            border-color: $orange-mango;
+            background-color: $orange-mango;
+        }
     }
 
     &__title-article {

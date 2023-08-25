@@ -1088,6 +1088,14 @@ textarea {
   border-color: #ffa500;
   background-color: #ffa500;
 }
+.schools__link--ilsc:hover {
+  border-color: #ffbd2c;
+  background-color: #ffbd2c;
+}
+.schools__link--ilsc:active {
+  border-color: #f19900;
+  background-color: #f19900;
+}
 .schools__title-article {
   color: #444;
   text-align: center;
