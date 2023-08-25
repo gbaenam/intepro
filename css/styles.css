@@ -1104,9 +1104,6 @@ textarea {
   max-width: var(--mxw-schools-d);
   flex-basis: var(--flb-schools-d);
 }
-.schools__description--last p:last-child span {
-  font-weight: 600;
-}
 .schools__description p:first-child {
   font-weight: 600;
   font-size: calc(1.625rem + 0.4vw);
@@ -1118,6 +1115,9 @@ textarea {
   margin-right: 0.8125rem;
   background-color: #1bd741;
   border: 0.0625rem solid #1bd741;
+}
+.schools__description--last p:last-child span {
+  font-weight: 600;
 }
 
 /* ------------------ form.scss ---------------------- */

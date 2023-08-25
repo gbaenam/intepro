@@ -131,10 +131,6 @@
         flex-basis: var(--flb-schools-d);
     }
 
-    &__description--last p:last-child span {
-        font-weight: 600;
-    }
-
     &__description p:first-child {
         font-weight: 600;
         font-size: calc(1.625rem + .4vw);
@@ -147,5 +143,9 @@
         margin-right: 0.8125rem;
         background-color: $color-whatsapp; // Todo: Nombre variable!!!
         border: 0.0625rem solid $color-whatsapp; // Todo: Nombre variable!!!
+    }
+
+    &__description--last p:last-child span {
+        font-weight: 600;
     }
 }
