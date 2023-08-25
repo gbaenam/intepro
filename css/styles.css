@@ -850,7 +850,10 @@ textarea {
   background: var(--bg-cards);
 }
 .cards__subtitle {
+  width: 90%;
   line-height: 115%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cards__title, .cards__subtitle, .cards__footer {
   text-align: center;

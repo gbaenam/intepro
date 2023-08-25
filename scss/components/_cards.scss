@@ -33,7 +33,10 @@
     background: var(--bg-cards);
 
     &__subtitle {
+        width: 90%;
         line-height: 115%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__title,
