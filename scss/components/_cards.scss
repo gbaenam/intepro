@@ -58,11 +58,11 @@
     }
 
     &__title span,
-    &__title::after {
+    &__title::after,
+    &__subtitle span {
         color: $red-main;
     }
 
-    &__subtitle span,
     &__article-title,
     &__footer-title {
         text-transform: uppercase;

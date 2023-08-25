@@ -163,7 +163,7 @@ fieldset {
 
 .subtitle {
   font-weight: 500;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.8em;
   font-size: calc(1.2em + 1vw);
 }
 
@@ -864,10 +864,10 @@ textarea {
 .cards__title::after, .cards__footer-title::after, .cards__template-button::after, .cards__template-button::after {
   content: "!";
 }
-.cards__title span, .cards__title::after {
+.cards__title span, .cards__title::after, .cards__subtitle span {
   color: #cc0000;
 }
-.cards__subtitle span, .cards__article-title, .cards__footer-title {
+.cards__article-title, .cards__footer-title {
   text-transform: uppercase;
 }
 .cards__articles {
