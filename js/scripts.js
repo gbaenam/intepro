@@ -223,6 +223,9 @@ const closeForm = () => {
 
 	formContainer.classList.remove('form--show')
 
+	// if (nav.classList.contains('main-nav__move')) animation()
+
+	// Todo: Corregir este código llamando únicamente a la función animation()
 	if (nav.classList.contains('main-nav__move')) {
 		burgerLine.classList.toggle('cruz')
 		nav.classList.toggle('main-nav__move')

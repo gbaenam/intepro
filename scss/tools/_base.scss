@@ -9,13 +9,7 @@ html {
 }
 
 section[id] {
-    scroll-margin-top: var(--height-header);
-}
-
-@include from(large) {
-    section[id] {
-        scroll-margin-top: 1rem;
-    }
+    scroll-margin-top: 1.5rem;
 }
 
 body {
