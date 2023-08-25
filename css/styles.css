@@ -982,8 +982,8 @@ textarea {
 .cards__template-list {
   list-style: disc;
   line-height: 125%;
+  font-size: 1.25em;
   font-family: "Roboto", sans-serif;
-  font-size: calc(1em + 0.15vw);
 }
 .cards__template-list li {
   margin-bottom: 0.5rem;

@@ -215,8 +215,8 @@
     &__template-list {
         list-style: disc;
         line-height: 125%;
+        font-size: 1.25em;
         font-family: $ff-main;
-        font-size: calc(1em + .15vw);
     }
 
     &__template-list li {
