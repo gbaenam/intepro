@@ -1104,6 +1104,9 @@ textarea {
   max-width: var(--mxw-schools-d);
   flex-basis: var(--flb-schools-d);
 }
+.schools__description--last p:last-child span {
+  font-weight: 600;
+}
 .schools__description p:first-child {
   font-weight: 600;
   font-size: calc(1.625rem + 0.4vw);

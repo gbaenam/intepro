@@ -131,6 +131,10 @@
         flex-basis: var(--flb-schools-d);
     }
 
+    &__description--last p:last-child span {
+        font-weight: 600;
+    }
+
     &__description p:first-child {
         font-weight: 600;
         font-size: calc(1.625rem + .4vw);
