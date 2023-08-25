@@ -140,7 +140,13 @@ button {
 }
 
 a {
+  cursor: default;
   text-decoration: none;
+}
+@media screen and (min-width: 1024px) {
+  a {
+    cursor: pointer;
+  }
 }
 
 a,

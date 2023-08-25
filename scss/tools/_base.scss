@@ -96,7 +96,12 @@ button {
 }
 
 a {
+    cursor: default;
     text-decoration: none;
+
+    @include from(large) {
+        cursor: pointer;
+    }
 }
 
 a,
