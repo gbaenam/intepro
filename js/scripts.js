@@ -53,10 +53,13 @@ const animation = e => {
 burgerButton.addEventListener('click', animation)
 
 // Evento Animación botón hamburguesa y NAV
-document.querySelector('.main-nav__menu').addEventListener('click', e => {
-	if (nav.classList.contains('main-nav__move')) setTimeout(() => animation(e),600)
-})
+// document.querySelector('.main-nav__menu').addEventListener('click', e => {
+// 	if (nav.classList.contains('main-nav__move')) setTimeout(() => animation(e),600)
+// })
 
+document.querySelector('.main-nav__menu').addEventListener('click', e => {
+	if (nav.classList.contains('main-nav__move')) animation(e)
+})
 
 
 // Creación elemento 'h3' de socialBar.
