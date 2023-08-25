@@ -42,26 +42,22 @@ const mql1600 = matchMedia('(min-width: 1600px)')
 
 
 
-// Función hamburger button animation
-function buttonAnimation() {
-    burgerLine.classList.toggle('cruz')
+//  Función Animación botón hamburguesa y NAV
+const animation = e => {
+	e.stopPropagation
+	burgerLine.classList.toggle('cruz')
     nav.classList.toggle('main-nav__move')
 }
-// Evento 'click' hamburger button animation.
-burgerButton.addEventListener('click', buttonAnimation)
 
+// Evento Animación botón hamburguesa y NAV
+burgerButton.addEventListener('click', animation)
 
-
-// Evento remover clase "main-nav__move"
+// Evento Animación botón hamburguesa y NAV
 document.querySelector('.main-nav__menu').addEventListener('click', e => {
-	e.stopPropagation
-	if (nav.classList.contains('main-nav__move')) setTimeout(() => {
-		burgerLine.classList.toggle('cruz')
-		nav.classList.toggle('main-nav__move')
-	},600)
+	if (nav.classList.contains('main-nav__move')) setTimeout(() => animation(e),600)
 })
 
-,600
+
 
 // Creación elemento 'h3' de socialBar.
 const h3 = document.createElement('h3')
