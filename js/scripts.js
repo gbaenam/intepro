@@ -57,7 +57,7 @@ burgerButton.addEventListener('click', animation)
 const menuLinks = document.querySelectorAll('.main-nav__menu a[href^="#"]')
 menuLinks.forEach(menuLink => {
 	menuLink.addEventListener('click', e => {
-		if (nav.classList.contains('main-nav__move')) animation(e)
+		if (nav.classList.contains('main-nav__move')) setTimeout(() => animation(e),600)
 	})
 })
 
