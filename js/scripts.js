@@ -52,14 +52,24 @@ const animation = e => {
 // Evento Animación botón hamburguesa y NAV
 burgerButton.addEventListener('click', animation)
 
+
+// Evento captura de los enlaces del NAV.
+const menuLinks = document.querySelectorAll('.main-nav__menu a[href^="#"]')
+menuLinks.forEach(menuLink => {
+	menuLink.addEventListener('click', e => {
+		if (nav.classList.contains('main-nav__move')) animation(e)
+	})
+})
+
+
 // Evento Animación botón hamburguesa y NAV
 // document.querySelector('.main-nav__menu').addEventListener('click', e => {
 // 	if (nav.classList.contains('main-nav__move')) setTimeout(() => animation(e),600)
 // })
 
-document.querySelector('.main-nav__menu').addEventListener('click', e => {
-	if (nav.classList.contains('main-nav__move')) animation(e)
-})
+// document.querySelector('.main-nav__menu').addEventListener('click', e => {
+// 	if (nav.classList.contains('main-nav__move')) animation(e)
+// })
 
 
 // Creación elemento 'h3' de socialBar.
