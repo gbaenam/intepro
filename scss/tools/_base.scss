@@ -5,7 +5,11 @@
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: unset;
+}
+
+html:focus-within {
+    scroll-behavior: unset;
 }
 
 section[id] {
